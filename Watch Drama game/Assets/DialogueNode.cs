@@ -47,5 +47,4 @@ public class DialogueChoice
     [LabelWidth(60)]
     public int hostilityChange;
     [LabelWidth(60)]
-    public string nextNodeId;
 } 
