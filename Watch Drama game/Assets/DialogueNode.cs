@@ -14,25 +14,10 @@ public class DialogueNode
     [TextArea(2, 4), LabelWidth(60)]
     public string text;
 
-    [LabelWidth(60)]
-    public int? minTurn;
-    [LabelWidth(60)]
-    public int? maxTurn;
-    [LabelWidth(60)]
-    public int? minTrust;
-    [LabelWidth(60)]
-    public int? maxTrust;
-    [LabelWidth(60)]
-    public int? minFaith;
-    [LabelWidth(60)]
-    public int? maxFaith;
-    [LabelWidth(60)]
-    public int? minHostility;
-    [LabelWidth(60)]
-    public int? maxHostility;
-
     [TableList(ShowIndexLabels = true)]
     public List<DialogueChoice> choices = new List<DialogueChoice>();
+
+    public bool isSpecial; // özel diyalog flag'i
 }
 
 [System.Serializable]
@@ -46,5 +31,4 @@ public class DialogueChoice
     public int faithChange;
     [LabelWidth(60)]
     public int hostilityChange;
-    [LabelWidth(60)]
 } 

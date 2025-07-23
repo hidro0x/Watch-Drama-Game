@@ -12,25 +12,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb687b9638a00e45ab44fd500e7587d, type: 3}
   m_Name: New Dialogue Database
   m_EditorClassIdentifier: 
-  dialogueNodes:
-  - id: 
-    sprite: {fileID: 0}
-    text: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: specialGeneralDialoguesByMap
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[MapType, Assembly-CSharp],[System.Collections.Generic.List`1[[DialogueNode,
+        Assembly-CSharp]], mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[MapType, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  maps: 0100000002000000030000000400000000000000
+  generalDialogues:
+  - id: deneme
+    sprite: {fileID: 21300000, guid: 44a054df1702e39458b7072b08d0f212, type: 3}
+    text: dwdw
     choices:
-    - text: 
-      trustChange: 0
-      faithChange: 0
-      hostilityChange: 0
-      nextNodeId: 
-  - id: 
-    sprite: {fileID: 0}
-    text: 
-    choices: []
-  - id: 
-    sprite: {fileID: 0}
-    text: 
-    choices: []
-  - id: 
-    sprite: {fileID: 0}
-    text: 
-    choices: []
+    - text: deneme
+      trustChange: 5
+      faithChange: 5
+      hostilityChange: 5
+    - text: deneme2
+      trustChange: 10
+      faithChange: 10
+      hostilityChange: 10
+    - text: deneme3
+      trustChange: 2
+      faithChange: 2
+      hostilityChange: 2
+  - id: deneme
+    sprite: {fileID: 21300000, guid: 33e1e6147b08d6d4ab5a134dd49ed962, type: 3}
+    text: erg
+    choices:
+    - text: 232
+      trustChange: 5
+      faithChange: 5
+      hostilityChange: 5
+    - text: fer
+      trustChange: 10
+      faithChange: 10
+      hostilityChange: 10
+    - text: fer
+      trustChange: 2
+      faithChange: 2
+      hostilityChange: 2
+  globalConditionalDialogues:
+  - dialogue:
+      id: 
+      sprite: {fileID: 0}
+      text: 
+      choices: []
+    conditionType: 0
+  specialGeneralInterval: 15

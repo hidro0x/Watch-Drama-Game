@@ -1,57 +1,67 @@
 using UnityEngine;
 using System.Linq;
+using System;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
     public DialogueDatabase dialogueDatabase;
     private DialogueNode currentNode;
+    
+    private int currentTurn = 1;
 
-    public void StartDialogue(int turn, float trust, float faith, float hostility)
+    [SerializeField] private TextMeshProUGUI turnText;
+    
+
+    public void ShowSpecificDialogue(DialogueNode node)
     {
-        // Uygun diyalogları bul
-        foreach (var node in dialogueDatabase.dialogueNodes)
+        if (node == null)
         {
-            if (IsAvailable(node, turn, trust, faith, hostility))
-            {
-                currentNode = node;
-                ShowDialogue(node);
-                break;
-            }
+            Debug.LogError("Gösterilecek diyalog null!");
+            return;
         }
+        
+        currentNode = node;
+        ShowDialogue(node);
     }
-
-    bool IsAvailable(DialogueNode node, int turn, float trust, float faith, float hostility)
+    
+    // Seçim yapıldığında çağrılacak
+    public void OnChoiceMade()
     {
-        if (node.minTurn.HasValue && turn < node.minTurn.Value) return false;
-        if (node.maxTurn.HasValue && turn > node.maxTurn.Value) return false;
-        if (node.minTrust.HasValue && trust < node.minTrust.Value) return false;
-        if (node.maxTrust.HasValue && trust > node.maxTrust.Value) return false;
-        if (node.minFaith.HasValue && faith < node.minFaith.Value) return false;
-        if (node.maxFaith.HasValue && faith > node.maxFaith.Value) return false;
-        if (node.minHostility.HasValue && hostility < node.minHostility.Value) return false;
-        if (node.maxHostility.HasValue && hostility > node.maxHostility.Value) return false;
-        return true;
+        FindFirstObjectByType<ChoiceSelectionUI>().AnimateChoicePanel();
     }
 
     void ShowDialogue(DialogueNode node)
     {
-        Debug.Log(node.text);
-        // UIManager ile entegre edilecek
+        // ChoiceSelectionUI ile entegre gösterim
+        ChoiceSelectionUI ui = FindFirstObjectByType<ChoiceSelectionUI>(FindObjectsInactive.Include);
+        if (ui != null)
+        {
+            ui.ShowUI(node);
+        }
+        else
+        {
+            Debug.LogError("ChoiceSelectionUI sahnede bulunamadı!");
+        }
+    }
+    
+    // Getter methodları
+    public DialogueNode GetCurrentNode() => currentNode;
+
+    // Turn getter
+    public int GetCurrentTurn() => currentTurn;
+
+    // Turn ilerlet
+    public void NextTurn()
+    {
+        currentTurn++;
+        turnText.text = "Turn: " + currentTurn;
     }
 
-    public void MakeChoice(int choiceIndex)
+    // Turn sıfırla
+    public void ResetTurn()
     {
-        var choice = currentNode.choices[choiceIndex];
-        // Barları güncelle (GameManager üzerinden)
-        // Sonraki düğüme geç
-        if (!string.IsNullOrEmpty(choice.nextNodeId))
-        {
-            var nextNode = dialogueDatabase.dialogueNodes.FirstOrDefault(n => n.id == choice.nextNodeId);
-            if (nextNode != null)
-            {
-                currentNode = nextNode;
-                ShowDialogue(nextNode);
-            }
-        }
+        currentTurn = 1;
+        turnText.text = "Turn: " + currentTurn;
     }
 } 

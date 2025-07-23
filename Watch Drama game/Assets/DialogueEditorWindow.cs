@@ -5,6 +5,7 @@ using UnityEditor;
 
 public class DialogueEditorWindow : OdinEditorWindow
 {
+    [Title("Diyalog Veritabanı")]
     [InlineEditor(Expanded = true)]
     public DialogueDatabase dialogueDatabase;
 
@@ -14,4 +15,6 @@ public class DialogueEditorWindow : OdinEditorWindow
         var window = GetWindow<DialogueEditorWindow>("Dialogue Editor");
         window.Show();
     }
+    
+
 } 

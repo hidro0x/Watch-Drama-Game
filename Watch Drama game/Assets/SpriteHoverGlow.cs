@@ -1,14 +1,15 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpriteHoverGlow : MonoBehaviour
 {
     public Material selectionMaterial;
     private Material originalMaterial;
-    private SpriteRenderer sr;
+    private Image sr;
 
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+        sr = GetComponent<Image>();
         originalMaterial = sr.material;
     }
 
