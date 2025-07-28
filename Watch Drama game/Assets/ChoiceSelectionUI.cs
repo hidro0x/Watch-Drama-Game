@@ -10,7 +10,7 @@ public class ChoiceSelectionUI : MonoBehaviour
     [SerializeField] private List<ChoiceButtonSlot> choiceButtonSlotList = new List<ChoiceButtonSlot>();
     [SerializeField] private Button returnButton;
 
-    private DialogueNode dialogueNode;
+    private Node dialogueNode;
     [SerializeField]private RectTransform rectTransform;
 
     public static event Action OnDialogueChoiceMade;
@@ -18,6 +18,7 @@ public class ChoiceSelectionUI : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(false);
+        returnButton.onClick.AddListener(OnReturnButtonClicked);
     }
 
     public void ShowUI(DialogueNode dialogueNode)
@@ -26,7 +27,14 @@ public class ChoiceSelectionUI : MonoBehaviour
         this.dialogueNode = dialogueNode;
         choiceSelectionImage.sprite = dialogueNode.sprite;
         SetChoices(dialogueNode.choices);
-        returnButton.gameObject.SetActive(!dialogueNode.isSpecial);
+    }
+    
+    public void ShowUI(GlobalDialogueNode globalDialogueNode)
+    {
+        gameObject.SetActive(true);
+        this.dialogueNode = globalDialogueNode;
+        choiceSelectionImage.sprite = globalDialogueNode.sprite;
+        SetGlobalChoices(globalDialogueNode.choices);
     }
 
     public void AnimateChoicePanel()
@@ -52,10 +60,26 @@ public class ChoiceSelectionUI : MonoBehaviour
             choiceButtonSlotList[i].SetChoice(choices[i]);
         }
     }
+    
+    private void SetGlobalChoices(List<GlobalDialogueChoice> globalChoices)
+    {
+        for (int i = 0; i < globalChoices.Count; i++)
+        {
+            choiceButtonSlotList[i].SetChoice(globalChoices[i]);
+        }
+    }
 
     public void OnReturnButtonClicked()
     {
         gameObject.SetActive(false);
-        MapManager.Instance.SaveDialogueForCurrentMap(dialogueNode);
+        if (dialogueNode is DialogueNode dialogue)
+        {
+            MapManager.Instance.SaveDialogueForCurrentMap(dialogue);
+        }
+    }
+
+    public void SetReturnButtonActive(bool active)
+    {
+        returnButton.enabled = active;
     }
 }

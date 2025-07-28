@@ -6,11 +6,13 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public DialogueDatabase dialogueDatabase;
-    private DialogueNode currentNode;
+    private Node currentNode;
     
     private int currentTurn = 1;
-
+    
+    [Header("Turn Ayarları")]
     [SerializeField] private TextMeshProUGUI turnText;
+    [SerializeField] private int maxTurnCount = 10;
     
 
     public void ShowSpecificDialogue(DialogueNode node)
@@ -25,10 +27,22 @@ public class DialogueManager : MonoBehaviour
         ShowDialogue(node);
     }
     
+    public void ShowSpecificDialogue(GlobalDialogueNode node)
+    {
+        if (node == null)
+        {
+            Debug.LogError("Gösterilecek global diyalog null!");
+            return;
+        }
+        
+        currentNode = node;
+        ShowGlobalDialogue(node);
+    }
+    
     // Seçim yapıldığında çağrılacak
     public void OnChoiceMade()
     {
-        FindFirstObjectByType<ChoiceSelectionUI>().AnimateChoicePanel();
+        FindFirstObjectByType<ChoiceSelectionUI>(FindObjectsInactive.Include).AnimateChoicePanel();
     }
 
     void ShowDialogue(DialogueNode node)
@@ -45,17 +59,57 @@ public class DialogueManager : MonoBehaviour
         }
     }
     
+    void ShowGlobalDialogue(GlobalDialogueNode node)
+    {
+        // ChoiceSelectionUI ile entegre gösterim
+        ChoiceSelectionUI ui = FindFirstObjectByType<ChoiceSelectionUI>(FindObjectsInactive.Include);
+        if (ui != null)
+        {
+            ui.ShowUI(node);
+        }
+        else
+        {
+            Debug.LogError("ChoiceSelectionUI sahnede bulunamadı!");
+        }
+    }
+    
     // Getter methodları
-    public DialogueNode GetCurrentNode() => currentNode;
+    public Node GetCurrentNode() => currentNode;
 
     // Turn getter
     public int GetCurrentTurn() => currentTurn;
+    
+    // Max turn getter
+    public int GetMaxTurnCount() => maxTurnCount;
 
     // Turn ilerlet
     public void NextTurn()
     {
         currentTurn++;
         turnText.text = "Turn: " + currentTurn;
+        
+        // Turn limit kontrolü
+        CheckTurnLimit();
+    }
+    
+    // Turn artır (test için)
+    public void IncrementTurn()
+    {
+        currentTurn++;
+        turnText.text = "Turn: " + currentTurn;
+        
+        // Turn limit kontrolü
+        CheckTurnLimit();
+    }
+    
+    // Turn limit kontrolü
+    private void CheckTurnLimit()
+    {
+        TurnConditionSystem turnConditionSystem = UnityEngine.Object.FindObjectOfType<TurnConditionSystem>();
+        if (turnConditionSystem != null)
+        {
+            turnConditionSystem.CheckTurnConditionsOnTurnChange();
+        }
     }
 
     // Turn sıfırla

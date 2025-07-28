@@ -17,8 +17,9 @@ public class DialogueDatabase : SerializedScriptableObject
     [Title("Harita Özel Genel Diyalogları")]
     public Dictionary<MapType, List<DialogueNode>> specialGeneralDialoguesByMap = new();
     
-    [Title("Global Koşullu Diyaloglar")]
-    public List<ConditionalDialogueNode> globalConditionalDialogues = new List<ConditionalDialogueNode>();
+    [Title("Global Diyalog Etkileri")]
+    [TableList]
+    public List<GlobalDialogueNode> globalDialogueEffects = new List<GlobalDialogueNode>();
     
     [Title("Genel Özel Diyalog Aralığı")]
     [LabelWidth(150)]

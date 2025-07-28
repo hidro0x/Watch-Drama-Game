@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
     {
         currentMapType = mapType;
         // BarUIController'ı güncellemek için event tetikle
-        OnChoiceMade?.Invoke(new ChoiceEffect(0, 0, 0)); // Sıfır etkiyle tetiklenir, sadece güncelleme için
+        RefreshValues();
     }
 
     // Seçimden gelen etkiyi uygula (artık sadece aktif map'e uygula)
@@ -122,11 +122,47 @@ public class GameManager : MonoBehaviour
         CheckForZeroValues(values);
 
         // DialogueManager'a seçim yapıldığını bildir
-        DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();
+        DialogueManager dialogueManager = UnityEngine.Object.FindObjectOfType<DialogueManager>();
         if (dialogueManager != null)
         {
             dialogueManager.OnChoiceMade();
         }
+    }
+
+    // Global diyalog etkilerini uygula (tüm ülkelere etki eder)
+    public void ApplyGlobalDialogueEffect(GlobalDialogueEffect globalEffect)
+    {
+        if (globalEffect == null || globalEffect.countryEffects == null)
+        {
+            Debug.LogWarning("GlobalDialogueEffect veya countryEffects null!");
+            return;
+        }
+        
+        foreach (var kvp in globalEffect.countryEffects)
+        {
+            var country = kvp.Key;
+            var values = kvp.Value;
+            if (mapValuesDict.ContainsKey(country))
+            {
+                var current = mapValuesDict[country];
+                current.Trust += values.trust;
+                current.Faith += values.faith;
+                current.Hostility += values.hostility;
+                current.Trust = Mathf.Max(0, current.Trust);
+                current.Faith = Mathf.Max(0, current.Faith);
+                current.Hostility = Mathf.Max(0, current.Hostility);
+                mapValuesDict[country] = current;
+                CheckForZeroValues(current);
+            }
+        }
+        RefreshValues();
+    }
+
+    private void RefreshValues(){
+        var values = mapValuesDict[currentMapType];
+        values.Trust = Mathf.Max(0, values.Trust);
+        values.Faith = Mathf.Max(0, values.Faith);
+        values.Hostility = Mathf.Max(0, values.Hostility);
     }
 
     private void CheckForZeroValues(MapValues values)
@@ -196,6 +232,19 @@ public class GameManager : MonoBehaviour
     public int GetTrust() => mapValuesDict.ContainsKey(currentMapType) ? mapValuesDict[currentMapType].Trust : 0;
     public int GetFaith() => mapValuesDict.ContainsKey(currentMapType) ? mapValuesDict[currentMapType].Faith : 0;
     public int GetHostility() => mapValuesDict.ContainsKey(currentMapType) ? mapValuesDict[currentMapType].Hostility : 0;
+
+    // Belirli bir ülke için değerleri al
+    public int GetTrustForCountry(MapType country) => mapValuesDict.ContainsKey(country) ? mapValuesDict[country].Trust : 0;
+    public int GetFaithForCountry(MapType country) => mapValuesDict.ContainsKey(country) ? mapValuesDict[country].Faith : 0;
+    public int GetHostilityForCountry(MapType country) => mapValuesDict.ContainsKey(country) ? mapValuesDict[country].Hostility : 0;
+    
+    public MapValues GetBarValuesForCountry(MapType country) => mapValuesDict.ContainsKey(country) ? mapValuesDict[country] : new MapValues(0, 0, 0);
+    
+    public void SetBarValuesForCountry(MapType country, MapValues values)
+    {
+        mapValuesDict[country] = values;
+        RefreshValues();
+    }
 
     // Yeni oyun başlatma
     public void StartNewGame()

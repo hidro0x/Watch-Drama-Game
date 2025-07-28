@@ -15,7 +15,10 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 21300000, guid: 35f23c48db908de47a926c4bb1831818, type: 3}
+    - {fileID: 21300000, guid: 677b90f883a2ca849a7a6b4f9c434c26, type: 3}
+    - {fileID: 21300000, guid: 166dce78c8aa1cc49a05bab0ccadaa3b, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -40,7 +43,275 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
       Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[DialogueNode, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 3|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: astharil1
+    - Name: sprite
+      Entry: 10
+      Data: 0
+    - Name: text
+      Entry: 1
+      Data: astrahil ozel diyalogu1
+    - Name: choices
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 5|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: deneme1
+    - Name: trustChange
+      Entry: 3
+      Data: 5
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: deneme2
+    - Name: trustChange
+      Entry: 3
+      Data: 5
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 7|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: deneme3
+    - Name: trustChange
+      Entry: 3
+      Data: 5
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 8|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: astharil2
+    - Name: sprite
+      Entry: 10
+      Data: 1
+    - Name: text
+      Entry: 1
+      Data: astrahil ozel diyalogu2
+    - Name: choices
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 10|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: deneme1
+    - Name: trustChange
+      Entry: 3
+      Data: 5
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 11|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: deneme2
+    - Name: trustChange
+      Entry: 3
+      Data: 5
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 12|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: deneme3
+    - Name: trustChange
+      Entry: 3
+      Data: 5
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 13|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: astharil3
+    - Name: sprite
+      Entry: 10
+      Data: 2
+    - Name: text
+      Entry: 1
+      Data: astrahil ozel diyalogu3
+    - Name: choices
+      Entry: 7
+      Data: 14|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 15|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: deneme1
+    - Name: trustChange
+      Entry: 3
+      Data: 5
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 16|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: deneme2
+    - Name: trustChange
+      Entry: 3
+      Data: 5
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 17|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: deneme3
+    - Name: trustChange
+      Entry: 3
+      Data: 5
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -81,11 +352,77 @@ MonoBehaviour:
       trustChange: 2
       faithChange: 2
       hostilityChange: 2
-  globalConditionalDialogues:
-  - dialogue:
-      id: 
-      sprite: {fileID: 0}
-      text: 
-      choices: []
-    conditionType: 0
+  globalDialogueEffects:
+  - id: global1
+    sprite: {fileID: 21300000, guid: 90e9a88b126b0964aa4cb4bf1beb4d6d, type: 3}
+    text: 'global deneme diyalog
+
+'
+    choices:
+    - text: deneme1
+      globalEffects:
+      - country: 1
+        trustChange: 5
+        faithChange: 0
+        hostilityChange: 0
+      - country: 0
+        trustChange: 5
+        faithChange: 0
+        hostilityChange: 0
+      - country: 4
+        trustChange: 5
+        faithChange: 0
+        hostilityChange: 0
+      - country: 3
+        trustChange: 5
+        faithChange: 0
+        hostilityChange: 0
+      - country: 2
+        trustChange: 5
+        faithChange: 0
+        hostilityChange: 0
+    - text: deneme2
+      globalEffects:
+      - country: 1
+        trustChange: 5
+        faithChange: 0
+        hostilityChange: 0
+      - country: 0
+        trustChange: 5
+        faithChange: 0
+        hostilityChange: 0
+      - country: 4
+        trustChange: 5
+        faithChange: 0
+        hostilityChange: 0
+      - country: 3
+        trustChange: 5
+        faithChange: 0
+        hostilityChange: 0
+      - country: 2
+        trustChange: 5
+        faithChange: 0
+        hostilityChange: 0
+    - text: deneme3
+      globalEffects:
+      - country: 1
+        trustChange: 0
+        faithChange: 5
+        hostilityChange: 0
+      - country: 0
+        trustChange: 0
+        faithChange: 5
+        hostilityChange: 0
+      - country: 4
+        trustChange: 0
+        faithChange: 5
+        hostilityChange: 0
+      - country: 3
+        trustChange: 0
+        faithChange: 5
+        hostilityChange: 0
+      - country: 2
+        trustChange: 0
+        faithChange: 5
+        hostilityChange: 0
   specialGeneralInterval: 15

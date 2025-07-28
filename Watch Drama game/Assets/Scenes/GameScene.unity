@@ -994,7 +994,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.6698113, g: 0.11058204, b: 0.11058204, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1825,6 +1825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315643951}
   - component: {fileID: 1315643950}
+  - component: {fileID: 1315643952}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1863,6 +1864,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1315643952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315643949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1263fb6fc995c344685c83f980e041b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnConditions:
+  - conditionName: "Varnan Y\xFCksek Trust"
+    IsActive: 1
+    conditionType: 0
+    targetCountry: 4
+    targetValue: 0
+    comparison: 0
+    thresholdValue: 80
+    actionType: 2
+    customDialogue:
+      id: 
+      sprite: {fileID: 0}
+      text: 
+      choices: []
+    globalEffect:
+      dialogue:
+        id: 
+        sprite: {fileID: 0}
+        text: 
+        choices: []
+    customMessage: "Varnan'\u0131n g\xFCveni \xE7ok y\xFCksek!"
+  - conditionName: "Astrahil D\xFC\u015F\xFCk Faith"
+    IsActive: 1
+    conditionType: 0
+    targetCountry: 0
+    targetValue: 1
+    comparison: 1
+    thresholdValue: 30
+    actionType: 2
+    customDialogue:
+      id: 
+      sprite: {fileID: 0}
+      text: 
+      choices: []
+    globalEffect:
+      dialogue:
+        id: 
+        sprite: {fileID: 0}
+        text: 
+        choices: []
+    customMessage: "Astrahil'in inanc\u0131 \xE7ok d\xFC\u015F\xFCk!"
+  - conditionName: "Turn 10+ Uyar\u0131"
+    IsActive: 1
+    conditionType: 1
+    targetCountry: 4
+    targetValue: 0
+    comparison: 0
+    thresholdValue: 10
+    actionType: 2
+    customDialogue:
+      id: 
+      sprite: {fileID: 0}
+      text: 
+      choices: []
+    globalEffect:
+      dialogue:
+        id: 
+        sprite: {fileID: 0}
+        text: 
+        choices: []
+    customMessage: "10 turn ge\xE7ti!"
 --- !u!224 &1385279348 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 235683214469111255, guid: dad2fb991f81d2c4e8b623e5f07695d5, type: 3}
@@ -1941,7 +2015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05119054, y: 0}
   m_AnchorMax: {x: 0.94100004, y: 0.47242522}
-  m_AnchoredPosition: {x: -0.81207275, y: 55.858994}
+  m_AnchoredPosition: {x: -0.8120117, y: 55.85919}
   m_SizeDelta: {x: -2.8899536, y: -117.09787}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1548727419
@@ -2501,7 +2575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.10426566}
   m_AnchorMax: {x: 1, y: 0.897}
-  m_AnchoredPosition: {x: -0.5008545, y: -1.0733032}
+  m_AnchoredPosition: {x: -0.5008545, y: -1.0733643}
   m_SizeDelta: {x: -2.13, y: -1.7669983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1832370530
@@ -2844,7 +2918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05119054, y: 0.47242522}
   m_AnchorMax: {x: 0.94100004, y: 0.9551654}
-  m_AnchoredPosition: {x: -0.99993896, y: -1.5001221}
+  m_AnchoredPosition: {x: -1, y: -1.5001221}
   m_SizeDelta: {x: -2.000061, y: 1.7308044}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2066675817

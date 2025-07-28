@@ -77,10 +77,21 @@ public class MapManager : MonoBehaviour
             Debug.LogError("Aktif harita yok!");
             return;
         }
-        DialogueManager dialogueManager = FindFirstObjectByType<DialogueManager>();
+        DialogueManager dialogueManager = UnityEngine.Object.FindFirstObjectByType<DialogueManager>();
         dialogueManager.NextTurn();
 
         mapTurns[currentMap.Value]++;
+        // Return butonunu tur sayısına göre aktif/pasif yap
+        var choiceUI = UnityEngine.Object.FindFirstObjectByType<ChoiceSelectionUI>(FindObjectsInactive.Include);
+        if (choiceUI != null)
+        {
+            bool isActive = mapTurns[currentMap.Value] >= 15;
+            choiceUI.SetReturnButtonActive(isActive);
+        }
+        
+        // Turn sonunda condition'ları kontrol et
+        CheckTurnConditions();
+        
         // Harita tamamlandı mı kontrolü gerekiyorsa burada yapılabilir
         // Hangi havuzdan diyalog seçileceğini belirle
         DialogueNode selectedDialogue = SelectDialogueFromPool();
@@ -95,6 +106,18 @@ public class MapManager : MonoBehaviour
         else
         {
             Debug.LogWarning("Uygun diyalog bulunamadı!");
+        }
+    }
+    
+    /// <summary>
+    /// Turn sonunda condition'ları kontrol eder
+    /// </summary>
+    private void CheckTurnConditions()
+    {
+        var turnConditionSystem = UnityEngine.Object.FindFirstObjectByType<TurnConditionSystem>();
+        if (turnConditionSystem != null)
+        {
+            turnConditionSystem.CheckTurnConditions();
         }
     }
     
