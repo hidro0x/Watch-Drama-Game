@@ -3,6 +3,44 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 
+[System.Serializable]
+public class MapInitialValues
+{
+    [Title("Harita Başlangıç Değerleri")]
+    [LabelWidth(80)]
+    public MapType mapType;
+    
+    [Title("Bar Başlangıç Değerleri")]
+    [LabelWidth(80)]
+    [Range(0, 100)]
+    public int initialTrust = 50;
+    
+    [LabelWidth(80)]
+    [Range(0, 100)]
+    public int initialFaith = 50;
+    
+    [LabelWidth(80)]
+    [Range(0, 100)]
+    public int initialHostility = 0;
+    
+    // BarValues'e dönüştürme
+    public BarValues GetBarValues()
+    {
+        return new BarValues
+        {
+            trust = initialTrust,
+            faith = initialFaith,
+            hostility = initialHostility
+        };
+    }
+    
+    // MapValues'e dönüştürme
+    public MapValues GetMapValues()
+    {
+        return new MapValues(initialTrust, initialFaith, initialHostility);
+    }
+}
+
 [CreateAssetMenu(menuName = "Kahin/Dialog Database")]
 public class DialogueDatabase : SerializedScriptableObject
 {
@@ -21,8 +59,11 @@ public class DialogueDatabase : SerializedScriptableObject
     [TableList]
     public List<GlobalDialogueNode> globalDialogueEffects = new List<GlobalDialogueNode>();
     
-    [Title("Genel Özel Diyalog Aralığı")]
+    [Title("Turn Aralıkları")]
     [LabelWidth(150)]
-    public int specialGeneralInterval = 15; // Her y turnde genel özel diyalog
+    public int mapSpecificInterval = 5; // Her 5 turn'de map'e özel diyalog
+    
+    [LabelWidth(150)]
+    public int globalDialogueInterval = 16; // Her 15 turn'de global diyalog
     
 } 

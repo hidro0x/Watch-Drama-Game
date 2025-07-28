@@ -14,4 +14,11 @@ public class MapSelectionButton : MonoBehaviour
     private void OnButtonClicked(){
         MapManager.Instance.SelectMap(mapType);
     }
+    
+    public MapType GetMapType() => mapType;
+    
+    public void SetButtonInteractable(bool interactable)
+    {
+        button.interactable = interactable;
+    }
 }

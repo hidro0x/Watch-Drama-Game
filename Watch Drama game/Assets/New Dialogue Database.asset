@@ -320,38 +320,259 @@ MonoBehaviour:
       Data: 
   maps: 0100000002000000030000000400000000000000
   generalDialogues:
-  - id: deneme
-    sprite: {fileID: 21300000, guid: 44a054df1702e39458b7072b08d0f212, type: 3}
-    text: dwdw
+  - id: n01
+    sprite: {fileID: 0}
+    text: "Ya\u015Fl\u0131 G\xF6zc\xFC: Yolcu... R\xFCzgar\u0131n y\xF6n\xFC de\u011Fi\u015Fti.
+      Seninle birlikte bir \u015Fey geliyor."
     choices:
-    - text: deneme
+    - text: "Ben sadece r\xFCzgar\u0131 izlerim."
+      trustChange: 1
+      faithChange: 3
+      hostilityChange: 0
+    - text: "Karanl\u0131\u011F\u0131 ta\u015F\u0131yan ben de\u011Filim."
+      trustChange: 2
+      faithChange: 5
+      hostilityChange: -1
+    - text: "Neye haz\u0131rlanmal\u0131y\u0131z?"
+      trustChange: 5
+      faithChange: 6
+      hostilityChange: 0
+  - id: n02
+    sprite: {fileID: 0}
+    text: "Tuz Madencisi Elrek: Derinlerde bir \u015Fey uyan\u0131yor. Tuhaf yank\u0131lar
+      duyduk."
+    choices:
+    - text: "Yine mi? Onlar\u0131 susturman\u0131n zaman\u0131 geldi."
+      trustChange: 4
+      faithChange: 2
+      hostilityChange: 3
+    - text: Oraya inmeme izin verin.
       trustChange: 5
       faithChange: 5
+      hostilityChange: 0
+    - text: "Ben kar\u0131\u015Fmam, sizin probleminiz."
+      trustChange: -2
+      faithChange: 0
+      hostilityChange: 4
+  - id: n03
+    sprite: {fileID: 0}
+    text: "Gen\xE7 \xD6\u011Frenci Lia: Ger\xE7ekten kutsal biri misin? Efsanelerde
+      anlat\u0131lan gibi mi?"
+    choices:
+    - text: "Ben sadece g\xF6revimi yap\u0131yorum."
+      trustChange: 3
+      faithChange: 4
+      hostilityChange: 0
+    - text: "Evet, r\xFCyalar\u0131n bile \xF6tesinden geldim."
+      trustChange: 2
+      faithChange: 7
+      hostilityChange: -1
+    - text: "Sa\xE7mal\u0131klarla vakit kaybetme."
+      trustChange: -3
+      faithChange: -2
       hostilityChange: 5
-    - text: deneme2
-      trustChange: 10
-      faithChange: 10
-      hostilityChange: 10
-    - text: deneme3
+  - id: n04
+    sprite: {fileID: 0}
+    text: "S\xFCrg\xFCn Kad\u0131n: \u0130\xE7eride \xF6fke ta\u015F\u0131yorsun.
+      Sen de bizim gibisin."
+    choices:
+    - text: "Ben \xF6fkemi kontrol edebiliyorum."
+      trustChange: 2
+      faithChange: 3
+      hostilityChange: 1
+    - text: "\xD6fkemin nereye y\xF6neldi\u011Fini bilemezsin."
+      trustChange: 1
+      faithChange: 1
+      hostilityChange: 5
+    - text: "Belki de bu \xF6fke seni kurtar\u0131r."
+      trustChange: 3
+      faithChange: 4
+      hostilityChange: 2
+  - id: n05
+    sprite: {fileID: 0}
+    text: "G\xF6zc\xFC Rahip: G\xF6zlerin uzun zamand\u0131r yolu g\xF6ren g\xF6zlere
+      benziyor."
+    choices:
+    - text: Yollar kadar eskiyim.
+      trustChange: 4
+      faithChange: 6
+      hostilityChange: 0
+    - text: "Ben sadece do\u011Fru y\xF6ne bak\u0131yorum."
+      trustChange: 5
+      faithChange: 5
+      hostilityChange: 0
+    - text: "G\xF6zler yan\u0131lt\u0131c\u0131 olabilir."
+      trustChange: 1
+      faithChange: 2
+      hostilityChange: 2
+  - id: n06
+    sprite: {fileID: 0}
+    text: "Sakl\u0131 M\u0131zrak\xE7\u0131: H\xE2l\xE2 ya\u015F\u0131yor olmana
+      \u015Fa\u015F\u0131rd\u0131m... ya g\xFC\xE7l\xFC ya da \xE7ok \u015Fansl\u0131s\u0131n."
+    choices:
+    - text: "\u0130kisi de de\u011Fil. Sadece kararl\u0131y\u0131m."
+      trustChange: 4
+      faithChange: 3
+      hostilityChange: 1
+    - text: "G\xFC\xE7 benim kaderimdir."
+      trustChange: 2
+      faithChange: 5
+      hostilityChange: 2
+    - text: "\u015Eansl\u0131 olan sensin ki h\xE2l\xE2 konu\u015Fuyorsun."
+      trustChange: -2
+      faithChange: 0
+      hostilityChange: 6
+  - id: n07
+    sprite: {fileID: 0}
+    text: "Yalva\xE7 Mirana: Ge\xE7mi\u015Fin y\xFCk\xFCn\xFC h\xE2l\xE2 s\u0131rt\u0131nda
+      m\u0131 ta\u015F\u0131yorsun?"
+    choices:
+    - text: "O y\xFCk beni ben yapt\u0131."
+      trustChange: 3
+      faithChange: 4
+      hostilityChange: 0
+    - text: "B\u0131rakt\u0131m onu, \u015Fimdi sadece yolum var."
+      trustChange: 4
+      faithChange: 5
+      hostilityChange: 0
+    - text: "Ge\xE7mi\u015Fim seni ilgilendirmez."
+      trustChange: -1
+      faithChange: 1
+      hostilityChange: 4
+  - id: n08
+    sprite: {fileID: 0}
+    text: "Varnan T\xFCccar\u0131: Alt\u0131n m\u0131 arars\u0131n, yoksa cevaplar
+      m\u0131?"
+    choices:
+    - text: "Cevaplar. Alt\u0131n ge\xE7ici, bilgi kal\u0131c\u0131d\u0131r."
+      trustChange: 3
+      faithChange: 6
+      hostilityChange: 0
+    - text: "Alt\u0131n olmadan cevaplar\u0131n da k\u0131ymeti yok."
+      trustChange: 2
+      faithChange: 2
+      hostilityChange: 1
+    - text: "Ne alt\u0131n ne cevap. Yaln\u0131zca sessizlik istiyorum."
+      trustChange: 0
+      faithChange: 1
+      hostilityChange: 3
+  - id: n09
+    sprite: {fileID: 0}
+    text: "K\u0131r\u0131k Z\u0131rhl\u0131 Asker: Sence bir sava\u015F\xE7\u0131n\u0131n
+      pi\u015Fmanl\u0131\u011F\u0131 olabilir mi?"
+    choices:
+    - text: "Ger\xE7ek sava\u015F\xE7\u0131lar pi\u015Fman olur."
+      trustChange: 4
+      faithChange: 4
+      hostilityChange: 0
+    - text: "Zafer varsa pi\u015Fmanl\u0131k yoktur."
       trustChange: 2
       faithChange: 2
       hostilityChange: 2
-  - id: deneme
-    sprite: {fileID: 21300000, guid: 33e1e6147b08d6d4ab5a134dd49ed962, type: 3}
-    text: erg
+    - text: "Pi\u015Fmanl\u0131k zay\u0131fl\u0131kt\u0131r."
+      trustChange: -1
+      faithChange: 0
+      hostilityChange: 5
+  - id: n10
+    sprite: {fileID: 0}
+    text: "K\xF6y Bek\xE7isi: Gece uzun olacak. Varl\u0131\u011F\u0131n huzur getirir
+      mi, kaos mu?"
     choices:
-    - text: 232
+    - text: "Huzur getirmek i\xE7in buraday\u0131m."
       trustChange: 5
       faithChange: 5
+      hostilityChange: 0
+    - text: "Gece nas\u0131l isterse \xF6yle olur."
+      trustChange: 2
+      faithChange: 3
+      hostilityChange: 1
+    - text: Kaosun kendisiyim.
+      trustChange: 0
+      faithChange: -1
+      hostilityChange: 7
+  - id: n11
+    sprite: {fileID: 0}
+    text: "Varnan Terzisi: Diki\u015Flerime g\xFCvenebilirim, ya sana?"
+    choices:
+    - text: "G\xFCven, bo\u015Fa \xE7\u0131kmaz."
+      trustChange: 5
+      faithChange: 4
+      hostilityChange: 0
+    - text: "Kendin g\xF6r, karar ver."
+      trustChange: 3
+      faithChange: 3
+      hostilityChange: 1
+    - text: "Ben kimseye g\xFCven vermem."
+      trustChange: -2
+      faithChange: 0
+      hostilityChange: 4
+  - id: n12
+    sprite: {fileID: 0}
+    text: "Kuyu Ba\u015F\u0131 Annesi: \xC7ocuklar bile senden \xE7ekiniyor... Neden
+      b\xF6yle?"
+    choices:
+    - text: "Karanl\u0131k g\xFCnlerden ge\xE7tim."
+      trustChange: 2
+      faithChange: 3
+      hostilityChange: 2
+    - text: "Ben korkulacak biri de\u011Filim."
+      trustChange: 4
+      faithChange: 5
+      hostilityChange: 0
+    - text: "\xC7ocuklar hakl\u0131. Uzak dursunlar."
+      trustChange: -1
+      faithChange: 0
       hostilityChange: 5
-    - text: fer
-      trustChange: 10
-      faithChange: 10
-      hostilityChange: 10
-    - text: fer
+  - id: n13
+    sprite: {fileID: 0}
+    text: "Kervan \u015Eefi: Bu yollar hepimizi s\u0131nar. Sen neyle s\u0131nan\u0131yorsun?"
+    choices:
+    - text: "\u0130nan\xE7la. Yolum belli."
+      trustChange: 3
+      faithChange: 6
+      hostilityChange: 0
+    - text: "Zay\u0131fl\u0131kla. S\xFCrekli d\xFC\u015F\xFCyorum."
       trustChange: 2
       faithChange: 2
       hostilityChange: 2
+    - text: "Hi\xE7bir \u015Fey beni sarsamaz."
+      trustChange: 1
+      faithChange: -1
+      hostilityChange: 4
+  - id: n14
+    sprite: {fileID: 0}
+    text: "Uykusuz Mistik: R\xFCyalar\u0131nda Tanr\u0131 konu\u015Fuyor mu, yoksa
+      kendi sesinle mi uyuyorsun?"
+    choices:
+    - text: "Tanr\u0131 geceleri f\u0131s\u0131ldar bana."
+      trustChange: 3
+      faithChange: 7
+      hostilityChange: 0
+    - text: "Ben sadece sessizlik ar\u0131yorum."
+      trustChange: 2
+      faithChange: 3
+      hostilityChange: 1
+    - text: "Uykular\u0131m bile bana kar\u015F\u0131."
+      trustChange: 0
+      faithChange: 1
+      hostilityChange: 4
+  - id: n15
+    sprite: {fileID: 0}
+    text: "Kay\u0131p Ruh Avc\u0131s\u0131: Baz\u0131 ruhlar geri d\xF6nmez. Sen
+      geri d\xF6nmeyi d\xFC\u015F\xFCn\xFCyor musun?"
+    choices:
+    - text: "Hay\u0131r, yolum ileri."
+      trustChange: 3
+      faithChange: 4
+      hostilityChange: 1
+    - text: "Belki bir g\xFCn, ama hen\xFCz de\u011Fil."
+      trustChange: 4
+      faithChange: 5
+      hostilityChange: 0
+    - text: "D\xF6n\xFC\u015F\xFCm yok. Sonuna kadar gidece\u011Fim."
+      trustChange: 2
+      faithChange: 2
+      hostilityChange: 3
   globalDialogueEffects:
   - id: global1
     sprite: {fileID: 21300000, guid: 90e9a88b126b0964aa4cb4bf1beb4d6d, type: 3}
@@ -425,4 +646,5 @@ MonoBehaviour:
         trustChange: 0
         faithChange: 5
         hostilityChange: 0
-  specialGeneralInterval: 15
+  mapSpecificInterval: 5
+  globalDialogueInterval: 16

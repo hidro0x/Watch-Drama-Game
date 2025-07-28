@@ -5,6 +5,8 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager Instance { get; private set; }
+    
     public DialogueDatabase dialogueDatabase;
     private Node currentNode;
     
@@ -12,7 +14,17 @@ public class DialogueManager : MonoBehaviour
     
     [Header("Turn Ayarları")]
     [SerializeField] private TextMeshProUGUI turnText;
-    [SerializeField] private int maxTurnCount = 10;
+    [SerializeField] private int maxTurnCount = 200;
+    
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
     
 
     public void ShowSpecificDialogue(DialogueNode node)
@@ -27,17 +39,7 @@ public class DialogueManager : MonoBehaviour
         ShowDialogue(node);
     }
     
-    public void ShowSpecificDialogue(GlobalDialogueNode node)
-    {
-        if (node == null)
-        {
-            Debug.LogError("Gösterilecek global diyalog null!");
-            return;
-        }
-        
-        currentNode = node;
-        ShowGlobalDialogue(node);
-    }
+
     
     // Seçim yapıldığında çağrılacak
     public void OnChoiceMade()
@@ -59,19 +61,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
     
-    void ShowGlobalDialogue(GlobalDialogueNode node)
-    {
-        // ChoiceSelectionUI ile entegre gösterim
-        ChoiceSelectionUI ui = FindFirstObjectByType<ChoiceSelectionUI>(FindObjectsInactive.Include);
-        if (ui != null)
-        {
-            ui.ShowUI(node);
-        }
-        else
-        {
-            Debug.LogError("ChoiceSelectionUI sahnede bulunamadı!");
-        }
-    }
+
     
     // Getter methodları
     public Node GetCurrentNode() => currentNode;

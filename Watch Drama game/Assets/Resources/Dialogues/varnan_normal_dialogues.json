@@ -1,0 +1,482 @@
+[
+  {
+    "id": "n01",
+    "type": "normal",
+    "speaker": "Yaşlı Gözcü",
+    "text": "Yolcu... Rüzgarın yönü değişti. Seninle birlikte bir şey geliyor.",
+    "options": [
+      {
+        "text": "Ben sadece rüzgarı izlerim.",
+        "effects": {
+          "faith": 3,
+          "trust": 1,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Karanlığı taşıyan ben değilim.",
+        "effects": {
+          "faith": 5,
+          "trust": 2,
+          "hostility": -1
+        }
+      },
+      {
+        "text": "Neye hazırlanmalıyız?",
+        "effects": {
+          "faith": 6,
+          "trust": 5,
+          "hostility": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "n02",
+    "type": "normal",
+    "speaker": "Tuz Madencisi Elrek",
+    "text": "Derinlerde bir şey uyanıyor. Tuhaf yankılar duyduk.",
+    "options": [
+      {
+        "text": "Yine mi? Onları susturmanın zamanı geldi.",
+        "effects": {
+          "faith": 2,
+          "trust": 4,
+          "hostility": 3
+        }
+      },
+      {
+        "text": "Oraya inmeme izin verin.",
+        "effects": {
+          "faith": 5,
+          "trust": 5,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Ben karışmam, sizin probleminiz.",
+        "effects": {
+          "faith": 0,
+          "trust": -2,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "n03",
+    "type": "normal",
+    "speaker": "Genç Öğrenci Lia",
+    "text": "Gerçekten kutsal biri misin? Efsanelerde anlatılan gibi mi?",
+    "options": [
+      {
+        "text": "Ben sadece görevimi yapıyorum.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Evet, rüyaların bile ötesinden geldim.",
+        "effects": {
+          "faith": 7,
+          "trust": 2,
+          "hostility": -1
+        }
+      },
+      {
+        "text": "Saçmalıklarla vakit kaybetme.",
+        "effects": {
+          "faith": -2,
+          "trust": -3,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "n04",
+    "type": "normal",
+    "speaker": "Sürgün Kadın",
+    "text": "İçeride öfke taşıyorsun. Sen de bizim gibisin.",
+    "options": [
+      {
+        "text": "Ben öfkemi kontrol edebiliyorum.",
+        "effects": {
+          "faith": 3,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Öfkemin nereye yöneldiğini bilemezsin.",
+        "effects": {
+          "faith": 1,
+          "trust": 1,
+          "hostility": 5
+        }
+      },
+      {
+        "text": "Belki de bu öfke seni kurtarır.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "n05",
+    "type": "normal",
+    "speaker": "Gözcü Rahip",
+    "text": "Gözlerin uzun zamandır yolu gören gözlere benziyor.",
+    "options": [
+      {
+        "text": "Yollar kadar eskiyim.",
+        "effects": {
+          "faith": 6,
+          "trust": 4,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Ben sadece doğru yöne bakıyorum.",
+        "effects": {
+          "faith": 5,
+          "trust": 5,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Gözler yanıltıcı olabilir.",
+        "effects": {
+          "faith": 2,
+          "trust": 1,
+          "hostility": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "n06",
+    "type": "normal",
+    "speaker": "Saklı Mızrakçı",
+    "text": "Hâlâ yaşıyor olmana şaşırdım... ya güçlü ya da çok şanslısın.",
+    "options": [
+      {
+        "text": "İkisi de değil. Sadece kararlıyım.",
+        "effects": {
+          "faith": 3,
+          "trust": 4,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Güç benim kaderimdir.",
+        "effects": {
+          "faith": 5,
+          "trust": 2,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Şanslı olan sensin ki hâlâ konuşuyorsun.",
+        "effects": {
+          "faith": 0,
+          "trust": -2,
+          "hostility": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "n07",
+    "type": "normal",
+    "speaker": "Yalvaç Mirana",
+    "text": "Geçmişin yükünü hâlâ sırtında mı taşıyorsun?",
+    "options": [
+      {
+        "text": "O yük beni ben yaptı.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Bıraktım onu, şimdi sadece yolum var.",
+        "effects": {
+          "faith": 5,
+          "trust": 4,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Geçmişim seni ilgilendirmez.",
+        "effects": {
+          "faith": 1,
+          "trust": -1,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "n08",
+    "type": "normal",
+    "speaker": "Varnan Tüccarı",
+    "text": "Altın mı ararsın, yoksa cevaplar mı?",
+    "options": [
+      {
+        "text": "Cevaplar. Altın geçici, bilgi kalıcıdır.",
+        "effects": {
+          "faith": 6,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Altın olmadan cevapların da kıymeti yok.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Ne altın ne cevap. Yalnızca sessizlik istiyorum.",
+        "effects": {
+          "faith": 1,
+          "trust": 0,
+          "hostility": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "n09",
+    "type": "normal",
+    "speaker": "Kırık Zırhlı Asker",
+    "text": "Sence bir savaşçının pişmanlığı olabilir mi?",
+    "options": [
+      {
+        "text": "Gerçek savaşçılar pişman olur.",
+        "effects": {
+          "faith": 4,
+          "trust": 4,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Zafer varsa pişmanlık yoktur.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Pişmanlık zayıflıktır.",
+        "effects": {
+          "faith": 0,
+          "trust": -1,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "n10",
+    "type": "normal",
+    "speaker": "Köy Bekçisi",
+    "text": "Gece uzun olacak. Varlığın huzur getirir mi, kaos mu?",
+    "options": [
+      {
+        "text": "Huzur getirmek için buradayım.",
+        "effects": {
+          "faith": 5,
+          "trust": 5,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Gece nasıl isterse öyle olur.",
+        "effects": {
+          "faith": 3,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Kaosun kendisiyim.",
+        "effects": {
+          "faith": -1,
+          "trust": 0,
+          "hostility": 7
+        }
+      }
+    ]
+  },
+  {
+    "id": "n11",
+    "type": "normal",
+    "speaker": "Varnan Terzisi",
+    "text": "Dikişlerime güvenebilirim, ya sana?",
+    "options": [
+      {
+        "text": "Güven, boşa çıkmaz.",
+        "effects": {
+          "faith": 4,
+          "trust": 5,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Kendin gör, karar ver.",
+        "effects": {
+          "faith": 3,
+          "trust": 3,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Ben kimseye güven vermem.",
+        "effects": {
+          "faith": 0,
+          "trust": -2,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "n12",
+    "type": "normal",
+    "speaker": "Kuyu Başı Annesi",
+    "text": "Çocuklar bile senden çekiniyor... Neden böyle?",
+    "options": [
+      {
+        "text": "Karanlık günlerden geçtim.",
+        "effects": {
+          "faith": 3,
+          "trust": 2,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Ben korkulacak biri değilim.",
+        "effects": {
+          "faith": 5,
+          "trust": 4,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Çocuklar haklı. Uzak dursunlar.",
+        "effects": {
+          "faith": 0,
+          "trust": -1,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "n13",
+    "type": "normal",
+    "speaker": "Kervan Şefi",
+    "text": "Bu yollar hepimizi sınar. Sen neyle sınanıyorsun?",
+    "options": [
+      {
+        "text": "İnançla. Yolum belli.",
+        "effects": {
+          "faith": 6,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Zayıflıkla. Sürekli düşüyorum.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Hiçbir şey beni sarsamaz.",
+        "effects": {
+          "faith": -1,
+          "trust": 1,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "n14",
+    "type": "normal",
+    "speaker": "Uykusuz Mistik",
+    "text": "Rüyalarında Tanrı konuşuyor mu, yoksa kendi sesinle mi uyuyorsun?",
+    "options": [
+      {
+        "text": "Tanrı geceleri fısıldar bana.",
+        "effects": {
+          "faith": 7,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Ben sadece sessizlik arıyorum.",
+        "effects": {
+          "faith": 3,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Uykularım bile bana karşı.",
+        "effects": {
+          "faith": 1,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "n15",
+    "type": "normal",
+    "speaker": "Kayıp Ruh Avcısı",
+    "text": "Bazı ruhlar geri dönmez. Sen geri dönmeyi düşünüyor musun?",
+    "options": [
+      {
+        "text": "Hayır, yolum ileri.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Belki bir gün, ama henüz değil.",
+        "effects": {
+          "faith": 5,
+          "trust": 4,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Dönüşüm yok. Sonuna kadar gideceğim.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 3
+        }
+      }
+    ]
+  }
+]

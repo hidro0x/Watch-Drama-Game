@@ -37,10 +37,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    [Header("Başlangıç Değerleri")]
-    public int startingTrust = 50;
-    public int startingFaith = 50;
-    public int startingHostility = 50;
 
     [Header("Map Bazlı Değerler")]
     public List<MapTypeValues> mapTypeValuesList;
@@ -83,7 +79,7 @@ public class GameManager : MonoBehaviour
             // Eğer inspector'dan ayarlanmadıysa tüm MapType'lar için default değer ata
             foreach (MapType mapType in Enum.GetValues(typeof(MapType)))
             {
-                mapValuesDict[mapType] = new MapValues(startingTrust, startingFaith, startingHostility);
+                mapValuesDict[mapType] = new MapValues(0, 0, 0);
             }
         }
         // Varsayılan olarak ilk MapType'ı aktif yap

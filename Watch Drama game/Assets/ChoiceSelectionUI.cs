@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using DG.Tweening; // DOTween ekle
 using System;
+using TMPro;
 
 public class ChoiceSelectionUI : MonoBehaviour
 {
     [SerializeField] private Image choiceSelectionImage;
     [SerializeField] private List<ChoiceButtonSlot> choiceButtonSlotList = new List<ChoiceButtonSlot>();
-    [SerializeField] private Button returnButton;
+
+    [SerializeField] private TextMeshProUGUI descriptionText;
+
+    [SerializeField] private GameObject barPanel;
 
     private Node dialogueNode;
     [SerializeField]private RectTransform rectTransform;
@@ -17,8 +21,7 @@ public class ChoiceSelectionUI : MonoBehaviour
 
     void Start()
     {
-        gameObject.SetActive(false);
-        returnButton.onClick.AddListener(OnReturnButtonClicked);
+        OnPanelClosed();
     }
 
     public void ShowUI(DialogueNode dialogueNode)
@@ -26,16 +29,19 @@ public class ChoiceSelectionUI : MonoBehaviour
         gameObject.SetActive(true);
         this.dialogueNode = dialogueNode;
         choiceSelectionImage.sprite = dialogueNode.sprite;
+        descriptionText.text = dialogueNode.text;
+        barPanel.SetActive(true);
+        // Global diyalog kontrolü
+        if (dialogueNode.isGlobalDialogue)
+        {
+            Debug.Log("Global diyalog gösteriliyor...");
+            // Global diyalog için özel işlemler burada yapılabilir
+        }
+        
         SetChoices(dialogueNode.choices);
     }
     
-    public void ShowUI(GlobalDialogueNode globalDialogueNode)
-    {
-        gameObject.SetActive(true);
-        this.dialogueNode = globalDialogueNode;
-        choiceSelectionImage.sprite = globalDialogueNode.sprite;
-        SetGlobalChoices(globalDialogueNode.choices);
-    }
+
 
     public void AnimateChoicePanel()
     {
@@ -61,25 +67,18 @@ public class ChoiceSelectionUI : MonoBehaviour
         }
     }
     
-    private void SetGlobalChoices(List<GlobalDialogueChoice> globalChoices)
-    {
-        for (int i = 0; i < globalChoices.Count; i++)
-        {
-            choiceButtonSlotList[i].SetChoice(globalChoices[i]);
-        }
-    }
 
-    public void OnReturnButtonClicked()
+
+    public void OnPanelClosed()
     {
         gameObject.SetActive(false);
-        if (dialogueNode is DialogueNode dialogue)
-        {
-            MapManager.Instance.SaveDialogueForCurrentMap(dialogue);
-        }
+        barPanel.SetActive(false);
     }
 
-    public void SetReturnButtonActive(bool active)
+
+    
+    public void TriggerDialogueChoiceEvent()
     {
-        returnButton.enabled = active;
+        OnDialogueChoiceMade?.Invoke();
     }
 }

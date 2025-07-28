@@ -16,11 +16,7 @@ public class ChoiceButtonSlot : MonoBehaviour
         SetChoiceText(choice.text);
     }
     
-    public void SetChoice(GlobalDialogueChoice choice)
-    {
-        this.choice = choice;
-        SetChoiceText(choice.text);
-    }
+
 
     void Awake()
     {
@@ -42,6 +38,15 @@ public class ChoiceButtonSlot : MonoBehaviour
         {
             Debug.Log($"Dialogue choice clicked: {dialogueChoice.text}");
             
+            // Global choice kontrolü
+            if (dialogueChoice.isGlobalChoice)
+            {
+                Debug.Log("Global choice seçildi!");
+                // Global choice için özel işlemler
+                OnGlobalChoiceSelected(dialogueChoice);
+                return;
+            }
+            
             // Normal diyalog: Sadece aktif ülkeyi etkiler
             ChoiceEffect effect = new ChoiceEffect(
                 dialogueChoice.trustChange, 
@@ -51,16 +56,74 @@ public class ChoiceButtonSlot : MonoBehaviour
             
             GameManager.MakeChoice(effect);
         }
-        else if (choice is GlobalDialogueChoice globalChoice)
+
+    }
+    
+    private void OnGlobalChoiceSelected(DialogueChoice globalChoice)
+    {
+        // Global choice seçimi sonrası işlemler
+        Debug.Log($"Global choice seçildi: {globalChoice.text}");
+        
+        // Global effects'i uygula (şimdilik boş, çünkü DialogueChoice'ta global effects yok)
+        // Bu kısım için GlobalDialogueChoice'tan bilgi almamız gerekiyor
+        ApplyGlobalEffectsFromDialogueChoice(globalChoice);
+        
+        // 1. Diyalog ekranını kapat
+        var choiceSelectionUI = UnityEngine.Object.FindFirstObjectByType<ChoiceSelectionUI>();
+        if (choiceSelectionUI != null)
         {
-            Debug.Log($"Global dialogue choice clicked: {globalChoice.text}");
-            
-            // Global diyalog: Sadece global effects var
-            ApplyGlobalEffects(globalChoice);
+            choiceSelectionUI.OnPanelClosed();
+        }
+        
+        // 2. Aktif ülkenin butonunu pasif yap
+        var currentMap = MapManager.Instance.GetCurrentMap();
+        if (currentMap.HasValue)
+        {
+            DisableMapButton(currentMap.Value);
+        }
+        
+        // 3. Event'i tetikle
+        var choiceUI = UnityEngine.Object.FindFirstObjectByType<ChoiceSelectionUI>();
+        if (choiceUI != null)
+        {
+            choiceUI.TriggerDialogueChoiceEvent();
         }
     }
     
-    private void ApplyGlobalEffects(GlobalDialogueChoice globalChoice)
+    private void ApplyGlobalEffectsFromDialogueChoice(DialogueChoice globalChoice)
+    {
+        // Global diyalog referansını al
+        var currentGlobalDialogue = MapManager.Instance.GetCurrentGlobalDialogue();
+        if (currentGlobalDialogue == null)
+        {
+            Debug.LogWarning("Global diyalog referansı bulunamadı!");
+            return;
+        }
+        
+        // Seçilen choice'ın index'ini bul
+        int choiceIndex = -1;
+        for (int i = 0; i < currentGlobalDialogue.choices.Count; i++)
+        {
+            if (currentGlobalDialogue.choices[i].text == globalChoice.text)
+            {
+                choiceIndex = i;
+                break;
+            }
+        }
+        
+        if (choiceIndex >= 0)
+        {
+            // Global effects'i uygula
+            var originalGlobalChoice = currentGlobalDialogue.choices[choiceIndex];
+            ApplyGlobalEffectsFromGlobalChoice(originalGlobalChoice);
+        }
+        else
+        {
+            Debug.LogWarning("Global choice bulunamadı!");
+        }
+    }
+    
+    private void ApplyGlobalEffectsFromGlobalChoice(GlobalDialogueChoice globalChoice)
     {
         var globalEffect = new GlobalDialogueEffect();
         
@@ -86,6 +149,47 @@ public class ChoiceButtonSlot : MonoBehaviour
         }
         
         GameManager.Instance.ApplyGlobalDialogueEffect(globalEffect);
+    }
+    
+
+    
+    private void OnGlobalDialogueChoiceCompleted()
+    {
+        // 1. Diyalog ekranını kapat
+        var choiceSelectionUI = UnityEngine.Object.FindFirstObjectByType<ChoiceSelectionUI>();
+        if (choiceSelectionUI != null)
+        {
+            choiceSelectionUI.gameObject.SetActive(false);
+        }
+        
+        // 2. Aktif ülkenin butonunu pasif yap
+        var currentMap = MapManager.Instance.GetCurrentMap();
+        if (currentMap.HasValue)
+        {
+            DisableMapButton(currentMap.Value);
+        }
+        
+        // 3. Event'i tetikle
+        var choiceUI = UnityEngine.Object.FindFirstObjectByType<ChoiceSelectionUI>();
+        if (choiceUI != null)
+        {
+            choiceUI.TriggerDialogueChoiceEvent();
+        }
+    }
+    
+    private void DisableMapButton(MapType mapType)
+    {
+        // Tüm MapSelectionButton'ları bul
+        var mapButtons = UnityEngine.Object.FindObjectsOfType<MapSelectionButton>();
+        foreach (var mapButton in mapButtons)
+        {
+            if (mapButton.GetMapType() == mapType)
+            {
+                mapButton.SetButtonInteractable(false);
+                Debug.Log($"Map butonu pasif yapıldı: {mapType}");
+                break;
+            }
+        }
     }
     
 }

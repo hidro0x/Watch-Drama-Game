@@ -11,8 +11,9 @@ public class MapManager : MonoBehaviour
     
     private MapType? currentMap = null;
     private Dictionary<MapType, int> mapTurns = new Dictionary<MapType, int>();
-    private DialogueNode lastDialogue = null;
-    private Dictionary<MapType, DialogueNode> lastDialoguePerMap = new Dictionary<MapType, DialogueNode>();
+    
+    // Global diyalog referansı
+    private GlobalDialogueNode currentGlobalDialogue = null;
     
     // Events
     public static event Action<MapType> OnMapSelected;
@@ -56,18 +57,7 @@ public class MapManager : MonoBehaviour
         OnMapSelected?.Invoke(mapType);
         // Aktif map'i GameManager'a bildir
         GameManager.Instance.SetActiveMap(mapType);
-        // Eğer kayıtlı diyalog varsa turn atlamadan onu göster
-        if (lastDialoguePerMap.TryGetValue(mapType, out var savedNode) && savedNode != null)
-        {
-            DialogueManager dialogueManager = FindFirstObjectByType<DialogueManager>();
-            if (dialogueManager != null)
-                dialogueManager.ShowSpecificDialogue(savedNode);
-        }
-        else
-        {
-            lastDialogue = null;
-            StartNextDialogue();
-        }
+        StartNextDialogue();
     }
     
     public void StartNextDialogue()
@@ -81,13 +71,7 @@ public class MapManager : MonoBehaviour
         dialogueManager.NextTurn();
 
         mapTurns[currentMap.Value]++;
-        // Return butonunu tur sayısına göre aktif/pasif yap
-        var choiceUI = UnityEngine.Object.FindFirstObjectByType<ChoiceSelectionUI>(FindObjectsInactive.Include);
-        if (choiceUI != null)
-        {
-            bool isActive = mapTurns[currentMap.Value] >= 15;
-            choiceUI.SetReturnButtonActive(isActive);
-        }
+
         
         // Turn sonunda condition'ları kontrol et
         CheckTurnConditions();
@@ -123,15 +107,69 @@ public class MapManager : MonoBehaviour
     
     private DialogueNode SelectDialogueFromPool()
     {
+        DialogueManager dialogueManager = UnityEngine.Object.FindFirstObjectByType<DialogueManager>();
+        int currentTurn = dialogueManager?.GetCurrentTurn() ?? 0;
+        int mapTurn = mapTurns[currentMap.Value];
+        
+        Debug.Log($"Turn: {currentTurn}, Map Turn: {mapTurn}, Current Map: {currentMap}");
+        
+        // 1. Global diyalog kontrolü
+        if (currentTurn % dialogueDatabase.globalDialogueInterval == 0 && dialogueDatabase.globalDialogueEffects.Count > 0)
+        {
+            Debug.Log("Global diyalog seçiliyor...");
+            var globalDialogue = dialogueDatabase.globalDialogueEffects[UnityEngine.Random.Range(0, dialogueDatabase.globalDialogueEffects.Count)];
+            currentGlobalDialogue = globalDialogue; // Global diyalog referansını sakla
+            return ConvertGlobalDialogueToDialogue(globalDialogue);
+        }
+        
+        // 2. Map'e özel diyalog kontrolü
+        if (mapTurn % dialogueDatabase.mapSpecificInterval == 0 && currentMap != null)
+        {
+            if (dialogueDatabase.specialGeneralDialoguesByMap.ContainsKey(currentMap.Value) && 
+                dialogueDatabase.specialGeneralDialoguesByMap[currentMap.Value].Count > 0)
+            {
+                Debug.Log($"Map'e özel diyalog seçiliyor... ({currentMap})");
+                var mapDialogues = dialogueDatabase.specialGeneralDialoguesByMap[currentMap.Value];
+                var selectedDialogue = mapDialogues[UnityEngine.Random.Range(0, mapDialogues.Count)];
+                return selectedDialogue;
+            }
+        }
+        
+        // 3. Genel diyalog (varsayılan)
         List<DialogueNode> pool = dialogueDatabase.generalDialogues;
         if (pool.Count == 0) return null;
-        // Son kullanılan diyalogu havuzdan çıkar
-        List<DialogueNode> filtered = new List<DialogueNode>(pool);
-        if (lastDialogue != null && filtered.Count > 1)
-            filtered.Remove(lastDialogue);
-        DialogueNode selected = filtered[UnityEngine.Random.Range(0, filtered.Count)];
-        lastDialogue = selected;
+        
+        DialogueNode selected = pool[UnityEngine.Random.Range(0, pool.Count)];
         return selected;
+    }
+    
+    public DialogueNode ConvertGlobalDialogueToDialogue(GlobalDialogueNode globalDialogue)
+    {
+        // GlobalDialogueNode'u DialogueNode'a dönüştür
+        DialogueNode dialogueNode = new DialogueNode
+        {
+            id = globalDialogue.id,
+            text = globalDialogue.text,
+            choices = new List<DialogueChoice>(),
+            isGlobalDialogue = true // Global diyalog olduğunu işaretle
+        };
+        
+        // GlobalDialogueChoice'ları DialogueChoice'a dönüştür
+        foreach (var globalChoice in globalDialogue.choices)
+        {
+            DialogueChoice choice = new DialogueChoice
+            {
+                text = globalChoice.text,
+                trustChange = 0, // Global diyaloglarda yerel değişiklik yok
+                faithChange = 0,
+                hostilityChange = 0,
+                isGlobalChoice = true // Global choice olduğunu işaretle
+            };
+            
+            dialogueNode.choices.Add(choice);
+        }
+        
+        return dialogueNode;
     }
     
     // Artık kullanılmıyor: GetAvailableDialogues
@@ -143,20 +181,18 @@ public class MapManager : MonoBehaviour
     // Getter methodları
     public MapType? GetCurrentMap() => currentMap;
     public List<MapType> GetAllMaps() => dialogueDatabase.maps;
+    public Dictionary<MapType, int> GetMapTurns() => mapTurns;
+    public GlobalDialogueNode GetCurrentGlobalDialogue() => currentGlobalDialogue;
     
     // Yeni oyun başlatma için haritaları sıfırla
     public void ResetAllMaps()
     {
         mapTurns.Clear();
         currentMap = null;
-        lastDialogue = null;
+        currentGlobalDialogue = null; // Global diyalog referansını da temizle
     }
 
-    public void SaveDialogueForCurrentMap(DialogueNode node)
-    {
-        if (currentMap != null)
-            lastDialoguePerMap[currentMap.Value] = node;
-    }
+
 } 
 
 [System.Serializable]

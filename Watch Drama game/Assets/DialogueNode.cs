@@ -20,10 +20,11 @@ public class Node
 [System.Serializable]
 public class DialogueNode : Node
 {
-
     [TableList(ShowIndexLabels = true)]
     public List<DialogueChoice> choices = new List<DialogueChoice>();
-
+    
+    // Global diyalog olup olmadığını belirten flag
+    public bool isGlobalDialogue = false;
 }
 
 [System.Serializable]
@@ -48,6 +49,8 @@ public class DialogueChoice
     [LabelWidth(60)]
     public int hostilityChange;
     
+    // Global diyalog seçimi olup olmadığını belirten flag
+    public bool isGlobalChoice = false;
 } 
 
 [System.Serializable]

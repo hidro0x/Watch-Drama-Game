@@ -137,7 +137,7 @@ public class TurnConditionSystem : MonoBehaviour
         if (currentTurn >= maxTurnCount)
         {
             Debug.Log($"Maximum turn sayısına ulaşıldı! ({currentTurn}/{maxTurnCount}) Özel diyalog tetikleniyor.");
-            ShowSpecialDialogue(maxTurnDialogue, MapType.Varnan); // Ülke önemli değil
+             // Ülke önemli değil
             
             // Opsiyonel: Turn'i sıfırla veya oyunu bitir
             // dialogueManager.ResetTurn();
