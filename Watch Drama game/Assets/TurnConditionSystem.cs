@@ -11,17 +11,21 @@ public class TurnConditionSystem : MonoBehaviour
 {
     [Title("Bar Sıfırlanma Diyalogları")]
     [LabelWidth(120)]
-    public DialogueNode trustZeroDialogue;
+    public Sprite trustZeroDialogueSprite;
+    public string trustZeroDialogueText;
     
     [LabelWidth(120)]
-    public DialogueNode faithZeroDialogue;
+    public Sprite faithZeroDialogueSprite;
+    public string faithZeroDialogueText;
     
     [LabelWidth(120)]
-    public DialogueNode hostilityMaxDialogue;
+    public Sprite hostilityMaxDialogueSprite;
+    public string hostilityMaxDialogueText;
     
     [Title("Turn Limit Diyalogu")]
     [LabelWidth(120)]
-    public DialogueNode maxTurnDialogue;
+    public Sprite maxTurnDialogueSprite;
+    public string maxTurnDialogueText;
     
     
     private void Start()
@@ -73,7 +77,6 @@ public class TurnConditionSystem : MonoBehaviour
     
     private void CheckTrustZeroConditions()
     {
-        if (trustZeroDialogue == null) return;
         
         foreach (MapType country in System.Enum.GetValues(typeof(MapType)))
         {
@@ -81,7 +84,7 @@ public class TurnConditionSystem : MonoBehaviour
             if (trustValue <= 0)
             {
                 Debug.Log($"{country} ülkesinin Trust değeri 0'a düştü! Özel diyalog tetikleniyor.");
-                ShowSpecialDialogue(trustZeroDialogue, country);
+                FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include).SetEnding(trustZeroDialogueSprite, trustZeroDialogueText);
                 return; // Sadece ilk bulunanı tetikle
             }
         }
@@ -89,7 +92,6 @@ public class TurnConditionSystem : MonoBehaviour
     
     private void CheckFaithZeroConditions()
     {
-        if (faithZeroDialogue == null) return;
         
         foreach (MapType country in System.Enum.GetValues(typeof(MapType)))
         {
@@ -97,7 +99,7 @@ public class TurnConditionSystem : MonoBehaviour
             if (faithValue <= 0)
             {
                 Debug.Log($"{country} ülkesinin Faith değeri 0'a düştü! Özel diyalog tetikleniyor.");
-                ShowSpecialDialogue(faithZeroDialogue, country);
+                FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include).SetEnding(faithZeroDialogueSprite, faithZeroDialogueText);
                 return; // Sadece ilk bulunanı tetikle
             }
         }
@@ -105,7 +107,6 @@ public class TurnConditionSystem : MonoBehaviour
     
     private void CheckHostilityMaxConditions()
     {
-        if (hostilityMaxDialogue == null) return;
         
         foreach (MapType country in System.Enum.GetValues(typeof(MapType)))
         {
@@ -113,7 +114,7 @@ public class TurnConditionSystem : MonoBehaviour
             if (hostilityValue >= 100)
             {
                 Debug.Log($"{country} ülkesinin Hostility değeri 100'e çıktı! Özel diyalog tetikleniyor.");
-                ShowSpecialDialogue(hostilityMaxDialogue, country);
+                FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include).SetEnding(hostilityMaxDialogueSprite, hostilityMaxDialogueText);
                 return; // Sadece ilk bulunanı tetikle
             }
         }
@@ -121,7 +122,6 @@ public class TurnConditionSystem : MonoBehaviour
     
     private void CheckMaxTurnCondition()
     {
-        if (maxTurnDialogue == null) return;
         
         // DialogueManager'dan turn bilgisini al
         DialogueManager dialogueManager = UnityEngine.Object.FindObjectOfType<DialogueManager>();
@@ -138,7 +138,7 @@ public class TurnConditionSystem : MonoBehaviour
         {
             Debug.Log($"Maximum turn sayısına ulaşıldı! ({currentTurn}/{maxTurnCount}) Özel diyalog tetikleniyor.");
              // Ülke önemli değil
-            
+            FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include).SetEnding(maxTurnDialogueSprite, maxTurnDialogueText);
             // Opsiyonel: Turn'i sıfırla veya oyunu bitir
             // dialogueManager.ResetTurn();
         }

@@ -43,7 +43,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 
@@ -91,6 +91,9 @@ MonoBehaviour:
     - Name: hostilityChange
       Entry: 3
       Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -109,6 +112,9 @@ MonoBehaviour:
     - Name: hostilityChange
       Entry: 3
       Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -127,6 +133,9 @@ MonoBehaviour:
     - Name: hostilityChange
       Entry: 3
       Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -136,6 +145,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -173,6 +185,9 @@ MonoBehaviour:
     - Name: hostilityChange
       Entry: 3
       Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -191,6 +206,9 @@ MonoBehaviour:
     - Name: hostilityChange
       Entry: 3
       Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -209,6 +227,9 @@ MonoBehaviour:
     - Name: hostilityChange
       Entry: 3
       Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -218,6 +239,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -255,6 +279,9 @@ MonoBehaviour:
     - Name: hostilityChange
       Entry: 3
       Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -273,6 +300,9 @@ MonoBehaviour:
     - Name: hostilityChange
       Entry: 3
       Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -291,6 +321,9 @@ MonoBehaviour:
     - Name: hostilityChange
       Entry: 3
       Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -300,6 +333,1456 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 18|System.Collections.Generic.List`1[[DialogueNode, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 15
+    - Name: 
+      Entry: 7
+      Data: 19|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_01
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "Kervan Lideri Tharak: R\xFCzg\xE2r d\xFCn gece y\xF6n de\u011Fi\u015Ftirdi.
+        Seninle mi geldi, Kahin?"
+    - Name: choices
+      Entry: 7
+      Data: 20|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 21|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: Ben sadece yolu takip ederim.
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 4
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 22|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "R\xFCzg\xE2r beni korur, evet."
+    - Name: trustChange
+      Entry: 3
+      Data: 2
+    - Name: faithChange
+      Entry: 3
+      Data: 6
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 23|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "R\xFCzg\xE2r\u0131n y\xF6n\xFCyle ilgilenmiyorum."
+    - Name: trustChange
+      Entry: 3
+      Data: -2
+    - Name: faithChange
+      Entry: 3
+      Data: 1
+    - Name: hostilityChange
+      Entry: 3
+      Data: 3
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 24|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_02
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "Toprak \u015Eifac\u0131s\u0131 Emah: Ruhlar senin ad\u0131n\u0131 f\u0131s\u0131ldad\u0131
+        bu sabah. Kime hizmet ediyorsun?"
+    - Name: choices
+      Entry: 7
+      Data: 25|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 26|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Yaln\u0131zca B\xFCy\xFCk R\xFCzg\xE2r\u2019a kulak veririm."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 7
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 27|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Hizmetim yok. Sadece g\xF6\xE7erim."
+    - Name: trustChange
+      Entry: 3
+      Data: 2
+    - Name: faithChange
+      Entry: 3
+      Data: 4
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 28|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Ben kimsenin buyru\u011Funda de\u011Filim."
+    - Name: trustChange
+      Entry: 3
+      Data: -1
+    - Name: faithChange
+      Entry: 3
+      Data: 1
+    - Name: hostilityChange
+      Entry: 3
+      Data: 4
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 29|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_03
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "G\xF6\xE7ebe Bilgesi Nomah: Senin g\xF6zlerinde y\xF6n arayanlar var.
+        Bizi nereye g\xF6t\xFCreceksin?"
+    - Name: choices
+      Entry: 7
+      Data: 30|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 31|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Do\u011Fdu\u011Funuz yere, ama farkl\u0131 bir siz olarak."
+    - Name: trustChange
+      Entry: 3
+      Data: 4
+    - Name: faithChange
+      Entry: 3
+      Data: 6
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 32|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Nereye r\xFCzg\xE2r isterse."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 33|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Ben sadece kendi yolumu ar\u0131yorum."
+    - Name: trustChange
+      Entry: 3
+      Data: 1
+    - Name: faithChange
+      Entry: 3
+      Data: 2
+    - Name: hostilityChange
+      Entry: 3
+      Data: 2
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 34|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_04
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "R\xFCzg\xE2r Muhaf\u0131z\u0131 Ennek: R\xFCzg\xE2r bazen yalan s\xF6yler.
+        Senin s\xF6zlerin ondan daha g\xFCvenilir mi?"
+    - Name: choices
+      Entry: 7
+      Data: 35|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 36|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Ben de r\xFCzg\xE2r gibi sadece ta\u015F\u0131r\u0131m, yaratmam."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 37|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Do\u011Fruyu s\xF6yl\xFCyorum ama herkesin do\u011Frusu farkl\u0131d\u0131r."
+    - Name: trustChange
+      Entry: 3
+      Data: 2
+    - Name: faithChange
+      Entry: 3
+      Data: 4
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 38|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "G\xFCven istiyorsan ba\u015Fka y\xF6ne bak."
+    - Name: trustChange
+      Entry: 3
+      Data: -2
+    - Name: faithChange
+      Entry: 3
+      Data: 0
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 39|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_05
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "Atasoylu Kad\u0131n Mareh: Atalar seni s\u0131nav i\xE7in mi g\xF6nderdi,
+        yoksa uyarmak i\xE7in mi?"
+    - Name: choices
+      Entry: 7
+      Data: 40|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 41|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "S\u0131nav i\xE7in. De\u011Fi\u015Fim yakla\u015F\u0131yor."
+    - Name: trustChange
+      Entry: 3
+      Data: 4
+    - Name: faithChange
+      Entry: 3
+      Data: 6
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 42|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Belki ikisi birden. Baz\u0131 i\u015Faretler \xE7ifte anlam ta\u015F\u0131r."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 43|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Ben kimsenin habercisi de\u011Filim."
+    - Name: trustChange
+      Entry: 3
+      Data: -1
+    - Name: faithChange
+      Entry: 3
+      Data: 1
+    - Name: hostilityChange
+      Entry: 3
+      Data: 3
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 44|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_06
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "G\xF6\xE7 Konseyi \xDCyesi Halem: Konsey seni dinlemek istiyor. R\xFCzg\xE2rla
+        gelen haberlerin neler?"
+    - Name: choices
+      Entry: 7
+      Data: 45|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 46|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "R\xFCzg\xE2r bar\u0131\u015F ta\u015F\u0131yor."
+    - Name: trustChange
+      Entry: 3
+      Data: 4
+    - Name: faithChange
+      Entry: 3
+      Data: 6
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 47|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Haberler kar\u0131\u015F\u0131k, sessizlik \xF6neririm."
+    - Name: trustChange
+      Entry: 3
+      Data: 2
+    - Name: faithChange
+      Entry: 3
+      Data: 3
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 48|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Beni sorgulamay\u0131n, kendi r\xFCzg\xE2r\u0131n\u0131za bak\u0131n."
+    - Name: trustChange
+      Entry: 3
+      Data: -3
+    - Name: faithChange
+      Entry: 3
+      Data: 0
+    - Name: hostilityChange
+      Entry: 3
+      Data: 4
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 49|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_07
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "Atatutan \u015Eaman Vahri: Bir g\xF6\xE7 halk\u0131 olarak, seninle
+        g\xF6\xE7 etmeli miyiz, yoksa beklemeli miyiz?"
+    - Name: choices
+      Entry: 7
+      Data: 50|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 51|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Zaman geldi, yollar sizi \xE7a\u011F\u0131r\u0131yor."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 7
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 52|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Hen\xFCz de\u011Fil, r\xFCzg\xE2r sab\u0131rs\u0131z."
+    - Name: trustChange
+      Entry: 3
+      Data: 2
+    - Name: faithChange
+      Entry: 3
+      Data: 4
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 53|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Ne yapaca\u011F\u0131n\u0131z\u0131 siz bilirsiniz, ben de\u011Fil."
+    - Name: trustChange
+      Entry: 3
+      Data: -2
+    - Name: faithChange
+      Entry: 3
+      Data: 1
+    - Name: hostilityChange
+      Entry: 3
+      Data: 3
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 54|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_08
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "Kutsal Ate\u015F Bek\xE7isi Enra: R\xFCzg\xE2r\u0131n f\u0131s\u0131lt\u0131s\u0131n\u0131
+        ta\u015F\u0131yan biri misin ger\xE7ekten, yoksa bir taklit mi?"
+    - Name: choices
+      Entry: 7
+      Data: 55|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 56|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Atalar\u0131n sesiyle konu\u015Furum."
+    - Name: trustChange
+      Entry: 3
+      Data: 4
+    - Name: faithChange
+      Entry: 3
+      Data: 6
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 57|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Ben sadece duyanlardan\u0131m."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 58|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: Kimin sesi, ne fark eder?
+    - Name: trustChange
+      Entry: 3
+      Data: -2
+    - Name: faithChange
+      Entry: 3
+      Data: 0
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 59|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_09
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "Ruh A\u011F\u0131 K\xE2hyas\u0131 Sarem: Son g\xF6\xE7ten \xF6nceki
+        r\xFCyan neydi? Bilmek istiyoruz."
+    - Name: choices
+      Entry: 7
+      Data: 60|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 61|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "R\xFCyamda toprak \u015Fark\u0131 s\xF6yl\xFCyordu."
+    - Name: trustChange
+      Entry: 3
+      Data: 4
+    - Name: faithChange
+      Entry: 3
+      Data: 6
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 62|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "G\xF6lge vard\u0131, ama i\xE7inde \u0131\u015F\u0131k sakl\u0131yd\u0131."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 63|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "R\xFCyalar\u0131m bana ait, anlatmam."
+    - Name: trustChange
+      Entry: 3
+      Data: -2
+    - Name: faithChange
+      Entry: 3
+      Data: 1
+    - Name: hostilityChange
+      Entry: 3
+      Data: 3
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 64|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_10
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "Ya\u015Fl\u0131 Kervan Koruyucusu Thol: Yoldaki kay\u0131plar\u0131
+        nas\u0131l a\xE7\u0131klars\u0131n Kahin? Sessizce gidiyorlar."
+    - Name: choices
+      Entry: 7
+      Data: 65|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 66|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Ruhlar \xE7a\u011F\u0131r\u0131nca gitmek gerekir."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 6
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 67|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Kay\u0131plar d\xF6n\xFC\u015F yolunu haz\u0131rlar."
+    - Name: trustChange
+      Entry: 3
+      Data: 4
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 68|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Bunlar sadece tesad\xFCf."
+    - Name: trustChange
+      Entry: 3
+      Data: -1
+    - Name: faithChange
+      Entry: 3
+      Data: 1
+    - Name: hostilityChange
+      Entry: 3
+      Data: 4
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 69|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_11
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "G\xF6\xE7ebe Kay\u0131t\xE7\u0131s\u0131 Miral: Ad\u0131n\u0131 yazmam\u0131
+        istiyor musun kehanet defterine?"
+    - Name: choices
+      Entry: 7
+      Data: 70|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 71|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Evet, kaderimi yazmal\u0131s\u0131n."
+    - Name: trustChange
+      Entry: 3
+      Data: 4
+    - Name: faithChange
+      Entry: 3
+      Data: 7
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 72|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Hen\xFCz de\u011Fil. Yazg\u0131m de\u011Fi\u015Febilir."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 4
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 73|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Ben yaz\u0131lmam, ben silerim."
+    - Name: trustChange
+      Entry: 3
+      Data: -2
+    - Name: faithChange
+      Entry: 3
+      Data: 0
+    - Name: hostilityChange
+      Entry: 3
+      Data: 5
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 74|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_12
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "\xC7ad\u0131r Ruh\xE7usu Errem: Sen ge\xE7tikten sonra r\xFCzg\xE2r
+        y\xF6n de\u011Fi\u015Ftirdi. Bu i\u015Faret midir?"
+    - Name: choices
+      Entry: 7
+      Data: 75|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 76|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Evet, yeni bir yol a\xE7\u0131ld\u0131."
+    - Name: trustChange
+      Entry: 3
+      Data: 4
+    - Name: faithChange
+      Entry: 3
+      Data: 6
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 77|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Belki de sadece r\xFCzg\xE2rd\u0131r."
+    - Name: trustChange
+      Entry: 3
+      Data: 2
+    - Name: faithChange
+      Entry: 3
+      Data: 3
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 78|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Her \u015Feyi i\u015Faret san\u0131yorsunuz."
+    - Name: trustChange
+      Entry: 3
+      Data: -2
+    - Name: faithChange
+      Entry: 3
+      Data: 1
+    - Name: hostilityChange
+      Entry: 3
+      Data: 3
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 79|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_13
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "Gen\xE7 Konsey G\xF6zlemcisi Theva: Gen\xE7ler art\u0131k seni dinlemiyor.
+        Neden sence?"
+    - Name: choices
+      Entry: 7
+      Data: 80|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 81|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Onlara hen\xFCz ula\u015Famad\u0131m."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 4
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 82|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Belki de farkl\u0131 yollar\u0131 var."
+    - Name: trustChange
+      Entry: 3
+      Data: 2
+    - Name: faithChange
+      Entry: 3
+      Data: 3
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 83|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Onlar kayboldu, ben de\u011Fil."
+    - Name: trustChange
+      Entry: 3
+      Data: -2
+    - Name: faithChange
+      Entry: 3
+      Data: 0
+    - Name: hostilityChange
+      Entry: 3
+      Data: 4
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 84|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_14
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "R\xFCzg\xE2r Sesi Dinleyicisi Noram: Senin sesin r\xFCzg\xE2rla kar\u0131\u015F\u0131yor.
+        Ne demek istiyorsun?"
+    - Name: choices
+      Entry: 7
+      Data: 85|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 86|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "\u0130kisi ayn\u0131 kaynaktan do\u011Fuyor."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 6
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 87|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Ben sadece ta\u015F\u0131y\u0131c\u0131y\u0131m."
+    - Name: trustChange
+      Entry: 3
+      Data: 2
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 88|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Sustu\u011Fumda daha net anla\u015F\u0131l\u0131yorum."
+    - Name: trustChange
+      Entry: 3
+      Data: 0
+    - Name: faithChange
+      Entry: 3
+      Data: 2
+    - Name: hostilityChange
+      Entry: 3
+      Data: 2
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 89|DialogueNode, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: varnan_15
+    - Name: sprite
+      Entry: 6
+      Data: 
+    - Name: text
+      Entry: 1
+      Data: "Yol Ruh\xE7usu Darnak: G\xF6\xE7 yollar\u0131 \xE7atalla\u015Ft\u0131.
+        Hangi yolun sonu bar\u0131\u015Ft\u0131r?"
+    - Name: choices
+      Entry: 7
+      Data: 90|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 91|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "En zor olan yol bar\u0131\u015Fla biter."
+    - Name: trustChange
+      Entry: 3
+      Data: 4
+    - Name: faithChange
+      Entry: 3
+      Data: 6
+    - Name: hostilityChange
+      Entry: 3
+      Data: 0
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 92|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Bar\u0131\u015F yolun kendisindedir."
+    - Name: trustChange
+      Entry: 3
+      Data: 3
+    - Name: faithChange
+      Entry: 3
+      Data: 5
+    - Name: hostilityChange
+      Entry: 3
+      Data: 1
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 93|DialogueChoice, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "Bar\u0131\u015F diye bir son yok."
+    - Name: trustChange
+      Entry: 3
+      Data: -2
+    - Name: faithChange
+      Entry: 3
+      Data: 1
+    - Name: hostilityChange
+      Entry: 3
+      Data: 3
+    - Name: isGlobalChoice
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: isGlobalDialogue
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -329,14 +1812,18 @@ MonoBehaviour:
       trustChange: 1
       faithChange: 3
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Karanl\u0131\u011F\u0131 ta\u015F\u0131yan ben de\u011Filim."
       trustChange: 2
       faithChange: 5
       hostilityChange: -1
+      isGlobalChoice: 0
     - text: "Neye haz\u0131rlanmal\u0131y\u0131z?"
       trustChange: 5
       faithChange: 6
       hostilityChange: 0
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n02
     sprite: {fileID: 0}
     text: "Tuz Madencisi Elrek: Derinlerde bir \u015Fey uyan\u0131yor. Tuhaf yank\u0131lar
@@ -346,14 +1833,18 @@ MonoBehaviour:
       trustChange: 4
       faithChange: 2
       hostilityChange: 3
+      isGlobalChoice: 0
     - text: Oraya inmeme izin verin.
       trustChange: 5
       faithChange: 5
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Ben kar\u0131\u015Fmam, sizin probleminiz."
       trustChange: -2
       faithChange: 0
       hostilityChange: 4
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n03
     sprite: {fileID: 0}
     text: "Gen\xE7 \xD6\u011Frenci Lia: Ger\xE7ekten kutsal biri misin? Efsanelerde
@@ -363,14 +1854,18 @@ MonoBehaviour:
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Evet, r\xFCyalar\u0131n bile \xF6tesinden geldim."
       trustChange: 2
       faithChange: 7
       hostilityChange: -1
+      isGlobalChoice: 0
     - text: "Sa\xE7mal\u0131klarla vakit kaybetme."
       trustChange: -3
       faithChange: -2
       hostilityChange: 5
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n04
     sprite: {fileID: 0}
     text: "S\xFCrg\xFCn Kad\u0131n: \u0130\xE7eride \xF6fke ta\u015F\u0131yorsun.
@@ -380,14 +1875,18 @@ MonoBehaviour:
       trustChange: 2
       faithChange: 3
       hostilityChange: 1
+      isGlobalChoice: 0
     - text: "\xD6fkemin nereye y\xF6neldi\u011Fini bilemezsin."
       trustChange: 1
       faithChange: 1
       hostilityChange: 5
+      isGlobalChoice: 0
     - text: "Belki de bu \xF6fke seni kurtar\u0131r."
       trustChange: 3
       faithChange: 4
       hostilityChange: 2
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n05
     sprite: {fileID: 0}
     text: "G\xF6zc\xFC Rahip: G\xF6zlerin uzun zamand\u0131r yolu g\xF6ren g\xF6zlere
@@ -397,14 +1896,18 @@ MonoBehaviour:
       trustChange: 4
       faithChange: 6
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Ben sadece do\u011Fru y\xF6ne bak\u0131yorum."
       trustChange: 5
       faithChange: 5
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "G\xF6zler yan\u0131lt\u0131c\u0131 olabilir."
       trustChange: 1
       faithChange: 2
       hostilityChange: 2
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n06
     sprite: {fileID: 0}
     text: "Sakl\u0131 M\u0131zrak\xE7\u0131: H\xE2l\xE2 ya\u015F\u0131yor olmana
@@ -414,14 +1917,18 @@ MonoBehaviour:
       trustChange: 4
       faithChange: 3
       hostilityChange: 1
+      isGlobalChoice: 0
     - text: "G\xFC\xE7 benim kaderimdir."
       trustChange: 2
       faithChange: 5
       hostilityChange: 2
+      isGlobalChoice: 0
     - text: "\u015Eansl\u0131 olan sensin ki h\xE2l\xE2 konu\u015Fuyorsun."
       trustChange: -2
       faithChange: 0
       hostilityChange: 6
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n07
     sprite: {fileID: 0}
     text: "Yalva\xE7 Mirana: Ge\xE7mi\u015Fin y\xFCk\xFCn\xFC h\xE2l\xE2 s\u0131rt\u0131nda
@@ -431,14 +1938,18 @@ MonoBehaviour:
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "B\u0131rakt\u0131m onu, \u015Fimdi sadece yolum var."
       trustChange: 4
       faithChange: 5
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Ge\xE7mi\u015Fim seni ilgilendirmez."
       trustChange: -1
       faithChange: 1
       hostilityChange: 4
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n08
     sprite: {fileID: 0}
     text: "Varnan T\xFCccar\u0131: Alt\u0131n m\u0131 arars\u0131n, yoksa cevaplar
@@ -448,14 +1959,18 @@ MonoBehaviour:
       trustChange: 3
       faithChange: 6
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Alt\u0131n olmadan cevaplar\u0131n da k\u0131ymeti yok."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
+      isGlobalChoice: 0
     - text: "Ne alt\u0131n ne cevap. Yaln\u0131zca sessizlik istiyorum."
       trustChange: 0
       faithChange: 1
       hostilityChange: 3
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n09
     sprite: {fileID: 0}
     text: "K\u0131r\u0131k Z\u0131rhl\u0131 Asker: Sence bir sava\u015F\xE7\u0131n\u0131n
@@ -465,14 +1980,18 @@ MonoBehaviour:
       trustChange: 4
       faithChange: 4
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Zafer varsa pi\u015Fmanl\u0131k yoktur."
       trustChange: 2
       faithChange: 2
       hostilityChange: 2
+      isGlobalChoice: 0
     - text: "Pi\u015Fmanl\u0131k zay\u0131fl\u0131kt\u0131r."
       trustChange: -1
       faithChange: 0
       hostilityChange: 5
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n10
     sprite: {fileID: 0}
     text: "K\xF6y Bek\xE7isi: Gece uzun olacak. Varl\u0131\u011F\u0131n huzur getirir
@@ -482,14 +2001,18 @@ MonoBehaviour:
       trustChange: 5
       faithChange: 5
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Gece nas\u0131l isterse \xF6yle olur."
       trustChange: 2
       faithChange: 3
       hostilityChange: 1
+      isGlobalChoice: 0
     - text: Kaosun kendisiyim.
       trustChange: 0
       faithChange: -1
       hostilityChange: 7
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n11
     sprite: {fileID: 0}
     text: "Varnan Terzisi: Diki\u015Flerime g\xFCvenebilirim, ya sana?"
@@ -498,14 +2021,18 @@ MonoBehaviour:
       trustChange: 5
       faithChange: 4
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Kendin g\xF6r, karar ver."
       trustChange: 3
       faithChange: 3
       hostilityChange: 1
+      isGlobalChoice: 0
     - text: "Ben kimseye g\xFCven vermem."
       trustChange: -2
       faithChange: 0
       hostilityChange: 4
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n12
     sprite: {fileID: 0}
     text: "Kuyu Ba\u015F\u0131 Annesi: \xC7ocuklar bile senden \xE7ekiniyor... Neden
@@ -515,14 +2042,18 @@ MonoBehaviour:
       trustChange: 2
       faithChange: 3
       hostilityChange: 2
+      isGlobalChoice: 0
     - text: "Ben korkulacak biri de\u011Filim."
       trustChange: 4
       faithChange: 5
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "\xC7ocuklar hakl\u0131. Uzak dursunlar."
       trustChange: -1
       faithChange: 0
       hostilityChange: 5
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n13
     sprite: {fileID: 0}
     text: "Kervan \u015Eefi: Bu yollar hepimizi s\u0131nar. Sen neyle s\u0131nan\u0131yorsun?"
@@ -531,14 +2062,18 @@ MonoBehaviour:
       trustChange: 3
       faithChange: 6
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Zay\u0131fl\u0131kla. S\xFCrekli d\xFC\u015F\xFCyorum."
       trustChange: 2
       faithChange: 2
       hostilityChange: 2
+      isGlobalChoice: 0
     - text: "Hi\xE7bir \u015Fey beni sarsamaz."
       trustChange: 1
       faithChange: -1
       hostilityChange: 4
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n14
     sprite: {fileID: 0}
     text: "Uykusuz Mistik: R\xFCyalar\u0131nda Tanr\u0131 konu\u015Fuyor mu, yoksa
@@ -548,14 +2083,18 @@ MonoBehaviour:
       trustChange: 3
       faithChange: 7
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "Ben sadece sessizlik ar\u0131yorum."
       trustChange: 2
       faithChange: 3
       hostilityChange: 1
+      isGlobalChoice: 0
     - text: "Uykular\u0131m bile bana kar\u015F\u0131."
       trustChange: 0
       faithChange: 1
       hostilityChange: 4
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   - id: n15
     sprite: {fileID: 0}
     text: "Kay\u0131p Ruh Avc\u0131s\u0131: Baz\u0131 ruhlar geri d\xF6nmez. Sen
@@ -565,14 +2104,18 @@ MonoBehaviour:
       trustChange: 3
       faithChange: 4
       hostilityChange: 1
+      isGlobalChoice: 0
     - text: "Belki bir g\xFCn, ama hen\xFCz de\u011Fil."
       trustChange: 4
       faithChange: 5
       hostilityChange: 0
+      isGlobalChoice: 0
     - text: "D\xF6n\xFC\u015F\xFCm yok. Sonuna kadar gidece\u011Fim."
       trustChange: 2
       faithChange: 2
       hostilityChange: 3
+      isGlobalChoice: 0
+    isGlobalDialogue: 0
   globalDialogueEffects:
   - id: global1
     sprite: {fileID: 21300000, guid: 90e9a88b126b0964aa4cb4bf1beb4d6d, type: 3}

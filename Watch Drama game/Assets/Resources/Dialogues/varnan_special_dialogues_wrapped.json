@@ -1,0 +1,485 @@
+{
+  "mapType": "Varnan",
+  "dialogues": [
+    {
+      "id": "varnan_01",
+      "type": "special",
+      "speaker": "Kervan Lideri Tharak",
+      "text": "Rüzgâr dün gece yön değiştirdi. Seninle mi geldi, Kahin?",
+      "options": [
+        {
+          "text": "Ben sadece yolu takip ederim.",
+          "effects": {
+            "faith": 4,
+            "trust": 3,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Rüzgâr beni korur, evet.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Rüzgârın yönüyle ilgilenmiyorum.",
+          "effects": {
+            "faith": 1,
+            "trust": -2,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "varnan_02",
+      "type": "special",
+      "speaker": "Toprak Şifacısı Emah",
+      "text": "Ruhlar senin adını fısıldadı bu sabah. Kime hizmet ediyorsun?",
+      "options": [
+        {
+          "text": "Yalnızca Büyük Rüzgâr’a kulak veririm.",
+          "effects": {
+            "faith": 7,
+            "trust": 3,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim yok. Sadece göçerim.",
+          "effects": {
+            "faith": 4,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Ben kimsenin buyruğunda değilim.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "varnan_03",
+      "type": "special",
+      "speaker": "Göçebe Bilgesi Nomah",
+      "text": "Senin gözlerinde yön arayanlar var. Bizi nereye götüreceksin?",
+      "options": [
+        {
+          "text": "Doğduğunuz yere, ama farklı bir siz olarak.",
+          "effects": {
+            "faith": 6,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Nereye rüzgâr isterse.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Ben sadece kendi yolumu arıyorum.",
+          "effects": {
+            "faith": 2,
+            "trust": 1,
+            "hostility": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "varnan_04",
+      "type": "special",
+      "speaker": "Rüzgâr Muhafızı Ennek",
+      "text": "Rüzgâr bazen yalan söyler. Senin sözlerin ondan daha güvenilir mi?",
+      "options": [
+        {
+          "text": "Ben de rüzgâr gibi sadece taşırım, yaratmam.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Doğruyu söylüyorum ama herkesin doğrusu farklıdır.",
+          "effects": {
+            "faith": 4,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Güven istiyorsan başka yöne bak.",
+          "effects": {
+            "faith": 0,
+            "trust": -2,
+            "hostility": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "varnan_05",
+      "type": "special",
+      "speaker": "Atasoylu Kadın Mareh",
+      "text": "Atalar seni sınav için mi gönderdi, yoksa uyarmak için mi?",
+      "options": [
+        {
+          "text": "Sınav için. Değişim yaklaşıyor.",
+          "effects": {
+            "faith": 6,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Belki ikisi birden. Bazı işaretler çifte anlam taşır.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Ben kimsenin habercisi değilim.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "speaker": "Göç Konseyi Üyesi Halem",
+      "text": "Konsey seni dinlemek istiyor. Rüzgârla gelen haberlerin neler?",
+      "options": [
+        {
+          "text": "Rüzgâr barış taşıyor.",
+          "effects": {
+            "faith": 6,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Haberler karışık, sessizlik öneririm.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Beni sorgulamayın, kendi rüzgârınıza bakın.",
+          "effects": {
+            "faith": 0,
+            "trust": -3,
+            "hostility": 4
+          }
+        }
+      ],
+      "id": "varnan_06",
+      "type": "special"
+    },
+    {
+      "speaker": "Atatutan Şaman Vahri",
+      "text": "Bir göç halkı olarak, seninle göç etmeli miyiz, yoksa beklemeli miyiz?",
+      "options": [
+        {
+          "text": "Zaman geldi, yollar sizi çağırıyor.",
+          "effects": {
+            "faith": 7,
+            "trust": 3,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Henüz değil, rüzgâr sabırsız.",
+          "effects": {
+            "faith": 4,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Ne yapacağınızı siz bilirsiniz, ben değil.",
+          "effects": {
+            "faith": 1,
+            "trust": -2,
+            "hostility": 3
+          }
+        }
+      ],
+      "id": "varnan_07",
+      "type": "special"
+    },
+    {
+      "speaker": "Kutsal Ateş Bekçisi Enra",
+      "text": "Rüzgârın fısıltısını taşıyan biri misin gerçekten, yoksa bir taklit mi?",
+      "options": [
+        {
+          "text": "Ataların sesiyle konuşurum.",
+          "effects": {
+            "faith": 6,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Ben sadece duyanlardanım.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kimin sesi, ne fark eder?",
+          "effects": {
+            "faith": 0,
+            "trust": -2,
+            "hostility": 5
+          }
+        }
+      ],
+      "id": "varnan_08",
+      "type": "special"
+    },
+    {
+      "speaker": "Ruh Ağı Kâhyası Sarem",
+      "text": "Son göçten önceki rüyan neydi? Bilmek istiyoruz.",
+      "options": [
+        {
+          "text": "Rüyamda toprak şarkı söylüyordu.",
+          "effects": {
+            "faith": 6,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Gölge vardı, ama içinde ışık saklıydı.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Rüyalarım bana ait, anlatmam.",
+          "effects": {
+            "faith": 1,
+            "trust": -2,
+            "hostility": 3
+          }
+        }
+      ],
+      "id": "varnan_09",
+      "type": "special"
+    },
+    {
+      "speaker": "Yaşlı Kervan Koruyucusu Thol",
+      "text": "Yoldaki kayıpları nasıl açıklarsın Kahin? Sessizce gidiyorlar.",
+      "options": [
+        {
+          "text": "Ruhlar çağırınca gitmek gerekir.",
+          "effects": {
+            "faith": 6,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kayıplar dönüş yolunu hazırlar.",
+          "effects": {
+            "faith": 5,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunlar sadece tesadüf.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 4
+          }
+        }
+      ],
+      "id": "varnan_10",
+      "type": "special"
+    },
+    {
+      "speaker": "Göçebe Kayıtçısı Miral",
+      "text": "Adını yazmamı istiyor musun kehanet defterine?",
+      "options": [
+        {
+          "text": "Evet, kaderimi yazmalısın.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Henüz değil. Yazgım değişebilir.",
+          "effects": {
+            "faith": 4,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Ben yazılmam, ben silerim.",
+          "effects": {
+            "faith": 0,
+            "trust": -2,
+            "hostility": 5
+          }
+        }
+      ],
+      "id": "varnan_11",
+      "type": "special"
+    },
+    {
+      "speaker": "Çadır Ruhçusu Errem",
+      "text": "Sen geçtikten sonra rüzgâr yön değiştirdi. Bu işaret midir?",
+      "options": [
+        {
+          "text": "Evet, yeni bir yol açıldı.",
+          "effects": {
+            "faith": 6,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Belki de sadece rüzgârdır.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Her şeyi işaret sanıyorsunuz.",
+          "effects": {
+            "faith": 1,
+            "trust": -2,
+            "hostility": 3
+          }
+        }
+      ],
+      "id": "varnan_12",
+      "type": "special"
+    },
+    {
+      "speaker": "Genç Konsey Gözlemcisi Theva",
+      "text": "Gençler artık seni dinlemiyor. Neden sence?",
+      "options": [
+        {
+          "text": "Onlara henüz ulaşamadım.",
+          "effects": {
+            "faith": 4,
+            "trust": 3,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Belki de farklı yolları var.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Onlar kayboldu, ben değil.",
+          "effects": {
+            "faith": 0,
+            "trust": -2,
+            "hostility": 4
+          }
+        }
+      ],
+      "id": "varnan_13",
+      "type": "special"
+    },
+    {
+      "speaker": "Rüzgâr Sesi Dinleyicisi Noram",
+      "text": "Senin sesin rüzgârla karışıyor. Ne demek istiyorsun?",
+      "options": [
+        {
+          "text": "İkisi aynı kaynaktan doğuyor.",
+          "effects": {
+            "faith": 6,
+            "trust": 3,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Ben sadece taşıyıcıyım.",
+          "effects": {
+            "faith": 5,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sustuğumda daha net anlaşılıyorum.",
+          "effects": {
+            "faith": 2,
+            "trust": 0,
+            "hostility": 2
+          }
+        }
+      ],
+      "id": "varnan_14",
+      "type": "special"
+    },
+    {
+      "speaker": "Yol Ruhçusu Darnak",
+      "text": "Göç yolları çatallaştı. Hangi yolun sonu barıştır?",
+      "options": [
+        {
+          "text": "En zor olan yol barışla biter.",
+          "effects": {
+            "faith": 6,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Barış yolun kendisindedir.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Barış diye bir son yok.",
+          "effects": {
+            "faith": 1,
+            "trust": -2,
+            "hostility": 3
+          }
+        }
+      ],
+      "id": "varnan_15",
+      "type": "special"
+    }
+  ]
+}
