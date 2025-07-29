@@ -10,6 +10,7 @@ public class BarUIController : MonoBehaviour
 
     private void Start()
     {
+        
         // Başlangıçta değerleri güncelle
         UpdateBars();
         // Evente abone ol
@@ -26,7 +27,7 @@ public class BarUIController : MonoBehaviour
         UpdateBars();
     }
 
-    private void UpdateBars()
+    public void UpdateBars()
     {
         if (trustSlider != null)
             trustSlider.value = GameManager.Instance.GetTrust()/100f;

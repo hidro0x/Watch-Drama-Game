@@ -1,0 +1,485 @@
+{
+  "mapType": "Theon",
+  "dialogues": [
+    {
+      "speaker": "Başanalist Kelvion",
+      "text": "Kutsal rüyalarını test etmek istiyoruz. Uyurken seni izleyebilir miyiz?",
+      "options": [
+        {
+          "text": "Hayır, Tanrı’nın sözü gizlidir",
+          "effects": {
+            "faith": 7,
+            "trust": -5,
+            "hostility": 2
+          }
+        },
+        {
+          "text": "Sadece bir gece",
+          "effects": {
+            "faith": 2,
+            "trust": 3,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Tamam, ne gerekiyorsa yapın",
+          "effects": {
+            "faith": -3,
+            "trust": 6,
+            "hostility": 0
+          }
+        }
+      ],
+      "id": "theon_01",
+      "type": "special"
+    },
+    {
+      "id": "theon_02",
+      "type": "special",
+      "speaker": "Analist-2",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_03",
+      "type": "special",
+      "speaker": "Analist-3",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_04",
+      "type": "special",
+      "speaker": "Analist-4",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_05",
+      "type": "special",
+      "speaker": "Analist-5",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_06",
+      "type": "special",
+      "speaker": "Analist-6",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_07",
+      "type": "special",
+      "speaker": "Analist-7",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_08",
+      "type": "special",
+      "speaker": "Analist-8",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_09",
+      "type": "special",
+      "speaker": "Analist-9",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_10",
+      "type": "special",
+      "speaker": "Analist-10",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_11",
+      "type": "special",
+      "speaker": "Analist-11",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_12",
+      "type": "special",
+      "speaker": "Analist-12",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_13",
+      "type": "special",
+      "speaker": "Analist-13",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_14",
+      "type": "special",
+      "speaker": "Analist-14",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "theon_15",
+      "type": "special",
+      "speaker": "Analist-15",
+      "text": "Kehanetlerini analiz edemedik. Açıklaman var mı?",
+      "options": [
+        {
+          "text": "Kehanet mantığa uymaz.",
+          "effects": {
+            "faith": 6,
+            "trust": 2,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Bunun için buradayım.",
+          "effects": {
+            "faith": 4,
+            "trust": 4,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Sorgulamalarınız anlamsız.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    }
+  ]
+}

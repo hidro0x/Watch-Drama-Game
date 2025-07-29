@@ -1,0 +1,485 @@
+{
+  "mapType": "Agnari",
+  "dialogues": [
+    {
+      "id": "agnari_01",
+      "type": "special",
+      "speaker": "Alev Rahibesi A",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_02",
+      "type": "special",
+      "speaker": "Alev Rahibesi B",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_03",
+      "type": "special",
+      "speaker": "Alev Rahibesi C",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_04",
+      "type": "special",
+      "speaker": "Alev Rahibesi D",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_05",
+      "type": "special",
+      "speaker": "Alev Rahibesi E",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_06",
+      "type": "special",
+      "speaker": "Alev Rahibesi F",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_07",
+      "type": "special",
+      "speaker": "Alev Rahibesi G",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_08",
+      "type": "special",
+      "speaker": "Alev Rahibesi H",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_09",
+      "type": "special",
+      "speaker": "Alev Rahibesi I",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_10",
+      "type": "special",
+      "speaker": "Alev Rahibesi J",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_11",
+      "type": "special",
+      "speaker": "Alev Rahibesi K",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_12",
+      "type": "special",
+      "speaker": "Alev Rahibesi L",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_13",
+      "type": "special",
+      "speaker": "Alev Rahibesi M",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_14",
+      "type": "special",
+      "speaker": "Alev Rahibesi N",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "agnari_15",
+      "type": "special",
+      "speaker": "Alev Rahibesi O",
+      "text": "Ateşin sesini duyduğunu söylüyorsun. Bu sesi halkla paylaşmaya hazır mısın?",
+      "options": [
+        {
+          "text": "Evet, alevin söylediklerini açıklayacağım.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Alev sır saklar. Her şey açıklanmaz.",
+          "effects": {
+            "faith": 5,
+            "trust": 3,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Bu ses sadece bana ait, paylaşamam.",
+          "effects": {
+            "faith": 2,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    }
+  ]
+}

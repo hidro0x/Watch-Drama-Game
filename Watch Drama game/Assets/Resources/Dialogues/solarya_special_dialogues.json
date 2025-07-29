@@ -1,0 +1,485 @@
+{
+  "mapType": "Solarya",
+  "dialogues": [
+    {
+      "id": "solarya_01",
+      "type": "special",
+      "speaker": "Güneş Muhafızı A",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_02",
+      "type": "special",
+      "speaker": "Güneş Muhafızı B",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_03",
+      "type": "special",
+      "speaker": "Güneş Muhafızı C",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_04",
+      "type": "special",
+      "speaker": "Güneş Muhafızı D",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_05",
+      "type": "special",
+      "speaker": "Güneş Muhafızı E",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_06",
+      "type": "special",
+      "speaker": "Güneş Muhafızı F",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_07",
+      "type": "special",
+      "speaker": "Güneş Muhafızı G",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_08",
+      "type": "special",
+      "speaker": "Güneş Muhafızı H",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_09",
+      "type": "special",
+      "speaker": "Güneş Muhafızı I",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_10",
+      "type": "special",
+      "speaker": "Güneş Muhafızı J",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_11",
+      "type": "special",
+      "speaker": "Güneş Muhafızı K",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_12",
+      "type": "special",
+      "speaker": "Güneş Muhafızı L",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_13",
+      "type": "special",
+      "speaker": "Güneş Muhafızı M",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_14",
+      "type": "special",
+      "speaker": "Güneş Muhafızı N",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "solarya_15",
+      "type": "special",
+      "speaker": "Güneş Muhafızı O",
+      "text": "Güneş Tanrısı Solum adına sözlerini açıklamanı istiyoruz. Kehanetin neye hizmet ediyor?",
+      "options": [
+        {
+          "text": "Solum’un ışığına hizmet ediyorum.",
+          "effects": {
+            "faith": 7,
+            "trust": 4,
+            "hostility": 0
+          }
+        },
+        {
+          "text": "Hizmetim halka, tanrılara değil.",
+          "effects": {
+            "faith": 3,
+            "trust": 2,
+            "hostility": 1
+          }
+        },
+        {
+          "text": "Kehanetim sadece bana aittir.",
+          "effects": {
+            "faith": 1,
+            "trust": -1,
+            "hostility": 3
+          }
+        }
+      ]
+    }
+  ]
+}

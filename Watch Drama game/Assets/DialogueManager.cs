@@ -15,6 +15,9 @@ public class DialogueManager : MonoBehaviour
     [Header("Turn Ayarları")]
     [SerializeField] private TextMeshProUGUI turnText;
     [SerializeField] private int maxTurnCount = 200;
+
+    ChoiceSelectionUI choiceSelectionUI;
+    BarUIController barUIController;
     
     void Awake()
     {
@@ -24,6 +27,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         Instance = this;
+        choiceSelectionUI = FindFirstObjectByType<ChoiceSelectionUI>(FindObjectsInactive.Include);
     }
     
 
@@ -50,10 +54,9 @@ public class DialogueManager : MonoBehaviour
     void ShowDialogue(DialogueNode node)
     {
         // ChoiceSelectionUI ile entegre gösterim
-        ChoiceSelectionUI ui = FindFirstObjectByType<ChoiceSelectionUI>(FindObjectsInactive.Include);
-        if (ui != null)
+        if (choiceSelectionUI != null)
         {
-            ui.ShowUI(node);
+            choiceSelectionUI.ShowUI(node);
         }
         else
         {

@@ -19,8 +19,11 @@ public class ChoiceSelectionUI : MonoBehaviour
 
     public static event Action OnDialogueChoiceMade;
 
+    BarUIController barUIController;
+
     void Start()
     {
+        barUIController = barPanel.transform.parent.GetComponent<BarUIController>();
         OnPanelClosed();
     }
 
@@ -31,6 +34,7 @@ public class ChoiceSelectionUI : MonoBehaviour
         choiceSelectionImage.sprite = dialogueNode.sprite;
         descriptionText.text = dialogueNode.text;
         barPanel.SetActive(true);
+        barUIController.UpdateBars();
         // Global diyalog kontrolü
         if (dialogueNode.isGlobalDialogue)
         {
