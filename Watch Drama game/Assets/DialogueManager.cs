@@ -29,7 +29,21 @@ public class DialogueManager : MonoBehaviour
         Instance = this;
         choiceSelectionUI = FindFirstObjectByType<ChoiceSelectionUI>(FindObjectsInactive.Include);
     }
-    
+
+    private void Start()
+    {
+        if (turnText != null)
+            turnText.text = "";
+    }
+
+    public void UpdateMapName(string mapName)
+    {
+        if (turnText != null)
+        {
+            turnText.text = mapName;
+        }
+    }
+
 
     public void ShowSpecificDialogue(DialogueNode node)
     {
@@ -43,7 +57,6 @@ public class DialogueManager : MonoBehaviour
         ShowDialogue(node);
     }
     
-
     
     // Seçim yapıldığında çağrılacak
     public void OnChoiceMade()
@@ -64,7 +77,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
     
-
     
     // Getter methodları
     public Node GetCurrentNode() => currentNode;
@@ -79,7 +91,6 @@ public class DialogueManager : MonoBehaviour
     public void NextTurn()
     {
         currentTurn++;
-        turnText.text = "Turn: " + currentTurn;
         
         // Turn limit kontrolü
         CheckTurnLimit();
@@ -89,7 +100,6 @@ public class DialogueManager : MonoBehaviour
     public void IncrementTurn()
     {
         currentTurn++;
-        turnText.text = "Turn: " + currentTurn;
         
         // Turn limit kontrolü
         CheckTurnLimit();
@@ -98,7 +108,7 @@ public class DialogueManager : MonoBehaviour
     // Turn limit kontrolü
     private void CheckTurnLimit()
     {
-        TurnConditionSystem turnConditionSystem = UnityEngine.Object.FindObjectOfType<TurnConditionSystem>();
+        TurnConditionSystem turnConditionSystem = FindFirstObjectByType<TurnConditionSystem>();
         if (turnConditionSystem != null)
         {
             turnConditionSystem.CheckTurnConditionsOnTurnChange();
@@ -109,6 +119,5 @@ public class DialogueManager : MonoBehaviour
     public void ResetTurn()
     {
         currentTurn = 1;
-        turnText.text = "Turn: " + currentTurn;
     }
-} 
+}

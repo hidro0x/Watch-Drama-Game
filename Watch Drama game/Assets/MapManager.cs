@@ -57,6 +57,10 @@ public class MapManager : MonoBehaviour
         OnMapSelected?.Invoke(mapType);
         // Aktif map'i GameManager'a bildir
         GameManager.Instance.SetActiveMap(mapType);
+        
+        // Harita adını DialogueManager'a gönder
+        DialogueManager.Instance.UpdateMapName(mapType.ToString());
+        
         StartNextDialogue();
     }
     

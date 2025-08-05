@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 4a2d2f31114d27543b597755cc2b99ea
+guid: 218ee6d998cd3c646a5a9fb597d86d2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6428458036859658834
-    second: panel-026_0
+      213: 1163814135708225149
+    second: pray_0
+  - first:
+      213: 3623282468289405689
+    second: pray_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: panel-026_0
+      name: pray_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 9
         y: 0
-        width: 48
-        height: 48
+        width: 233
+        height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 20, y: 20, z: 20, w: 20}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 252668c6688763950800000000000000
-      internalID: 6428458036859658834
+      spriteID: d7e877f4ac2b62010800000000000000
+      internalID: 1163814135708225149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pray_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 233
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f26a4b353c784230800000000000000
+      internalID: 3623282468289405689
       vertices: []
       indices: 
       edges: []
@@ -138,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b034d038725cd3f4fa19ce6c327bd4e6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      panel-026_0: 6428458036859658834
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
