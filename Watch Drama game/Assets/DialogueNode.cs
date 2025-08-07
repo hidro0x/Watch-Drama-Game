@@ -9,6 +9,9 @@ public class Node
     [LabelWidth(60)]
     public string id;
 
+    [LabelWidth(60)]
+    public string name;
+
     [PreviewField(70), LabelWidth(60)]
     public Sprite sprite;
 

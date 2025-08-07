@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 /// Desteklenen JSON formatı:
 /// {
 ///   "id": "n15",
+///   "name": "Kayıp Ruh Avcısı",
 ///   "type": "normal",
 ///   "speaker": "Kayıp Ruh Avcısı",
 ///   "text": "Bazı ruhlar geri dönmez...",
@@ -112,6 +113,7 @@ public class JsonDialogueImporter : MonoBehaviour
         DialogueNode dialogueNode = new DialogueNode
         {
             id = jsonData.id,
+            name = jsonData.name ?? jsonData.speaker, // name yoksa speaker'ı kullan
             text = $"{jsonData.speaker}: {jsonData.text}",
             choices = new List<DialogueChoice>()
         };
@@ -161,6 +163,7 @@ public class JsonDialogueImporter : MonoBehaviour
 public class JsonDialogueData
 {
     public string id;
+    public string name;
     public string type;
     public string speaker;
     public string text;

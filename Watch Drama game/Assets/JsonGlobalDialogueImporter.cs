@@ -10,6 +10,7 @@ using Sirenix.OdinInspector;
 /// Desteklenen JSON formatı:
 /// {
 ///   "id": "global_01",
+///   "name": "Kahin",
 ///   "type": "global",
 ///   "speaker": "Kahin",
 ///   "text": "Tüm ülkeler için önemli bir karar...",
@@ -118,6 +119,7 @@ public class JsonGlobalDialogueImporter : MonoBehaviour
         GlobalDialogueNode globalDialogueNode = new GlobalDialogueNode
         {
             id = jsonData.id,
+            name = jsonData.name ?? jsonData.speaker, // name yoksa speaker'ı kullan
             text = $"{jsonData.speaker}: {jsonData.text}",
             choices = new List<GlobalDialogueChoice>()
         };
@@ -211,6 +213,7 @@ public class JsonGlobalDialogueImporter : MonoBehaviour
         var exampleData = new JsonGlobalDialogueData
         {
             id = "global_example_01",
+            name = "Kahin",
             type = "global",
             speaker = "Kahin",
             text = "Tüm ülkeler için önemli bir karar vermen gerekiyor. Bu karar tüm dünyayı etkileyecek.",
@@ -269,6 +272,7 @@ public class JsonGlobalDialogueImporter : MonoBehaviour
 public class JsonGlobalDialogueData
 {
     public string id;
+    public string name;
     public string type;
     public string speaker;
     public string text;
