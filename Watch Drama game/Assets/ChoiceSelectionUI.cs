@@ -21,6 +21,7 @@ public class ChoiceSelectionUI : MonoBehaviour
 
     private Node dialogueNode;
     [SerializeField] private RectTransform rectTransform;
+    [SerializeField] private RectTransform bottomPanel;
 
     [SerializeField] private RectTransform choicesPanel;
 
@@ -34,13 +35,23 @@ public class ChoiceSelectionUI : MonoBehaviour
     private const float TEXT_REVEAL_DURATION = 1.5f;
     private const float CHARACTER_NAME_DELAY = 0.3f;
 
+    private bool hasBeenInitialized = false; // Panel'in daha önce açılıp açılmadığını takip etmek için
+
     void Start()
     {
         barUIController = barPanel.transform.parent.GetComponent<BarUIController>();
+        // rectTransform ekranın sağ dışında başlasın
+        float screenWidth = Screen.width * SCREEN_OFFSET_MULTIPLIER;
+        rectTransform.anchoredPosition = new Vector2(screenWidth, 0);
+        // bottomPanel ekranın üstünde başlasın (görünür)
+        if (bottomPanel != null)
+            bottomPanel.anchoredPosition = new Vector2(0, 0);
     }
 
     public void ShowUI(DialogueNode dialogueNode)
     {
+        bool isFirstTime = !hasBeenInitialized;
+        
         gameObject.SetActive(true);
         this.dialogueNode = dialogueNode;
         choiceSelectionImage.sprite = dialogueNode.sprite;
@@ -56,8 +67,22 @@ public class ChoiceSelectionUI : MonoBehaviour
         
         SetChoices(dialogueNode.choices);
         
-        // Start entrance animation
-        AnimateEntrance();
+        if (isFirstTime)
+        {
+            // İlk kez açılıyorsa bottomPanel animasyonu ve entrance animasyonu
+            hasBeenInitialized = true;
+            if (bottomPanel != null)
+            {
+                float screenHeight = Screen.height * SCREEN_OFFSET_MULTIPLIER;
+                bottomPanel.DOAnchorPos(new Vector2(0, -screenHeight), ANIMATION_DURATION).SetEase(Ease.InQuad);
+            }
+            AnimateEntrance();
+        }
+        else
+        {
+            // Panel zaten açıksa sadece choice panel animasyonu
+            AnimateChoicePanel();
+        }
     }
 
     private void AnimateEntrance()
@@ -163,11 +188,20 @@ public class ChoiceSelectionUI : MonoBehaviour
             .OnComplete(() => {
                 gameObject.SetActive(false);
                 barPanel.SetActive(false);
+                hasBeenInitialized = false; // Panel kapatıldığında flag'i sıfırla
             });
+        // bottomPanel tekrar yukarı çıksın
+        if (bottomPanel != null)
+        {
+            bottomPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad);
+        }
     }
 
     public void TriggerDialogueChoiceEvent()
     {
         OnDialogueChoiceMade?.Invoke();
+        // Choice selection sonrası text'leri temizle
+        if (characterNameText != null) characterNameText.text = "";
+        if (descriptionText != null) descriptionText.text = "";
     }
 }

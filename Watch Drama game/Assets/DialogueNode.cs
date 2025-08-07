@@ -54,6 +54,8 @@ public class DialogueChoice
     
     // Global diyalog seçimi olup olmadığını belirten flag
     public bool isGlobalChoice = false;
+    // Bir sonraki node'un id'si
+    public string nextNodeId;
 } 
 
 [System.Serializable]

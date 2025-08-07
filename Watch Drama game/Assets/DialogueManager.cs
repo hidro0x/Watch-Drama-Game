@@ -43,6 +43,14 @@ public class DialogueManager : MonoBehaviour
             turnText.text = mapName;
         }
     }
+    
+    public void UpdateTurnText()
+    {
+        if (turnText != null)
+        {
+            turnText.text = $"Turn: {currentTurn}";
+        }
+    }
 
 
     public void ShowSpecificDialogue(DialogueNode node)
@@ -91,6 +99,7 @@ public class DialogueManager : MonoBehaviour
     public void NextTurn()
     {
         currentTurn++;
+        UpdateTurnText();
         
         // Turn limit kontrolü
         CheckTurnLimit();

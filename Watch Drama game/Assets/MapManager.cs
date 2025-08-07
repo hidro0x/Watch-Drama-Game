@@ -97,6 +97,29 @@ public class MapManager : MonoBehaviour
         }
     }
     
+    // Zorunlu node gösterme ve turn ilerletme
+    public void ForceShowSpecificDialogueAndAdvanceTurn(DialogueNode forcedNode)
+    {
+        if (currentMap == null)
+        {
+            Debug.LogError("Aktif harita yok!");
+            return;
+        }
+        
+        DialogueManager dialogueManager = UnityEngine.Object.FindFirstObjectByType<DialogueManager>();
+        dialogueManager.NextTurn();
+        mapTurns[currentMap.Value]++;
+        
+        // Turn sonunda condition'ları kontrol et
+        CheckTurnConditions();
+        
+        // Zorunlu node'u göster
+        if (dialogueManager != null)
+        {
+            dialogueManager.ShowSpecificDialogue(forcedNode);
+        }
+    }
+    
     /// <summary>
     /// Turn sonunda condition'ları kontrol eder
     /// </summary>
