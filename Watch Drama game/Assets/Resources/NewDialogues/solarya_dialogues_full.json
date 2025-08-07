@@ -1,0 +1,299 @@
+[
+  {
+    "id": "solarya_01",
+    "name": "Güneş Tapınağı Rahibi Solon",
+    "type": "normal",
+    "speaker": "Güneş Tapınağı Rahibi Solon",
+    "text": "Güneş ışığını aramaya mı geldin, yoksa ondan kaçmaya mı?",
+    "options": [
+      {
+        "text": "Işık yolumdur.",
+        "effects": {
+          "faith": 5,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Henüz karar vermedim.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Gölgeyi tercih ederim.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "solarya_02",
+    "name": "Güneş Tapınağı Rahibi Solon",
+    "type": "normal",
+    "speaker": "Güneş Tapınağı Rahibi Solon",
+    "text": "Tapınak sadece hak edenleri aydınlatır. Sen hazır mısın?",
+    "options": [
+      {
+        "text": "Kalbim hazır.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Sınanmaya hazırım.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Beni kimse sınayamaz.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "solarya_03",
+    "name": "Güneş Tapınağı Rahibi Solon",
+    "type": "normal",
+    "speaker": "Güneş Tapınağı Rahibi Solon",
+    "text": "Gözlerin kamaştığında bile gerçeği görebilir misin?",
+    "options": [
+      {
+        "text": "Gerçek içimdedir.",
+        "effects": {
+          "faith": 5,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Gerçek değişkendir.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Gerçek yalandır.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "solarya_04",
+    "name": "Altın Mühendis Celya",
+    "type": "normal",
+    "speaker": "Altın Mühendis Celya",
+    "text": "Altınla çalışan bir düzen kurduk. Ona layık mısın?",
+    "options": [
+      {
+        "text": "Emekle kazanırım.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Layık olup olmadığımı göreceğiz.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Altın için her şey mübahtır.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "solarya_05",
+    "name": "Altın Mühendis Celya",
+    "type": "normal",
+    "speaker": "Altın Mühendis Celya",
+    "text": "Düzen mi istersin, yoksa kaos mu getirirsin?",
+    "options": [
+      {
+        "text": "Düzen için buradayım.",
+        "effects": {
+          "faith": 3,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Hangisi daha çok kazandırırsa.",
+        "effects": {
+          "faith": 2,
+          "trust": 1,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Kaosun hizmetindeyim.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "solarya_06",
+    "name": "Altın Mühendis Celya",
+    "type": "normal",
+    "speaker": "Altın Mühendis Celya",
+    "text": "Makineyi durdurmak mı, yoksa hızlandırmak mı istersin?",
+    "options": [
+      {
+        "text": "Kontrollü ilerlemek isterim.",
+        "effects": {
+          "faith": 3,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Daha hızlı, daha güçlü!",
+        "effects": {
+          "faith": 2,
+          "trust": 1,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Makineyi yıkmak için geldim.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "solarya_07",
+    "name": "Güneş Muhafızı Talmar",
+    "type": "normal",
+    "speaker": "Güneş Muhafızı Talmar",
+    "text": "Bu kapı ışıkla açılır. Kalbinde ışık var mı?",
+    "options": [
+      {
+        "text": "Güneş içimi aydınlatır.",
+        "effects": {
+          "faith": 5,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Gölgede kalmış olabilirim.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Işık gözümü alıyor.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "solarya_08",
+    "name": "Güneş Muhafızı Talmar",
+    "type": "normal",
+    "speaker": "Güneş Muhafızı Talmar",
+    "text": "Güneşin altında herkes eşit değildir. Sen neredesin?",
+    "options": [
+      {
+        "text": "Hizmet edenim.",
+        "effects": {
+          "faith": 3,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Kendi yolumu seçtim.",
+        "effects": {
+          "faith": 2,
+          "trust": 1,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Işığın hükmünü tanımam.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "solarya_09",
+    "name": "Güneş Muhafızı Talmar",
+    "type": "normal",
+    "speaker": "Güneş Muhafızı Talmar",
+    "text": "Kalkanımı indirirsem, arkamdan vurur musun?",
+    "options": [
+      {
+        "text": "Güvenine layığım.",
+        "effects": {
+          "faith": 4,
+          "trust": 4,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Güven tehlikelidir.",
+        "effects": {
+          "faith": 2,
+          "trust": 1,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Evet, ilk fırsatta.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  }
+]

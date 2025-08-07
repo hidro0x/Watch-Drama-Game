@@ -1,0 +1,299 @@
+[
+  {
+    "id": "astharil_01",
+    "name": "Ruh Şifacısı Ihlira",
+    "type": "normal",
+    "speaker": "Ruh Şifacısı Ihlira",
+    "text": "Ruhun yorgun görünüyor. Şifa mı arıyorsun?",
+    "options": [
+      {
+        "text": "Evet, huzur istiyorum.",
+        "effects": {
+          "faith": 5,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Yaralarımı kendim sararım.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Şifa yalan bir tesellidir.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "astharil_02",
+    "name": "Ruh Şifacısı Ihlira",
+    "type": "normal",
+    "speaker": "Ruh Şifacısı Ihlira",
+    "text": "Sessizlik içinde konuşanları duyabiliyor musun?",
+    "options": [
+      {
+        "text": "Kalbimle duyarım.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Bazen fısıltılar gelir.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Sessizlik bana bir şey söylemez.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "astharil_03",
+    "name": "Ruh Şifacısı Ihlira",
+    "type": "normal",
+    "speaker": "Ruh Şifacısı Ihlira",
+    "text": "Karanlık seni bulduğunda ne yaparsın?",
+    "options": [
+      {
+        "text": "Işığı hatırlarım.",
+        "effects": {
+          "faith": 5,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Karanlığa alışırım.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Karanlık benim evimdir.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "astharil_04",
+    "name": "Sis Rahibi Thamor",
+    "type": "normal",
+    "speaker": "Sis Rahibi Thamor",
+    "text": "Sis her şeyi örter. Gerçeği görebiliyor musun?",
+    "options": [
+      {
+        "text": "Gözüm değil, sezgim görür.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Aradığım gerçeği bulurum.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Gerçek diye bir şey yoktur.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "astharil_05",
+    "name": "Sis Rahibi Thamor",
+    "type": "normal",
+    "speaker": "Sis Rahibi Thamor",
+    "text": "Adımlarını sessiz atıyorsun. Neden gizleniyorsun?",
+    "options": [
+      {
+        "text": "Gölgeden korunmak için.",
+        "effects": {
+          "faith": 3,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Kimseye güvenmiyorum.",
+        "effects": {
+          "faith": 2,
+          "trust": 1,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Niyetim karanlık.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "astharil_06",
+    "name": "Sis Rahibi Thamor",
+    "type": "normal",
+    "speaker": "Sis Rahibi Thamor",
+    "text": "Sis seni çağırdığında karşılık verir misin?",
+    "options": [
+      {
+        "text": "Sisle dans ederim.",
+        "effects": {
+          "faith": 4,
+          "trust": 2,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Uzağında kalırım.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Sis beni yutsun isterim.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "astharil_07",
+    "name": "Ay İzleyicisi Velun",
+    "type": "normal",
+    "speaker": "Ay İzleyicisi Velun",
+    "text": "Ay geceyi izlerken sen ne düşünürsün?",
+    "options": [
+      {
+        "text": "Ay bana umut verir.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Sadece bir ışık kaynağı.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Ay benim düşmanım.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "astharil_08",
+    "name": "Ay İzleyicisi Velun",
+    "type": "normal",
+    "speaker": "Ay İzleyicisi Velun",
+    "text": "Dolunay zamanı geldiğinde kim oluyorsun?",
+    "options": [
+      {
+        "text": "Gerçek benliğim ortaya çıkar.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Kontrolümü kaybedebilirim.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "O zaman beni tanıyamazsın.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "astharil_09",
+    "name": "Ay İzleyicisi Velun",
+    "type": "normal",
+    "speaker": "Ay İzleyicisi Velun",
+    "text": "Ay ışığında yürürken iz bırakır mısın?",
+    "options": [
+      {
+        "text": "Adımlarım sessiz ama kalıcıdır.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "İzimi rüzgar siler.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "İz bırakmak istemem.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  }
+]

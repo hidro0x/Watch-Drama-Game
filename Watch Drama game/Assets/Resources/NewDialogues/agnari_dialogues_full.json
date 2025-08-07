@@ -1,0 +1,299 @@
+[
+  {
+    "id": "agnari_01",
+    "name": "Genç Alev Rahibesi Mira",
+    "type": "normal",
+    "speaker": "Genç Alev Rahibesi Mira",
+    "text": "Alev seni seçti mi, yoksa sen mi ona yürüdün?",
+    "options": [
+      {
+        "text": "Alev içimde doğdu.",
+        "effects": {
+          "faith": 5,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Yolumu onunla buldum.",
+        "effects": {
+          "faith": 3,
+          "trust": 2,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Ateşten uzak dururum.",
+        "effects": {
+          "faith": 1,
+          "trust": 1,
+          "hostility": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "agnari_02",
+    "name": "Genç Alev Rahibesi Mira",
+    "type": "normal",
+    "speaker": "Genç Alev Rahibesi Mira",
+    "text": "İnançsız biri alevi söndürebilir. Senin kalbin ne diyor?",
+    "options": [
+      {
+        "text": "İnancım sarsılmaz.",
+        "effects": {
+          "faith": 5,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Şüphelerim var ama ilerliyorum.",
+        "effects": {
+          "faith": 3,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "İnanç zaman kaybı.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "agnari_03",
+    "name": "Genç Alev Rahibesi Mira",
+    "type": "normal",
+    "speaker": "Genç Alev Rahibesi Mira",
+    "text": "Agnari’nin kutsalı önünde diz çöker misin?",
+    "options": [
+      {
+        "text": "Onun yolunda yürürüm.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Saygı duyarım ama itaat etmem.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Kutsallık beni ilgilendirmez.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "agnari_04",
+    "name": "Agnari Muhafızı Karok",
+    "type": "normal",
+    "speaker": "Agnari Muhafızı Karok",
+    "text": "Bu topraklara izinsiz girdin. Ne için buradasın?",
+    "options": [
+      {
+        "text": "Barış için geldim.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Bilgi arıyorum.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "İşgal için buradayım.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "agnari_05",
+    "name": "Agnari Muhafızı Karok",
+    "type": "normal",
+    "speaker": "Agnari Muhafızı Karok",
+    "text": "Silahın var mı, yoksa kelimelere mi güvenirsin?",
+    "options": [
+      {
+        "text": "Sözlerim kalkanımdır.",
+        "effects": {
+          "faith": 4,
+          "trust": 2,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Kendimi korurum.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Silahlar konuşsun.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "agnari_06",
+    "name": "Agnari Muhafızı Karok",
+    "type": "normal",
+    "speaker": "Agnari Muhafızı Karok",
+    "text": "Agnari düşmanlarını affetmez. Sen affedilebilir misin?",
+    "options": [
+      {
+        "text": "Ben değiştim.",
+        "effects": {
+          "faith": 3,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Zaman gösterecek.",
+        "effects": {
+          "faith": 2,
+          "trust": 1,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Hiçbir zaman affedilmeyi beklemedim.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "agnari_07",
+    "name": "Alev Cevhercisi Lena",
+    "type": "normal",
+    "speaker": "Alev Cevhercisi Lena",
+    "text": "Bu cevher yalnızca yürekle parıldar. Senin yüreğin neyle dolu?",
+    "options": [
+      {
+        "text": "İnançla dolu.",
+        "effects": {
+          "faith": 5,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Merakla dolu.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Hiçbir şeyle.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "agnari_08",
+    "name": "Alev Cevhercisi Lena",
+    "type": "normal",
+    "speaker": "Alev Cevhercisi Lena",
+    "text": "Cevherin sesi var, ama herkes duymaz. Sen duydun mu?",
+    "options": [
+      {
+        "text": "Fısıltısını bile duydum.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Bir yankı hissettim.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Hiçbir şey duymadım.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "agnari_09",
+    "name": "Alev Cevhercisi Lena",
+    "type": "normal",
+    "speaker": "Alev Cevhercisi Lena",
+    "text": "Cevheri çalmak isteyenler oldu. Sen onlardan mısın?",
+    "options": [
+      {
+        "text": "Onu korumaya geldim.",
+        "effects": {
+          "faith": 5,
+          "trust": 4,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Sadece bakmak istiyorum.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Evet, cevher benim olacak.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  }
+]

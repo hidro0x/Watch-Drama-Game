@@ -1,0 +1,695 @@
+[
+  {
+    "id": "universal_01",
+    "name": "Yaşlı Teyze",
+    "type": "normal",
+    "speaker": "Yaşlı Teyze",
+    "text": "Evladım, yüzünde uzun yolların tozu var. Nereden geliyorsun bakalım?",
+    "options": [
+      {
+        "text": "Çok uzaklardan geliyorum.",
+        "effects": {
+          "faith": 3,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Buralarda dolaşıyordum.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Sana ne?",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_02",
+    "name": "Yaşlı Teyze",
+    "type": "normal",
+    "speaker": "Yaşlı Teyze",
+    "text": "Bir tas sıcak çorba ister misin? Evim küçük ama kalbim büyük.",
+    "options": [
+      {
+        "text": "Teşekkür ederim, çok makbule geçer.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Sadece biraz su yeterli.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Yemeklerin kokusu rahatsız edici.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_03",
+    "name": "Yaşlı Teyze",
+    "type": "normal",
+    "speaker": "Yaşlı Teyze",
+    "text": "Gençken ben de senin gibiydim... Ama sonra rüzgar başka yönden esti.",
+    "options": [
+      {
+        "text": "Hikayeni duymak isterim.",
+        "effects": {
+          "faith": 4,
+          "trust": 4,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Herkesin yolu farklıdır.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Benim vaktim yok yaşlı kadın.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_04",
+    "name": "Oduncu",
+    "type": "normal",
+    "speaker": "Oduncu",
+    "text": "Baltam kırılmak üzere... Ama orman hâlâ suskun. Sen neden geldin?",
+    "options": [
+      {
+        "text": "Sana yardım etmeye geldim.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Sadece yolum düştü.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Ağaçları kesmeni engellemeye geldim.",
+        "effects": {
+          "faith": 1,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_05",
+    "name": "Oduncu",
+    "type": "normal",
+    "speaker": "Oduncu",
+    "text": "Orman gözüyle izler. Ne zaman dal kessem, içim burkulur.",
+    "options": [
+      {
+        "text": "Saygılı davranman güzel.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Ağaç da bir kaynak sonuçta.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Duygusallık işini zorlaştırır.",
+        "effects": {
+          "faith": 0,
+          "trust": 1,
+          "hostility": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_06",
+    "name": "Oduncu",
+    "type": "normal",
+    "speaker": "Oduncu",
+    "text": "Soğuk havada kesilen odun daha dayanıklıdır. Sen ne zaman en güçlüsün?",
+    "options": [
+      {
+        "text": "Zorluklar karşısında.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Kendimi yalnız hissettiğimde.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Her zaman güçlüyümdür.",
+        "effects": {
+          "faith": 1,
+          "trust": 0,
+          "hostility": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_07",
+    "name": "Vatandaş",
+    "type": "normal",
+    "speaker": "Vatandaş",
+    "text": "Günlerdir pazarda fiyatlar artıyor. Bu işin sonu nereye varacak sence?",
+    "options": [
+      {
+        "text": "Umut edelim, geçer.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Herkes kendi başının çaresine baksın.",
+        "effects": {
+          "faith": 1,
+          "trust": 1,
+          "hostility": 2
+        }
+      },
+      {
+        "text": "Bu düzene bir son verilmeli.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_08",
+    "name": "Vatandaş",
+    "type": "normal",
+    "speaker": "Vatandaş",
+    "text": "Yeni bir yüz görmek güzel. Burada kalmayı mı düşünüyorsun?",
+    "options": [
+      {
+        "text": "Evet, bir süre kalacağım.",
+        "effects": {
+          "faith": 3,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Kararsızım, daha gözlemliyorum.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Hayır, hemen gideceğim.",
+        "effects": {
+          "faith": 1,
+          "trust": 0,
+          "hostility": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_09",
+    "name": "Vatandaş",
+    "type": "normal",
+    "speaker": "Vatandaş",
+    "text": "Dün gece yine garip sesler geldi dağlardan. Sence ne olabilir?",
+    "options": [
+      {
+        "text": "Doğanın sesi, korkmaya gerek yok.",
+        "effects": {
+          "faith": 4,
+          "trust": 2,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Belki de bir uyarıydı.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Bir şeyler gizleniyor buralarda.",
+        "effects": {
+          "faith": 1,
+          "trust": 1,
+          "hostility": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_10",
+    "name": "Terzi",
+    "type": "normal",
+    "speaker": "Terzi",
+    "text": "Kumaş ruh gibidir; yanlış biçersen geri dönüşü olmaz. Ne arıyorsun burada?",
+    "options": [
+      {
+        "text": "Kendime uygun bir yol.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Yolum buraya düştü sadece.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Seninle işim olmaz, terzi.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_11",
+    "name": "Terzi",
+    "type": "normal",
+    "speaker": "Terzi",
+    "text": "Her dikiş bir karar demektir. Sen kararlarını nasıl alırsın?",
+    "options": [
+      {
+        "text": "İç sesimi dinlerim.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Duruma göre değişir.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Kararları sorgulamam.",
+        "effects": {
+          "faith": 1,
+          "trust": 0,
+          "hostility": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_12",
+    "name": "Terzi",
+    "type": "normal",
+    "speaker": "Terzi",
+    "text": "İpek mi ararsın, keten mi? Her ruh bir kumaş seçer.",
+    "options": [
+      {
+        "text": "Zarif ama sade bir şey isterim.",
+        "effects": {
+          "faith": 3,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Dayanıklı olan en iyisidir.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Fark etmez, param yok zaten.",
+        "effects": {
+          "faith": 1,
+          "trust": 1,
+          "hostility": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_13",
+    "name": "Çoban",
+    "type": "normal",
+    "speaker": "Çoban",
+    "text": "Koyunlar bile yabancıyı hisseder. Senin niyetin ne?",
+    "options": [
+      {
+        "text": "Sadece dostça geldim.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Biraz gözlem yapıyorum.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Sürüyü almaya geldim.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_14",
+    "name": "Çoban",
+    "type": "normal",
+    "speaker": "Çoban",
+    "text": "Dağlarda zaman farklı akar. Sen zamanı nasıl geçirirsin?",
+    "options": [
+      {
+        "text": "Kendimle kalırım.",
+        "effects": {
+          "faith": 3,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Yeni yerler keşfederim.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Zamanın önemi yoktur bana.",
+        "effects": {
+          "faith": 1,
+          "trust": 1,
+          "hostility": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_15",
+    "name": "Çoban",
+    "type": "normal",
+    "speaker": "Çoban",
+    "text": "Kurt izleri gördüm bu sabah. Tehlike yakındaysa sen ne yaparsın?",
+    "options": [
+      {
+        "text": "Köylüleri uyarırım.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Kendimi korurum önce.",
+        "effects": {
+          "faith": 2,
+          "trust": 1,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Kaçmak en iyisi.",
+        "effects": {
+          "faith": 1,
+          "trust": 0,
+          "hostility": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_16",
+    "name": "Genç Delikanlı",
+    "type": "normal",
+    "speaker": "Genç Delikanlı",
+    "text": "Buralarda macera yok, sadece bekleyiş. Sen neyin peşindesin?",
+    "options": [
+      {
+        "text": "Gerçekleri arıyorum.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Bir iş çıkarsa kaçırmam.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Sana ne, işine bak.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_17",
+    "name": "Genç Delikanlı",
+    "type": "normal",
+    "speaker": "Genç Delikanlı",
+    "text": "Bana herkes 'fazla hayal kurma' diyor. Sence haklılar mı?",
+    "options": [
+      {
+        "text": "Hayaller yol gösterir.",
+        "effects": {
+          "faith": 5,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Gerçeklerle yüzleşmelisin.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Hayaller zaman kaybıdır.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_18",
+    "name": "Genç Delikanlı",
+    "type": "normal",
+    "speaker": "Genç Delikanlı",
+    "text": "Bir gün buradan çıkıp gideceğim. Senin hayalin ne?",
+    "options": [
+      {
+        "text": "Daha iyi bir dünya kurmak.",
+        "effects": {
+          "faith": 4,
+          "trust": 4,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Özgürce yaşamak yeter.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Benim hayalim yok.",
+        "effects": {
+          "faith": 1,
+          "trust": 1,
+          "hostility": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_19",
+    "name": "Tuhaf Yaşlı",
+    "type": "normal",
+    "speaker": "Tuhaf Yaşlı",
+    "text": "Geceleri taşlar fısıldar, ama herkes duymaz. Sen duyabiliyor musun?",
+    "options": [
+      {
+        "text": "Bazen sessizlikte sesler bulurum.",
+        "effects": {
+          "faith": 5,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Yalnızca rüzgarın oyunudur.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Saçmalık bu!",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_20",
+    "name": "Tuhaf Yaşlı",
+    "type": "normal",
+    "speaker": "Tuhaf Yaşlı",
+    "text": "Üçüncü gözü açılmış birini tanıdım... Aynaya bakınca ne görüyorsun?",
+    "options": [
+      {
+        "text": "İçimdeki beni.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Sorgulayan bir yabancıyı.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Boş bir kabuk.",
+        "effects": {
+          "faith": 0,
+          "trust": 0,
+          "hostility": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "universal_21",
+    "name": "Tuhaf Yaşlı",
+    "type": "normal",
+    "speaker": "Tuhaf Yaşlı",
+    "text": "Zaman düz değil, kıvrılır, bükülür. Hangi zamanı yaşıyorsun şu an?",
+    "options": [
+      {
+        "text": "Şimdiyi, olması gerekeni.",
+        "effects": {
+          "faith": 4,
+          "trust": 3,
+          "hostility": 0
+        }
+      },
+      {
+        "text": "Geçmişte takılı kaldım.",
+        "effects": {
+          "faith": 2,
+          "trust": 2,
+          "hostility": 1
+        }
+      },
+      {
+        "text": "Hiçbir zamanın içinde değilim.",
+        "effects": {
+          "faith": 1,
+          "trust": 1,
+          "hostility": 3
+        }
+      }
+    ]
+  }
+]
