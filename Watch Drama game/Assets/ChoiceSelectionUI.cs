@@ -94,7 +94,7 @@ public class ChoiceSelectionUI : MonoBehaviour
         // Set initial positions
         rectTransform.anchoredPosition = new Vector2(-screenWidth, 0);
         choicesPanel.anchoredPosition = new Vector2(0, -screenHeight);
-        characterImage.rectTransform.anchoredPosition = new Vector2(screenWidth, 0);
+        characterImage.rectTransform.anchoredPosition = new Vector2(screenWidth *1.5f, 0);
         
         // Clear text initially
         characterNameText.text = "";
