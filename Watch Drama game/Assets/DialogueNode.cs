@@ -28,6 +28,9 @@ public class DialogueNode : Node
     
     // Global diyalog olup olmadığını belirten flag
     public bool isGlobalDialogue = false;
+    
+    // Opsiyonel: Bu diyalog için özel arkaplan
+    public Sprite backgroundSprite;
 }
 
 [System.Serializable]

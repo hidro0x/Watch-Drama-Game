@@ -15,6 +15,9 @@ public class MapManager : MonoBehaviour
     // Global diyalog referansı
     private GlobalDialogueNode currentGlobalDialogue = null;
     
+    // Zorunlu gösterilecek (nextNodeId ile gelen) bir sonraki diyalog
+    private DialogueNode pendingForcedNode = null;
+    
     // Events
     public static event Action<MapType> OnMapSelected;
     public static event Action<MapType> OnMapCompleted;
@@ -30,22 +33,37 @@ public class MapManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
         
-        // DialogueManager eventlerini dinle
-        ChoiceSelectionUI.OnDialogueChoiceMade += OnDialogueChoiceCompleted;
+        // Tek olay kaynağı: GameManager.OnChoiceMade
+        GameManager.OnChoiceMade += OnGameChoiceMade;
     }
     
     private void OnDestroy()
     {
-        ChoiceSelectionUI.OnDialogueChoiceMade -= OnDialogueChoiceCompleted;
+        GameManager.OnChoiceMade -= OnGameChoiceMade;
     }
     
-    // DialogueManager'dan seçim yapıldığı bilgisi gelince çağrılır
-    private void OnDialogueChoiceCompleted()
+    // Seçim uygulandığında (tek olay)
+    private void OnGameChoiceMade(ChoiceEffect _)
     {
-        if (currentMap != null)
+        if (currentMap == null) return;
+        
+        // Eğer nextNodeId ile zorunlu bir diyalog planlandıysa onu göster
+        if (pendingForcedNode != null)
         {
-            StartNextDialogue();
+            var node = pendingForcedNode;
+            pendingForcedNode = null;
+            ForceShowSpecificDialogueAndAdvanceTurn(node);
+            return;
         }
+        
+        // Normal akış
+        StartNextDialogue();
+    }
+    
+    // nextNodeId akışı için önceden haber ver
+    public void PrepareForcedNextDialogue(DialogueNode node)
+    {
+        pendingForcedNode = node;
     }
     
     public void SelectMap(MapType mapType)

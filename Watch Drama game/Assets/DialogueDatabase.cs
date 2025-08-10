@@ -52,8 +52,12 @@ public class DialogueDatabase : SerializedScriptableObject
     [TableList]
     public List<DialogueNode> generalDialogues = new List<DialogueNode>();
     
-    [Title("Harita Özel Genel Diyalogları")]
+    [Title("Harita Özel Genel Diyalogları")] 
     public Dictionary<MapType, List<DialogueNode>> specialGeneralDialoguesByMap = new();
+    
+    
+    [Title("Map'e Özel NORMAL Arkaplanlar")] 
+    public Dictionary<MapType, Sprite> mapSpecificDialogueBackgrounds = new();
     
     [Title("Global Diyalog Etkileri")]
     [TableList]

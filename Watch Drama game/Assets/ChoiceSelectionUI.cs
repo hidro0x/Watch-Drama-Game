@@ -37,6 +37,10 @@ public class ChoiceSelectionUI : MonoBehaviour
 
     private bool hasBeenInitialized = false; // Panel'in daha önce açılıp açılmadığını takip etmek için
 
+    // Typewriter kontrolü için coroutine referansları
+    private Coroutine nameTypewriterCoroutine;
+    private Coroutine descriptionTypewriterCoroutine;
+
     void Start()
     {
         barUIController = barPanel.transform.parent.GetComponent<BarUIController>();
@@ -55,8 +59,20 @@ public class ChoiceSelectionUI : MonoBehaviour
         gameObject.SetActive(true);
         this.dialogueNode = dialogueNode;
         choiceSelectionImage.sprite = dialogueNode.sprite;
+        if (characterImage != null)
+        {
+            characterImage.sprite = dialogueNode.sprite;
+            characterImage.enabled = (dialogueNode.sprite != null);
+        }
         barPanel.SetActive(true);
         barUIController.UpdateBars();
+        
+        // Arkaplan seçimi
+        ApplyBackgroundForDialogue(dialogueNode);
+        
+        // Aktif typewriter'ları durdur ve metinleri sıfırla (skip + reset)
+        StopTypewriterCoroutines();
+        ResetTypewriterTexts();
         
         // Global diyalog kontrolü
         if (dialogueNode.isGlobalDialogue)
@@ -82,6 +98,44 @@ public class ChoiceSelectionUI : MonoBehaviour
         {
             // Panel zaten açıksa sadece choice panel animasyonu
             AnimateChoicePanel();
+        }
+    }
+
+    private void ApplyBackgroundForDialogue(DialogueNode node)
+    {
+        if (backgroundImage == null) return;
+        
+        // Global diyaloglarda tek görsel kullanılacak: mevcut background'ı koru
+        if (node.isGlobalDialogue)
+        {
+            return;
+        }
+        
+        // Aktif map ve database
+        var mapManager = MapManager.Instance;
+        if (mapManager == null || mapManager.GetCurrentMap() == null) return;
+        var mapType = mapManager.GetCurrentMap().Value;
+        var db = mapManager.dialogueDatabase;
+        if (db == null) return;
+        
+        // Özel ülke diyalogu: specialGeneralDialoguesByMap içinde olanlar -> node.backgroundSprite kullan
+        bool isSpecialForMap = db.specialGeneralDialoguesByMap.ContainsKey(mapType) &&
+                               db.specialGeneralDialoguesByMap[mapType] != null &&
+                               db.specialGeneralDialoguesByMap[mapType].Contains(node);
+        if (isSpecialForMap)
+        {
+            if (node.backgroundSprite != null)
+            {
+                backgroundImage.sprite = node.backgroundSprite;
+            }
+            // node'da arkaplan yoksa mevcut background korunur
+            return;
+        }
+        
+        // Genel diyalog: map'e özel arkaplan kullan (mapSpecificDialogueBackgrounds)
+        if (db.mapSpecificDialogueBackgrounds != null && db.mapSpecificDialogueBackgrounds.TryGetValue(mapType, out var mapBg) && mapBg != null)
+        {
+            backgroundImage.sprite = mapBg;
         }
     }
 
@@ -118,15 +172,48 @@ public class ChoiceSelectionUI : MonoBehaviour
 
     private void AnimateTextReveal()
     {
-        // Start typewriter effects
-        StartCoroutine(TypewriterEffect(characterNameText, dialogueNode.name, TEXT_REVEAL_DURATION * 0.6f, CHARACTER_NAME_DELAY));
-        StartCoroutine(TypewriterEffect(descriptionText, dialogueNode.text, TEXT_REVEAL_DURATION, CHARACTER_NAME_DELAY + 0.2f));
+        // Yeni diyalog başlamadan önce: stop + reset
+        StopTypewriterCoroutines();
+        ResetTypewriterTexts();
+        
+        // Typewriter başlat (name ve description)
+        nameTypewriterCoroutine = StartCoroutine(TypewriterEffect(characterNameText, dialogueNode.name, TEXT_REVEAL_DURATION * 0.6f, CHARACTER_NAME_DELAY));
+        descriptionTypewriterCoroutine = StartCoroutine(TypewriterEffect(descriptionText, dialogueNode.text, TEXT_REVEAL_DURATION, CHARACTER_NAME_DELAY + 0.2f));
+    }
+
+    private void StopTypewriterCoroutines()
+    {
+        if (nameTypewriterCoroutine != null)
+        {
+            StopCoroutine(nameTypewriterCoroutine);
+            nameTypewriterCoroutine = null;
+        }
+        if (descriptionTypewriterCoroutine != null)
+        {
+            StopCoroutine(descriptionTypewriterCoroutine);
+            descriptionTypewriterCoroutine = null;
+        }
+    }
+
+    private void ResetTypewriterTexts()
+    {
+        if (characterNameText != null) characterNameText.text = "";
+        if (descriptionText != null) descriptionText.text = "";
     }
 
     private IEnumerator TypewriterEffect(TextMeshProUGUI textComponent, string fullText, float duration, float delay)
     {
         // Wait for delay
         yield return new WaitForSeconds(delay);
+        
+        if (textComponent == null)
+            yield break;
+        
+        if (string.IsNullOrEmpty(fullText))
+        {
+            textComponent.text = fullText ?? "";
+            yield break;
+        }
         
         textComponent.text = "";
         int totalCharacters = fullText.Length;
@@ -141,6 +228,10 @@ public class ChoiceSelectionUI : MonoBehaviour
 
     public void AnimateChoicePanel()
     {
+        // Yeni panele geçmeden önce: stop + reset
+        StopTypewriterCoroutines();
+        ResetTypewriterTexts();
+        
         // 1. Choices panel slides down
         float screenHeight = Screen.height * SCREEN_OFFSET_MULTIPLIER;
         
@@ -161,11 +252,9 @@ public class ChoiceSelectionUI : MonoBehaviour
                         characterImage.rectTransform.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad)
                             .OnComplete(() => {
                                 // 4. Choices panel slides back up
-                                choicesPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad)
-                                    .OnComplete(() => {
-                                        // 5. Re-animate text reveal for new dialogue
-                                        AnimateTextReveal();
-                                    });
+                                // Typewriter efektini choices panel yukarı çıkarken eşzamanlı başlat
+                                AnimateTextReveal();
+                                choicesPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad);
                             });
                     });
             });
@@ -181,6 +270,9 @@ public class ChoiceSelectionUI : MonoBehaviour
 
     public void OnPanelClosed()
     {
+        // Typewriter'ları durdur
+        StopTypewriterCoroutines();
+        
         // Animate exit to left
         float screenWidth = Screen.width * SCREEN_OFFSET_MULTIPLIER;
         

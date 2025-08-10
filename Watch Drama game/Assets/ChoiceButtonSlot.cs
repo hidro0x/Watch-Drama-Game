@@ -54,28 +54,28 @@ public class ChoiceButtonSlot : MonoBehaviour
                 dialogueChoice.hostilityChange
             );
             
-            GameManager.MakeChoice(effect);
-            // Eğer nextNodeId doluysa, ilgili DialogueNode'u göster
+            // Eğer nextNodeId doluysa, ilgili DialogueNode'u sonraki adımda zorunlu göstermek için MapManager'a (ÖNCE) bildir
+            DialogueNode preparedNext = null;
             if (!string.IsNullOrEmpty(dialogueChoice.nextNodeId))
             {
                 var db = DialogueManager.Instance.dialogueDatabase;
                 if (db != null && db.generalDialogues != null)
                 {
-                    var nextNode = db.generalDialogues.Find(n => n.id == dialogueChoice.nextNodeId);
-                    if (nextNode != null)
+                    preparedNext = db.generalDialogues.Find(n => n.id == dialogueChoice.nextNodeId);
+                    if (preparedNext != null)
                     {
-                        // MapManager üzerinden turn ilerlet ve zorunlu node göster
-                        MapManager.Instance.ForceShowSpecificDialogueAndAdvanceTurn(nextNode);
-                        return;
+                        MapManager.Instance.PrepareForcedNextDialogue(preparedNext);
                     }
                 }
             }
-            // Eğer nextNodeId yoksa normal akış devam etsin
-            var choiceUI = UnityEngine.Object.FindFirstObjectByType<ChoiceSelectionUI>();
-            if (choiceUI != null)
-            {
-                choiceUI.TriggerDialogueChoiceEvent();
-            }
+
+            // Seçimi uygula (tek olay kaynağı)
+            GameManager.MakeChoice(effect);
+            
+            // UI event tetikleme yok; akış GameManager.OnChoiceMade üzerinden ilerler
+            // Eğer forced next yoksa da MapManager normal akışı başlatır
+            
+            return;
         }
 
     }

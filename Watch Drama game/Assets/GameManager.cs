@@ -71,7 +71,8 @@ public class GameManager : MonoBehaviour
         {
             foreach (var item in mapTypeValuesList)
             {
-                mapValuesDict[item.mapType] = new MapValues(item.trust, item.faith, item.hostility);
+                var initVals = new MapValues(item.trust, item.faith, item.hostility);
+                mapValuesDict[item.mapType] = ClampMapValues(initVals);
             }
         }
         else
@@ -84,6 +85,7 @@ public class GameManager : MonoBehaviour
         }
         // Varsayılan olarak ilk MapType'ı aktif yap
         currentMapType = (MapType)0;
+        SyncMapTypeValuesList();
     }
 
     private void OnDestroy()
@@ -107,15 +109,11 @@ public class GameManager : MonoBehaviour
         values.Trust += effect.TrustChange;
         values.Faith += effect.FaithChange;
         values.Hostility += effect.HostilityChange;
-
-        // Değerlerin min sınırlarını kontrol et (0'ın altına düşmesin)
-        values.Trust = Mathf.Max(0, values.Trust);
-        values.Faith = Mathf.Max(0, values.Faith);
-        values.Hostility = Mathf.Max(0, values.Hostility);
-
+        values = ClampMapValues(values);
         mapValuesDict[currentMapType] = values;
 
         CheckForZeroValues(values);
+        SyncMapTypeValuesList();
 
         // DialogueManager'a seçim yapıldığını bildir
         DialogueManager dialogueManager = UnityEngine.Object.FindObjectOfType<DialogueManager>();
@@ -144,21 +142,19 @@ public class GameManager : MonoBehaviour
                 current.Trust += values.trust;
                 current.Faith += values.faith;
                 current.Hostility += values.hostility;
-                current.Trust = Mathf.Max(0, current.Trust);
-                current.Faith = Mathf.Max(0, current.Faith);
-                current.Hostility = Mathf.Max(0, current.Hostility);
+                current = ClampMapValues(current);
                 mapValuesDict[country] = current;
                 CheckForZeroValues(current);
             }
         }
+        SyncMapTypeValuesList();
         RefreshValues();
     }
 
     private void RefreshValues(){
         var values = mapValuesDict[currentMapType];
-        values.Trust = Mathf.Max(0, values.Trust);
-        values.Faith = Mathf.Max(0, values.Faith);
-        values.Hostility = Mathf.Max(0, values.Hostility);
+        values = ClampMapValues(values);
+        mapValuesDict[currentMapType] = values;
     }
 
     private void CheckForZeroValues(MapValues values)
@@ -238,8 +234,9 @@ public class GameManager : MonoBehaviour
     
     public void SetBarValuesForCountry(MapType country, MapValues values)
     {
-        mapValuesDict[country] = values;
+        mapValuesDict[country] = ClampMapValues(values);
         RefreshValues();
+        SyncMapTypeValuesList();
     }
 
     // Yeni oyun başlatma
@@ -247,6 +244,42 @@ public class GameManager : MonoBehaviour
     {
         InitializeMapValues();
         Debug.Log("Yeni oyun başlatıldı!");
+        SyncMapTypeValuesList();
+    }
+
+    private void SyncMapTypeValuesList()
+    {
+        if (mapTypeValuesList == null)
+            mapTypeValuesList = new List<MapTypeValues>();
+        
+        // Ensure list has one entry per MapType and mirrors dictionary values (for inspector/debug)
+        var byType = new Dictionary<MapType, MapTypeValues>();
+        foreach (var entry in mapTypeValuesList)
+        {
+            if (!byType.ContainsKey(entry.mapType))
+                byType[entry.mapType] = entry;
+        }
+        foreach (MapType mapType in Enum.GetValues(typeof(MapType)))
+        {
+            MapValues vals = mapValuesDict.ContainsKey(mapType) ? mapValuesDict[mapType] : new MapValues(0,0,0);
+            if (!byType.TryGetValue(mapType, out var m))
+            {
+                m = new MapTypeValues { mapType = mapType };
+                mapTypeValuesList.Add(m);
+                byType[mapType] = m;
+            }
+            m.trust = vals.Trust;
+            m.faith = vals.Faith;
+            m.hostility = vals.Hostility;
+        }
+    }
+
+    private MapValues ClampMapValues(MapValues values)
+    {
+        values.Trust = Mathf.Clamp(values.Trust, 0, 100);
+        values.Faith = Mathf.Clamp(values.Faith, 0, 100);
+        values.Hostility = Mathf.Clamp(values.Hostility, 0, 100);
+        return values;
     }
 }
 
