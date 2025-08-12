@@ -12,7 +12,6 @@ public class EndingPanelUI : MonoBehaviour
 
     private void Start()
     {
-        gameObject.SetActive(false);
         nextButton.onClick.AddListener(OnNextButtonClicked);
     }
 

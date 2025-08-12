@@ -5731,7 +5731,7 @@ MonoBehaviour:
   globalDialogueEffects:
   - id: global_01
     name: 
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: de548bdd32ee5394c8d3b921d859c4af, type: 3}
     text: "Kahin: Leviathan uyan\u0131yor. Dalgalar k\u0131talar\u0131 yutmak \xFCzere.
       Ne yapacaks\u0131n?"
     choices:
@@ -5803,7 +5803,7 @@ MonoBehaviour:
         hostilityChange: 2
   - id: global_02
     name: 
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 30799550cda955148a143ab6a49af3e9, type: 3}
     text: "Kahin: G\xF6ky\xFCz\xFC yar\u0131ld\u0131, i\xE7inden \u0131\u015F\u0131k
       de\u011Fil karanl\u0131k s\u0131z\u0131yor. Uluslara ne s\xF6yleyeceksin?"
     choices:
@@ -5875,222 +5875,7 @@ MonoBehaviour:
         hostilityChange: 3
   - id: global_03
     name: 
-    sprite: {fileID: 0}
-    text: "Kahin: D\xFCnya bir yol ayr\u0131m\u0131nda. Hangi yoldan gideceksin?"
-    choices:
-    - text: "Bar\u0131\u015F\u0131 tesis et"
-      globalEffects:
-      - country: 1
-        trustChange: 4
-        faithChange: 3
-        hostilityChange: -2
-      - country: 0
-        trustChange: 3
-        faithChange: 4
-        hostilityChange: -1
-      - country: 4
-        trustChange: 2
-        faithChange: 2
-        hostilityChange: -2
-      - country: 3
-        trustChange: 2
-        faithChange: 3
-        hostilityChange: -1
-      - country: 2
-        trustChange: 3
-        faithChange: 3
-        hostilityChange: -2
-    - text: "Ekonomik yapt\u0131r\u0131m uygula"
-      globalEffects:
-      - country: 1
-        trustChange: -1
-        faithChange: 0
-        hostilityChange: 2
-      - country: 0
-        trustChange: 1
-        faithChange: 1
-        hostilityChange: 0
-      - country: 4
-        trustChange: -2
-        faithChange: 0
-        hostilityChange: 3
-      - country: 3
-        trustChange: 0
-        faithChange: 1
-        hostilityChange: 1
-      - country: 2
-        trustChange: -1
-        faithChange: 0
-        hostilityChange: 2
-    - text: "Sava\u015Fa haz\u0131rlan"
-      globalEffects:
-      - country: 1
-        trustChange: -3
-        faithChange: -2
-        hostilityChange: 5
-      - country: 0
-        trustChange: -2
-        faithChange: -1
-        hostilityChange: 4
-      - country: 4
-        trustChange: -4
-        faithChange: -2
-        hostilityChange: 6
-      - country: 3
-        trustChange: -1
-        faithChange: -3
-        hostilityChange: 3
-      - country: 2
-        trustChange: -2
-        faithChange: -2
-        hostilityChange: 4
-  - id: global_01
-    name: 
-    sprite: {fileID: 0}
-    text: "Kahin: Leviathan uyan\u0131yor. Dalgalar k\u0131talar\u0131 yutmak \xFCzere.
-      Ne yapacaks\u0131n?"
-    choices:
-    - text: "Bar\u0131nak in\u015Fa edin, halk\u0131 koruyun"
-      globalEffects:
-      - country: 1
-        trustChange: 2
-        faithChange: 3
-        hostilityChange: -1
-      - country: 0
-        trustChange: 3
-        faithChange: 4
-        hostilityChange: -2
-      - country: 4
-        trustChange: 1
-        faithChange: 2
-        hostilityChange: -1
-      - country: 3
-        trustChange: 2
-        faithChange: 2
-        hostilityChange: -1
-      - country: 2
-        trustChange: 3
-        faithChange: 3
-        hostilityChange: -2
-    - text: "Dualar edin, denizi yat\u0131\u015Ft\u0131rmaya \xE7al\u0131\u015F\u0131n"
-      globalEffects:
-      - country: 1
-        trustChange: 0
-        faithChange: 2
-        hostilityChange: 0
-      - country: 0
-        trustChange: 2
-        faithChange: 5
-        hostilityChange: -1
-      - country: 4
-        trustChange: 1
-        faithChange: 3
-        hostilityChange: 0
-      - country: 3
-        trustChange: 1
-        faithChange: 2
-        hostilityChange: 0
-      - country: 2
-        trustChange: 3
-        faithChange: 4
-        hostilityChange: -1
-    - text: "Sularla birlikte ilerleyin, Leviathan\u2019\u0131 selamlay\u0131n"
-      globalEffects:
-      - country: 1
-        trustChange: -1
-        faithChange: -2
-        hostilityChange: 3
-      - country: 0
-        trustChange: -2
-        faithChange: -3
-        hostilityChange: 4
-      - country: 4
-        trustChange: -1
-        faithChange: -2
-        hostilityChange: 3
-      - country: 3
-        trustChange: -1
-        faithChange: -2
-        hostilityChange: 2
-      - country: 2
-        trustChange: 0
-        faithChange: -1
-        hostilityChange: 2
-  - id: global_02
-    name: 
-    sprite: {fileID: 0}
-    text: "Kahin: G\xF6ky\xFCz\xFC yar\u0131ld\u0131, i\xE7inden \u0131\u015F\u0131k
-      de\u011Fil karanl\u0131k s\u0131z\u0131yor. Uluslara ne s\xF6yleyeceksin?"
-    choices:
-    - text: "\u0130nan\xE7la birle\u015Fin"
-      globalEffects:
-      - country: 1
-        trustChange: 1
-        faithChange: 2
-        hostilityChange: -1
-      - country: 0
-        trustChange: 3
-        faithChange: 3
-        hostilityChange: -2
-      - country: 4
-        trustChange: 1
-        faithChange: 2
-        hostilityChange: -1
-      - country: 3
-        trustChange: 2
-        faithChange: 2
-        hostilityChange: -1
-      - country: 2
-        trustChange: 1
-        faithChange: 1
-        hostilityChange: 0
-    - text: "Sessiz kal\u0131n, halk\u0131 oyalay\u0131n"
-      globalEffects:
-      - country: 1
-        trustChange: -1
-        faithChange: -1
-        hostilityChange: 1
-      - country: 0
-        trustChange: -2
-        faithChange: -2
-        hostilityChange: 2
-      - country: 4
-        trustChange: 2
-        faithChange: 0
-        hostilityChange: 0
-      - country: 3
-        trustChange: -1
-        faithChange: 0
-        hostilityChange: 1
-      - country: 2
-        trustChange: 1
-        faithChange: 0
-        hostilityChange: 0
-    - text: "Karanl\u0131\u011F\u0131 kucaklay\u0131n"
-      globalEffects:
-      - country: 1
-        trustChange: -2
-        faithChange: 0
-        hostilityChange: 4
-      - country: 0
-        trustChange: -3
-        faithChange: -2
-        hostilityChange: 5
-      - country: 4
-        trustChange: 0
-        faithChange: -1
-        hostilityChange: 3
-      - country: 3
-        trustChange: -2
-        faithChange: -1
-        hostilityChange: 4
-      - country: 2
-        trustChange: -1
-        faithChange: 0
-        hostilityChange: 3
-  - id: global_03
-    name: 
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 25dc797d80fe4674ca18245702571643, type: 3}
     text: "Kahin: D\xFCnya bir yol ayr\u0131m\u0131nda. Hangi yoldan gideceksin?"
     choices:
     - text: "Bar\u0131\u015F\u0131 tesis et"
@@ -6161,7 +5946,7 @@ MonoBehaviour:
         hostilityChange: 4
   - id: global_04
     name: 
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: a492e079136183c4da41e40b058d8802, type: 3}
     text: "Kahin: Y\u0131ld\u0131zlar bir bir s\xF6n\xFCyor. I\u015F\u0131\u011F\u0131n
       olmad\u0131\u011F\u0131 yerde ne h\xFCk\xFCm s\xFCrer?"
     choices:
@@ -6233,7 +6018,7 @@ MonoBehaviour:
         hostilityChange: 1
   - id: global_05
     name: 
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: a612029496e2680458968367a64fa4c6, type: 3}
     text: "Kahin: D\xF6rd\xFCnc\xFC m\xFCh\xFCr de k\u0131r\u0131ld\u0131. Kehanetin
       son halkas\u0131 yakla\u015F\u0131yor. Nas\u0131l y\xF6n vereceksin?"
     choices:
