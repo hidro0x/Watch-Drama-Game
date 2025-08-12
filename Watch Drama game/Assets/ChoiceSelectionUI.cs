@@ -42,6 +42,21 @@ public class ChoiceSelectionUI : MonoBehaviour
     // Typewriter kontrolü için coroutine referansları
     private Coroutine nameTypewriterCoroutine;
     private Coroutine descriptionTypewriterCoroutine;
+    private void UpdateCharacterImageForNode(DialogueNode node)
+    {
+        if (characterImage == null) return;
+        if (node != null && node.isGlobalDialogue)
+        {
+            // Global diyalogda karakter görselini göstermeyelim
+            characterImage.enabled = false;
+        }
+        else
+        {
+            characterImage.sprite = node != null ? node.sprite : null;
+            characterImage.enabled = (characterImage.sprite != null);
+        }
+    }
+
 
     void Start()
     {
@@ -64,11 +79,7 @@ public class ChoiceSelectionUI : MonoBehaviour
         {
             this.dialogueNode = newDialogueNode;
             choiceSelectionImage.sprite = newDialogueNode.sprite;
-            if (characterImage != null)
-            {
-                characterImage.sprite = newDialogueNode.sprite;
-                characterImage.enabled = (newDialogueNode.sprite != null);
-            }
+            UpdateCharacterImageForNode(newDialogueNode);
             barPanel.SetActive(true);
             barUIController.UpdateBars();
             
@@ -178,11 +189,19 @@ public class ChoiceSelectionUI : MonoBehaviour
                 choicesPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad)
                     .OnComplete(() => {
                         // 3. Character image slides from right to center
-                        characterImage.rectTransform.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad)
-                            .OnComplete(() => {
-                                // 4. Start text reveal animations
-                                AnimateTextReveal();
-                            });
+        if (dialogueNode is DialogueNode dn && dn.isGlobalDialogue)
+        {
+            // Global diyalogda karakter görselini içeri getirmeden metinleri başlat
+            AnimateTextReveal();
+        }
+        else
+        {
+            characterImage.rectTransform.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad)
+                .OnComplete(() => {
+                    // 4. Start text reveal animations
+                    AnimateTextReveal();
+                });
+        }
                     });
             });
     }
@@ -269,11 +288,7 @@ public class ChoiceSelectionUI : MonoBehaviour
 
                             // Sprite ve görünürlük
                             choiceSelectionImage.sprite = ((DialogueNode)dialogueNode).sprite;
-                            if (characterImage != null)
-                            {
-                                characterImage.sprite = ((DialogueNode)dialogueNode).sprite;
-                                characterImage.enabled = (characterImage.sprite != null);
-                            }
+                            UpdateCharacterImageForNode((DialogueNode)dialogueNode);
 
                             // Arkaplan ve barlar
                             ApplyBackgroundForDialogue((DialogueNode)dialogueNode);
@@ -286,16 +301,26 @@ public class ChoiceSelectionUI : MonoBehaviour
                             }
                         }
 
-                        // 3. Character image teleports to left and slides back to center
-                        characterImage.rectTransform.anchoredPosition = new Vector2(-screenWidth, 0);
-                        characterImage.rectTransform.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad)
-                            .OnComplete(() => {
-                                // 4. Choices panel slides back up
-                                // Typewriter efektini choices panel yukarı çıkarken eşzamanlı başlat
-                                AnimateTextReveal();
-                                choicesPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad);
-                                isTransitioning = false;
-                            });
+                        // 3. Character image teleports to left and slides back to center (global değilse)
+                        if (dialogueNode is DialogueNode dn2 && dn2.isGlobalDialogue)
+                        {
+                            // Görseli içeri getirmeden metinleri başlat ve paneli yukarı çıkar
+                            AnimateTextReveal();
+                            choicesPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad);
+                            isTransitioning = false;
+                        }
+                        else
+                        {
+                            characterImage.rectTransform.anchoredPosition = new Vector2(-screenWidth, 0);
+                            characterImage.rectTransform.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad)
+                                .OnComplete(() => {
+                                    // 4. Choices panel slides back up
+                                    // Typewriter efektini choices panel yukarı çıkarken eşzamanlı başlat
+                                    AnimateTextReveal();
+                                    choicesPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad);
+                                    isTransitioning = false;
+                                });
+                        }
                     });
             });
     }
