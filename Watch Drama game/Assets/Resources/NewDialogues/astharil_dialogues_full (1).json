@@ -1,9 +1,10 @@
-[
+{
+  "mapType": "Astrahil",
+  "dialogues": [
   {
     "id": "astharil_01",
     "name": "Ruh Şifacısı Ihlira",
     "type": "normal",
-    "speaker": "Ruh Şifacısı Ihlira",
     "text": "Ruhun yorgun görünüyor. Şifa mı arıyorsun?",
     "options": [
       {
@@ -36,7 +37,6 @@
     "id": "astharil_02",
     "name": "Ruh Şifacısı Ihlira",
     "type": "normal",
-    "speaker": "Ruh Şifacısı Ihlira",
     "text": "Sessizlik içinde konuşanları duyabiliyor musun?",
     "options": [
       {
@@ -69,7 +69,6 @@
     "id": "astharil_03",
     "name": "Ruh Şifacısı Ihlira",
     "type": "normal",
-    "speaker": "Ruh Şifacısı Ihlira",
     "text": "Karanlık seni bulduğunda ne yaparsın?",
     "options": [
       {
@@ -102,7 +101,6 @@
     "id": "astharil_04",
     "name": "Sis Rahibi Thamor",
     "type": "normal",
-    "speaker": "Sis Rahibi Thamor",
     "text": "Sis her şeyi örter. Gerçeği görebiliyor musun?",
     "options": [
       {
@@ -135,7 +133,6 @@
     "id": "astharil_05",
     "name": "Sis Rahibi Thamor",
     "type": "normal",
-    "speaker": "Sis Rahibi Thamor",
     "text": "Adımlarını sessiz atıyorsun. Neden gizleniyorsun?",
     "options": [
       {
@@ -168,7 +165,6 @@
     "id": "astharil_06",
     "name": "Sis Rahibi Thamor",
     "type": "normal",
-    "speaker": "Sis Rahibi Thamor",
     "text": "Sis seni çağırdığında karşılık verir misin?",
     "options": [
       {
@@ -201,7 +197,6 @@
     "id": "astharil_07",
     "name": "Ay İzleyicisi Velun",
     "type": "normal",
-    "speaker": "Ay İzleyicisi Velun",
     "text": "Ay geceyi izlerken sen ne düşünürsün?",
     "options": [
       {
@@ -234,7 +229,6 @@
     "id": "astharil_08",
     "name": "Ay İzleyicisi Velun",
     "type": "normal",
-    "speaker": "Ay İzleyicisi Velun",
     "text": "Dolunay zamanı geldiğinde kim oluyorsun?",
     "options": [
       {
@@ -267,7 +261,6 @@
     "id": "astharil_09",
     "name": "Ay İzleyicisi Velun",
     "type": "normal",
-    "speaker": "Ay İzleyicisi Velun",
     "text": "Ay ışığında yürürken iz bırakır mısın?",
     "options": [
       {
@@ -296,4 +289,5 @@
       }
     ]
   }
-]
+  ]
+}

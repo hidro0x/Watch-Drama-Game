@@ -1,0 +1,344 @@
+[
+  {
+    "id": "global_01",
+    "name": "Kahin",
+    "type": "global",
+    "speaker": "Kahin",
+    "text": "Leviathan uyanıyor. Dalgalar kıtaları yutmak üzere. Ne yapacaksın?",
+    "choices": [
+      {
+        "text": "Barınak inşa edin, halkı koruyun",
+        "globalEffects": [
+          {
+            "country": "Agnari",
+            "trustChange": 2,
+            "faithChange": 3,
+            "hostilityChange": -1
+          },
+          {
+            "country": "Astrahil",
+            "trustChange": 3,
+            "faithChange": 4,
+            "hostilityChange": -2
+          },
+          {
+            "country": "Varnan",
+            "trustChange": 1,
+            "faithChange": 2,
+            "hostilityChange": -1
+          },
+          {
+            "country": "Theon",
+            "trustChange": 2,
+            "faithChange": 2,
+            "hostilityChange": -1
+          },
+          {
+            "country": "Solarya",
+            "trustChange": 3,
+            "faithChange": 3,
+            "hostilityChange": -2
+          }
+        ]
+      },
+      {
+        "text": "Dualar edin, denizi yatıştırmaya çalışın",
+        "globalEffects": [
+          {
+            "country": "Agnari",
+            "trustChange": 0,
+            "faithChange": 2,
+            "hostilityChange": 0
+          },
+          {
+            "country": "Astrahil",
+            "trustChange": 2,
+            "faithChange": 5,
+            "hostilityChange": -1
+          },
+          {
+            "country": "Varnan",
+            "trustChange": 1,
+            "faithChange": 3,
+            "hostilityChange": 0
+          },
+          {
+            "country": "Theon",
+            "trustChange": 1,
+            "faithChange": 2,
+            "hostilityChange": 0
+          },
+          {
+            "country": "Solarya",
+            "trustChange": 3,
+            "faithChange": 4,
+            "hostilityChange": -1
+          }
+        ]
+      },
+      {
+        "text": "Sularla birlikte ilerleyin, Leviathan’ı selamlayın",
+        "globalEffects": [
+          {
+            "country": "Agnari",
+            "trustChange": -1,
+            "faithChange": -2,
+            "hostilityChange": 3
+          },
+          {
+            "country": "Astrahil",
+            "trustChange": -2,
+            "faithChange": -3,
+            "hostilityChange": 4
+          },
+          {
+            "country": "Varnan",
+            "trustChange": -1,
+            "faithChange": -2,
+            "hostilityChange": 3
+          },
+          {
+            "country": "Theon",
+            "trustChange": -1,
+            "faithChange": -2,
+            "hostilityChange": 2
+          },
+          {
+            "country": "Solarya",
+            "trustChange": 0,
+            "faithChange": -1,
+            "hostilityChange": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "global_02",
+    "name": "Kahin",
+    "type": "global",
+    "speaker": "Kahin",
+    "text": "Gökyüzü yarıldı, içinden ışık değil karanlık sızıyor. Uluslara ne söyleyeceksin?",
+    "choices": [
+      {
+        "text": "İnançla birleşin",
+        "globalEffects": [
+          {
+            "country": "Agnari",
+            "trustChange": 1,
+            "faithChange": 2,
+            "hostilityChange": -1
+          },
+          {
+            "country": "Astrahil",
+            "trustChange": 3,
+            "faithChange": 3,
+            "hostilityChange": -2
+          },
+          {
+            "country": "Varnan",
+            "trustChange": 1,
+            "faithChange": 2,
+            "hostilityChange": -1
+          },
+          {
+            "country": "Theon",
+            "trustChange": 2,
+            "faithChange": 2,
+            "hostilityChange": -1
+          },
+          {
+            "country": "Solarya",
+            "trustChange": 1,
+            "faithChange": 1,
+            "hostilityChange": 0
+          }
+        ]
+      },
+      {
+        "text": "Sessiz kalın, halkı oyalayın",
+        "globalEffects": [
+          {
+            "country": "Agnari",
+            "trustChange": -1,
+            "faithChange": -1,
+            "hostilityChange": 1
+          },
+          {
+            "country": "Astrahil",
+            "trustChange": -2,
+            "faithChange": -2,
+            "hostilityChange": 2
+          },
+          {
+            "country": "Varnan",
+            "trustChange": 2,
+            "faithChange": 0,
+            "hostilityChange": 0
+          },
+          {
+            "country": "Theon",
+            "trustChange": -1,
+            "faithChange": 0,
+            "hostilityChange": 1
+          },
+          {
+            "country": "Solarya",
+            "trustChange": 1,
+            "faithChange": 0,
+            "hostilityChange": 0
+          }
+        ]
+      },
+      {
+        "text": "Karanlığı kucaklayın",
+        "globalEffects": [
+          {
+            "country": "Agnari",
+            "trustChange": -2,
+            "faithChange": 0,
+            "hostilityChange": 4
+          },
+          {
+            "country": "Astrahil",
+            "trustChange": -3,
+            "faithChange": -2,
+            "hostilityChange": 5
+          },
+          {
+            "country": "Varnan",
+            "trustChange": 0,
+            "faithChange": -1,
+            "hostilityChange": 3
+          },
+          {
+            "country": "Theon",
+            "trustChange": -2,
+            "faithChange": -1,
+            "hostilityChange": 4
+          },
+          {
+            "country": "Solarya",
+            "trustChange": -1,
+            "faithChange": 0,
+            "hostilityChange": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "global_03",
+    "name": "Kahin",
+    "type": "global",
+    "speaker": "Kahin",
+    "text": "Dünya bir yol ayrımında. Hangi yoldan gideceksin?",
+    "choices": [
+      {
+        "text": "Barışı tesis et",
+        "globalEffects": [
+          {
+            "country": "Agnari",
+            "trustChange": 4,
+            "faithChange": 3,
+            "hostilityChange": -2
+          },
+          {
+            "country": "Astrahil",
+            "trustChange": 3,
+            "faithChange": 4,
+            "hostilityChange": -1
+          },
+          {
+            "country": "Varnan",
+            "trustChange": 2,
+            "faithChange": 2,
+            "hostilityChange": -2
+          },
+          {
+            "country": "Theon",
+            "trustChange": 2,
+            "faithChange": 3,
+            "hostilityChange": -1
+          },
+          {
+            "country": "Solarya",
+            "trustChange": 3,
+            "faithChange": 3,
+            "hostilityChange": -2
+          }
+        ]
+      },
+      {
+        "text": "Ekonomik yaptırım uygula",
+        "globalEffects": [
+          {
+            "country": "Agnari",
+            "trustChange": -1,
+            "faithChange": 0,
+            "hostilityChange": 2
+          },
+          {
+            "country": "Astrahil",
+            "trustChange": 1,
+            "faithChange": 1,
+            "hostilityChange": 0
+          },
+          {
+            "country": "Varnan",
+            "trustChange": -2,
+            "faithChange": 0,
+            "hostilityChange": 3
+          },
+          {
+            "country": "Theon",
+            "trustChange": 0,
+            "faithChange": 1,
+            "hostilityChange": 1
+          },
+          {
+            "country": "Solarya",
+            "trustChange": -1,
+            "faithChange": 0,
+            "hostilityChange": 2
+          }
+        ]
+      },
+      {
+        "text": "Savaşa hazırlan",
+        "globalEffects": [
+          {
+            "country": "Agnari",
+            "trustChange": -3,
+            "faithChange": -2,
+            "hostilityChange": 5
+          },
+          {
+            "country": "Astrahil",
+            "trustChange": -2,
+            "faithChange": -1,
+            "hostilityChange": 4
+          },
+          {
+            "country": "Varnan",
+            "trustChange": -4,
+            "faithChange": -2,
+            "hostilityChange": 6
+          },
+          {
+            "country": "Theon",
+            "trustChange": -1,
+            "faithChange": -3,
+            "hostilityChange": 3
+          },
+          {
+            "country": "Solarya",
+            "trustChange": -2,
+            "faithChange": -2,
+            "hostilityChange": 4
+          }
+        ]
+      }
+    ]
+  }
+]

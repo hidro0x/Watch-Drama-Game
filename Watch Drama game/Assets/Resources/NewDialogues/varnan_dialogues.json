@@ -1,299 +1,104 @@
-[
-  {
-    "id": "varnan_01",
-    "name": "Varnan Gözcüsü",
-    "type": "normal",
-    "speaker": "Varnan Gözcüsü",
-    "text": "Varnan'ın gölgeleri seni izliyor. Neden geldin?",
-    "options": [
-      {
-        "text": "Barış için geldim.",
-        "effects": {
-          "faith": 4,
-          "trust": 3,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Savaş için geldim.",
-        "effects": {
-          "faith": 2,
-          "trust": 1,
-          "hostility": 5
-        }
-      },
-      {
-        "text": "Sadece geçiyordum.",
-        "effects": {
-          "faith": 1,
-          "trust": 2,
-          "hostility": 1
-        }
-      }
-    ]
-  },
-  {
-    "id": "varnan_02",
-    "name": "Varnan Gözcüsü",
-    "type": "normal",
-    "speaker": "Varnan Gözcüsü",
-    "text": "Burada yabancılara nadiren güvenilir. Neyi kanıtlayabilirsin?",
-    "options": [
-      {
-        "text": "Sadakatimi sunabilirim.",
-        "effects": {
-          "faith": 5,
-          "trust": 2,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Gücümü gösterebilirim.",
-        "effects": {
-          "faith": 3,
-          "trust": 1,
-          "hostility": 3
-        }
-      },
-      {
-        "text": "Hiçbir şey kanıtlamam gerekmiyor.",
-        "effects": {
-          "faith": 0,
-          "trust": 0,
-          "hostility": 4
-        }
-      }
-    ]
-  },
-  {
-    "id": "varnan_03",
-    "name": "Varnan Gözcüsü",
-    "type": "normal",
-    "speaker": "Varnan Gözcüsü",
-    "text": "Rüzgar değiştiğinde, dost mu kalacaksın düşman mı?",
-    "options": [
-      {
-        "text": "Varnan’a sadığım.",
-        "effects": {
-          "faith": 4,
-          "trust": 4,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Duruma göre karar veririm.",
-        "effects": {
-          "faith": 2,
-          "trust": 1,
-          "hostility": 2
-        }
-      },
-      {
-        "text": "Kimseye sadakat borcum yok.",
-        "effects": {
-          "faith": 0,
-          "trust": 0,
-          "hostility": 5
-        }
-      }
-    ]
-  },
-  {
-    "id": "varnan_04",
-    "name": "Yaslı Savaşçı Terek",
-    "type": "normal",
-    "speaker": "Yaslı Savaşçı Terek",
-    "text": "Kılıcın olmadan bu topraklarda uzun süre kalamazsın.",
-    "options": [
-      {
-        "text": "Kendimi savunabilirim.",
-        "effects": {
-          "faith": 2,
-          "trust": 3,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Kılıçsız da barış sağlanır.",
-        "effects": {
-          "faith": 3,
-          "trust": 2,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Benimle uğraşma yaşlı adam.",
-        "effects": {
-          "faith": 0,
-          "trust": 0,
-          "hostility": 5
-        }
-      }
-    ]
-  },
-  {
-    "id": "varnan_05",
-    "name": "Yaslı Savaşçı Terek",
-    "type": "normal",
-    "speaker": "Yaslı Savaşçı Terek",
-    "text": "Gençler artık savaşmayı bilmiyor. Sen farklı mısın?",
-    "options": [
-      {
-        "text": "Savaşın anlamını sorguluyorum.",
-        "effects": {
-          "faith": 3,
-          "trust": 2,
-          "hostility": 1
-        }
-      },
-      {
-        "text": "Kan dökmekten çekinmem.",
-        "effects": {
-          "faith": 1,
-          "trust": 0,
-          "hostility": 5
-        }
-      },
-      {
-        "text": "Savaşsız bir gelecek hayalim.",
-        "effects": {
-          "faith": 4,
-          "trust": 3,
-          "hostility": 0
-        }
-      }
-    ]
-  },
-  {
-    "id": "varnan_06",
-    "name": "Yaslı Savaşçı Terek",
-    "type": "normal",
-    "speaker": "Yaslı Savaşçı Terek",
-    "text": "Gölgeler seni yargılar. Hazır mısın?",
-    "options": [
-      {
-        "text": "Kaderimle yüzleşirim.",
-        "effects": {
-          "faith": 4,
-          "trust": 2,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Yargılayanları yargılarım.",
-        "effects": {
-          "faith": 1,
-          "trust": 0,
-          "hostility": 4
-        }
-      },
-      {
-        "text": "Gölgelerden korkmam.",
-        "effects": {
-          "faith": 2,
-          "trust": 1,
-          "hostility": 2
-        }
-      }
-    ]
-  },
-  {
-    "id": "varnan_07",
-    "name": "Kamp Ateşi Anası Milna",
-    "type": "normal",
-    "speaker": "Kamp Ateşi Anası Milna",
-    "text": "Ateşin başında herkesin hikayesi eşit değer taşır. Seninki nedir?",
-    "options": [
-      {
-        "text": "Barış için yola çıktım.",
-        "effects": {
-          "faith": 5,
-          "trust": 3,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Hikayem acı ve kanla dolu.",
-        "effects": {
-          "faith": 2,
-          "trust": 2,
-          "hostility": 2
-        }
-      },
-      {
-        "text": "Anlatmak istemem.",
-        "effects": {
-          "faith": 0,
-          "trust": 0,
-          "hostility": 3
-        }
-      }
-    ]
-  },
-  {
-    "id": "varnan_08",
-    "name": "Kamp Ateşi Anası Milna",
-    "type": "normal",
-    "speaker": "Kamp Ateşi Anası Milna",
-    "text": "Geçmişin küllerinden kim doğar, bilmezsin. Sen hangi yandansın?",
-    "options": [
-      {
-        "text": "Yıkılanı onarmaya geldim.",
-        "effects": {
-          "faith": 4,
-          "trust": 3,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Geçmişi unutmaya geldim.",
-        "effects": {
-          "faith": 2,
-          "trust": 2,
-          "hostility": 1
-        }
-      },
-      {
-        "text": "Küller bile bana ait değil.",
-        "effects": {
-          "faith": 1,
-          "trust": 0,
-          "hostility": 4
-        }
-      }
-    ]
-  },
-  {
-    "id": "varnan_09",
-    "name": "Kamp Ateşi Anası Milna",
-    "type": "normal",
-    "speaker": "Kamp Ateşi Anası Milna",
-    "text": "Her ateş bir öyküyü taşır. Seninle paylaşmalı mıyım?",
-    "options": [
-      {
-        "text": "Lütfen, sözlerini duymak isterim.",
-        "effects": {
-          "faith": 5,
-          "trust": 4,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Öykülerin zamanı geçti.",
-        "effects": {
-          "faith": 0,
-          "trust": 1,
-          "hostility": 3
-        }
-      },
-      {
-        "text": "Sadece sessizliğe ihtiyacım var.",
-        "effects": {
-          "faith": 2,
-          "trust": 1,
-          "hostility": 1
-        }
-      }
-    ]
-  }
-]
+{
+  "mapType": "Varnan",
+  "dialogues": [
+    {
+      "id": "varnan_01",
+      "name": "Varnan Gözcüsü",
+      "type": "normal",
+      "text": "Varnan'ın gölgeleri seni izliyor. Neden geldin?",
+      "options": [
+        { "text": "Barış için geldim.", "effects": { "faith": 4, "trust": 3, "hostility": 0 } },
+        { "text": "Savaş için geldim.", "effects": { "faith": 2, "trust": 1, "hostility": 5 } },
+        { "text": "Sadece geçiyordum.", "effects": { "faith": 1, "trust": 2, "hostility": 1 } }
+      ]
+    },
+    {
+      "id": "varnan_02",
+      "name": "Varnan Gözcüsü",
+      "type": "normal",
+      "text": "Burada yabancılara nadiren güvenilir. Neyi kanıtlayabilirsin?",
+      "options": [
+        { "text": "Sadakatimi sunabilirim.", "effects": { "faith": 5, "trust": 2, "hostility": 0 } },
+        { "text": "Gücümü gösterebilirim.", "effects": { "faith": 3, "trust": 1, "hostility": 3 } },
+        { "text": "Hiçbir şey kanıtlamam gerekmiyor.", "effects": { "faith": 0, "trust": 0, "hostility": 4 } }
+      ]
+    },
+    {
+      "id": "varnan_03",
+      "name": "Varnan Gözcüsü",
+      "type": "normal",
+      "text": "Rüzgar değiştiğinde, dost mu kalacaksın düşman mı?",
+      "options": [
+        { "text": "Varnan’a sadığım.", "effects": { "faith": 4, "trust": 4, "hostility": 0 } },
+        { "text": "Duruma göre karar veririm.", "effects": { "faith": 2, "trust": 1, "hostility": 2 } },
+        { "text": "Kimseye sadakat borcum yok.", "effects": { "faith": 0, "trust": 0, "hostility": 5 } }
+      ]
+    },
+    {
+      "id": "varnan_04",
+      "name": "Yaslı Savaşçı Terek",
+      "type": "normal",
+      "text": "Kılıcın olmadan bu topraklarda uzun süre kalamazsın.",
+      "options": [
+        { "text": "Kendimi savunabilirim.", "effects": { "faith": 2, "trust": 3, "hostility": 0 } },
+        { "text": "Kılıçsız da barış sağlanır.", "effects": { "faith": 3, "trust": 2, "hostility": 0 } },
+        { "text": "Benimle uğraşma yaşlı adam.", "effects": { "faith": 0, "trust": 0, "hostility": 5 } }
+      ]
+    },
+    {
+      "id": "varnan_05",
+      "name": "Yaslı Savaşçı Terek",
+      "type": "normal",
+      "text": "Gençler artık savaşmayı bilmiyor. Sen farklı mısın?",
+      "options": [
+        { "text": "Savaşın anlamını sorguluyorum.", "effects": { "faith": 3, "trust": 2, "hostility": 1 } },
+        { "text": "Kan dökmekten çekinmem.", "effects": { "faith": 1, "trust": 0, "hostility": 5 } },
+        { "text": "Savaşsız bir gelecek hayalim.", "effects": { "faith": 4, "trust": 3, "hostility": 0 } }
+      ]
+    },
+    {
+      "id": "varnan_06",
+      "name": "Yaslı Savaşçı Terek",
+      "type": "normal",
+      "text": "Gölgeler seni yargılar. Hazır mısın?",
+      "options": [
+        { "text": "Kaderimle yüzleşirim.", "effects": { "faith": 4, "trust": 2, "hostility": 0 } },
+        { "text": "Yargılayanları yargılarım.", "effects": { "faith": 1, "trust": 0, "hostility": 4 } },
+        { "text": "Gölgelerden korkmam.", "effects": { "faith": 2, "trust": 1, "hostility": 2 } }
+      ]
+    },
+    {
+      "id": "varnan_07",
+      "name": "Kamp Ateşi Anası Milna",
+      "type": "normal",
+      "text": "Ateşin başında herkesin hikayesi eşit değer taşır. Seninki nedir?",
+      "options": [
+        { "text": "Barış için yola çıktım.", "effects": { "faith": 5, "trust": 3, "hostility": 0 } },
+        { "text": "Hikayem acı ve kanla dolu.", "effects": { "faith": 2, "trust": 2, "hostility": 2 } },
+        { "text": "Anlatmak istemem.", "effects": { "faith": 0, "trust": 0, "hostility": 3 } }
+      ]
+    },
+    {
+      "id": "varnan_08",
+      "name": "Kamp Ateşi Anası Milna",
+      "type": "normal",
+      "text": "Geçmişin küllerinden kim doğar, bilmezsin. Sen hangi yandansın?",
+      "options": [
+        { "text": "Yıkılanı onarmaya geldim.", "effects": { "faith": 4, "trust": 3, "hostility": 0 } },
+        { "text": "Geçmişi unutmaya geldim.", "effects": { "faith": 2, "trust": 2, "hostility": 1 } },
+        { "text": "Küller bile bana ait değil.", "effects": { "faith": 1, "trust": 0, "hostility": 4 } }
+      ]
+    },
+    {
+      "id": "varnan_09",
+      "name": "Kamp Ateşi Anası Milna",
+      "type": "normal",
+      "text": "Her ateş bir öyküyü taşır. Seninle paylaşmalı mıyım?",
+      "options": [
+        { "text": "Lütfen, sözlerini duymak isterim.", "effects": { "faith": 5, "trust": 4, "hostility": 0 } },
+        { "text": "Öykülerin zamanı geçti.", "effects": { "faith": 0, "trust": 1, "hostility": 3 } },
+        { "text": "Sadece sessizliğe ihtiyacım var.", "effects": { "faith": 2, "trust": 1, "hostility": 1 } }
+      ]
+    }
+  ]
+}

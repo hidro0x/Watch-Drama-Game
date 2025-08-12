@@ -113,8 +113,10 @@ public class JsonDialogueImporter : MonoBehaviour
         DialogueNode dialogueNode = new DialogueNode
         {
             id = jsonData.id,
-            name = jsonData.name ?? jsonData.speaker, // name yoksa speaker'ı kullan
-            text = $"{jsonData.speaker}: {jsonData.text}",
+            // name öncelikli; yoksa speaker kullanılır
+            name = !string.IsNullOrEmpty(jsonData.name) ? jsonData.name : jsonData.speaker,
+            // Text'e konuşmacı adı eklenmez; yalnızca diyalog metni yazılır
+            text = jsonData.text,
             choices = new List<DialogueChoice>()
         };
         

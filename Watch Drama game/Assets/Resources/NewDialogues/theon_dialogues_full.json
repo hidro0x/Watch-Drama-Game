@@ -1,299 +1,104 @@
-[
-  {
-    "id": "theon_01",
-    "name": "Yaşlı Bilge Elenor",
-    "type": "normal",
-    "speaker": "Yaşlı Bilge Elenor",
-    "text": "Theon tarafsız kalmalı mı, karar senin ellerinde mi?",
-    "options": [
-      {
-        "text": "Tarafsızlık barışı getirir.",
-        "effects": {
-          "faith": 4,
-          "trust": 3,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Tarafsızlık ihanettir.",
-        "effects": {
-          "faith": 2,
-          "trust": 0,
-          "hostility": 4
-        }
-      },
-      {
-        "text": "Benim kararım değil.",
-        "effects": {
-          "faith": 1,
-          "trust": 2,
-          "hostility": 1
-        }
-      }
-    ]
-  },
-  {
-    "id": "theon_02",
-    "name": "Yaşlı Bilge Elenor",
-    "type": "normal",
-    "speaker": "Yaşlı Bilge Elenor",
-    "text": "Bilgelik mi arıyorsun yoksa sadece geçip mi gidiyorsun?",
-    "options": [
-      {
-        "text": "Bilgelik için geldim.",
-        "effects": {
-          "faith": 5,
-          "trust": 2,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Sadece yoluma devam ediyorum.",
-        "effects": {
-          "faith": 2,
-          "trust": 2,
-          "hostility": 1
-        }
-      },
-      {
-        "text": "Burada zaman kaybediyorum.",
-        "effects": {
-          "faith": 0,
-          "trust": 0,
-          "hostility": 3
-        }
-      }
-    ]
-  },
-  {
-    "id": "theon_03",
-    "name": "Yaşlı Bilge Elenor",
-    "type": "normal",
-    "speaker": "Yaşlı Bilge Elenor",
-    "text": "Bir karar vermen gerek. Taraf mı seçeceksin?",
-    "options": [
-      {
-        "text": "Adaletin tarafındayım.",
-        "effects": {
-          "faith": 4,
-          "trust": 3,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Güçlü olanın yanındayım.",
-        "effects": {
-          "faith": 1,
-          "trust": 1,
-          "hostility": 3
-        }
-      },
-      {
-        "text": "Taraf tutmam.",
-        "effects": {
-          "faith": 2,
-          "trust": 2,
-          "hostility": 1
-        }
-      }
-    ]
-  },
-  {
-    "id": "theon_04",
-    "name": "Teknokrat Gözlemci Nuro",
-    "type": "normal",
-    "speaker": "Teknokrat Gözlemci Nuro",
-    "text": "Veriler seni uyarıyor: burada bulunman normal değil.",
-    "options": [
-      {
-        "text": "Gözlem için geldim.",
-        "effects": {
-          "faith": 3,
-          "trust": 3,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Yanlışlıkla düştüm buraya.",
-        "effects": {
-          "faith": 1,
-          "trust": 2,
-          "hostility": 1
-        }
-      },
-      {
-        "text": "Sizi izlemeye geldim.",
-        "effects": {
-          "faith": 0,
-          "trust": 0,
-          "hostility": 4
-        }
-      }
-    ]
-  },
-  {
-    "id": "theon_05",
-    "name": "Teknokrat Gözlemci Nuro",
-    "type": "normal",
-    "speaker": "Teknokrat Gözlemci Nuro",
-    "text": "Veriye erişim iznin yok. Ama niyetin nedir?",
-    "options": [
-      {
-        "text": "Sadece bilmek istiyorum.",
-        "effects": {
-          "faith": 3,
-          "trust": 2,
-          "hostility": 1
-        }
-      },
-      {
-        "text": "Bilgiyi çalmaya geldim.",
-        "effects": {
-          "faith": 0,
-          "trust": 0,
-          "hostility": 5
-        }
-      },
-      {
-        "text": "Merakıma yenildim.",
-        "effects": {
-          "faith": 2,
-          "trust": 1,
-          "hostility": 2
-        }
-      }
-    ]
-  },
-  {
-    "id": "theon_06",
-    "name": "Teknokrat Gözlemci Nuro",
-    "type": "normal",
-    "speaker": "Teknokrat Gözlemci Nuro",
-    "text": "Theon'un hesaplamaları seni kayıtsız gösteriyor. Açıkla kendini.",
-    "options": [
-      {
-        "text": "Kayıtlı olmam mümkün değil.",
-        "effects": {
-          "faith": 2,
-          "trust": 1,
-          "hostility": 2
-        }
-      },
-      {
-        "text": "Sistemin dışındanım.",
-        "effects": {
-          "faith": 3,
-          "trust": 1,
-          "hostility": 1
-        }
-      },
-      {
-        "text": "Kayıtsız kalmak özgürlüktür.",
-        "effects": {
-          "faith": 4,
-          "trust": 2,
-          "hostility": 0
-        }
-      }
-    ]
-  },
-  {
-    "id": "theon_07",
-    "name": "Konsey Sözcüsü Tharak",
-    "type": "normal",
-    "speaker": "Konsey Sözcüsü Tharak",
-    "text": "Konsey seni tanımıyor. Neden kapımıza geldin?",
-    "options": [
-      {
-        "text": "Yardımınıza ihtiyacım var.",
-        "effects": {
-          "faith": 4,
-          "trust": 3,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Sizi uyarmaya geldim.",
-        "effects": {
-          "faith": 3,
-          "trust": 2,
-          "hostility": 1
-        }
-      },
-      {
-        "text": "Konseyin zamanı doldu.",
-        "effects": {
-          "faith": 0,
-          "trust": 0,
-          "hostility": 5
-        }
-      }
-    ]
-  },
-  {
-    "id": "theon_08",
-    "name": "Konsey Sözcüsü Tharak",
-    "type": "normal",
-    "speaker": "Konsey Sözcüsü Tharak",
-    "text": "Sözlerin etkili olabilir. Hangi dili konuşacaksın?",
-    "options": [
-      {
-        "text": "Gerçeğin diliyle.",
-        "effects": {
-          "faith": 5,
-          "trust": 3,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Diplomasiyle.",
-        "effects": {
-          "faith": 3,
-          "trust": 2,
-          "hostility": 1
-        }
-      },
-      {
-        "text": "Tehditlerle.",
-        "effects": {
-          "faith": 0,
-          "trust": 0,
-          "hostility": 5
-        }
-      }
-    ]
-  },
-  {
-    "id": "theon_09",
-    "name": "Konsey Sözcüsü Tharak",
-    "type": "normal",
-    "speaker": "Konsey Sözcüsü Tharak",
-    "text": "Konseyin kararları sorgulanmaz, ama bugün bir istisna olabilir.",
-    "options": [
-      {
-        "text": "Konseyin yanında yer alacağım.",
-        "effects": {
-          "faith": 4,
-          "trust": 4,
-          "hostility": 0
-        }
-      },
-      {
-        "text": "Kararlarınızı gözden geçirin.",
-        "effects": {
-          "faith": 2,
-          "trust": 1,
-          "hostility": 2
-        }
-      },
-      {
-        "text": "Artık söz sırası bende.",
-        "effects": {
-          "faith": 1,
-          "trust": 0,
-          "hostility": 4
-        }
-      }
-    ]
-  }
-]
+{
+  "mapType": "Theon",
+  "dialogues": [
+    {
+      "id": "theon_01",
+      "name": "Yaşlı Bilge Elenor",
+      "type": "normal",
+      "text": "Theon tarafsız kalmalı mı, karar senin ellerinde mi?",
+      "options": [
+        { "text": "Tarafsızlık barışı getirir.", "effects": { "faith": 4, "trust": 3, "hostility": 0 } },
+        { "text": "Tarafsızlık ihanettir.", "effects": { "faith": 2, "trust": 0, "hostility": 4 } },
+        { "text": "Benim kararım değil.", "effects": { "faith": 1, "trust": 2, "hostility": 1 } }
+      ]
+    },
+    {
+      "id": "theon_02",
+      "name": "Yaşlı Bilge Elenor",
+      "type": "normal",
+      "text": "Bilgelik mi arıyorsun yoksa sadece geçip mi gidiyorsun?",
+      "options": [
+        { "text": "Bilgelik için geldim.", "effects": { "faith": 5, "trust": 2, "hostility": 0 } },
+        { "text": "Sadece yoluma devam ediyorum.", "effects": { "faith": 2, "trust": 2, "hostility": 1 } },
+        { "text": "Burada zaman kaybediyorum.", "effects": { "faith": 0, "trust": 0, "hostility": 3 } }
+      ]
+    },
+    {
+      "id": "theon_03",
+      "name": "Yaşlı Bilge Elenor",
+      "type": "normal",
+      "text": "Bir karar vermen gerek. Taraf mı seçeceksin?",
+      "options": [
+        { "text": "Adaletin tarafındayım.", "effects": { "faith": 4, "trust": 3, "hostility": 0 } },
+        { "text": "Güçlü olanın yanındayım.", "effects": { "faith": 1, "trust": 1, "hostility": 3 } },
+        { "text": "Taraf tutmam.", "effects": { "faith": 2, "trust": 2, "hostility": 1 } }
+      ]
+    },
+    {
+      "id": "theon_04",
+      "name": "Teknokrat Gözlemci Nuro",
+      "type": "normal",
+      "text": "Veriler seni uyarıyor: burada bulunman normal değil.",
+      "options": [
+        { "text": "Gözlem için geldim.", "effects": { "faith": 3, "trust": 3, "hostility": 0 } },
+        { "text": "Yanlışlıkla düştüm buraya.", "effects": { "faith": 1, "trust": 2, "hostility": 1 } },
+        { "text": "Sizi izlemeye geldim.", "effects": { "faith": 0, "trust": 0, "hostility": 4 } }
+      ]
+    },
+    {
+      "id": "theon_05",
+      "name": "Teknokrat Gözlemci Nuro",
+      "type": "normal",
+      "text": "Veriye erişim iznin yok. Ama niyetin nedir?",
+      "options": [
+        { "text": "Sadece bilmek istiyorum.", "effects": { "faith": 3, "trust": 2, "hostility": 1 } },
+        { "text": "Bilgiyi çalmaya geldim.", "effects": { "faith": 0, "trust": 0, "hostility": 5 } },
+        { "text": "Merakıma yenildim.", "effects": { "faith": 2, "trust": 1, "hostility": 2 } }
+      ]
+    },
+    {
+      "id": "theon_06",
+      "name": "Teknokrat Gözlemci Nuro",
+      "type": "normal",
+      "text": "Theon'un hesaplamaları seni kayıtsız gösteriyor. Açıkla kendini.",
+      "options": [
+        { "text": "Kayıtlı olmam mümkün değil.", "effects": { "faith": 2, "trust": 1, "hostility": 2 } },
+        { "text": "Sistemin dışındanım.", "effects": { "faith": 3, "trust": 1, "hostility": 1 } },
+        { "text": "Kayıtsız kalmak özgürlüktür.", "effects": { "faith": 4, "trust": 2, "hostility": 0 } }
+      ]
+    },
+    {
+      "id": "theon_07",
+      "name": "Konsey Sözcüsü Tharak",
+      "type": "normal",
+      "text": "Konsey seni tanımıyor. Neden kapımıza geldin?",
+      "options": [
+        { "text": "Yardımınıza ihtiyacım var.", "effects": { "faith": 4, "trust": 3, "hostility": 0 } },
+        { "text": "Sizi uyarmaya geldim.", "effects": { "faith": 3, "trust": 2, "hostility": 1 } },
+        { "text": "Konseyin zamanı doldu.", "effects": { "faith": 0, "trust": 0, "hostility": 5 } }
+      ]
+    },
+    {
+      "id": "theon_08",
+      "name": "Konsey Sözcüsü Tharak",
+      "type": "normal",
+      "text": "Sözlerin etkili olabilir. Hangi dili konuşacaksın?",
+      "options": [
+        { "text": "Gerçeğin diliyle.", "effects": { "faith": 5, "trust": 3, "hostility": 0 } },
+        { "text": "Diplomasiyle.", "effects": { "faith": 3, "trust": 2, "hostility": 1 } },
+        { "text": "Tehditlerle.", "effects": { "faith": 0, "trust": 0, "hostility": 5 } }
+      ]
+    },
+    {
+      "id": "theon_09",
+      "name": "Konsey Sözcüsü Tharak",
+      "type": "normal",
+      "text": "Konseyin kararları sorgulanmaz, ama bugün bir istisna olabilir.",
+      "options": [
+        { "text": "Konseyin yanında yer alacağım.", "effects": { "faith": 4, "trust": 4, "hostility": 0 } },
+        { "text": "Kararlarınızı gözden geçirin.", "effects": { "faith": 2, "trust": 1, "hostility": 2 } },
+        { "text": "Artık söz sırası bende.", "effects": { "faith": 1, "trust": 0, "hostility": 4 } }
+      ]
+    }
+  ]
+}

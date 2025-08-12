@@ -20,6 +20,8 @@ public class ChoiceSelectionUI : MonoBehaviour
     [SerializeField] private Image backgroundImage;
 
     private Node dialogueNode;
+    private DialogueNode pendingDialogueNode; // Gelecek diyalogu geçiş sırasında uygulamak için
+    private bool isTransitioning = false; // Çıkış/giriş animasyonu sırasında kilit
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private RectTransform bottomPanel;
 
@@ -52,36 +54,48 @@ public class ChoiceSelectionUI : MonoBehaviour
             bottomPanel.anchoredPosition = new Vector2(0, 0);
     }
 
-    public void ShowUI(DialogueNode dialogueNode)
+    public void ShowUI(DialogueNode newDialogueNode)
     {
         bool isFirstTime = !hasBeenInitialized;
         
         gameObject.SetActive(true);
-        this.dialogueNode = dialogueNode;
-        choiceSelectionImage.sprite = dialogueNode.sprite;
-        if (characterImage != null)
+        // İlk açılışta içerik doğrudan set edilir (zaten ekran dışından giriyor)
+        if (isFirstTime)
         {
-            characterImage.sprite = dialogueNode.sprite;
-            characterImage.enabled = (dialogueNode.sprite != null);
+            this.dialogueNode = newDialogueNode;
+            choiceSelectionImage.sprite = newDialogueNode.sprite;
+            if (characterImage != null)
+            {
+                characterImage.sprite = newDialogueNode.sprite;
+                characterImage.enabled = (newDialogueNode.sprite != null);
+            }
+            barPanel.SetActive(true);
+            barUIController.UpdateBars();
+            
+            // Arkaplan seçimi
+            ApplyBackgroundForDialogue(newDialogueNode);
         }
-        barPanel.SetActive(true);
-        barUIController.UpdateBars();
-        
-        // Arkaplan seçimi
-        ApplyBackgroundForDialogue(dialogueNode);
+        else
+        {
+            // Sonraki içerik hazırda bekletilir, animasyon sırasında uygulanır
+            pendingDialogueNode = newDialogueNode;
+        }
         
         // Aktif typewriter'ları durdur ve metinleri sıfırla (skip + reset)
         StopTypewriterCoroutines();
         ResetTypewriterTexts();
         
         // Global diyalog kontrolü
-        if (dialogueNode.isGlobalDialogue)
+        if (!isFirstTime && pendingDialogueNode != null && pendingDialogueNode.isGlobalDialogue)
         {
             Debug.Log("Global diyalog gösteriliyor...");
             // Global diyalog için özel işlemler burada yapılabilir
         }
         
-        SetChoices(dialogueNode.choices);
+        if (isFirstTime)
+        {
+            SetChoices(((DialogueNode)dialogueNode).choices);
+        }
         
         if (isFirstTime)
         {
@@ -96,8 +110,11 @@ public class ChoiceSelectionUI : MonoBehaviour
         }
         else
         {
-            // Panel zaten açıksa sadece choice panel animasyonu
-            AnimateChoicePanel();
+            // Panel zaten açıksa: Animasyon dışarı -> içerik güncelle -> içeri
+            if (!isTransitioning)
+            {
+                AnimateChoicePanel();
+            }
         }
     }
 
@@ -228,6 +245,9 @@ public class ChoiceSelectionUI : MonoBehaviour
 
     public void AnimateChoicePanel()
     {
+        if (isTransitioning) return;
+        isTransitioning = true;
+
         // Yeni panele geçmeden önce: stop + reset
         StopTypewriterCoroutines();
         ResetTypewriterTexts();
@@ -237,16 +257,35 @@ public class ChoiceSelectionUI : MonoBehaviour
         
         choicesPanel.DOAnchorPos(new Vector2(0, -screenHeight), ANIMATION_DURATION).SetEase(Ease.InQuad)
             .OnComplete(() => {
-                // Refresh choices
-                if (dialogueNode is DialogueNode dialogueNodeCast)
-                {
-                    SetChoices(dialogueNodeCast.choices);
-                }
-                
                 // 2. Character image slides out to right
                 float screenWidth = Screen.width * SCREEN_OFFSET_MULTIPLIER;
                 characterImage.rectTransform.DOAnchorPos(new Vector2(screenWidth, 0), ANIMATION_DURATION).SetEase(Ease.InQuad)
                     .OnComplete(() => {
+                        // İçerik değişimini EKRAN DIŞINDAYKEN yap
+                        if (pendingDialogueNode != null)
+                        {
+                            this.dialogueNode = pendingDialogueNode;
+                            pendingDialogueNode = null;
+
+                            // Sprite ve görünürlük
+                            choiceSelectionImage.sprite = ((DialogueNode)dialogueNode).sprite;
+                            if (characterImage != null)
+                            {
+                                characterImage.sprite = ((DialogueNode)dialogueNode).sprite;
+                                characterImage.enabled = (characterImage.sprite != null);
+                            }
+
+                            // Arkaplan ve barlar
+                            ApplyBackgroundForDialogue((DialogueNode)dialogueNode);
+                            barUIController.UpdateBars();
+
+                            // Yeni seçimleri set et
+                            if (dialogueNode is DialogueNode dn)
+                            {
+                                SetChoices(dn.choices);
+                            }
+                        }
+
                         // 3. Character image teleports to left and slides back to center
                         characterImage.rectTransform.anchoredPosition = new Vector2(-screenWidth, 0);
                         characterImage.rectTransform.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad)
@@ -255,6 +294,7 @@ public class ChoiceSelectionUI : MonoBehaviour
                                 // Typewriter efektini choices panel yukarı çıkarken eşzamanlı başlat
                                 AnimateTextReveal();
                                 choicesPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad);
+                                isTransitioning = false;
                             });
                     });
             });
