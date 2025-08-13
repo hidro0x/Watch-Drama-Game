@@ -300,6 +300,11 @@ public class ChoiceSelectionUI : MonoBehaviour
 
                             // Arkaplan ve barlar
                             ApplyBackgroundForDialogue((DialogueNode)dialogueNode);
+                            // Choice slotlarını resetle
+                            for (int i = 0; i < choiceButtonSlotList.Count; i++)
+                            {
+                                choiceButtonSlotList[i].ResetVisualState();
+                            }
                             if (barUIController != null)
                             {
                                 var activeMap = MapManager.Instance != null ? MapManager.Instance.GetCurrentMap() : (MapType?)null;
@@ -346,6 +351,7 @@ public class ChoiceSelectionUI : MonoBehaviour
         for (int i = 0; i < choices.Count; i++)
         {
             choiceButtonSlotList[i].SetChoice(choices[i]);
+            choiceButtonSlotList[i].ResetVisualState();
         }
     }
 
