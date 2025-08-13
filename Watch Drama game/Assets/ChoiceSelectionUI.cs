@@ -81,7 +81,15 @@ public class ChoiceSelectionUI : MonoBehaviour
             choiceSelectionImage.sprite = newDialogueNode.sprite;
             UpdateCharacterImageForNode(newDialogueNode);
             barPanel.SetActive(true);
-            barUIController.UpdateBars();
+            if (barUIController != null)
+            {
+                var activeMap = MapManager.Instance != null ? MapManager.Instance.GetCurrentMap() : (MapType?)null;
+                if (activeMap.HasValue)
+                {
+                    barUIController.bar.Initialize(activeMap.Value);
+                }
+                barUIController.bar.Refresh();
+            }
             
             // Arkaplan seçimi
             ApplyBackgroundForDialogue(newDialogueNode);
@@ -292,7 +300,15 @@ public class ChoiceSelectionUI : MonoBehaviour
 
                             // Arkaplan ve barlar
                             ApplyBackgroundForDialogue((DialogueNode)dialogueNode);
-                            barUIController.UpdateBars();
+                            if (barUIController != null)
+                            {
+                                var activeMap = MapManager.Instance != null ? MapManager.Instance.GetCurrentMap() : (MapType?)null;
+                                if (activeMap.HasValue)
+                                {
+                                    barUIController.bar.Initialize(activeMap.Value);
+                                }
+                                barUIController.bar.Refresh();
+                            }
 
                             // Yeni seçimleri set et
                             if (dialogueNode is DialogueNode dn)

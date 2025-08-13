@@ -4,36 +4,44 @@ using UnityEngine.UI;
 public class BarUIController : MonoBehaviour
 {
     [Header("Barlar")]
-    public Slider trustSlider;
-    public Slider faithSlider;
-    public Slider hostilitySlider;
+    public BarSlot_UI bar;
 
     private void Start()
     {
         
-        // Başlangıçta değerleri güncelle
-        UpdateBars();
         // Evente abone ol
         GameManager.OnChoiceMade += OnChoiceMadeHandler;
+        MapManager.OnMapSelected += OnMapSelectedHandler;
     }
 
     private void OnDestroy()
     {
         GameManager.OnChoiceMade -= OnChoiceMadeHandler;
+        MapManager.OnMapSelected -= OnMapSelectedHandler;
     }
 
     private void OnChoiceMadeHandler(ChoiceEffect effect)
     {
-        UpdateBars();
+        bar.Refresh();
     }
 
+    private void OnMapSelectedHandler(MapType mapType)
+    {
+        if (bar != null)
+        {
+            bar.Initialize(mapType);
+        }
+    }
+    
     public void UpdateBars()
     {
-        if (trustSlider != null)
-            trustSlider.value = GameManager.Instance.GetTrust()/100f;
-        if (faithSlider != null)
-            faithSlider.value = GameManager.Instance.GetFaith()/100f;
-        if (hostilitySlider != null)
-            hostilitySlider.value = GameManager.Instance.GetHostility()/100f;
+        if (bar == null) return;
+        var activeMap = MapManager.Instance != null ? MapManager.Instance.GetCurrentMap() : (MapType?)null;
+        if (activeMap.HasValue)
+        {
+            bar.Initialize(activeMap.Value);
+        }
+        bar.Refresh();
     }
+
 } 
