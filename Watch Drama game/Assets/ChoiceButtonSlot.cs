@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using DG.Tweening;
 
-public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     private TextMeshProUGUI choiceText;
 
@@ -111,6 +111,8 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IBeginDragHa
         if (layoutElement != null) layoutElement.ignoreLayout = true;
         // Görsel olarak öne getir
         transform.SetAsLastSibling();
+        // Hafif büyütme animasyonu
+        rectTransform.DOScale(originalScale * 1.05f, 0.1f).SetEase(Ease.OutQuad);
 		RectTransformUtility.ScreenPointToLocalPointInRectangle(
 			(RectTransform)rectTransform.parent,
 			eventData.position,
@@ -118,6 +120,19 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IBeginDragHa
 			out pointerDownLocalPos
 		);
 		initialAnchoredPos = rectTransform.anchoredPosition;
+	}
+
+	public void OnPointerUp(PointerEventData eventData)
+	{
+		if (rectTransform == null) return;
+		
+		// Eğer sürükleme yapılmadıysa, boyutu geri al
+		if (!isDragging)
+		{
+			rectTransform.DOKill();
+			rectTransform.DOScale(originalScale, 0.1f).SetEase(Ease.OutQuad);
+			if (layoutElement != null) layoutElement.ignoreLayout = false;
+		}
 	}
 
 	public void OnBeginDrag(PointerEventData eventData)

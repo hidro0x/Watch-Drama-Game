@@ -22,10 +22,10 @@ public class TurnConditionSystem : MonoBehaviour
     public Sprite hostilityMaxDialogueSprite;
     public string hostilityMaxDialogueText;
     
-    [Title("Turn Limit Diyalogu")]
+    [Title("Tüm Haritalar Tamamlandı Diyalogu")]
     [LabelWidth(120)]
-    public Sprite maxTurnDialogueSprite;
-    public string maxTurnDialogueText;
+    public Sprite allMapsCompletedDialogueSprite;
+    public string allMapsCompletedDialogueText;
     
     
     private void Start()
@@ -71,8 +71,8 @@ public class TurnConditionSystem : MonoBehaviour
     /// </summary>
     public void CheckTurnConditionsOnTurnChange()
     {
-        // Maximum turn kontrolü
-        CheckMaxTurnCondition();
+        // Tüm haritaların tamamlanması kontrolü
+        CheckAllMapsCompletedCondition();
     }
     
     private void CheckTrustZeroConditions()
@@ -120,27 +120,34 @@ public class TurnConditionSystem : MonoBehaviour
         }
     }
     
-    private void CheckMaxTurnCondition()
+    private void CheckAllMapsCompletedCondition()
     {
-        
-        // DialogueManager'dan turn bilgisini al
-        DialogueManager dialogueManager = UnityEngine.Object.FindObjectOfType<DialogueManager>();
-        if (dialogueManager == null)
+        // MapManager'dan harita bilgilerini al
+        if (MapManager.Instance == null)
         {
-            Debug.LogWarning("DialogueManager bulunamadı!");
+            Debug.LogWarning("MapManager.Instance null!");
             return;
         }
         
-        int currentTurn = dialogueManager.GetCurrentTurn();
-        int maxTurnCount = dialogueManager.GetMaxTurnCount();
+        // Tüm haritaları al
+        List<MapType> allMaps = MapManager.Instance.GetAllMaps();
+        Dictionary<MapType, int> mapTurns = MapManager.Instance.GetMapTurns();
         
-        if (currentTurn >= maxTurnCount)
+        // Her haritanın en az 1 turn oynanıp oynanmadığını kontrol et
+        bool allMapsCompleted = true;
+        foreach (MapType mapType in allMaps)
         {
-            Debug.Log($"Maximum turn sayısına ulaşıldı! ({currentTurn}/{maxTurnCount}) Özel diyalog tetikleniyor.");
-             // Ülke önemli değil
-            FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include).SetEnding(maxTurnDialogueSprite, maxTurnDialogueText);
-            // Opsiyonel: Turn'i sıfırla veya oyunu bitir
-            // dialogueManager.ResetTurn();
+            if (!mapTurns.ContainsKey(mapType) || mapTurns[mapType] < 1)
+            {
+                allMapsCompleted = false;
+                break;
+            }
+        }
+        
+        if (allMapsCompleted)
+        {
+            Debug.Log("Tüm haritalar tamamlandı! Özel diyalog tetikleniyor.");
+            FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include).SetEnding(allMapsCompletedDialogueSprite, allMapsCompletedDialogueText);
         }
     }
     
@@ -167,5 +174,5 @@ public class TurnConditionSystem : MonoBehaviour
 /// 1. Herhangi bir ülkenin Trust'ı 0'a düşerse
 /// 2. Herhangi bir ülkenin Faith'i 0'a düşerse  
 /// 3. Herhangi bir ülkenin Hostility'si 100'e çıkarsa
-/// 4. Oyuncu maximum turn'e ulaşırsa
+/// 4. Tüm haritalar tamamlandığında
 /// </summary> 
