@@ -174,20 +174,21 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 			float threshold = GetEffectiveThresholdUnits();
 			if (delta.magnitude >= threshold)
 			{
-				// Seçim tetikle
-				OnChoiceButtonClicked();
-                // Seçimle birlikte boyutu geri al (UI zaten akış değiştirebilir)
-                rectTransform.DOKill();
-                rectTransform.localScale = originalScale;
-                if (layoutElement != null) layoutElement.ignoreLayout = false;
+				// Hızlıca kaybol (scale -> 0), ardından seçimi tetikle
+				rectTransform.DOKill();
+				rectTransform.DOScale(0f, 0.12f).SetEase(Ease.InQuad).OnComplete(() =>
+				{
+					OnChoiceButtonClicked();
+					if (layoutElement != null) layoutElement.ignoreLayout = false;
+				});
 			}
 			else
 			{
 				// Geri dön
-                rectTransform.DOKill();
-                rectTransform.DOAnchorPos(initialAnchoredPos, 0.2f).SetEase(Ease.OutQuad);
-                rectTransform.DOScale(originalScale, 0.12f).SetEase(Ease.OutQuad);
-                if (layoutElement != null) layoutElement.ignoreLayout = false;
+				rectTransform.DOKill();
+				rectTransform.DOAnchorPos(initialAnchoredPos, 0.2f).SetEase(Ease.OutQuad);
+				rectTransform.DOScale(originalScale, 0.12f).SetEase(Ease.OutQuad);
+				if (layoutElement != null) layoutElement.ignoreLayout = false;
 			}
 		}
         isDragging = false;
