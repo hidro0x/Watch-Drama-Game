@@ -24,7 +24,7 @@ public class BarSlot_UI : MonoBehaviour
 
     // Animasyon süreleri
     private const float VALUE_ANIM_DURATION = 0.25f;
-    private const float COLOR_FLASH_DURATION = 0.45f;
+    [SerializeField] private float colorFlashDuration = 0.7f; // Renk geri dönüş süresi (daha belirgin görünüm için)
 
 	// Yalnızca hostility barında artışta kırmızı, düşüşte yeşil göster
 	[SerializeField] private bool invertHostilityColor = true;
@@ -96,7 +96,7 @@ public class BarSlot_UI : MonoBehaviour
             // Değer animasyonu ile aynı anda çalışsın
             seq.Join(slider.DOValue(newValue01, VALUE_ANIM_DURATION).SetEase(Ease.OutQuad));
             // Değer animasyonu bittikten sonra renge geri dön
-            seq.Append(fillImage.DOColor(baseColor, COLOR_FLASH_DURATION).SetEase(Ease.OutQuad));
+            seq.Append(fillImage.DOColor(baseColor, colorFlashDuration).SetEase(Ease.OutQuad));
             seq.Play();
         }
         else

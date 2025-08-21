@@ -5186,10 +5186,10 @@ MonoBehaviour:
   maps: 0100000002000000030000000400000000000000
   generalDialogues:
   - id: universal_01
-    name: 
+    name: "Ya\u015Fl\u0131 Teyze"
     sprite: {fileID: 21300000, guid: c4ba858d883fd5844a1f3ebec99aeb9c, type: 3}
-    text: "Ya\u015Fl\u0131 Teyze: Evlad\u0131m, y\xFCz\xFCnde uzun yollar\u0131n
-      tozu var. Nereden geliyorsun bakal\u0131m?"
+    text: "Evlad\u0131m, y\xFCz\xFCnde uzun yollar\u0131n tozu var. Nereden geliyorsun
+      bakal\u0131m?"
     choices:
     - text: "\xC7ok uzaklardan geliyorum."
       trustChange: 3
@@ -5212,10 +5212,10 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_02
-    name: 
+    name: "Ya\u015Fl\u0131 Teyze"
     sprite: {fileID: 21300000, guid: c4ba858d883fd5844a1f3ebec99aeb9c, type: 3}
-    text: "Ya\u015Fl\u0131 Teyze: Bir tas s\u0131cak \xE7orba ister misin? Evim k\xFC\xE7\xFCk
-      ama kalbim b\xFCy\xFCk."
+    text: "Bir tas s\u0131cak \xE7orba ister misin? Evim k\xFC\xE7\xFCk ama kalbim
+      b\xFCy\xFCk."
     choices:
     - text: "Te\u015Fekk\xFCr ederim, \xE7ok makbule ge\xE7er."
       trustChange: 3
@@ -5238,10 +5238,10 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_03
-    name: 
+    name: "Ya\u015Fl\u0131 Teyze"
     sprite: {fileID: 21300000, guid: c4ba858d883fd5844a1f3ebec99aeb9c, type: 3}
-    text: "Ya\u015Fl\u0131 Teyze: Gen\xE7ken ben de senin gibiydim... Ama sonra r\xFCzgar
-      ba\u015Fka y\xF6nden esti."
+    text: "Gen\xE7ken ben de senin gibiydim... Ama sonra r\xFCzgar ba\u015Fka y\xF6nden
+      esti."
     choices:
     - text: Hikayeni duymak isterim.
       trustChange: 4
@@ -5264,10 +5264,10 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_04
-    name: 
+    name: Oduncu
     sprite: {fileID: 21300000, guid: 96f0bceaafaf76b4dbc3edd4a3bb8583, type: 3}
-    text: "Oduncu: Baltam k\u0131r\u0131lmak \xFCzere... Ama orman h\xE2l\xE2 suskun.
-      Sen neden geldin?"
+    text: "Baltam k\u0131r\u0131lmak \xFCzere... Ama orman h\xE2l\xE2 suskun. Sen
+      neden geldin?"
     choices:
     - text: "Sana yard\u0131m etmeye geldim."
       trustChange: 3
@@ -5290,9 +5290,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_05
-    name: 
+    name: Oduncu
     sprite: {fileID: 21300000, guid: 96f0bceaafaf76b4dbc3edd4a3bb8583, type: 3}
-    text: "Oduncu: Orman g\xF6z\xFCyle izler. Ne zaman dal kessem, i\xE7im burkulur."
+    text: "Orman g\xF6z\xFCyle izler. Ne zaman dal kessem, i\xE7im burkulur."
     choices:
     - text: "Sayg\u0131l\u0131 davranman g\xFCzel."
       trustChange: 3
@@ -5315,10 +5315,10 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_06
-    name: 
+    name: Oduncu
     sprite: {fileID: 21300000, guid: 96f0bceaafaf76b4dbc3edd4a3bb8583, type: 3}
-    text: "Oduncu: So\u011Fuk havada kesilen odun daha dayan\u0131kl\u0131d\u0131r.
-      Sen ne zaman en g\xFC\xE7l\xFCs\xFCn?"
+    text: "So\u011Fuk havada kesilen odun daha dayan\u0131kl\u0131d\u0131r. Sen ne
+      zaman en g\xFC\xE7l\xFCs\xFCn?"
     choices:
     - text: "Zorluklar kar\u015F\u0131s\u0131nda."
       trustChange: 3
@@ -5341,10 +5341,10 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_07
-    name: 
+    name: "Vatanda\u015F"
     sprite: {fileID: 21300000, guid: 67868d64b4be8f84e8fa120a0b0e2079, type: 3}
-    text: "Vatanda\u015F: G\xFCnlerdir pazarda fiyatlar art\u0131yor. Bu i\u015Fin
-      sonu nereye varacak sence?"
+    text: "G\xFCnlerdir pazarda fiyatlar art\u0131yor. Bu i\u015Fin sonu nereye varacak
+      sence?"
     choices:
     - text: "Umut edelim, ge\xE7er."
       trustChange: 3
@@ -5367,10 +5367,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_08
-    name: 
+    name: "Vatanda\u015F"
     sprite: {fileID: 21300000, guid: 67868d64b4be8f84e8fa120a0b0e2079, type: 3}
-    text: "Vatanda\u015F: Yeni bir y\xFCz g\xF6rmek g\xFCzel. Burada kalmay\u0131
-      m\u0131 d\xFC\u015F\xFCn\xFCyorsun?"
+    text: "Yeni bir y\xFCz g\xF6rmek g\xFCzel. Burada kalmay\u0131 m\u0131 d\xFC\u015F\xFCn\xFCyorsun?"
     choices:
     - text: "Evet, bir s\xFCre kalaca\u011F\u0131m."
       trustChange: 3
@@ -5393,10 +5392,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_09
-    name: 
+    name: "Vatanda\u015F"
     sprite: {fileID: 21300000, guid: 67868d64b4be8f84e8fa120a0b0e2079, type: 3}
-    text: "Vatanda\u015F: D\xFCn gece yine garip sesler geldi da\u011Flardan. Sence
-      ne olabilir?"
+    text: "D\xFCn gece yine garip sesler geldi da\u011Flardan. Sence ne olabilir?"
     choices:
     - text: "Do\u011Fan\u0131n sesi, korkmaya gerek yok."
       trustChange: 2
@@ -5419,9 +5417,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_10
-    name: 
+    name: Terzi
     sprite: {fileID: 21300000, guid: 72f1fe8e591d1a54c9b7e0a1ea4e40b9, type: 3}
-    text: "Terzi: Kuma\u015F ruh gibidir; yanl\u0131\u015F bi\xE7ersen geri d\xF6n\xFC\u015F\xFC
+    text: "Kuma\u015F ruh gibidir; yanl\u0131\u015F bi\xE7ersen geri d\xF6n\xFC\u015F\xFC
       olmaz. Ne ar\u0131yorsun burada?"
     choices:
     - text: Kendime uygun bir yol.
@@ -5445,9 +5443,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_11
-    name: 
+    name: Terzi
     sprite: {fileID: 21300000, guid: 72f1fe8e591d1a54c9b7e0a1ea4e40b9, type: 3}
-    text: "Terzi: Her diki\u015F bir karar demektir. Sen kararlar\u0131n\u0131 nas\u0131l
+    text: "Her diki\u015F bir karar demektir. Sen kararlar\u0131n\u0131 nas\u0131l
       al\u0131rs\u0131n?"
     choices:
     - text: "\u0130\xE7 sesimi dinlerim."
@@ -5471,9 +5469,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_12
-    name: 
+    name: Terzi
     sprite: {fileID: 21300000, guid: 72f1fe8e591d1a54c9b7e0a1ea4e40b9, type: 3}
-    text: "Terzi: \u0130pek mi arars\u0131n, keten mi? Her ruh bir kuma\u015F se\xE7er."
+    text: "\u0130pek mi arars\u0131n, keten mi? Her ruh bir kuma\u015F se\xE7er."
     choices:
     - text: "Zarif ama sade bir \u015Fey isterim."
       trustChange: 3
@@ -5496,9 +5494,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_13
-    name: 
+    name: "\xC7oban"
     sprite: {fileID: 21300000, guid: 46a620b8bc282b141804e36e25ebfd7c, type: 3}
-    text: "\xC7oban: Koyunlar bile yabanc\u0131y\u0131 hisseder. Senin niyetin ne?"
+    text: "Koyunlar bile yabanc\u0131y\u0131 hisseder. Senin niyetin ne?"
     choices:
     - text: "Sadece dost\xE7a geldim."
       trustChange: 3
@@ -5521,10 +5519,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_14
-    name: 
+    name: "\xC7oban"
     sprite: {fileID: 21300000, guid: 46a620b8bc282b141804e36e25ebfd7c, type: 3}
-    text: "\xC7oban: Da\u011Flarda zaman farkl\u0131 akar. Sen zaman\u0131 nas\u0131l
-      ge\xE7irirsin?"
+    text: "Da\u011Flarda zaman farkl\u0131 akar. Sen zaman\u0131 nas\u0131l ge\xE7irirsin?"
     choices:
     - text: "Kendimle kal\u0131r\u0131m."
       trustChange: 3
@@ -5547,10 +5544,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_15
-    name: 
+    name: "\xC7oban"
     sprite: {fileID: 21300000, guid: 46a620b8bc282b141804e36e25ebfd7c, type: 3}
-    text: "\xC7oban: Kurt izleri g\xF6rd\xFCm bu sabah. Tehlike yak\u0131ndaysa sen
-      ne yapars\u0131n?"
+    text: "Kurt izleri g\xF6rd\xFCm bu sabah. Tehlike yak\u0131ndaysa sen ne yapars\u0131n?"
     choices:
     - text: "K\xF6yl\xFCleri uyar\u0131r\u0131m."
       trustChange: 3
@@ -5573,10 +5569,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_16
-    name: 
+    name: "Gen\xE7 Delikanl\u0131"
     sprite: {fileID: 21300000, guid: 3e1b1698c4c90c540aeec08a0c18b19c, type: 3}
-    text: "Gen\xE7 Delikanl\u0131: Buralarda macera yok, sadece bekleyi\u015F. Sen
-      neyin pe\u015Findesin?"
+    text: "Buralarda macera yok, sadece bekleyi\u015F. Sen neyin pe\u015Findesin?"
     choices:
     - text: "Ger\xE7ekleri ar\u0131yorum."
       trustChange: 3
@@ -5599,10 +5594,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_17
-    name: 
+    name: "Gen\xE7 Delikanl\u0131"
     sprite: {fileID: 21300000, guid: 3e1b1698c4c90c540aeec08a0c18b19c, type: 3}
-    text: "Gen\xE7 Delikanl\u0131: Bana herkes 'fazla hayal kurma' diyor. Sence hakl\u0131lar
-      m\u0131?"
+    text: "Bana herkes 'fazla hayal kurma' diyor. Sence hakl\u0131lar m\u0131?"
     choices:
     - text: "Hayaller yol g\xF6sterir."
       trustChange: 3
@@ -5625,10 +5619,9 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_18
-    name: 
+    name: "Gen\xE7 Delikanl\u0131"
     sprite: {fileID: 21300000, guid: 3e1b1698c4c90c540aeec08a0c18b19c, type: 3}
-    text: "Gen\xE7 Delikanl\u0131: Bir g\xFCn buradan \xE7\u0131k\u0131p gidece\u011Fim.
-      Senin hayalin ne?"
+    text: "Bir g\xFCn buradan \xE7\u0131k\u0131p gidece\u011Fim. Senin hayalin ne?"
     choices:
     - text: "Daha iyi bir d\xFCnya kurmak."
       trustChange: 4
@@ -5651,10 +5644,10 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_19
-    name: 
+    name: "Tuhaf Ya\u015Fl\u0131"
     sprite: {fileID: 21300000, guid: 85ace2f9f969d8949a2d57d24de8be54, type: 3}
-    text: "Tuhaf Ya\u015Fl\u0131: Geceleri ta\u015Flar f\u0131s\u0131ldar, ama herkes
-      duymaz. Sen duyabiliyor musun?"
+    text: "Geceleri ta\u015Flar f\u0131s\u0131ldar, ama herkes duymaz. Sen duyabiliyor
+      musun?"
     choices:
     - text: Bazen sessizlikte sesler bulurum.
       trustChange: 3
@@ -5677,10 +5670,10 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_20
-    name: 
+    name: "Tuhaf Ya\u015Fl\u0131"
     sprite: {fileID: 21300000, guid: 85ace2f9f969d8949a2d57d24de8be54, type: 3}
-    text: "Tuhaf Ya\u015Fl\u0131: \xDC\xE7\xFCnc\xFC g\xF6z\xFC a\xE7\u0131lm\u0131\u015F
-      birini tan\u0131d\u0131m... Aynaya bak\u0131nca ne g\xF6r\xFCyorsun?"
+    text: "\xDC\xE7\xFCnc\xFC g\xF6z\xFC a\xE7\u0131lm\u0131\u015F birini tan\u0131d\u0131m...
+      Aynaya bak\u0131nca ne g\xF6r\xFCyorsun?"
     choices:
     - text: "\u0130\xE7imdeki beni."
       trustChange: 3
@@ -5703,10 +5696,10 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_21
-    name: 
+    name: "Tuhaf Ya\u015Fl\u0131"
     sprite: {fileID: 21300000, guid: 85ace2f9f969d8949a2d57d24de8be54, type: 3}
-    text: "Tuhaf Ya\u015Fl\u0131: Zaman d\xFCz de\u011Fil, k\u0131vr\u0131l\u0131r,
-      b\xFCk\xFCl\xFCr. Hangi zaman\u0131 ya\u015F\u0131yorsun \u015Fu an?"
+    text: "Zaman d\xFCz de\u011Fil, k\u0131vr\u0131l\u0131r, b\xFCk\xFCl\xFCr. Hangi
+      zaman\u0131 ya\u015F\u0131yorsun \u015Fu an?"
     choices:
     - text: "\u015Eimdiyi, olmas\u0131 gerekeni."
       trustChange: 3
