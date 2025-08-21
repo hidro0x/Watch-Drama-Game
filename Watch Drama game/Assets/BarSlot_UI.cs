@@ -23,8 +23,11 @@ public class BarSlot_UI : MonoBehaviour
     private Color hostilityBaseColor;
 
     // Animasyon süreleri
-    private const float VALUE_ANIM_DURATION = 0.25f;
-    [SerializeField] private float colorFlashDuration = 0.7f; // Renk geri dönüş süresi (daha belirgin görünüm için)
+    [Header("Animasyon Ayarları")]
+    [SerializeField] private float valueAnimDuration = 0.8f;
+    [SerializeField] private float colorFlashDuration = 1.2f;
+    [SerializeField] private float scaleEffectDuration = 0.6f;
+    [SerializeField] private float scaleEffectIntensity = 1.1f;
 
 	// Yalnızca hostility barında artışta kırmızı, düşüşte yeşil göster
 	[SerializeField] private bool invertHostilityColor = true;
@@ -64,8 +67,24 @@ public class BarSlot_UI : MonoBehaviour
         float newFaith01 = GameManager.Instance.GetBarValuesForCountry(mapType).Faith / 100f;
         float newHostility01 = GameManager.Instance.GetBarValuesForCountry(mapType).Hostility / 100f;
 
+        // Değişimleri sırayla ve gecikmeli olarak güncelle
+        StartCoroutine(RefreshWithDelay(newTrust01, newFaith01, newHostility01));
+    }
+    
+    private System.Collections.IEnumerator RefreshWithDelay(float newTrust01, float newFaith01, float newHostility01)
+    {
+        // Kısa bir gecikme ile başla (değişimi daha belirgin yap)
+        yield return new WaitForSeconds(0.1f);
+        
+        // Trust barını güncelle
         UpdateBarWithFeedback(trustSlider, ref previousTrust01, newTrust01, trustBaseColor);
+        
+        // Faith barı için kısa gecikme
+        yield return new WaitForSeconds(0.15f);
         UpdateBarWithFeedback(faithSlider, ref previousFaith01, newFaith01, faithBaseColor);
+        
+        // Hostility barı için kısa gecikme
+        yield return new WaitForSeconds(0.15f);
         UpdateBarWithFeedback(hostilitySlider, ref previousHostility01, newHostility01, hostilityBaseColor);
     }
 
@@ -92,17 +111,29 @@ public class BarSlot_UI : MonoBehaviour
 				? new Color(0.2f, 1f, 0.2f, 1f)   // yeşil
 				: new Color(1f, 0.25f, 0.25f, 1f); // kırmızı
 
+            // Scale efekti için slider'ın transform'ını al
+            Transform sliderTransform = slider.transform;
+            Vector3 originalScale = sliderTransform.localScale;
+
+            // 1. Scale efekti (hafif büyütme)
+            seq.Append(sliderTransform.DOScale(originalScale * scaleEffectIntensity, scaleEffectDuration * 0.3f).SetEase(Ease.OutQuad));
+            seq.Append(sliderTransform.DOScale(originalScale, scaleEffectDuration * 0.7f).SetEase(Ease.InQuad));
+            
+            // 2. Renk değişimi
             fillImage.color = highlight;
-            // Değer animasyonu ile aynı anda çalışsın
-            seq.Join(slider.DOValue(newValue01, VALUE_ANIM_DURATION).SetEase(Ease.OutQuad));
-            // Değer animasyonu bittikten sonra renge geri dön
+            
+            // 3. Değer animasyonu (daha yavaş ve belirgin)
+            seq.Join(slider.DOValue(newValue01, valueAnimDuration).SetEase(Ease.OutCubic));
+            
+            // 4. Renk geri dönüşü (daha uzun süre)
             seq.Append(fillImage.DOColor(baseColor, colorFlashDuration).SetEase(Ease.OutQuad));
+            
             seq.Play();
         }
         else
         {
-            // Sadece değer animasyonu
-            slider.DOValue(newValue01, VALUE_ANIM_DURATION).SetEase(Ease.OutQuad);
+            // Sadece değer animasyonu (daha yavaş)
+            slider.DOValue(newValue01, valueAnimDuration).SetEase(Ease.OutCubic);
         }
 
         previousValue01 = newValue01;
