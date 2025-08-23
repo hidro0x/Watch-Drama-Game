@@ -25,6 +25,8 @@ public class MapManager : MonoBehaviour
     public static event Action<MapType> OnMapCompleted;
     public static event Action OnAllMapsCompleted;
     
+
+    
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -76,11 +78,11 @@ public class MapManager : MonoBehaviour
             Debug.LogError("Aktif harita yok!");
             return;
         }
+        
         DialogueManager dialogueManager = UnityEngine.Object.FindFirstObjectByType<DialogueManager>();
         dialogueManager.NextTurn();
 
         mapTurns[currentMap.Value]++;
-
         
         // Turn sonunda condition'ları kontrol et
         CheckTurnConditions();
@@ -108,6 +110,103 @@ public class MapManager : MonoBehaviour
     }
     
 
+    
+    /// <summary>
+    /// Ülke tamamlanma kontrolü - Global dialogue sonrasında ülke tamamlanır
+    /// </summary>
+    private void CheckCountryCompletion()
+    {
+        if (currentMap == null) return;
+        
+        // Global dialogue sonrasında ülke tamamlanmış sayılır
+        // Turn sayısına bakmaksızın global dialogue geldiğinde ülke biter
+        
+        // Ülke tamamlandı event'ini tetikle
+        OnMapCompleted?.Invoke(currentMap.Value);
+        
+        // CountryCompletionPanel'i bul ve göster
+        var completionPanel = UnityEngine.Object.FindFirstObjectByType<CountryCompletionPanel>();
+        
+        if (completionPanel != null)
+        {
+            var finalValues = GameManager.Instance.GetMapValues(currentMap.Value);
+            
+            completionPanel.ShowCountryCompletion(currentMap.Value, finalValues, () => {
+                // Tamamlandığında yapılacak işlemler
+                Debug.Log($"{currentMap.Value} ülkesi tamamlandı!");
+                
+                // Complete panel kapandıktan sonra global diyalog göster ve ülkeden çık
+                ShowGlobalDialogueAndExitCountry();
+            });
+        }
+        else
+        {
+            Debug.LogError("CountryCompletionPanel bulunamadı!");
+        }
+    }
+    
+    /// <summary>
+    /// Complete panel kapandıktan sonra global diyalog göster ve ülkeden çık
+    /// </summary>
+    private void ShowGlobalDialogueAndExitCountry()
+    {
+        // Global diyalog havuzundan rastgele bir diyalog seç
+        if (dialogueDatabase.globalDialogueEffects.Count > 0)
+        {
+            var globalDialogue = dialogueDatabase.globalDialogueEffects[UnityEngine.Random.Range(0, dialogueDatabase.globalDialogueEffects.Count)];
+            currentGlobalDialogue = globalDialogue;
+            
+            // Global diyalogu DialogueNode'a çevir ve göster
+            var dialogueNode = ConvertGlobalDialogueToDialogue(globalDialogue);
+            
+            if (dialogueNode != null)
+            {
+                // ChoiceSelectionUI'ya direkt gönder
+                var choiceUI = UnityEngine.Object.FindFirstObjectByType<ChoiceSelectionUI>();
+                if (choiceUI != null)
+                {
+                    choiceUI.ShowUI(dialogueNode);
+                }
+            }
+        }
+        
+        // Global diyalog sonrasında ülkeden çık
+        ExitCurrentCountry();
+    }
+    
+    /// <summary>
+    /// Mevcut ülkeden çık ve harita seçim ekranına dön
+    /// </summary>
+    private void ExitCurrentCountry()
+    {
+        if (currentMap == null) return;
+        
+        Debug.Log($"{currentMap.Value} ülkesinden çıkılıyor...");
+        
+        // Mevcut ülkeyi null yap
+        currentMap = null;
+        
+        // Harita seçim ekranına dön (bu kısmı daha sonra implement edebiliriz)
+        // Örneğin: MapSelectionUI.SetActive(true);
+        
+        // Başka ülke var mı kontrol et
+        CheckAllMapsCompletion();
+    }
+    
+    /// <summary>
+    /// Tüm ülkelerin tamamlanıp tamamlanmadığını kontrol eder
+    /// Artık global dialogue sonrasında ülkeler tamamlandığı için
+    /// bu kontrol sadece tüm ülkelerin global dialogue'larını görmüş olup olmadığını kontrol eder
+    /// </summary>
+    private void CheckAllMapsCompletion()
+    {
+        // Bu metod artık global dialogue sistemi ile çalıştığı için
+        // farklı bir mantık gerekebilir. Şimdilik basit tutuyoruz.
+        // İleride global dialogue sayısına göre kontrol eklenebilir.
+        
+        Debug.Log("Tüm ülkeler tamamlandı kontrolü yapılıyor...");
+        // Bu kısmı daha sonra global dialogue sayısına göre güncelleyebiliriz
+    }
     
     /// <summary>
     /// Turn sonunda condition'ları kontrol eder
@@ -184,6 +283,9 @@ public class MapManager : MonoBehaviour
             
             dialogueNode.choices.Add(choice);
         }
+        
+        // Global diyalog sonrasında ülke tamamlama kontrolü
+        CheckCountryCompletion();
         
         return dialogueNode;
     }

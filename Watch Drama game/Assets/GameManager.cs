@@ -253,6 +253,22 @@ public class GameManager : MonoBehaviour
     
     public MapValues GetBarValuesForCountry(MapType country) => mapValuesDict.ContainsKey(country) ? mapValuesDict[country] : new MapValues(0, 0, 0);
     
+    // CountryCompletionPanel için BarValues döndüren metod
+    public BarValues GetMapValues(MapType country)
+    {
+        if (mapValuesDict.ContainsKey(country))
+        {
+            var values = mapValuesDict[country];
+            return new BarValues
+            {
+                trust = values.Trust,
+                faith = values.Faith,
+                hostility = values.Hostility
+            };
+        }
+        return new BarValues { trust = 0, faith = 0, hostility = 0 };
+    }
+    
     public void SetBarValuesForCountry(MapType country, MapValues values)
     {
         mapValuesDict[country] = ClampMapValues(values);

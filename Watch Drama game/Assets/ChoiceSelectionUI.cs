@@ -34,7 +34,7 @@ public class ChoiceSelectionUI : MonoBehaviour
     // Animation settings
     private const float ANIMATION_DURATION = 0.5f;
     private const float SCREEN_OFFSET_MULTIPLIER = 1.5f;
-    private const float TEXT_REVEAL_DURATION = 1.5f;
+    private const float TEXT_REVEAL_DURATION = 0.5f; // 0.5 saniyede tamamlanacak
     private const float CHARACTER_NAME_DELAY = 0.3f;
 
     private bool hasBeenInitialized = false; // Panel'in daha önce açılıp açılmadığını takip etmek için
@@ -220,8 +220,8 @@ public class ChoiceSelectionUI : MonoBehaviour
         StopTypewriterCoroutines();
         ResetTypewriterTexts();
         
-        // Typewriter başlat (name ve description)
-        nameTypewriterCoroutine = StartCoroutine(TypewriterEffect(characterNameText, dialogueNode.name, TEXT_REVEAL_DURATION * 0.6f, CHARACTER_NAME_DELAY));
+        // Typewriter başlat (name ve description) - Her ikisi de 0.75 saniyede tamamlanacak
+        nameTypewriterCoroutine = StartCoroutine(TypewriterEffect(characterNameText, dialogueNode.name, TEXT_REVEAL_DURATION, CHARACTER_NAME_DELAY));
         descriptionTypewriterCoroutine = StartCoroutine(TypewriterEffect(descriptionText, dialogueNode.text, TEXT_REVEAL_DURATION, CHARACTER_NAME_DELAY + 0.2f));
     }
 
