@@ -31,6 +31,11 @@ public class DialogueNode : Node
     
     // Opsiyonel: Bu diyalog için özel arkaplan
     public Sprite backgroundSprite;
+
+    // Rakip karşılaşması mı? Eğer true ise bu düğüm bir rakip karşılaşmasıdır
+    public bool isRivalEncounter = false;
+    // Karşılaşmayı başlatan rakip savaşçının ülkesi
+    public MapType rivalOpponent;
 }
 
 [System.Serializable]
@@ -59,6 +64,11 @@ public class DialogueChoice
     public bool isGlobalChoice = false;
     // Bir sonraki node'un id'si
     public string nextNodeId;
+
+    // Rakip karşılaşmalarında, rakip ülkeye uygulanacak ek etkiler
+    [LabelWidth(160)] public int opponentTrustChange;
+    [LabelWidth(160)] public int opponentFaithChange;
+    [LabelWidth(160)] public int opponentHostilityChange;
 } 
 
 [System.Serializable]

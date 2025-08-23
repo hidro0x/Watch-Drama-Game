@@ -98,9 +98,14 @@ public class MapManager : MonoBehaviour
         // Turn sonunda condition'ları kontrol et
         CheckTurnConditions();
         
-        // Harita tamamlandı mı kontrolü gerekiyorsa burada yapılabilir
-        // Hangi havuzdan diyalog seçileceğini belirle
-        DialogueNode selectedDialogue = SelectDialogueFromPool();
+        // Şans bazlı rakip karşılaşması kontrolü
+        DialogueNode selectedDialogue = TrySelectRivalEncounter();
+        if (selectedDialogue == null)
+        {
+            // Harita tamamlandı mı kontrolü gerekiyorsa burada yapılabilir
+            // Hangi havuzdan diyalog seçileceğini belirle
+            selectedDialogue = SelectDialogueFromPool();
+        }
         if (selectedDialogue != null)
         {
             
@@ -215,6 +220,79 @@ public class MapManager : MonoBehaviour
         }
         
         return dialogueNode;
+    }
+
+    // Basit: Şans bazlı rakip karşılaşması
+    // Örnek oran: %15, rakip ülke havuzdan rastgele seçilir (aktif ülke hariç)
+    private DialogueNode TrySelectRivalEncounter()
+    {
+        var db = dialogueDatabase;
+        if (db == null || !db.enableRivalEncounters) return null;
+        // Turn aralığı kontrolü
+        DialogueManager dialogueManager = UnityEngine.Object.FindFirstObjectByType<DialogueManager>();
+        int currentTurn = dialogueManager?.GetCurrentTurn() ?? 0;
+        if (db.rivalEncounterInterval > 0 && currentTurn % db.rivalEncounterInterval != 0) return null;
+        // Şans kontrolü
+        float chance = Mathf.Clamp01(db.rivalEncounterChance);
+        if (UnityEngine.Random.value > chance) return null;
+        if (currentMap == null) return null;
+        if (db == null || db.generalDialogues == null || db.generalDialogues.Count == 0) return null;
+
+        // General havuzdan bir diyalog seç, flag'ini set et ve rakibi ata
+        DialogueNode candidate = null;
+        // Genel havuzda kullanılabilir bir node bul
+        for (int i = 0; i < 5; i++)
+        {
+            var tmp = db.generalDialogues[UnityEngine.Random.Range(0, db.generalDialogues.Count)];
+            if (tmp != null && tmp.choices != null && tmp.choices.Count >= 1)
+            {
+                candidate = tmp;
+                break;
+            }
+        }
+        if (candidate == null) return null;
+
+        // Kopya oluşturup işaretle (orijinal asseti kirletmemek için)
+        var node = new DialogueNode
+        {
+            id = candidate.id,
+            name = string.IsNullOrEmpty(candidate.name) ? "Rival" : candidate.name,
+            sprite = candidate.sprite,
+            text = candidate.text,
+            backgroundSprite = candidate.backgroundSprite,
+            isGlobalDialogue = false,
+            isRivalEncounter = true,
+            rivalOpponent = PickRandomOpponent(currentMap.Value)
+        };
+        node.choices = new List<DialogueChoice>();
+        foreach (var c in candidate.choices)
+        {
+            node.choices.Add(new DialogueChoice
+            {
+                text = c.text,
+                trustChange = c.trustChange,
+                faithChange = c.faithChange,
+                hostilityChange = c.hostilityChange,
+                isGlobalChoice = c.isGlobalChoice,
+                nextNodeId = c.nextNodeId,
+                opponentTrustChange = 0,
+                opponentFaithChange = 0,
+                opponentHostilityChange = 0
+            });
+        }
+        return node;
+    }
+
+    private MapType PickRandomOpponent(MapType exclude)
+    {
+        var all = GetAllMaps();
+        var candidates = new List<MapType>();
+        foreach (var m in all)
+        {
+            if (m != exclude) candidates.Add(m);
+        }
+        if (candidates.Count == 0) return exclude;
+        return candidates[UnityEngine.Random.Range(0, candidates.Count)];
     }
     
     // Artık kullanılmıyor: GetAvailableDialogues

@@ -123,6 +123,27 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Rakip karşılaşması için iki ülkeye birden etki uygulamak amacıyla yardımcı API
+    public void ApplyDualCountryEffect(MapType selfCountry, MapType opponentCountry, MapValues selfDelta, MapValues opponentDelta)
+    {
+        // self
+        var s = mapValuesDict.ContainsKey(selfCountry) ? mapValuesDict[selfCountry] : new MapValues(0,0,0);
+        s.Trust += selfDelta.Trust;
+        s.Faith += selfDelta.Faith;
+        s.Hostility += selfDelta.Hostility;
+        mapValuesDict[selfCountry] = ClampMapValues(s);
+
+        // opponent
+        var o = mapValuesDict.ContainsKey(opponentCountry) ? mapValuesDict[opponentCountry] : new MapValues(0,0,0);
+        o.Trust += opponentDelta.Trust;
+        o.Faith += opponentDelta.Faith;
+        o.Hostility += opponentDelta.Hostility;
+        mapValuesDict[opponentCountry] = ClampMapValues(o);
+
+        SyncMapTypeValuesList();
+        RefreshValues();
+    }
+
     // Global diyalog etkilerini uygula (tüm ülkelere etki eder)
     public void ApplyGlobalDialogueEffect(GlobalDialogueEffect globalEffect)
     {

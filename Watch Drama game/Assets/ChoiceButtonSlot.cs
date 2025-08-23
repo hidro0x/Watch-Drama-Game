@@ -66,7 +66,16 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IBeginDragHa
 				return;
 			}
 
-			// Normal diyalog: Sadece aktif ülkeyi etkiler
+			bool isRival = false;
+			MapType opponent = MapType.Astrahil;
+			var currentNode = DialogueManager.Instance != null ? typeof(DialogueManager).GetField("currentNode", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.GetValue(DialogueManager.Instance) as DialogueNode : null;
+			if (currentNode != null && currentNode.isRivalEncounter)
+			{
+				isRival = true;
+				opponent = currentNode.rivalOpponent;
+			}
+
+			// Normal diyalog: aktif ülke; rakip karşılaşması: aktif ülke + rakip ülke
 			ChoiceEffect effect = new ChoiceEffect(
 				dialogueChoice.trustChange, 
 				dialogueChoice.faithChange, 
@@ -88,8 +97,15 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IBeginDragHa
 				}
 			}
 
-			// Seçimi uygula (tek olay kaynağı)
+			// Seçimi uygula (tek olay kaynağı) + gerekirse rakip etki
 			GameManager.MakeChoice(effect);
+			if (isRival)
+			{
+				var self = MapManager.Instance.GetCurrentMap() ?? opponent;
+				var selfDelta = new MapValues(effect.TrustChange, effect.FaithChange, effect.HostilityChange);
+				var oppDelta = new MapValues(dialogueChoice.opponentTrustChange, dialogueChoice.opponentFaithChange, dialogueChoice.opponentHostilityChange);
+				GameManager.Instance.ApplyDualCountryEffect(self, opponent, selfDelta, oppDelta);
+			}
 			return;
 		}
 	}

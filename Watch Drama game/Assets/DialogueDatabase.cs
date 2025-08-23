@@ -70,4 +70,9 @@ public class DialogueDatabase : SerializedScriptableObject
     [LabelWidth(150)]
     public int globalDialogueInterval = 16; // Her 15 turn'de global diyalog
     
+    [Title("Rival Encounter Ayarları")]
+    [LabelWidth(180)] public bool enableRivalEncounters = true;
+    [LabelWidth(180), Range(0f, 1f)] public float rivalEncounterChance = 0.15f;
+    [LabelWidth(180)] public int rivalEncounterInterval = 6; // Her 6 turda bir şans kontrolü
+    
 } 
