@@ -1,0 +1,28 @@
+{
+    "warriors": [
+        {
+            "country": "Astrahil",
+            "warriorName": "Astrahil Savaşçısı",
+            "warriorSpritePath": "astrahil_warrior.png",
+            "allianceProposalText": "Ben Astrahil'in en güçlü savaşçısıyım! Seninle ittifak kurmak istiyorum!",
+            "joinWarriorSideText": "Astrahil'in tarafına katıl",
+            "helpCurrentCountryText": "Mevcut ülkeye yardım et",
+            "joinWarriorEffects": {
+                "trust": 5,
+                "faith": 3,
+                "hostility": 8,
+                "opponentTrust": 3,
+                "opponentFaith": 2,
+                "opponentHostility": 5
+            },
+            "helpCurrentEffects": {
+                "trust": -2,
+                "faith": -1,
+                "hostility": 2,
+                "opponentTrust": -2,
+                "opponentFaith": -1,
+                "opponentHostility": 1
+            }
+        }
+    ]
+}

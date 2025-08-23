@@ -348,10 +348,24 @@ public class ChoiceSelectionUI : MonoBehaviour
 
     private void SetChoices(List<DialogueChoice> choices)
     {
-        for (int i = 0; i < choices.Count; i++)
+        // Önce tüm slotları gizle ve resetle
+        for (int i = 0; i < choiceButtonSlotList.Count; i++)
         {
-            choiceButtonSlotList[i].SetChoice(choices[i]);
+            choiceButtonSlotList[i].gameObject.SetActive(false);
             choiceButtonSlotList[i].ResetVisualState();
+        }
+        
+        // Sadece gerekli slotları aktif et ve choice'ları set et
+        for (int i = 0; i < choices.Count && i < choiceButtonSlotList.Count; i++)
+        {
+            choiceButtonSlotList[i].gameObject.SetActive(true);
+            choiceButtonSlotList[i].SetChoice(choices[i]);
+        }
+        
+        // Eğer choice sayısı slot sayısından fazlaysa uyarı ver
+        if (choices.Count > choiceButtonSlotList.Count)
+        {
+            Debug.LogWarning($"Choice sayısı ({choices.Count}) slot sayısından ({choiceButtonSlotList.Count}) fazla! Fazla choice'lar gösterilmeyecek.");
         }
     }
 

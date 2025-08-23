@@ -2710,6 +2710,7 @@ MonoBehaviour:
   trustSlider: {fileID: 447856406}
   faithSlider: {fileID: 909021924}
   hostilitySlider: {fileID: 617933444}
+  colorFlashDuration: 0.7
   invertHostilityColor: 1
 --- !u!1 &1117018336
 GameObject:

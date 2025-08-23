@@ -63,6 +63,12 @@ public class DialogueDatabase : SerializedScriptableObject
     [TableList]
     public List<GlobalDialogueNode> globalDialogueEffects = new List<GlobalDialogueNode>();
     
+    [Title("Ülke Savaşçıları")]
+    [TableList]
+    public List<CountryWarrior> countryWarriors = new List<CountryWarrior>();
+    
+
+    
     [Title("Turn Aralıkları")]
     [LabelWidth(150)]
     public int mapSpecificInterval = 5; // Her 5 turn'de map'e özel diyalog
@@ -70,9 +76,8 @@ public class DialogueDatabase : SerializedScriptableObject
     [LabelWidth(150)]
     public int globalDialogueInterval = 16; // Her 15 turn'de global diyalog
     
-    [Title("Rival Encounter Ayarları")]
-    [LabelWidth(180)] public bool enableRivalEncounters = true;
-    [LabelWidth(180), Range(0f, 1f)] public float rivalEncounterChance = 0.15f;
-    [LabelWidth(180)] public int rivalEncounterInterval = 6; // Her 6 turda bir şans kontrolü
+    [Title("Savaşçı Karşılaşma Ayarları")]
+    [LabelWidth(180)] public bool enableWarriorEncounters = true;
+    [LabelWidth(180), Range(0f, 1f)] public float warriorEncounterChance = 0.15f;
     
 } 

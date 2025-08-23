@@ -66,40 +66,31 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IBeginDragHa
 				return;
 			}
 
-			bool isRival = false;
+			// Savaşçı karşılaşması kontrolü - ID'den anlayabiliriz
+			bool isWarriorEncounter = false;
 			MapType opponent = MapType.Astrahil;
 			var currentNode = DialogueManager.Instance != null ? typeof(DialogueManager).GetField("currentNode", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.GetValue(DialogueManager.Instance) as DialogueNode : null;
-			if (currentNode != null && currentNode.isRivalEncounter)
+			if (currentNode != null && currentNode.id != null && currentNode.id.StartsWith("warrior_"))
 			{
-				isRival = true;
-				opponent = currentNode.rivalOpponent;
+				isWarriorEncounter = true;
+				// ID'den rakip ülkeyi çıkar: "warrior_Astrahil" -> "Astrahil"
+				string opponentCountry = currentNode.id.Replace("warrior_", "");
+				if (System.Enum.TryParse<MapType>(opponentCountry, out MapType parsedOpponent))
+				{
+					opponent = parsedOpponent;
+				}
 			}
 
-			// Normal diyalog: aktif ülke; rakip karşılaşması: aktif ülke + rakip ülke
+			// Normal diyalog: aktif ülke; savaşçı karşılaşması: aktif ülke + rakip ülke
 			ChoiceEffect effect = new ChoiceEffect(
 				dialogueChoice.trustChange, 
 				dialogueChoice.faithChange, 
 				dialogueChoice.hostilityChange
 			);
 			
-			// Eğer nextNodeId doluysa, ilgili DialogueNode'u sonraki adımda zorunlu göstermek için MapManager'a (ÖNCE) bildir
-			DialogueNode preparedNext = null;
-			if (!string.IsNullOrEmpty(dialogueChoice.nextNodeId))
-			{
-				var db = DialogueManager.Instance.dialogueDatabase;
-				if (db != null && db.generalDialogues != null)
-				{
-					preparedNext = db.generalDialogues.Find(n => n.id == dialogueChoice.nextNodeId);
-					if (preparedNext != null)
-					{
-						MapManager.Instance.PrepareForcedNextDialogue(preparedNext);
-					}
-				}
-			}
-
 			// Seçimi uygula (tek olay kaynağı) + gerekirse rakip etki
 			GameManager.MakeChoice(effect);
-			if (isRival)
+			if (isWarriorEncounter)
 			{
 				var self = MapManager.Instance.GetCurrentMap() ?? opponent;
 				var selfDelta = new MapValues(effect.TrustChange, effect.FaithChange, effect.HostilityChange);

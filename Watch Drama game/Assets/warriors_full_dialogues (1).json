@@ -1,0 +1,119 @@
+{
+  "warriors": [
+    {
+      "country": "Astrahil",
+      "warriorName": "Kraliçe Seraphina",
+      "allianceProposalText": "Ben Kraliçe Seraphina, Astrahil'in hükümdarı. Seninle güçlü bir ittifak kurmak istiyorum. Birlikte bu dünyayı yönetebiliriz!",
+      "joinWarriorSideText": "Astrahil'in tarafına katıl",
+      "helpCurrentCountryText": "Mevcut ülkeye sadık kal",
+      "joinWarriorEffects": {
+        "trust": 8,
+        "faith": 5,
+        "hostility": 3,
+        "opponentTrust": 4,
+        "opponentFaith": 2,
+        "opponentHostility": 6
+      },
+      "helpCurrentEffects": {
+        "trust": -3,
+        "faith": -2,
+        "hostility": 4,
+        "opponentTrust": -5,
+        "opponentFaith": -3,
+        "opponentHostility": 8
+      }
+    },
+    {
+      "country": "Agnari",
+      "warriorName": "Ateş Lordu Dravos",
+      "allianceProposalText": "Ben Dravos, Alevin Efendisi. Kılıcın ve cesaretin bizimle olsun; birlikte ateşten bir saltanat kurarız!",
+      "joinWarriorSideText": "Agnari'nin tarafına katıl",
+      "helpCurrentCountryText": "Mevcut ülkeye sadık kal",
+      "joinWarriorEffects": {
+        "trust": 9,
+        "faith": 3,
+        "hostility": 5,
+        "opponentTrust": 3,
+        "opponentFaith": 1,
+        "opponentHostility": 7
+      },
+      "helpCurrentEffects": {
+        "trust": -4,
+        "faith": -2,
+        "hostility": 5,
+        "opponentTrust": -5,
+        "opponentFaith": -2,
+        "opponentHostility": 8
+      }
+    },
+    {
+      "country": "Varnan",
+      "warriorName": "Gölge Generali Kael",
+      "allianceProposalText": "Ben Kael. Gölge, sabır ve zeka ile savaşır. Bana katılırsan görünmeyen zaferler kazanırız.",
+      "joinWarriorSideText": "Varnan'ın tarafına katıl",
+      "helpCurrentCountryText": "Mevcut ülkeye sadık kal",
+      "joinWarriorEffects": {
+        "trust": 6,
+        "faith": 2,
+        "hostility": 3,
+        "opponentTrust": 4,
+        "opponentFaith": 1,
+        "opponentHostility": 6
+      },
+      "helpCurrentEffects": {
+        "trust": -3,
+        "faith": -1,
+        "hostility": 4,
+        "opponentTrust": -4,
+        "opponentFaith": -2,
+        "opponentHostility": 8
+      }
+    },
+    {
+      "country": "Theon",
+      "warriorName": "Denge Muhafızı Arion",
+      "allianceProposalText": "Ben Arion. Theon, dengeyi korur. Bana katıl; güç ile itidal arasında yeni bir düzen kuralım.",
+      "joinWarriorSideText": "Theon'un tarafına katıl",
+      "helpCurrentCountryText": "Mevcut ülkeye sadık kal",
+      "joinWarriorEffects": {
+        "trust": 7,
+        "faith": 4,
+        "hostility": 3,
+        "opponentTrust": 3,
+        "opponentFaith": 2,
+        "opponentHostility": 6
+      },
+      "helpCurrentEffects": {
+        "trust": -3,
+        "faith": -3,
+        "hostility": 4,
+        "opponentTrust": -4,
+        "opponentFaith": -3,
+        "opponentHostility": 8
+      }
+    },
+    {
+      "country": "Solarya",
+      "warriorName": "Güneş Zırhı Arconte Helion",
+      "allianceProposalText": "Ben Helion. Işığın ve bilimin gücüyle savaşırız. İttifakımız, karanlığa karşı yeni bir çağ başlatır.",
+      "joinWarriorSideText": "Solarya'nın tarafına katıl",
+      "helpCurrentCountryText": "Mevcut ülkeye sadık kal",
+      "joinWarriorEffects": {
+        "trust": 7,
+        "faith": 3,
+        "hostility": 4,
+        "opponentTrust": 4,
+        "opponentFaith": 2,
+        "opponentHostility": 7
+      },
+      "helpCurrentEffects": {
+        "trust": -3,
+        "faith": -2,
+        "hostility": 5,
+        "opponentTrust": -5,
+        "opponentFaith": -2,
+        "opponentHostility": 9
+      }
+    }
+  ]
+}

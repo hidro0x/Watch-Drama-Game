@@ -114,9 +114,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -138,9 +144,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -162,9 +174,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -224,9 +242,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -248,9 +272,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -272,9 +302,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -333,9 +369,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -357,9 +399,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -381,9 +429,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -442,9 +496,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -466,9 +526,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -490,9 +556,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -551,9 +623,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -575,9 +653,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -599,9 +683,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -660,9 +750,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -684,9 +780,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -708,9 +810,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -770,9 +878,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -794,9 +908,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -818,9 +938,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -879,9 +1005,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -903,9 +1035,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -927,9 +1065,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -988,9 +1132,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1012,9 +1162,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1036,9 +1192,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1120,9 +1282,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1144,9 +1312,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1168,9 +1342,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1230,9 +1410,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1254,9 +1440,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1278,9 +1470,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1340,9 +1538,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1364,9 +1568,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1388,9 +1598,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1450,9 +1666,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1474,9 +1696,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1498,9 +1726,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1559,9 +1793,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1583,9 +1823,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1607,9 +1853,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1668,9 +1920,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1692,9 +1950,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1716,9 +1980,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1778,9 +2048,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1802,9 +2078,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1826,9 +2108,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1887,9 +2175,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1911,9 +2205,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1935,9 +2235,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1996,9 +2302,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2020,9 +2332,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2044,9 +2362,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2127,9 +2451,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2151,9 +2481,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2175,9 +2511,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2236,9 +2578,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2260,9 +2608,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2284,9 +2638,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2345,9 +2705,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2369,9 +2735,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2393,9 +2765,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2454,9 +2832,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2478,9 +2862,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2502,9 +2892,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2563,9 +2959,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2587,9 +2989,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2611,9 +3019,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2673,9 +3087,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2697,9 +3117,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2721,9 +3147,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2782,9 +3214,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2806,9 +3244,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2830,9 +3274,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2891,9 +3341,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2915,9 +3371,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -2939,9 +3401,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3001,9 +3469,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3025,9 +3499,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3049,9 +3529,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3132,9 +3618,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3156,9 +3648,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3180,9 +3678,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3241,9 +3745,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3265,9 +3775,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3289,9 +3805,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3350,9 +3872,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3374,9 +3902,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3398,9 +3932,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3459,9 +3999,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3483,9 +4029,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3507,9 +4059,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3568,9 +4126,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3592,9 +4156,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3616,9 +4186,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3678,9 +4254,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3702,9 +4284,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3726,9 +4314,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3787,9 +4381,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3811,9 +4411,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3835,9 +4441,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3896,9 +4508,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3920,9 +4538,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -3944,9 +4568,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4005,9 +4635,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4029,9 +4665,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4053,9 +4695,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4136,9 +4784,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4160,9 +4814,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4184,9 +4844,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4245,9 +4911,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4269,9 +4941,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4293,9 +4971,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4355,9 +5039,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4379,9 +5069,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4403,9 +5099,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4464,9 +5166,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4488,9 +5196,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4512,9 +5226,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4574,9 +5294,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4598,9 +5324,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4622,9 +5354,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4683,9 +5421,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4707,9 +5451,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4731,9 +5481,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4793,9 +5549,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4817,9 +5579,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4841,9 +5609,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4903,9 +5677,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4927,9 +5707,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -4951,9 +5737,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -5013,9 +5805,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -5037,9 +5835,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -5061,9 +5865,15 @@ MonoBehaviour:
     - Name: isGlobalChoice
       Entry: 5
       Data: false
-    - Name: nextNodeId
-      Entry: 6
-      Data: 
+    - Name: opponentTrustChange
+      Entry: 3
+      Data: 0
+    - Name: opponentFaithChange
+      Entry: 3
+      Data: 0
+    - Name: opponentHostilityChange
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -5196,19 +6006,25 @@ MonoBehaviour:
       faithChange: 3
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Buralarda dola\u015F\u0131yordum."
       trustChange: 2
       faithChange: 2
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: Sana ne?
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_02
@@ -5222,19 +6038,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: Sadece biraz su yeterli.
       trustChange: 2
       faithChange: 2
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Yemeklerin kokusu rahats\u0131z edici."
       trustChange: 0
       faithChange: 0
       hostilityChange: 5
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_03
@@ -5248,19 +6070,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Herkesin yolu farkl\u0131d\u0131r."
       trustChange: 2
       faithChange: 2
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Benim vaktim yok ya\u015Fl\u0131 kad\u0131n."
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_04
@@ -5274,19 +6102,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Sadece yolum d\xFC\u015Ft\xFC."
       trustChange: 2
       faithChange: 2
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "A\u011Fa\xE7lar\u0131 kesmeni engellemeye geldim."
       trustChange: 0
       faithChange: 1
       hostilityChange: 4
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_05
@@ -5299,19 +6133,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "A\u011Fa\xE7 da bir kaynak sonu\xE7ta."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Duygusall\u0131k i\u015Fini zorla\u015Ft\u0131r\u0131r."
       trustChange: 1
       faithChange: 0
       hostilityChange: 3
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_06
@@ -5325,19 +6165,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Kendimi yaln\u0131z hissetti\u011Fimde."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Her zaman g\xFC\xE7l\xFCy\xFCmd\xFCr."
       trustChange: 0
       faithChange: 1
       hostilityChange: 2
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_07
@@ -5351,19 +6197,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Herkes kendi ba\u015F\u0131n\u0131n \xE7aresine baks\u0131n."
       trustChange: 1
       faithChange: 1
       hostilityChange: 2
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Bu d\xFCzene bir son verilmeli."
       trustChange: 2
       faithChange: 2
       hostilityChange: 3
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_08
@@ -5376,19 +6228,25 @@ MonoBehaviour:
       faithChange: 3
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Karars\u0131z\u0131m, daha g\xF6zlemliyorum."
       trustChange: 2
       faithChange: 2
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Hay\u0131r, hemen gidece\u011Fim."
       trustChange: 0
       faithChange: 1
       hostilityChange: 2
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_09
@@ -5401,19 +6259,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Belki de bir uyar\u0131yd\u0131."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Bir \u015Feyler gizleniyor buralarda."
       trustChange: 1
       faithChange: 1
       hostilityChange: 3
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_10
@@ -5427,19 +6291,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Yolum buraya d\xFC\u015Ft\xFC sadece."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Seninle i\u015Fim olmaz, terzi."
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_11
@@ -5453,19 +6323,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Duruma g\xF6re de\u011Fi\u015Fir."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Kararlar\u0131 sorgulamam."
       trustChange: 0
       faithChange: 1
       hostilityChange: 2
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_12
@@ -5478,19 +6354,25 @@ MonoBehaviour:
       faithChange: 3
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Dayan\u0131kl\u0131 olan en iyisidir."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: Fark etmez, param yok zaten.
       trustChange: 1
       faithChange: 1
       hostilityChange: 2
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_13
@@ -5503,19 +6385,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Biraz g\xF6zlem yap\u0131yorum."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "S\xFCr\xFCy\xFC almaya geldim."
       trustChange: 0
       faithChange: 0
       hostilityChange: 5
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_14
@@ -5528,19 +6416,25 @@ MonoBehaviour:
       faithChange: 3
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Yeni yerler ke\u015Ffederim."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Zaman\u0131n \xF6nemi yoktur bana."
       trustChange: 1
       faithChange: 1
       hostilityChange: 2
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_15
@@ -5553,19 +6447,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Kendimi korurum \xF6nce."
       trustChange: 1
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Ka\xE7mak en iyisi."
       trustChange: 0
       faithChange: 1
       hostilityChange: 3
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_16
@@ -5578,19 +6478,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Bir i\u015F \xE7\u0131karsa ka\xE7\u0131rmam."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Sana ne, i\u015Fine bak."
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_17
@@ -5603,19 +6509,25 @@ MonoBehaviour:
       faithChange: 5
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Ger\xE7eklerle y\xFCzle\u015Fmelisin."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Hayaller zaman kayb\u0131d\u0131r."
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_18
@@ -5628,19 +6540,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "\xD6zg\xFCrce ya\u015Famak yeter."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: Benim hayalim yok.
       trustChange: 1
       faithChange: 1
       hostilityChange: 2
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_19
@@ -5654,19 +6572,25 @@ MonoBehaviour:
       faithChange: 5
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Yaln\u0131zca r\xFCzgar\u0131n oyunudur."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Sa\xE7mal\u0131k bu!"
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_20
@@ -5680,19 +6604,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Sorgulayan bir yabanc\u0131y\u0131."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Bo\u015F bir kabuk."
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_21
@@ -5706,19 +6636,25 @@ MonoBehaviour:
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Ge\xE7mi\u015Fte tak\u0131l\u0131 kald\u0131m."
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     - text: "Hi\xE7bir zaman\u0131n i\xE7inde de\u011Filim."
       trustChange: 1
       faithChange: 1
       hostilityChange: 3
       isGlobalChoice: 0
-      nextNodeId: 
+      opponentTrustChange: 0
+      opponentFaithChange: 0
+      opponentHostilityChange: 0
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   globalDialogueEffects:
@@ -6081,5 +7017,75 @@ MonoBehaviour:
         trustChange: 0
         faithChange: 0
         hostilityChange: 3
+  countryWarriors:
+  - country: 0
+    warriorName: "Krali\xE7e Seraphina"
+    warriorSprite: {fileID: 0}
+    allianceProposalText: "Ben Krali\xE7e Seraphina, Astrahil'in h\xFCk\xFCmdar\u0131.
+      Seninle g\xFC\xE7l\xFC bir ittifak kurmak istiyorum. Birlikte bu d\xFCnyay\u0131
+      y\xF6netebiliriz!"
+    joinWarriorSideText: "Astrahil'in taraf\u0131na kat\u0131l"
+    helpCurrentCountryText: "Mevcut \xFClkeye sad\u0131k kal"
+    joinWarriorTrust: 8
+    joinWarriorFaith: 5
+    joinWarriorHostility: 3
+    helpCurrentTrust: -3
+    helpCurrentFaith: -2
+    helpCurrentHostility: 4
+  - country: 1
+    warriorName: "Ate\u015F Lordu Dravos"
+    warriorSprite: {fileID: 0}
+    allianceProposalText: "Ben Dravos, Alevin Efendisi. K\u0131l\u0131c\u0131n ve
+      cesaretin bizimle olsun; birlikte ate\u015Ften bir saltanat kurar\u0131z!"
+    joinWarriorSideText: "Agnari'nin taraf\u0131na kat\u0131l"
+    helpCurrentCountryText: "Mevcut \xFClkeye sad\u0131k kal"
+    joinWarriorTrust: 9
+    joinWarriorFaith: 3
+    joinWarriorHostility: 5
+    helpCurrentTrust: -4
+    helpCurrentFaith: -2
+    helpCurrentHostility: 5
+  - country: 4
+    warriorName: "G\xF6lge Generali Kael"
+    warriorSprite: {fileID: 0}
+    allianceProposalText: "Ben Kael. G\xF6lge, sab\u0131r ve zeka ile sava\u015F\u0131r.
+      Bana kat\u0131l\u0131rsan g\xF6r\xFCnmeyen zaferler kazan\u0131r\u0131z."
+    joinWarriorSideText: "Varnan'\u0131n taraf\u0131na kat\u0131l"
+    helpCurrentCountryText: "Mevcut \xFClkeye sad\u0131k kal"
+    joinWarriorTrust: 6
+    joinWarriorFaith: 2
+    joinWarriorHostility: 3
+    helpCurrentTrust: -3
+    helpCurrentFaith: -1
+    helpCurrentHostility: 4
+  - country: 3
+    warriorName: "Denge Muhaf\u0131z\u0131 Arion"
+    warriorSprite: {fileID: 0}
+    allianceProposalText: "Ben Arion. Theon, dengeyi korur. Bana kat\u0131l; g\xFC\xE7
+      ile itidal aras\u0131nda yeni bir d\xFCzen kural\u0131m."
+    joinWarriorSideText: "Theon'un taraf\u0131na kat\u0131l"
+    helpCurrentCountryText: "Mevcut \xFClkeye sad\u0131k kal"
+    joinWarriorTrust: 7
+    joinWarriorFaith: 4
+    joinWarriorHostility: 3
+    helpCurrentTrust: -3
+    helpCurrentFaith: -3
+    helpCurrentHostility: 4
+  - country: 2
+    warriorName: "G\xFCne\u015F Z\u0131rh\u0131 Arconte Helion"
+    warriorSprite: {fileID: 0}
+    allianceProposalText: "Ben Helion. I\u015F\u0131\u011F\u0131n ve bilimin g\xFCc\xFCyle
+      sava\u015F\u0131r\u0131z. \u0130ttifak\u0131m\u0131z, karanl\u0131\u011Fa kar\u015F\u0131
+      yeni bir \xE7a\u011F ba\u015Flat\u0131r."
+    joinWarriorSideText: "Solarya'n\u0131n taraf\u0131na kat\u0131l"
+    helpCurrentCountryText: "Mevcut \xFClkeye sad\u0131k kal"
+    joinWarriorTrust: 7
+    joinWarriorFaith: 3
+    joinWarriorHostility: 4
+    helpCurrentTrust: -3
+    helpCurrentFaith: -2
+    helpCurrentHostility: 5
   mapSpecificInterval: 5
   globalDialogueInterval: 16
+  enableWarriorEncounters: 1
+  warriorEncounterChance: 0.2

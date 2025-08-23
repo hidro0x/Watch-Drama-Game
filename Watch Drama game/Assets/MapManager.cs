@@ -15,8 +15,10 @@ public class MapManager : MonoBehaviour
     // Global diyalog referansı
     private GlobalDialogueNode currentGlobalDialogue = null;
     
-    // Zorunlu gösterilecek (nextNodeId ile gelen) bir sonraki diyalog
-    private DialogueNode pendingForcedNode = null;
+
+    
+    // Her ülkede savaşçı karşılaşması sadece bir kere olsun
+    private HashSet<MapType> warriorEncounteredCountries = new HashSet<MapType>();
     
     // Events
     public static event Action<MapType> OnMapSelected;
@@ -47,23 +49,8 @@ public class MapManager : MonoBehaviour
     {
         if (currentMap == null) return;
         
-        // Eğer nextNodeId ile zorunlu bir diyalog planlandıysa onu göster
-        if (pendingForcedNode != null)
-        {
-            var node = pendingForcedNode;
-            pendingForcedNode = null;
-            ForceShowSpecificDialogueAndAdvanceTurn(node);
-            return;
-        }
-        
         // Normal akış
         StartNextDialogue();
-    }
-    
-    // nextNodeId akışı için önceden haber ver
-    public void PrepareForcedNextDialogue(DialogueNode node)
-    {
-        pendingForcedNode = node;
     }
     
     public void SelectMap(MapType mapType)
@@ -98,8 +85,8 @@ public class MapManager : MonoBehaviour
         // Turn sonunda condition'ları kontrol et
         CheckTurnConditions();
         
-        // Şans bazlı rakip karşılaşması kontrolü
-        DialogueNode selectedDialogue = TrySelectRivalEncounter();
+        // Şans bazlı savaşçı karşılaşması kontrolü (sadece genel diyaloglar sırasında)
+        DialogueNode selectedDialogue = TrySelectWarriorEncounter();
         if (selectedDialogue == null)
         {
             // Harita tamamlandı mı kontrolü gerekiyorsa burada yapılabilir
@@ -120,28 +107,7 @@ public class MapManager : MonoBehaviour
         }
     }
     
-    // Zorunlu node gösterme ve turn ilerletme
-    public void ForceShowSpecificDialogueAndAdvanceTurn(DialogueNode forcedNode)
-    {
-        if (currentMap == null)
-        {
-            Debug.LogError("Aktif harita yok!");
-            return;
-        }
-        
-        DialogueManager dialogueManager = UnityEngine.Object.FindFirstObjectByType<DialogueManager>();
-        dialogueManager.NextTurn();
-        mapTurns[currentMap.Value]++;
-        
-        // Turn sonunda condition'ları kontrol et
-        CheckTurnConditions();
-        
-        // Zorunlu node'u göster
-        if (dialogueManager != null)
-        {
-            dialogueManager.ShowSpecificDialogue(forcedNode);
-        }
-    }
+
     
     /// <summary>
     /// Turn sonunda condition'ları kontrol eder
@@ -222,65 +188,81 @@ public class MapManager : MonoBehaviour
         return dialogueNode;
     }
 
-    // Basit: Şans bazlı rakip karşılaşması
-    // Örnek oran: %15, rakip ülke havuzdan rastgele seçilir (aktif ülke hariç)
-    private DialogueNode TrySelectRivalEncounter()
+    // Savaşçı karşılaşması - sadece genel diyaloglar sırasında ve her ülkede bir kere
+    private DialogueNode TrySelectWarriorEncounter()
     {
         var db = dialogueDatabase;
-        if (db == null || !db.enableRivalEncounters) return null;
-        // Turn aralığı kontrolü
-        DialogueManager dialogueManager = UnityEngine.Object.FindFirstObjectByType<DialogueManager>();
-        int currentTurn = dialogueManager?.GetCurrentTurn() ?? 0;
-        if (db.rivalEncounterInterval > 0 && currentTurn % db.rivalEncounterInterval != 0) return null;
-        // Şans kontrolü
-        float chance = Mathf.Clamp01(db.rivalEncounterChance);
-        if (UnityEngine.Random.value > chance) return null;
+        if (db == null || !db.enableWarriorEncounters) return null;
         if (currentMap == null) return null;
-        if (db == null || db.generalDialogues == null || db.generalDialogues.Count == 0) return null;
-
-        // General havuzdan bir diyalog seç, flag'ini set et ve rakibi ata
-        DialogueNode candidate = null;
-        // Genel havuzda kullanılabilir bir node bul
-        for (int i = 0; i < 5; i++)
-        {
-            var tmp = db.generalDialogues[UnityEngine.Random.Range(0, db.generalDialogues.Count)];
-            if (tmp != null && tmp.choices != null && tmp.choices.Count >= 1)
-            {
-                candidate = tmp;
-                break;
-            }
-        }
-        if (candidate == null) return null;
-
-        // Kopya oluşturup işaretle (orijinal asseti kirletmemek için)
+        
+        // Bu ülkede daha önce savaşçı karşılaşması oldu mu kontrol et
+        if (warriorEncounteredCountries.Contains(currentMap.Value)) return null;
+        
+        // Şans kontrolü
+        float chance = Mathf.Clamp01(db.warriorEncounterChance);
+        if (UnityEngine.Random.value > chance) return null;
+        
+        // Rastgele bir rakip ülke savaşçısı seç
+        var opponentCountry = PickRandomOpponent(currentMap.Value);
+        var warrior = GetWarriorForCountry(opponentCountry);
+        if (warrior == null) return null;
+        
+        // Bu ülkede savaşçı karşılaşması olduğunu işaretle
+        warriorEncounteredCountries.Add(currentMap.Value);
+        
+        // Dinamik taraf seçme diyalogu oluştur
         var node = new DialogueNode
         {
-            id = candidate.id,
-            name = string.IsNullOrEmpty(candidate.name) ? "Rival" : candidate.name,
-            sprite = candidate.sprite,
-            text = candidate.text,
-            backgroundSprite = candidate.backgroundSprite,
-            isGlobalDialogue = false,
-            isRivalEncounter = true,
-            rivalOpponent = PickRandomOpponent(currentMap.Value)
+            id = $"warrior_{opponentCountry}",
+            name = warrior.warriorName,
+            sprite = warrior.warriorSprite,
+            text = warrior.allianceProposalText,
+            backgroundSprite = null,
+            isGlobalDialogue = false
         };
+        
+        // İki seçenek: Savaşçının tarafına katıl veya mevcut ülkeye yardım et
         node.choices = new List<DialogueChoice>();
-        foreach (var c in candidate.choices)
+        
+        // Savaşçının tarafına katıl
+        node.choices.Add(new DialogueChoice
         {
-            node.choices.Add(new DialogueChoice
-            {
-                text = c.text,
-                trustChange = c.trustChange,
-                faithChange = c.faithChange,
-                hostilityChange = c.hostilityChange,
-                isGlobalChoice = c.isGlobalChoice,
-                nextNodeId = c.nextNodeId,
-                opponentTrustChange = 0,
-                opponentFaithChange = 0,
-                opponentHostilityChange = 0
-            });
-        }
+            text = warrior.joinWarriorSideText,
+            trustChange = warrior.joinWarriorTrust,
+            faithChange = warrior.joinWarriorFaith,
+            hostilityChange = warrior.joinWarriorHostility,
+            isGlobalChoice = false,
+            opponentTrustChange = 3,
+            opponentFaithChange = 2,
+            opponentHostilityChange = 5
+        });
+        
+        // Mevcut ülkeye yardım et
+        node.choices.Add(new DialogueChoice
+        {
+            text = warrior.helpCurrentCountryText,
+            trustChange = warrior.helpCurrentTrust,
+            faithChange = warrior.helpCurrentFaith,
+            hostilityChange = warrior.helpCurrentHostility,
+            isGlobalChoice = false,
+            opponentTrustChange = -2,
+            opponentFaithChange = -1,
+            opponentHostilityChange = 1
+        });
+        
         return node;
+    }
+    
+    private CountryWarrior GetWarriorForCountry(MapType country)
+    {
+        var db = dialogueDatabase;
+        if (db == null || db.countryWarriors == null) return null;
+        
+        foreach (var warrior in db.countryWarriors)
+        {
+            if (warrior.country == country) return warrior;
+        }
+        return null;
     }
 
     private MapType PickRandomOpponent(MapType exclude)
@@ -313,6 +295,7 @@ public class MapManager : MonoBehaviour
         mapTurns.Clear();
         currentMap = null;
         currentGlobalDialogue = null; // Global diyalog referansını da temizle
+        warriorEncounteredCountries.Clear(); // Savaşçı karşılaşma geçmişini temizle
     }
 
 
