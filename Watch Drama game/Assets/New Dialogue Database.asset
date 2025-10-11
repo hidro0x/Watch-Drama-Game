@@ -16,26 +16,26 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 21300000, guid: 5140979f1f940dd4287c3f937d62d661, type: 3}
-    - {fileID: 21300000, guid: a1f0751f3e4dbec42a2d685b390f337c, type: 3}
-    - {fileID: 21300000, guid: 8e896b17471b21c419a9f7b8092efd45, type: 3}
-    - {fileID: 21300000, guid: 3238bcf3afc6e3d4298f7ecbfbe29e36, type: 3}
-    - {fileID: 21300000, guid: 2cd1214c40118c741950f0cc034327de, type: 3}
-    - {fileID: 21300000, guid: 26ec41092625c084abcfa9c9fe3c041f, type: 3}
-    - {fileID: 21300000, guid: c651855bbf9ccb74e8ae6baaaabeec42, type: 3}
-    - {fileID: 21300000, guid: 52bc136ee5a40854f9de8227815a4100, type: 3}
-    - {fileID: 21300000, guid: 6a05892e86b84af40afefa948cdab7a4, type: 3}
-    - {fileID: 21300000, guid: 3b5a2e78817f38843ab8bab2b385824d, type: 3}
-    - {fileID: 21300000, guid: f6251e67433e4364fa9339eb4eb1623a, type: 3}
-    - {fileID: 21300000, guid: f66b1882440a1bb43a99071f4ea52924, type: 3}
-    - {fileID: 21300000, guid: b0b7d186aedd2be42a959cfeb28bbc9e, type: 3}
-    - {fileID: 21300000, guid: b35dc86171308e745b06d41792e2c9ae, type: 3}
-    - {fileID: 21300000, guid: d2f905a0ec8b9524a95eef28be0623b4, type: 3}
-    - {fileID: 21300000, guid: 1125c9df355fedc47ba2f01405296545, type: 3}
-    - {fileID: 21300000, guid: a612029496e2680458968367a64fa4c6, type: 3}
+    - {fileID: 7577220534501499005, guid: 971c26c04b1f4094381642c369dd9eb1, type: 3}
+    - {fileID: -8424203280747765378, guid: afeca4982bea3af4385465054c47936e, type: 3}
+    - {fileID: -3610142382256293247, guid: ed598413bbf9c044f94380f40e8c5bb1, type: 3}
+    - {fileID: 5083553646100931297, guid: d356d1f866c85f0419bda97da0002b91, type: 3}
+    - {fileID: 2950376048903711399, guid: a70f169ecc7965e45a385b97e3de35ff, type: 3}
+    - {fileID: 1162334233193285745, guid: 127ab56932638674ca73d5fd986c4117, type: 3}
+    - {fileID: -1888665144130760584, guid: 2cf00051ea4a49a468b5358bfb95b996, type: 3}
+    - {fileID: 611229527524370839, guid: d13c3a8d83ca09f43b4993c36136f081, type: 3}
+    - {fileID: -1634364802510623753, guid: afd3083810fe6db43ac3f8994a233d7f, type: 3}
+    - {fileID: 5977595905246154407, guid: b470724451a80c94d898e8bf38a80a88, type: 3}
+    - {fileID: -2135552259498141439, guid: c46bef6bad0c01041bdbb403ec3a8abe, type: 3}
+    - {fileID: 25535211364710562, guid: 7298e9b54189da84c842f0b24349bd4a, type: 3}
+    - {fileID: 4246733751768426875, guid: d98c8f441d9334742892bb47c7b6dc00, type: 3}
+    - {fileID: -4814437822384209800, guid: dbdcb92abde557243a33f54484363cc0, type: 3}
+    - {fileID: -5367458613230219050, guid: e37642d1d0c765c4691104d97c61a27a, type: 3}
+    - {fileID: 8289965311854818517, guid: 6b01ad56bf096f44087eaf348d579f47, type: 3}
+    - {fileID: 7851397868801416738, guid: 52841e13cbeda0047897b762b7ecc4ef, type: 3}
     - {fileID: 21300000, guid: c396aaae34468ec4ca4b429468637071, type: 3}
-    - {fileID: 21300000, guid: 6ec008b7a46e4ae40a7c01db88244b4b, type: 3}
-    - {fileID: 21300000, guid: a3d1bd0ba94f52b44911117256d34d85, type: 3}
+    - {fileID: -2889911701040867891, guid: 7b32bedf7d9c71346b27c7fa6f201688, type: 3}
+    - {fileID: -227458195820810653, guid: 9d324f7997cd2f54c8635b93e348bd33, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -82,13 +82,13 @@ MonoBehaviour:
       Data: agnari_01
     - Name: name
       Entry: 1
-      Data: "Gen\xE7 Alev Rahibesi Mira"
+      Data: 'Young Flame Priestess Mira '
     - Name: sprite
       Entry: 10
       Data: 0
     - Name: text
       Entry: 1
-      Data: "Alev seni se\xE7ti mi, yoksa sen mi ona y\xFCr\xFCd\xFCn?"
+      Data: "Did the flame choose you, or did you walk toward it?\r"
     - Name: choices
       Entry: 7
       Data: 4|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -101,7 +101,7 @@ MonoBehaviour:
       Data: 5|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Alev i\xE7imde do\u011Fdu."
+      Data: 'The flame was born within me. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -125,7 +125,7 @@ MonoBehaviour:
       Data: 6|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Yolumu onunla buldum.
+      Data: 'I found my path through it. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -149,7 +149,7 @@ MonoBehaviour:
       Data: 7|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ate\u015Ften uzak dururum."
+      Data: 'I keep my distance from fire. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -191,14 +191,13 @@ MonoBehaviour:
       Data: agnari_02
     - Name: name
       Entry: 1
-      Data: "Gen\xE7 Alev Rahibesi Mira"
+      Data: 'Young Flame Priestess Mira '
     - Name: sprite
       Entry: 10
       Data: 0
     - Name: text
       Entry: 1
-      Data: "\u0130nan\xE7s\u0131z biri alevi s\xF6nd\xFCrebilir. Senin kalbin ne
-        diyor?"
+      Data: "One without faith can extinguish the flame. What does your heart say?\r"
     - Name: choices
       Entry: 7
       Data: 9|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -211,7 +210,7 @@ MonoBehaviour:
       Data: 10|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "\u0130nanc\u0131m sars\u0131lmaz."
+      Data: 'My faith is unshakable. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -235,7 +234,7 @@ MonoBehaviour:
       Data: 11|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "\u015E\xFCphelerim var ama ilerliyorum."
+      Data: 'I have doubts, but I move forward. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -259,7 +258,7 @@ MonoBehaviour:
       Data: 12|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "\u0130nan\xE7 zaman kayb\u0131."
+      Data: 'Faith is a waste of time. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -301,13 +300,13 @@ MonoBehaviour:
       Data: agnari_03
     - Name: name
       Entry: 1
-      Data: "Gen\xE7 Alev Rahibesi Mira"
+      Data: 'Young Flame Priestess Mira '
     - Name: sprite
       Entry: 10
       Data: 0
     - Name: text
       Entry: 1
-      Data: "Agnari\u2019nin kutsal\u0131 \xF6n\xFCnde diz \xE7\xF6ker misin?"
+      Data: "Will you kneel before Agnari\u2019s sacred light?\r"
     - Name: choices
       Entry: 7
       Data: 14|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -320,7 +319,7 @@ MonoBehaviour:
       Data: 15|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Onun yolunda y\xFCr\xFCr\xFCm."
+      Data: 'I walk in its path. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -344,7 +343,7 @@ MonoBehaviour:
       Data: 16|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Sayg\u0131 duyar\u0131m ama itaat etmem."
+      Data: "I respect it, but I won\u2019t obey. "
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -368,7 +367,7 @@ MonoBehaviour:
       Data: 17|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kutsall\u0131k beni ilgilendirmez."
+      Data: 'The sacred means nothing to me. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -410,13 +409,13 @@ MonoBehaviour:
       Data: agnari_04
     - Name: name
       Entry: 1
-      Data: "Agnari Muhaf\u0131z\u0131 Karok"
+      Data: 'Agnari Guardian Karok '
     - Name: sprite
       Entry: 10
       Data: 1
     - Name: text
       Entry: 1
-      Data: "Bu topraklara izinsiz girdin. Ne i\xE7in buradas\u0131n?"
+      Data: "You\u2019ve entered these lands without permission. Why are you here?\r"
     - Name: choices
       Entry: 7
       Data: 19|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -429,7 +428,7 @@ MonoBehaviour:
       Data: 20|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Bar\u0131\u015F i\xE7in geldim."
+      Data: 'I come in peace. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -453,7 +452,7 @@ MonoBehaviour:
       Data: 21|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Bilgi ar\u0131yorum."
+      Data: 'I seek knowledge. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -477,7 +476,7 @@ MonoBehaviour:
       Data: 22|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "\u0130\u015Fgal i\xE7in buraday\u0131m."
+      Data: "I\u2019m here to invade. "
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -519,13 +518,13 @@ MonoBehaviour:
       Data: agnari_05
     - Name: name
       Entry: 1
-      Data: "Agnari Muhaf\u0131z\u0131 Karok"
+      Data: 'Agnari Guardian Karok '
     - Name: sprite
       Entry: 10
       Data: 1
     - Name: text
       Entry: 1
-      Data: "Silah\u0131n var m\u0131, yoksa kelimelere mi g\xFCvenirsin?"
+      Data: "Do you rely on weapons, or on words?\r"
     - Name: choices
       Entry: 7
       Data: 24|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -538,7 +537,7 @@ MonoBehaviour:
       Data: 25|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "S\xF6zlerim kalkan\u0131md\u0131r."
+      Data: 'My words are my shield. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -562,7 +561,7 @@ MonoBehaviour:
       Data: 26|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Kendimi korurum.
+      Data: 'I can protect myself. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -586,7 +585,7 @@ MonoBehaviour:
       Data: 27|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Silahlar konu\u015Fsun."
+      Data: 'Let the weapons speak. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -628,13 +627,13 @@ MonoBehaviour:
       Data: agnari_06
     - Name: name
       Entry: 1
-      Data: "Agnari Muhaf\u0131z\u0131 Karok"
+      Data: 'Agnari Guardian Karok '
     - Name: sprite
       Entry: 10
       Data: 1
     - Name: text
       Entry: 1
-      Data: "Agnari d\xFC\u015Fmanlar\u0131n\u0131 affetmez. Sen affedilebilir misin?"
+      Data: "Agnari does not forgive its enemies. Can you be forgiven?\r"
     - Name: choices
       Entry: 7
       Data: 29|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -647,7 +646,7 @@ MonoBehaviour:
       Data: 30|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ben de\u011Fi\u015Ftim."
+      Data: 'I have changed. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -671,7 +670,7 @@ MonoBehaviour:
       Data: 31|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Zaman g\xF6sterecek."
+      Data: 'Time will tell. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -695,7 +694,7 @@ MonoBehaviour:
       Data: 32|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Hi\xE7bir zaman affedilmeyi beklemedim."
+      Data: 'I never expected forgiveness. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -737,14 +736,13 @@ MonoBehaviour:
       Data: agnari_07
     - Name: name
       Entry: 1
-      Data: Alev Cevhercisi Lena
+      Data: 'Flame Gemsmith Lena '
     - Name: sprite
       Entry: 10
       Data: 2
     - Name: text
       Entry: 1
-      Data: "Bu cevher yaln\u0131zca y\xFCrekle par\u0131ldar. Senin y\xFCre\u011Fin
-        neyle dolu?"
+      Data: "This gem shines only through the heart. What fills yours?\r"
     - Name: choices
       Entry: 7
       Data: 34|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -757,7 +755,7 @@ MonoBehaviour:
       Data: 35|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "\u0130nan\xE7la dolu."
+      Data: 'Filled with faith. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -781,7 +779,7 @@ MonoBehaviour:
       Data: 36|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Merakla dolu.
+      Data: 'Filled with curiosity. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -805,7 +803,7 @@ MonoBehaviour:
       Data: 37|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Hi\xE7bir \u015Feyle."
+      Data: 'With nothing at all. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -847,13 +845,13 @@ MonoBehaviour:
       Data: agnari_08
     - Name: name
       Entry: 1
-      Data: Alev Cevhercisi Lena
+      Data: 'Flame Gemsmith Lena '
     - Name: sprite
       Entry: 10
       Data: 2
     - Name: text
       Entry: 1
-      Data: Cevherin sesi var, ama herkes duymaz. Sen duydun mu?
+      Data: "The gem has a voice, but not all can hear it. Have you?\r"
     - Name: choices
       Entry: 7
       Data: 39|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -866,7 +864,7 @@ MonoBehaviour:
       Data: 40|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "F\u0131s\u0131lt\u0131s\u0131n\u0131 bile duydum."
+      Data: "I\u2019ve heard even its whispers. "
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -890,7 +888,7 @@ MonoBehaviour:
       Data: 41|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Bir yank\u0131 hissettim."
+      Data: "I\u2019ve felt an echo. "
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -914,7 +912,7 @@ MonoBehaviour:
       Data: 42|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Hi\xE7bir \u015Fey duymad\u0131m."
+      Data: "I\u2019ve heard nothing. "
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -956,13 +954,13 @@ MonoBehaviour:
       Data: agnari_09
     - Name: name
       Entry: 1
-      Data: Alev Cevhercisi Lena
+      Data: 'Flame Gemsmith Lena '
     - Name: sprite
       Entry: 10
       Data: 2
     - Name: text
       Entry: 1
-      Data: "Cevheri \xE7almak isteyenler oldu. Sen onlardan m\u0131s\u0131n?"
+      Data: "Some came to steal the gem. Are you one of them?\r"
     - Name: choices
       Entry: 7
       Data: 44|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -975,7 +973,7 @@ MonoBehaviour:
       Data: 45|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Onu korumaya geldim.
+      Data: 'I came to protect it. '
     - Name: trustChange
       Entry: 3
       Data: 4
@@ -999,7 +997,7 @@ MonoBehaviour:
       Data: 46|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Sadece bakmak istiyorum.
+      Data: 'I just want to look. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -1023,7 +1021,7 @@ MonoBehaviour:
       Data: 47|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Evet, cevher benim olacak.
+      Data: 'Yes, it shall be mine. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -1087,14 +1085,13 @@ MonoBehaviour:
       Data: solarya_01
     - Name: name
       Entry: 1
-      Data: "G\xFCne\u015F Tap\u0131na\u011F\u0131 Rahibi Solon"
+      Data: 'Sun Temple Priest Solon '
     - Name: sprite
       Entry: 10
       Data: 3
     - Name: text
       Entry: 1
-      Data: "G\xFCne\u015F \u0131\u015F\u0131\u011F\u0131n\u0131 aramaya m\u0131
-        geldin, yoksa ondan ka\xE7maya m\u0131?"
+      Data: "Have you come seeking the light of the sun, or fleeing from it?\r"
     - Name: choices
       Entry: 7
       Data: 50|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -1107,7 +1104,7 @@ MonoBehaviour:
       Data: 51|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "I\u015F\u0131k yolumdur."
+      Data: 'The light is my path. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -1131,7 +1128,7 @@ MonoBehaviour:
       Data: 52|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Hen\xFCz karar vermedim."
+      Data: "I haven\u2019t decided yet. "
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -1155,7 +1152,7 @@ MonoBehaviour:
       Data: 53|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xF6lgeyi tercih ederim."
+      Data: 'I prefer the shadows. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -1197,14 +1194,13 @@ MonoBehaviour:
       Data: solarya_02
     - Name: name
       Entry: 1
-      Data: "G\xFCne\u015F Tap\u0131na\u011F\u0131 Rahibi Solon"
+      Data: 'Sun Temple Priest Solon '
     - Name: sprite
       Entry: 10
       Data: 3
     - Name: text
       Entry: 1
-      Data: "Tap\u0131nak sadece hak edenleri ayd\u0131nlat\u0131r. Sen haz\u0131r
-        m\u0131s\u0131n?"
+      Data: "The temple shines only upon the worthy. Are you ready?\r"
     - Name: choices
       Entry: 7
       Data: 55|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -1217,7 +1213,7 @@ MonoBehaviour:
       Data: 56|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kalbim haz\u0131r."
+      Data: 'My heart is ready. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -1241,7 +1237,7 @@ MonoBehaviour:
       Data: 57|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "S\u0131nanmaya haz\u0131r\u0131m."
+      Data: "I\u2019m ready to be tested. "
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -1265,7 +1261,7 @@ MonoBehaviour:
       Data: 58|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Beni kimse s\u0131nayamaz."
+      Data: 'No one can test me. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -1307,14 +1303,13 @@ MonoBehaviour:
       Data: solarya_03
     - Name: name
       Entry: 1
-      Data: "G\xFCne\u015F Tap\u0131na\u011F\u0131 Rahibi Solon"
+      Data: 'Sun Temple Priest Solon '
     - Name: sprite
       Entry: 10
       Data: 3
     - Name: text
       Entry: 1
-      Data: "G\xF6zlerin kama\u015Ft\u0131\u011F\u0131nda bile ger\xE7e\u011Fi g\xF6rebilir
-        misin?"
+      Data: "Can you see the truth even when your eyes are blinded?\r"
     - Name: choices
       Entry: 7
       Data: 60|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -1327,7 +1322,7 @@ MonoBehaviour:
       Data: 61|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ger\xE7ek i\xE7imdedir."
+      Data: 'The truth lies within me. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -1351,7 +1346,7 @@ MonoBehaviour:
       Data: 62|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ger\xE7ek de\u011Fi\u015Fkendir."
+      Data: 'The truth is ever-changing. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -1375,7 +1370,7 @@ MonoBehaviour:
       Data: 63|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ger\xE7ek yaland\u0131r."
+      Data: 'The truth is a lie. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -1417,14 +1412,13 @@ MonoBehaviour:
       Data: solarya_04
     - Name: name
       Entry: 1
-      Data: "Alt\u0131n M\xFChendis Celya"
+      Data: 'Golden Engineer Celya '
     - Name: sprite
       Entry: 10
       Data: 4
     - Name: text
       Entry: 1
-      Data: "Alt\u0131nla \xE7al\u0131\u015Fan bir d\xFCzen kurduk. Ona lay\u0131k
-        m\u0131s\u0131n?"
+      Data: "We built an order powered by gold. Are you worthy of it?\r"
     - Name: choices
       Entry: 7
       Data: 65|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -1437,7 +1431,7 @@ MonoBehaviour:
       Data: 66|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Emekle kazan\u0131r\u0131m."
+      Data: 'I earn through hard work. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -1461,7 +1455,7 @@ MonoBehaviour:
       Data: 67|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Lay\u0131k olup olmad\u0131\u011F\u0131m\u0131 g\xF6rece\u011Fiz."
+      Data: "Time will tell if I\u2019m worthy. "
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -1485,7 +1479,7 @@ MonoBehaviour:
       Data: 68|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Alt\u0131n i\xE7in her \u015Fey m\xFCbaht\u0131r."
+      Data: 'Anything is allowed for gold. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -1527,13 +1521,13 @@ MonoBehaviour:
       Data: solarya_05
     - Name: name
       Entry: 1
-      Data: "Alt\u0131n M\xFChendis Celya"
+      Data: 'Golden Engineer Celya '
     - Name: sprite
       Entry: 10
       Data: 4
     - Name: text
       Entry: 1
-      Data: "D\xFCzen mi istersin, yoksa kaos mu getirirsin?"
+      Data: "Do you seek order, or do you bring chaos?\r"
     - Name: choices
       Entry: 7
       Data: 70|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -1546,7 +1540,7 @@ MonoBehaviour:
       Data: 71|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "D\xFCzen i\xE7in buraday\u0131m."
+      Data: "I\u2019m here for order. "
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -1570,7 +1564,7 @@ MonoBehaviour:
       Data: 72|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Hangisi daha \xE7ok kazand\u0131r\u0131rsa."
+      Data: 'Whichever brings more gain. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -1594,7 +1588,7 @@ MonoBehaviour:
       Data: 73|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Kaosun hizmetindeyim.
+      Data: 'I serve chaos. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -1636,13 +1630,13 @@ MonoBehaviour:
       Data: solarya_06
     - Name: name
       Entry: 1
-      Data: "Alt\u0131n M\xFChendis Celya"
+      Data: 'Golden Engineer Celya '
     - Name: sprite
       Entry: 10
       Data: 4
     - Name: text
       Entry: 1
-      Data: "Makineyi durdurmak m\u0131, yoksa h\u0131zland\u0131rmak m\u0131 istersin?"
+      Data: "Would you stop the machine, or make it run faster?\r"
     - Name: choices
       Entry: 7
       Data: 75|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -1655,7 +1649,7 @@ MonoBehaviour:
       Data: 76|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kontroll\xFC ilerlemek isterim."
+      Data: 'I prefer steady progress. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -1679,7 +1673,7 @@ MonoBehaviour:
       Data: 77|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Daha h\u0131zl\u0131, daha g\xFC\xE7l\xFC!"
+      Data: 'Faster, stronger! '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -1703,7 +1697,7 @@ MonoBehaviour:
       Data: 78|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Makineyi y\u0131kmak i\xE7in geldim."
+      Data: 'I came to destroy the machine. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -1745,14 +1739,13 @@ MonoBehaviour:
       Data: solarya_07
     - Name: name
       Entry: 1
-      Data: "G\xFCne\u015F Muhaf\u0131z\u0131 Talmar"
+      Data: 'Sun Guardian Talmar '
     - Name: sprite
       Entry: 10
       Data: 5
     - Name: text
       Entry: 1
-      Data: "Bu kap\u0131 \u0131\u015F\u0131kla a\xE7\u0131l\u0131r. Kalbinde \u0131\u015F\u0131k
-        var m\u0131?"
+      Data: "This gate opens only with light. Do you hold light in your heart?\r"
     - Name: choices
       Entry: 7
       Data: 80|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -1765,7 +1758,7 @@ MonoBehaviour:
       Data: 81|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xFCne\u015F i\xE7imi ayd\u0131nlat\u0131r."
+      Data: 'The sun illuminates my soul. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -1789,7 +1782,7 @@ MonoBehaviour:
       Data: 82|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xF6lgede kalm\u0131\u015F olabilirim."
+      Data: 'I may have lingered in the shadows. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -1813,7 +1806,7 @@ MonoBehaviour:
       Data: 83|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "I\u015F\u0131k g\xF6z\xFCm\xFC al\u0131yor."
+      Data: 'The light blinds me. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -1855,13 +1848,13 @@ MonoBehaviour:
       Data: solarya_08
     - Name: name
       Entry: 1
-      Data: "G\xFCne\u015F Muhaf\u0131z\u0131 Talmar"
+      Data: 'Sun Guardian Talmar '
     - Name: sprite
       Entry: 10
       Data: 5
     - Name: text
       Entry: 1
-      Data: "G\xFCne\u015Fin alt\u0131nda herkes e\u015Fit de\u011Fildir. Sen neredesin?"
+      Data: "Beneath the sun, not all are equal. Where do you stand?\r"
     - Name: choices
       Entry: 7
       Data: 85|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -1874,7 +1867,7 @@ MonoBehaviour:
       Data: 86|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Hizmet edenim.
+      Data: 'I am one who serves. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -1898,7 +1891,7 @@ MonoBehaviour:
       Data: 87|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kendi yolumu se\xE7tim."
+      Data: 'I chose my own path. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -1922,7 +1915,7 @@ MonoBehaviour:
       Data: 88|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "I\u015F\u0131\u011F\u0131n h\xFCkm\xFCn\xFC tan\u0131mam."
+      Data: 'I do not bow to the light. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -1964,13 +1957,13 @@ MonoBehaviour:
       Data: solarya_09
     - Name: name
       Entry: 1
-      Data: "G\xFCne\u015F Muhaf\u0131z\u0131 Talmar"
+      Data: 'Sun Guardian Talmar '
     - Name: sprite
       Entry: 10
       Data: 5
     - Name: text
       Entry: 1
-      Data: "Kalkan\u0131m\u0131 indirirsem, arkamdan vurur musun?"
+      Data: "If I lower my shield, will you strike me from behind?\r"
     - Name: choices
       Entry: 7
       Data: 90|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -1983,7 +1976,7 @@ MonoBehaviour:
       Data: 91|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xFCvenine lay\u0131\u011F\u0131m."
+      Data: 'I am worthy of your trust. '
     - Name: trustChange
       Entry: 3
       Data: 4
@@ -2007,7 +2000,7 @@ MonoBehaviour:
       Data: 92|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xFCven tehlikelidir."
+      Data: 'Trust is dangerous. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -2031,7 +2024,7 @@ MonoBehaviour:
       Data: 93|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Evet, ilk f\u0131rsatta."
+      Data: 'Yes, at the first chance. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -2095,13 +2088,13 @@ MonoBehaviour:
       Data: astharil_01
     - Name: name
       Entry: 1
-      Data: "Ruh \u015Eifac\u0131s\u0131 Ihlira"
+      Data: 'Soul Healer Ihlira '
     - Name: sprite
       Entry: 10
       Data: 6
     - Name: text
       Entry: 1
-      Data: "Ruhun yorgun g\xF6r\xFCn\xFCyor. \u015Eifa m\u0131 ar\u0131yorsun?"
+      Data: "Your soul looks weary. Are you seeking healing?\r"
     - Name: choices
       Entry: 7
       Data: 96|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -2114,7 +2107,7 @@ MonoBehaviour:
       Data: 97|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Evet, huzur istiyorum.
+      Data: 'Yes, I long for peace. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -2138,7 +2131,7 @@ MonoBehaviour:
       Data: 98|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Yaralar\u0131m\u0131 kendim sarar\u0131m."
+      Data: 'I will heal my own wounds. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -2162,7 +2155,7 @@ MonoBehaviour:
       Data: 99|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "\u015Eifa yalan bir tesellidir."
+      Data: Healing is a false comfort.
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -2204,13 +2197,13 @@ MonoBehaviour:
       Data: astharil_02
     - Name: name
       Entry: 1
-      Data: "Ruh \u015Eifac\u0131s\u0131 Ihlira"
+      Data: 'Soul Healer Ihlira '
     - Name: sprite
       Entry: 10
       Data: 6
     - Name: text
       Entry: 1
-      Data: "Sessizlik i\xE7inde konu\u015Fanlar\u0131 duyabiliyor musun?"
+      Data: "Can you hear the ones who speak within silence?\r"
     - Name: choices
       Entry: 7
       Data: 101|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -2223,7 +2216,7 @@ MonoBehaviour:
       Data: 102|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kalbimle duyar\u0131m."
+      Data: 'I hear them with my heart. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -2247,7 +2240,7 @@ MonoBehaviour:
       Data: 103|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Bazen f\u0131s\u0131lt\u0131lar gelir."
+      Data: 'Sometimes I catch their whispers. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -2271,7 +2264,7 @@ MonoBehaviour:
       Data: 104|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Sessizlik bana bir \u015Fey s\xF6ylemez."
+      Data: 'Silence speaks nothing to me. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -2313,13 +2306,13 @@ MonoBehaviour:
       Data: astharil_03
     - Name: name
       Entry: 1
-      Data: "Ruh \u015Eifac\u0131s\u0131 Ihlira"
+      Data: 'Soul Healer Ihlira '
     - Name: sprite
       Entry: 10
       Data: 6
     - Name: text
       Entry: 1
-      Data: "Karanl\u0131k seni buldu\u011Funda ne yapars\u0131n?"
+      Data: "What do you do when darkness finds you?\r"
     - Name: choices
       Entry: 7
       Data: 106|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -2332,7 +2325,7 @@ MonoBehaviour:
       Data: 107|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "I\u015F\u0131\u011F\u0131 hat\u0131rlar\u0131m."
+      Data: 'I remember the light. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -2356,7 +2349,7 @@ MonoBehaviour:
       Data: 108|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Karanl\u0131\u011Fa al\u0131\u015F\u0131r\u0131m."
+      Data: 'I grow used to the dark. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -2380,7 +2373,7 @@ MonoBehaviour:
       Data: 109|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Karanl\u0131k benim evimdir."
+      Data: 'Darkness is my home. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -2422,13 +2415,13 @@ MonoBehaviour:
       Data: astharil_04
     - Name: name
       Entry: 1
-      Data: Sis Rahibi Thamor
+      Data: 'Priest of Mist Thamor '
     - Name: sprite
       Entry: 10
       Data: 7
     - Name: text
       Entry: 1
-      Data: "Sis her \u015Feyi \xF6rter. Ger\xE7e\u011Fi g\xF6rebiliyor musun?"
+      Data: "The mist covers all things. Can you see the truth?\r"
     - Name: choices
       Entry: 7
       Data: 111|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -2441,7 +2434,7 @@ MonoBehaviour:
       Data: 112|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xF6z\xFCm de\u011Fil, sezgim g\xF6r\xFCr."
+      Data: "My eyes don\u2019t see; my intuition does. "
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -2465,7 +2458,7 @@ MonoBehaviour:
       Data: 113|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Arad\u0131\u011F\u0131m ger\xE7e\u011Fi bulurum."
+      Data: 'I find the truth I seek. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -2489,7 +2482,7 @@ MonoBehaviour:
       Data: 114|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ger\xE7ek diye bir \u015Fey yoktur."
+      Data: 'There is no such thing as truth. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -2531,13 +2524,13 @@ MonoBehaviour:
       Data: astharil_05
     - Name: name
       Entry: 1
-      Data: Sis Rahibi Thamor
+      Data: 'Priest of Mist Thamor '
     - Name: sprite
       Entry: 10
       Data: 7
     - Name: text
       Entry: 1
-      Data: "Ad\u0131mlar\u0131n\u0131 sessiz at\u0131yorsun. Neden gizleniyorsun?"
+      Data: "You walk with silent steps. Why do you hide?\r"
     - Name: choices
       Entry: 7
       Data: 116|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -2550,7 +2543,7 @@ MonoBehaviour:
       Data: 117|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xF6lgeden korunmak i\xE7in."
+      Data: 'To stay safe from the shadows. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -2574,7 +2567,7 @@ MonoBehaviour:
       Data: 118|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kimseye g\xFCvenmiyorum."
+      Data: 'I trust no one. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -2598,7 +2591,7 @@ MonoBehaviour:
       Data: 119|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Niyetim karanl\u0131k."
+      Data: 'My intent is dark. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -2640,14 +2633,13 @@ MonoBehaviour:
       Data: astharil_06
     - Name: name
       Entry: 1
-      Data: Sis Rahibi Thamor
+      Data: 'Priest of Mist Thamor '
     - Name: sprite
       Entry: 10
       Data: 7
     - Name: text
       Entry: 1
-      Data: "Sis seni \xE7a\u011F\u0131rd\u0131\u011F\u0131nda kar\u015F\u0131l\u0131k
-        verir misin?"
+      Data: "When the mist calls, will you answer?\r"
     - Name: choices
       Entry: 7
       Data: 121|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -2660,7 +2652,7 @@ MonoBehaviour:
       Data: 122|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Sisle dans ederim.
+      Data: 'I will dance with the mist. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -2684,7 +2676,7 @@ MonoBehaviour:
       Data: 123|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Uza\u011F\u0131nda kal\u0131r\u0131m."
+      Data: 'I will stay away. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -2708,7 +2700,7 @@ MonoBehaviour:
       Data: 124|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Sis beni yutsun isterim.
+      Data: 'I wish to be swallowed by it. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -2750,7 +2742,7 @@ MonoBehaviour:
       Data: astharil_07
     - Name: name
       Entry: 1
-      Data: "Ay \u0130zleyicisi Velun"
+      Data: 'Moon Watcher Velun '
     - Name: sprite
       Entry: 10
       Data: 8
@@ -2769,7 +2761,7 @@ MonoBehaviour:
       Data: 127|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Ay bana umut verir.
+      Data: 'The moon gives me hope. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -2793,7 +2785,7 @@ MonoBehaviour:
       Data: 128|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Sadece bir \u0131\u015F\u0131k kayna\u011F\u0131."
+      Data: "It\u2019s just a source of light. "
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -2817,7 +2809,7 @@ MonoBehaviour:
       Data: 129|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ay benim d\xFC\u015Fman\u0131m."
+      Data: 'The moon is my enemy. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -2859,13 +2851,13 @@ MonoBehaviour:
       Data: astharil_08
     - Name: name
       Entry: 1
-      Data: "Ay \u0130zleyicisi Velun"
+      Data: 'Moon Watcher Velun '
     - Name: sprite
       Entry: 10
       Data: 8
     - Name: text
       Entry: 1
-      Data: "Dolunay zaman\u0131 geldi\u011Finde kim oluyorsun?"
+      Data: "When the full moon rises, who do you become?\r"
     - Name: choices
       Entry: 7
       Data: 131|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -2878,7 +2870,7 @@ MonoBehaviour:
       Data: 132|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ger\xE7ek benli\u011Fim ortaya \xE7\u0131kar."
+      Data: 'My true self is revealed. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -2902,7 +2894,7 @@ MonoBehaviour:
       Data: 133|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kontrol\xFCm\xFC kaybedebilirim."
+      Data: 'I may lose control. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -2926,7 +2918,7 @@ MonoBehaviour:
       Data: 134|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "O zaman beni tan\u0131yamazs\u0131n."
+      Data: "You wouldn\u2019t recognize me then. "
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -2968,14 +2960,13 @@ MonoBehaviour:
       Data: astharil_09
     - Name: name
       Entry: 1
-      Data: "Ay \u0130zleyicisi Velun"
+      Data: 'Moon Watcher Velun '
     - Name: sprite
       Entry: 10
       Data: 8
     - Name: text
       Entry: 1
-      Data: "Ay \u0131\u015F\u0131\u011F\u0131nda y\xFCr\xFCrken iz b\u0131rak\u0131r
-        m\u0131s\u0131n?"
+      Data: "Do you leave traces as you walk in the moonlight?\r"
     - Name: choices
       Entry: 7
       Data: 136|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -2988,7 +2979,7 @@ MonoBehaviour:
       Data: 137|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ad\u0131mlar\u0131m sessiz ama kal\u0131c\u0131d\u0131r."
+      Data: 'My steps are silent but lasting. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -3012,7 +3003,7 @@ MonoBehaviour:
       Data: 138|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "\u0130zimi r\xFCzgar siler."
+      Data: 'The wind erases my trail. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -3036,7 +3027,7 @@ MonoBehaviour:
       Data: 139|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "\u0130z b\u0131rakmak istemem."
+      Data: 'I choose not to leave any. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -3100,13 +3091,13 @@ MonoBehaviour:
       Data: theon_01
     - Name: name
       Entry: 1
-      Data: "Ya\u015Fl\u0131 Bilge Elenor"
+      Data: 'Elder Sage Elenor '
     - Name: sprite
       Entry: 10
       Data: 9
     - Name: text
       Entry: 1
-      Data: "Theon tarafs\u0131z kalmal\u0131 m\u0131, karar senin ellerinde mi?"
+      Data: "Should Theon remain neutral, or is the choice in your hands?\r"
     - Name: choices
       Entry: 7
       Data: 142|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -3119,7 +3110,7 @@ MonoBehaviour:
       Data: 143|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Tarafs\u0131zl\u0131k bar\u0131\u015F\u0131 getirir."
+      Data: 'Neutrality brings peace. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -3143,7 +3134,7 @@ MonoBehaviour:
       Data: 144|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Tarafs\u0131zl\u0131k ihanettir."
+      Data: 'Neutrality is betrayal. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -3167,7 +3158,7 @@ MonoBehaviour:
       Data: 145|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Benim karar\u0131m de\u011Fil."
+      Data: "It\u2019s not my decision. "
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -3209,13 +3200,13 @@ MonoBehaviour:
       Data: theon_02
     - Name: name
       Entry: 1
-      Data: "Ya\u015Fl\u0131 Bilge Elenor"
+      Data: 'Elder Sage Elenor '
     - Name: sprite
       Entry: 10
       Data: 9
     - Name: text
       Entry: 1
-      Data: "Bilgelik mi ar\u0131yorsun yoksa sadece ge\xE7ip mi gidiyorsun?"
+      Data: "Do you seek wisdom, or are you merely passing through?\r"
     - Name: choices
       Entry: 7
       Data: 147|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -3228,7 +3219,7 @@ MonoBehaviour:
       Data: 148|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Bilgelik i\xE7in geldim."
+      Data: 'I came seeking wisdom. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -3252,7 +3243,7 @@ MonoBehaviour:
       Data: 149|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Sadece yoluma devam ediyorum.
+      Data: "I\u2019m just on my way. "
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -3276,7 +3267,7 @@ MonoBehaviour:
       Data: 150|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Burada zaman kaybediyorum.
+      Data: "I\u2019m wasting my time here. "
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -3318,13 +3309,13 @@ MonoBehaviour:
       Data: theon_03
     - Name: name
       Entry: 1
-      Data: "Ya\u015Fl\u0131 Bilge Elenor"
+      Data: 'Elder Sage Elenor '
     - Name: sprite
       Entry: 10
       Data: 9
     - Name: text
       Entry: 1
-      Data: "Bir karar vermen gerek. Taraf m\u0131 se\xE7eceksin?"
+      Data: "You must choose \u2014 will you take a side?\r"
     - Name: choices
       Entry: 7
       Data: 152|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -3337,7 +3328,7 @@ MonoBehaviour:
       Data: 153|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Adaletin taraf\u0131nday\u0131m."
+      Data: 'I stand with justice. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -3361,7 +3352,7 @@ MonoBehaviour:
       Data: 154|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xFC\xE7l\xFC olan\u0131n yan\u0131nday\u0131m."
+      Data: 'I side with the strong. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -3385,7 +3376,7 @@ MonoBehaviour:
       Data: 155|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Taraf tutmam.
+      Data: 'I choose no sides. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -3427,13 +3418,13 @@ MonoBehaviour:
       Data: theon_04
     - Name: name
       Entry: 1
-      Data: "Teknokrat G\xF6zlemci Nuro"
+      Data: 'Technocrat Observer Nuro '
     - Name: sprite
       Entry: 10
       Data: 10
     - Name: text
       Entry: 1
-      Data: "Veriler seni uyar\u0131yor: burada bulunman normal de\u011Fil."
+      Data: "The data warns: your presence here is irregular.\r"
     - Name: choices
       Entry: 7
       Data: 157|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -3446,7 +3437,7 @@ MonoBehaviour:
       Data: 158|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xF6zlem i\xE7in geldim."
+      Data: 'I came to observe. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -3470,7 +3461,7 @@ MonoBehaviour:
       Data: 159|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Yanl\u0131\u015Fl\u0131kla d\xFC\u015Ft\xFCm buraya."
+      Data: 'I ended up here by mistake. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -3494,7 +3485,7 @@ MonoBehaviour:
       Data: 160|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Sizi izlemeye geldim.
+      Data: 'I came to watch you. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -3536,13 +3527,13 @@ MonoBehaviour:
       Data: theon_05
     - Name: name
       Entry: 1
-      Data: "Teknokrat G\xF6zlemci Nuro"
+      Data: 'Technocrat Observer Nuro '
     - Name: sprite
       Entry: 10
       Data: 10
     - Name: text
       Entry: 1
-      Data: "Veriye eri\u015Fim iznin yok. Ama niyetin nedir?"
+      Data: "You have no access to the data. What are your intentions?\r"
     - Name: choices
       Entry: 7
       Data: 162|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -3555,7 +3546,7 @@ MonoBehaviour:
       Data: 163|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Sadece bilmek istiyorum.
+      Data: I only wish to know.
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -3579,7 +3570,7 @@ MonoBehaviour:
       Data: 164|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Bilgiyi \xE7almaya geldim."
+      Data: I came to steal knowledge.
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -3603,7 +3594,7 @@ MonoBehaviour:
       Data: 165|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Merak\u0131ma yenildim."
+      Data: My curiosity got the better of me.
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -3645,14 +3636,13 @@ MonoBehaviour:
       Data: theon_06
     - Name: name
       Entry: 1
-      Data: "Teknokrat G\xF6zlemci Nuro"
+      Data: 'Technocrat Observer Nuro '
     - Name: sprite
       Entry: 10
       Data: 10
     - Name: text
       Entry: 1
-      Data: "Theon'un hesaplamalar\u0131 seni kay\u0131ts\u0131z g\xF6steriyor. A\xE7\u0131kla
-        kendini."
+      Data: "Theon\u2019s calculations show you as unregistered. Explain yourself.\r"
     - Name: choices
       Entry: 7
       Data: 167|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -3665,7 +3655,7 @@ MonoBehaviour:
       Data: 168|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kay\u0131tl\u0131 olmam m\xFCmk\xFCn de\u011Fil."
+      Data: I cannot be recorded.
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -3689,7 +3679,7 @@ MonoBehaviour:
       Data: 169|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Sistemin d\u0131\u015F\u0131ndan\u0131m."
+      Data: "I\u2019m from beyond the system. "
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -3713,7 +3703,7 @@ MonoBehaviour:
       Data: 170|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kay\u0131ts\u0131z kalmak \xF6zg\xFCrl\xFCkt\xFCr."
+      Data: To remain unregistered is true freedom.
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -3755,13 +3745,13 @@ MonoBehaviour:
       Data: theon_07
     - Name: name
       Entry: 1
-      Data: "Konsey S\xF6zc\xFCs\xFC Tharak"
+      Data: Council Spokesman Tharak
     - Name: sprite
       Entry: 10
       Data: 11
     - Name: text
       Entry: 1
-      Data: "Konsey seni tan\u0131m\u0131yor. Neden kap\u0131m\u0131za geldin?"
+      Data: "The Council does not know you. Why have you come?\r"
     - Name: choices
       Entry: 7
       Data: 172|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -3774,7 +3764,7 @@ MonoBehaviour:
       Data: 173|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Yard\u0131m\u0131n\u0131za ihtiyac\u0131m var."
+      Data: I seek your aid.
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -3798,7 +3788,7 @@ MonoBehaviour:
       Data: 174|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Sizi uyarmaya geldim.
+      Data: I came to warn you.
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -3822,7 +3812,7 @@ MonoBehaviour:
       Data: 175|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Konseyin zaman\u0131 doldu."
+      Data: "The Council\u2019s time is over."
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -3864,13 +3854,13 @@ MonoBehaviour:
       Data: theon_08
     - Name: name
       Entry: 1
-      Data: "Konsey S\xF6zc\xFCs\xFC Tharak"
+      Data: Council Spokesman Tharak
     - Name: sprite
       Entry: 10
       Data: 11
     - Name: text
       Entry: 1
-      Data: "S\xF6zlerin etkili olabilir. Hangi dili konu\u015Facaks\u0131n?"
+      Data: "Your words may carry weight. Which language will you speak?\r"
     - Name: choices
       Entry: 7
       Data: 177|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -3883,7 +3873,7 @@ MonoBehaviour:
       Data: 178|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ger\xE7e\u011Fin diliyle."
+      Data: The language of truth.
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -3907,7 +3897,7 @@ MonoBehaviour:
       Data: 179|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Diplomasiyle.
+      Data: The language of diplomacy.
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -3931,7 +3921,7 @@ MonoBehaviour:
       Data: 180|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Tehditlerle.
+      Data: 'The language of threats. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -3973,13 +3963,13 @@ MonoBehaviour:
       Data: theon_09
     - Name: name
       Entry: 1
-      Data: "Konsey S\xF6zc\xFCs\xFC Tharak"
+      Data: 'Council Spokesman Tharak '
     - Name: sprite
       Entry: 10
       Data: 11
     - Name: text
       Entry: 1
-      Data: "Konseyin kararlar\u0131 sorgulanmaz, ama bug\xFCn bir istisna olabilir."
+      Data: "The Council\u2019s decisions are final \u2014 yet today may be an exception.\r"
     - Name: choices
       Entry: 7
       Data: 182|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -3992,7 +3982,7 @@ MonoBehaviour:
       Data: 183|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Konseyin yan\u0131nda yer alaca\u011F\u0131m."
+      Data: 'I will stand by the Council. '
     - Name: trustChange
       Entry: 3
       Data: 4
@@ -4016,7 +4006,7 @@ MonoBehaviour:
       Data: 184|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kararlar\u0131n\u0131z\u0131 g\xF6zden ge\xE7irin."
+      Data: 'Rethink your decisions. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -4040,7 +4030,7 @@ MonoBehaviour:
       Data: 185|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Art\u0131k s\xF6z s\u0131ras\u0131 bende."
+      Data: "Now it\u2019s my turn to speak. "
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -4104,13 +4094,13 @@ MonoBehaviour:
       Data: varnan_01
     - Name: name
       Entry: 1
-      Data: "Varnan G\xF6zc\xFCs\xFC"
+      Data: 'Varnan Watcher '
     - Name: sprite
       Entry: 10
       Data: 12
     - Name: text
       Entry: 1
-      Data: "Varnan'\u0131n g\xF6lgeleri seni izliyor. Neden geldin?"
+      Data: "The shadows of Varnan are watching you. Why have you come?\r"
     - Name: choices
       Entry: 7
       Data: 188|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -4123,7 +4113,7 @@ MonoBehaviour:
       Data: 189|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Bar\u0131\u015F i\xE7in geldim."
+      Data: I came for peace.
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -4147,7 +4137,7 @@ MonoBehaviour:
       Data: 190|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Sava\u015F i\xE7in geldim."
+      Data: I came for war.
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -4171,7 +4161,7 @@ MonoBehaviour:
       Data: 191|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Sadece ge\xE7iyordum."
+      Data: I was just passing through.
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -4213,13 +4203,13 @@ MonoBehaviour:
       Data: varnan_02
     - Name: name
       Entry: 1
-      Data: "Varnan G\xF6zc\xFCs\xFC"
+      Data: 'Varnan Watcher '
     - Name: sprite
       Entry: 10
       Data: 12
     - Name: text
       Entry: 1
-      Data: "Burada yabanc\u0131lara nadiren g\xFCvenilir. Neyi kan\u0131tlayabilirsin?"
+      Data: "Strangers are rarely trusted here. What can you prove?\r"
     - Name: choices
       Entry: 7
       Data: 193|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -4232,7 +4222,7 @@ MonoBehaviour:
       Data: 194|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Sadakatimi sunabilirim.
+      Data: I can offer my loyalty.
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -4256,7 +4246,7 @@ MonoBehaviour:
       Data: 195|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xFCc\xFCm\xFC g\xF6sterebilirim."
+      Data: 'I can show my strength. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -4280,7 +4270,7 @@ MonoBehaviour:
       Data: 196|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Hi\xE7bir \u015Fey kan\u0131tlamam gerekmiyor."
+      Data: "I don\u2019t need to prove anything."
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -4322,14 +4312,13 @@ MonoBehaviour:
       Data: varnan_03
     - Name: name
       Entry: 1
-      Data: "Varnan G\xF6zc\xFCs\xFC"
+      Data: 'Varnan Watcher '
     - Name: sprite
       Entry: 10
       Data: 12
     - Name: text
       Entry: 1
-      Data: "R\xFCzgar de\u011Fi\u015Fti\u011Finde, dost mu kalacaks\u0131n d\xFC\u015Fman
-        m\u0131?"
+      Data: "When the wind changes, will you remain a friend or become a foe?\r"
     - Name: choices
       Entry: 7
       Data: 198|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -4342,7 +4331,7 @@ MonoBehaviour:
       Data: 199|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Varnan\u2019a sad\u0131\u011F\u0131m."
+      Data: I am loyal to Varnan.
     - Name: trustChange
       Entry: 3
       Data: 4
@@ -4366,7 +4355,7 @@ MonoBehaviour:
       Data: 200|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Duruma g\xF6re karar veririm."
+      Data: 'I decide based on the situation. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -4390,7 +4379,7 @@ MonoBehaviour:
       Data: 201|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Kimseye sadakat borcum yok.
+      Data: 'I owe loyalty to no one. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -4432,13 +4421,13 @@ MonoBehaviour:
       Data: varnan_04
     - Name: name
       Entry: 1
-      Data: "Yasl\u0131 Sava\u015F\xE7\u0131 Terek"
+      Data: 'Elder Warrior Terek '
     - Name: sprite
       Entry: 10
       Data: 13
     - Name: text
       Entry: 1
-      Data: "K\u0131l\u0131c\u0131n olmadan bu topraklarda uzun s\xFCre kalamazs\u0131n."
+      Data: "Without a sword, you won\u2019t last long in these lands.\r"
     - Name: choices
       Entry: 7
       Data: 203|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -4451,7 +4440,7 @@ MonoBehaviour:
       Data: 204|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Kendimi savunabilirim.
+      Data: I can defend myself.
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -4475,7 +4464,7 @@ MonoBehaviour:
       Data: 205|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "K\u0131l\u0131\xE7s\u0131z da bar\u0131\u015F sa\u011Flan\u0131r."
+      Data: 'Peace can be made without a sword. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -4499,7 +4488,7 @@ MonoBehaviour:
       Data: 206|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Benimle u\u011Fra\u015Fma ya\u015Fl\u0131 adam."
+      Data: "Don\u2019t test me, old man. "
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -4541,14 +4530,13 @@ MonoBehaviour:
       Data: varnan_05
     - Name: name
       Entry: 1
-      Data: "Yasl\u0131 Sava\u015F\xE7\u0131 Terek"
+      Data: 'Elder Warrior Terek '
     - Name: sprite
       Entry: 10
       Data: 13
     - Name: text
       Entry: 1
-      Data: "Gen\xE7ler art\u0131k sava\u015Fmay\u0131 bilmiyor. Sen farkl\u0131
-        m\u0131s\u0131n?"
+      Data: "The young no longer know how to fight. Are you different?\r"
     - Name: choices
       Entry: 7
       Data: 208|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -4561,7 +4549,7 @@ MonoBehaviour:
       Data: 209|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Sava\u015F\u0131n anlam\u0131n\u0131 sorguluyorum."
+      Data: 'I question the meaning of war. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -4585,7 +4573,7 @@ MonoBehaviour:
       Data: 210|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kan d\xF6kmekten \xE7ekinmem."
+      Data: "I don\u2019t hesitate to spill blood. "
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -4609,7 +4597,7 @@ MonoBehaviour:
       Data: 211|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Sava\u015Fs\u0131z bir gelecek hayalim."
+      Data: 'I dream of a world without war. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -4651,13 +4639,13 @@ MonoBehaviour:
       Data: varnan_06
     - Name: name
       Entry: 1
-      Data: "Yasl\u0131 Sava\u015F\xE7\u0131 Terek"
+      Data: 'Elder Warrior Terek '
     - Name: sprite
       Entry: 10
       Data: 13
     - Name: text
       Entry: 1
-      Data: "G\xF6lgeler seni yarg\u0131lar. Haz\u0131r m\u0131s\u0131n?"
+      Data: "The shadows judge you. Are you ready?\r"
     - Name: choices
       Entry: 7
       Data: 213|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -4670,7 +4658,7 @@ MonoBehaviour:
       Data: 214|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Kaderimle y\xFCzle\u015Firim."
+      Data: I will face my fate.
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -4694,7 +4682,7 @@ MonoBehaviour:
       Data: 215|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Yarg\u0131layanlar\u0131 yarg\u0131lar\u0131m."
+      Data: I will judge the ones who judge me.
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -4718,7 +4706,7 @@ MonoBehaviour:
       Data: 216|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "G\xF6lgelerden korkmam."
+      Data: I do not fear the shadows.
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -4760,14 +4748,13 @@ MonoBehaviour:
       Data: varnan_07
     - Name: name
       Entry: 1
-      Data: "Kamp Ate\u015Fi Anas\u0131 Milna"
+      Data: 'Fire Camp Mother Milna '
     - Name: sprite
       Entry: 10
       Data: 14
     - Name: text
       Entry: 1
-      Data: "Ate\u015Fin ba\u015F\u0131nda herkesin hikayesi e\u015Fit de\u011Fer
-        ta\u015F\u0131r. Seninki nedir?"
+      Data: "By the fire, every story holds equal worth. What\u2019s yours?\r"
     - Name: choices
       Entry: 7
       Data: 218|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -4780,7 +4767,7 @@ MonoBehaviour:
       Data: 219|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Bar\u0131\u015F i\xE7in yola \xE7\u0131kt\u0131m."
+      Data: 'I set out on a journey for peace. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -4828,7 +4815,7 @@ MonoBehaviour:
       Data: 221|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: Anlatmak istemem.
+      Data: "I don\u2019t wish to share it. "
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -4870,14 +4857,13 @@ MonoBehaviour:
       Data: varnan_08
     - Name: name
       Entry: 1
-      Data: "Kamp Ate\u015Fi Anas\u0131 Milna"
+      Data: 'Fire Camp Mother Milna '
     - Name: sprite
       Entry: 10
       Data: 14
     - Name: text
       Entry: 1
-      Data: "Ge\xE7mi\u015Fin k\xFCllerinden kim do\u011Far, bilmezsin. Sen hangi
-        yandans\u0131n?"
+      Data: "From the ashes of the past, who will rise? Which side are you on?\r"
     - Name: choices
       Entry: 7
       Data: 223|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -4890,7 +4876,7 @@ MonoBehaviour:
       Data: 224|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Y\u0131k\u0131lan\u0131 onarmaya geldim."
+      Data: 'I came to rebuild what was broken. '
     - Name: trustChange
       Entry: 3
       Data: 3
@@ -4914,7 +4900,7 @@ MonoBehaviour:
       Data: 225|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Ge\xE7mi\u015Fi unutmaya geldim."
+      Data: 'I came to forget the past. '
     - Name: trustChange
       Entry: 3
       Data: 2
@@ -4938,7 +4924,7 @@ MonoBehaviour:
       Data: 226|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "K\xFCller bile bana ait de\u011Fil."
+      Data: 'Even the ashes are not mine. '
     - Name: trustChange
       Entry: 3
       Data: 0
@@ -4980,14 +4966,13 @@ MonoBehaviour:
       Data: varnan_09
     - Name: name
       Entry: 1
-      Data: "Kamp Ate\u015Fi Anas\u0131 Milna"
+      Data: 'Fire Camp Mother Milna '
     - Name: sprite
       Entry: 10
       Data: 14
     - Name: text
       Entry: 1
-      Data: "Her ate\u015F bir \xF6yk\xFCy\xFC ta\u015F\u0131r. Seninle payla\u015Fmal\u0131
-        m\u0131y\u0131m?"
+      Data: "Every flame carries a story. Should I share one with you?\r"
     - Name: choices
       Entry: 7
       Data: 228|System.Collections.Generic.List`1[[DialogueChoice, Assembly-CSharp]],
@@ -5000,7 +4985,7 @@ MonoBehaviour:
       Data: 229|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "L\xFCtfen, s\xF6zlerini duymak isterim."
+      Data: 'Please, I wish to hear your words. '
     - Name: trustChange
       Entry: 3
       Data: 4
@@ -5024,7 +5009,7 @@ MonoBehaviour:
       Data: 230|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "\xD6yk\xFClerin zaman\u0131 ge\xE7ti."
+      Data: 'The time for stories has passed. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -5048,7 +5033,7 @@ MonoBehaviour:
       Data: 231|DialogueChoice, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "Sadece sessizli\u011Fe ihtiyac\u0131m var."
+      Data: 'I only need silence. '
     - Name: trustChange
       Entry: 3
       Data: 1
@@ -5186,24 +5171,23 @@ MonoBehaviour:
   maps: 0100000002000000030000000400000000000000
   generalDialogues:
   - id: universal_01
-    name: 
-    sprite: {fileID: 21300000, guid: c4ba858d883fd5844a1f3ebec99aeb9c, type: 3}
-    text: "Ya\u015Fl\u0131 Teyze: Evlad\u0131m, y\xFCz\xFCnde uzun yollar\u0131n
-      tozu var. Nereden geliyorsun bakal\u0131m?"
+    name: Old Lady
+    sprite: {fileID: 8701113985168403917, guid: 431ac4c3b39191946a31c8c8afb6ff06, type: 3}
+    text: "Child, the dust of long roads covers your face. Where have you come from?\r"
     choices:
-    - text: "\xC7ok uzaklardan geliyorum."
+    - text: 'I come from far away. '
       trustChange: 3
       faithChange: 3
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Buralarda dola\u015F\u0131yordum."
+    - text: 'I was just wandering around. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: Sana ne?
+    - text: 'Why do you care? '
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
@@ -5212,24 +5196,24 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_02
-    name: 
-    sprite: {fileID: 21300000, guid: c4ba858d883fd5844a1f3ebec99aeb9c, type: 3}
-    text: "Ya\u015Fl\u0131 Teyze: Bir tas s\u0131cak \xE7orba ister misin? Evim k\xFC\xE7\xFCk
-      ama kalbim b\xFCy\xFCk."
+    name: Old Lady
+    sprite: {fileID: 8701113985168403917, guid: 431ac4c3b39191946a31c8c8afb6ff06, type: 3}
+    text: "Would you like a bowl of hot soup? My house is small, but my heart is
+      big.\r"
     choices:
-    - text: "Te\u015Fekk\xFCr ederim, \xE7ok makbule ge\xE7er."
+    - text: 'Thank you, that would mean a lot. '
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: Sadece biraz su yeterli.
+    - text: 'A little water is enough. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Yemeklerin kokusu rahats\u0131z edici."
+    - text: 'The smell of your food bothers me. '
       trustChange: 0
       faithChange: 0
       hostilityChange: 5
@@ -5238,24 +5222,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_03
-    name: 
-    sprite: {fileID: 21300000, guid: c4ba858d883fd5844a1f3ebec99aeb9c, type: 3}
-    text: "Ya\u015Fl\u0131 Teyze: Gen\xE7ken ben de senin gibiydim... Ama sonra r\xFCzgar
-      ba\u015Fka y\xF6nden esti."
+    name: Old Lady
+    sprite: {fileID: 8701113985168403917, guid: 431ac4c3b39191946a31c8c8afb6ff06, type: 3}
+    text: "I was once like you when I was young... but then the wind changed direction.\r"
     choices:
-    - text: Hikayeni duymak isterim.
+    - text: "I\u2019d like to hear your story. "
       trustChange: 4
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Herkesin yolu farkl\u0131d\u0131r."
+    - text: 'Everyone walks their own path. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Benim vaktim yok ya\u015Fl\u0131 kad\u0131n."
+    - text: "I don\u2019t have time for stories, old woman."
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
@@ -5264,24 +5247,24 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_04
-    name: 
-    sprite: {fileID: 21300000, guid: 96f0bceaafaf76b4dbc3edd4a3bb8583, type: 3}
-    text: "Oduncu: Baltam k\u0131r\u0131lmak \xFCzere... Ama orman h\xE2l\xE2 suskun.
-      Sen neden geldin?"
+    name: Woodcutter
+    sprite: {fileID: 1149292356381445894, guid: 0862067495ff91142bf35ac7187ee205, type: 3}
+    text: "My axe is about to break\u2026 yet the forest remains silent. Why have
+      you come?"
     choices:
-    - text: "Sana yard\u0131m etmeye geldim."
+    - text: 'I came to help you. '
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Sadece yolum d\xFC\u015Ft\xFC."
+    - text: 'I just passed by. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "A\u011Fa\xE7lar\u0131 kesmeni engellemeye geldim."
+    - text: 'I came to stop you from cutting trees. '
       trustChange: 0
       faithChange: 1
       hostilityChange: 4
@@ -5290,23 +5273,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_05
-    name: 
-    sprite: {fileID: 21300000, guid: 96f0bceaafaf76b4dbc3edd4a3bb8583, type: 3}
-    text: "Oduncu: Orman g\xF6z\xFCyle izler. Ne zaman dal kessem, i\xE7im burkulur."
+    name: Woodcutter
+    sprite: {fileID: 1149292356381445894, guid: 0862067495ff91142bf35ac7187ee205, type: 3}
+    text: The forest watches with its eyes. Every time I cut a branch, my heart aches.
     choices:
-    - text: "Sayg\u0131l\u0131 davranman g\xFCzel."
+    - text: "It\u2019s good that you show respect. "
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "A\u011Fa\xE7 da bir kaynak sonu\xE7ta."
+    - text: 'A tree is just another resource. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Duygusall\u0131k i\u015Fini zorla\u015Ft\u0131r\u0131r."
+    - text: 'Emotions make your work harder. '
       trustChange: 1
       faithChange: 0
       hostilityChange: 3
@@ -5315,24 +5298,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_06
-    name: 
-    sprite: {fileID: 21300000, guid: 96f0bceaafaf76b4dbc3edd4a3bb8583, type: 3}
-    text: "Oduncu: So\u011Fuk havada kesilen odun daha dayan\u0131kl\u0131d\u0131r.
-      Sen ne zaman en g\xFC\xE7l\xFCs\xFCn?"
+    name: Woodcutter
+    sprite: {fileID: 1149292356381445894, guid: 0862067495ff91142bf35ac7187ee205, type: 3}
+    text: "Wood cut in the cold lasts longer. When are you at your strongest?\r"
     choices:
-    - text: "Zorluklar kar\u015F\u0131s\u0131nda."
+    - text: 'In the face of hardship. '
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Kendimi yaln\u0131z hissetti\u011Fimde."
+    - text: 'When I feel alone. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Her zaman g\xFC\xE7l\xFCy\xFCmd\xFCr."
+    - text: "I\u2019m always strong. "
       trustChange: 0
       faithChange: 1
       hostilityChange: 2
@@ -5341,24 +5323,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_07
-    name: 
-    sprite: {fileID: 21300000, guid: 67868d64b4be8f84e8fa120a0b0e2079, type: 3}
-    text: "Vatanda\u015F: G\xFCnlerdir pazarda fiyatlar art\u0131yor. Bu i\u015Fin
-      sonu nereye varacak sence?"
+    name: Citizen
+    sprite: {fileID: -8698030267966356022, guid: bd5f7b777ea95f4459921c7d76794005, type: 3}
+    text: Prices in the market have been rising for days. Where will this end?
     choices:
-    - text: "Umut edelim, ge\xE7er."
+    - text: "Let\u2019s hope it passes. "
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Herkes kendi ba\u015F\u0131n\u0131n \xE7aresine baks\u0131n."
+    - text: 'Everyone should fend for themselves. '
       trustChange: 1
       faithChange: 1
       hostilityChange: 2
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Bu d\xFCzene bir son verilmeli."
+    - text: 'This order must end. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 3
@@ -5367,24 +5348,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_08
-    name: 
-    sprite: {fileID: 21300000, guid: 67868d64b4be8f84e8fa120a0b0e2079, type: 3}
-    text: "Vatanda\u015F: Yeni bir y\xFCz g\xF6rmek g\xFCzel. Burada kalmay\u0131
-      m\u0131 d\xFC\u015F\xFCn\xFCyorsun?"
+    name: Citizen
+    sprite: {fileID: -8698030267966356022, guid: bd5f7b777ea95f4459921c7d76794005, type: 3}
+    text: "It\u2019s nice to see a new face. Are you planning to stay?\r"
     choices:
-    - text: "Evet, bir s\xFCre kalaca\u011F\u0131m."
+    - text: "Yes, I\u2019ll stay for a while. "
       trustChange: 3
       faithChange: 3
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Karars\u0131z\u0131m, daha g\xF6zlemliyorum."
+    - text: "I\u2019m unsure, still observing. "
       trustChange: 2
       faithChange: 2
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Hay\u0131r, hemen gidece\u011Fim."
+    - text: "No, I\u2019ll leave soon. "
       trustChange: 0
       faithChange: 1
       hostilityChange: 2
@@ -5393,24 +5373,24 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_09
-    name: 
-    sprite: {fileID: 21300000, guid: 67868d64b4be8f84e8fa120a0b0e2079, type: 3}
-    text: "Vatanda\u015F: D\xFCn gece yine garip sesler geldi da\u011Flardan. Sence
-      ne olabilir?"
+    name: Citizen
+    sprite: {fileID: -8698030267966356022, guid: bd5f7b777ea95f4459921c7d76794005, type: 3}
+    text: "Last night, strange sounds came from the mountains again. What do you
+      think it was?\r"
     choices:
-    - text: "Do\u011Fan\u0131n sesi, korkmaya gerek yok."
+    - text: 'The voice of nature, nothing to fear. '
       trustChange: 2
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Belki de bir uyar\u0131yd\u0131."
+    - text: 'Maybe a warning. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Bir \u015Feyler gizleniyor buralarda."
+    - text: 'Something is hiding out there. '
       trustChange: 1
       faithChange: 1
       hostilityChange: 3
@@ -5419,24 +5399,24 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_10
-    name: 
-    sprite: {fileID: 21300000, guid: 72f1fe8e591d1a54c9b7e0a1ea4e40b9, type: 3}
-    text: "Terzi: Kuma\u015F ruh gibidir; yanl\u0131\u015F bi\xE7ersen geri d\xF6n\xFC\u015F\xFC
-      olmaz. Ne ar\u0131yorsun burada?"
+    name: Tailor
+    sprite: {fileID: -344056796320936405, guid: 85c5433da92b9ae4cbc4c04941ea1b8f, type: 3}
+    text: "Fabric is like a soul; cut it wrong, and there\u2019s no turning back.
+      What are you seeking here?\r"
     choices:
-    - text: Kendime uygun bir yol.
+    - text: 'A path that fits me. '
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Yolum buraya d\xFC\u015Ft\xFC sadece."
+    - text: 'My path just led me here. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Seninle i\u015Fim olmaz, terzi."
+    - text: 'I have no business with you, tailor. '
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
@@ -5445,24 +5425,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_11
-    name: 
-    sprite: {fileID: 21300000, guid: 72f1fe8e591d1a54c9b7e0a1ea4e40b9, type: 3}
-    text: "Terzi: Her diki\u015F bir karar demektir. Sen kararlar\u0131n\u0131 nas\u0131l
-      al\u0131rs\u0131n?"
+    name: Tailor
+    sprite: {fileID: -344056796320936405, guid: 85c5433da92b9ae4cbc4c04941ea1b8f, type: 3}
+    text: Every stitch is a decision. How do you make yours?
     choices:
-    - text: "\u0130\xE7 sesimi dinlerim."
+    - text: 'I listen to my inner voice. '
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Duruma g\xF6re de\u011Fi\u015Fir."
+    - text: 'It depends on the situation. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Kararlar\u0131 sorgulamam."
+    - text: "I don\u2019t question my choices. "
       trustChange: 0
       faithChange: 1
       hostilityChange: 2
@@ -5471,23 +5450,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_12
-    name: 
-    sprite: {fileID: 21300000, guid: 72f1fe8e591d1a54c9b7e0a1ea4e40b9, type: 3}
-    text: "Terzi: \u0130pek mi arars\u0131n, keten mi? Her ruh bir kuma\u015F se\xE7er."
+    name: Tailor
+    sprite: {fileID: -344056796320936405, guid: 85c5433da92b9ae4cbc4c04941ea1b8f, type: 3}
+    text: "Do you seek silk or linen? Every soul chooses a fabric.\r"
     choices:
-    - text: "Zarif ama sade bir \u015Fey isterim."
+    - text: 'Something elegant yet simple. '
       trustChange: 3
       faithChange: 3
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Dayan\u0131kl\u0131 olan en iyisidir."
+    - text: 'The most durable one. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: Fark etmez, param yok zaten.
+    - text: "It doesn\u2019t matter, I can\u2019t afford any. "
       trustChange: 1
       faithChange: 1
       hostilityChange: 2
@@ -5496,23 +5475,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_13
-    name: 
-    sprite: {fileID: 21300000, guid: 46a620b8bc282b141804e36e25ebfd7c, type: 3}
-    text: "\xC7oban: Koyunlar bile yabanc\u0131y\u0131 hisseder. Senin niyetin ne?"
+    name: Shepherd
+    sprite: {fileID: -4199045409684295182, guid: 6610a215336f92d4b895122ee5dcc192, type: 3}
+    text: "Even the sheep can sense a stranger. What is your intent?\r"
     choices:
-    - text: "Sadece dost\xE7a geldim."
+    - text: 'I came as a friend. '
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Biraz g\xF6zlem yap\u0131yorum."
+    - text: 'Just observing. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "S\xFCr\xFCy\xFC almaya geldim."
+    - text: 'I came to take your flock. '
       trustChange: 0
       faithChange: 0
       hostilityChange: 5
@@ -5521,24 +5500,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_14
-    name: 
-    sprite: {fileID: 21300000, guid: 46a620b8bc282b141804e36e25ebfd7c, type: 3}
-    text: "\xC7oban: Da\u011Flarda zaman farkl\u0131 akar. Sen zaman\u0131 nas\u0131l
-      ge\xE7irirsin?"
+    name: Shepherd
+    sprite: {fileID: -4199045409684295182, guid: 6610a215336f92d4b895122ee5dcc192, type: 3}
+    text: "I saw wolf tracks this morning. What will you do if danger comes near?\r"
     choices:
-    - text: "Kendimle kal\u0131r\u0131m."
+    - text: "I\u2019ll warn the villagers. "
       trustChange: 3
       faithChange: 3
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Yeni yerler ke\u015Ffederim."
+    - text: 'Exploring new places. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Zaman\u0131n \xF6nemi yoktur bana."
+    - text: 'Running is the best choice. '
       trustChange: 1
       faithChange: 1
       hostilityChange: 2
@@ -5547,24 +5525,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_15
-    name: 
-    sprite: {fileID: 21300000, guid: 46a620b8bc282b141804e36e25ebfd7c, type: 3}
-    text: "\xC7oban: Kurt izleri g\xF6rd\xFCm bu sabah. Tehlike yak\u0131ndaysa sen
-      ne yapars\u0131n?"
+    name: Shepherd
+    sprite: {fileID: -4199045409684295182, guid: 6610a215336f92d4b895122ee5dcc192, type: 3}
+    text: "Time flows differently in the mountains. How do you spend yours?\r"
     choices:
-    - text: "K\xF6yl\xFCleri uyar\u0131r\u0131m."
+    - text: 'I spend it with myself. '
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Kendimi korurum \xF6nce."
+    - text: 'Exploring new places. '
       trustChange: 1
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Ka\xE7mak en iyisi."
+    - text: 'Time holds no meaning for me. '
       trustChange: 0
       faithChange: 1
       hostilityChange: 3
@@ -5573,24 +5550,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_16
-    name: 
-    sprite: {fileID: 21300000, guid: 3e1b1698c4c90c540aeec08a0c18b19c, type: 3}
-    text: "Gen\xE7 Delikanl\u0131: Buralarda macera yok, sadece bekleyi\u015F. Sen
-      neyin pe\u015Findesin?"
+    name: Young Man
+    sprite: {fileID: -2922439677368059965, guid: ed54fec51e3b9154dac8ffdbdf1f4e5f, type: 3}
+    text: "There\u2019s no adventure here, only waiting. What are you after?\r"
     choices:
-    - text: "Ger\xE7ekleri ar\u0131yorum."
+    - text: "I\u2019m searching for the truth. "
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Bir i\u015F \xE7\u0131karsa ka\xE7\u0131rmam."
+    - text: "I won\u2019t miss a chance if one comes. "
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Sana ne, i\u015Fine bak."
+    - text: 'Mind your own business. '
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
@@ -5599,24 +5575,24 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_17
-    name: 
-    sprite: {fileID: 21300000, guid: 3e1b1698c4c90c540aeec08a0c18b19c, type: 3}
-    text: "Gen\xE7 Delikanl\u0131: Bana herkes 'fazla hayal kurma' diyor. Sence hakl\u0131lar
-      m\u0131?"
+    name: Young Man
+    sprite: {fileID: -2922439677368059965, guid: ed54fec51e3b9154dac8ffdbdf1f4e5f, type: 3}
+    text: "Everyone tells me, \u201CStop dreaming so much.\u201D Do you think they\u2019re
+      right?\r"
     choices:
-    - text: "Hayaller yol g\xF6sterir."
+    - text: 'Dreams guide the way. '
       trustChange: 3
       faithChange: 5
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Ger\xE7eklerle y\xFCzle\u015Fmelisin."
+    - text: 'You must face reality. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Hayaller zaman kayb\u0131d\u0131r."
+    - text: 'Dreams are a waste of time. '
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
@@ -5625,24 +5601,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_18
-    name: 
-    sprite: {fileID: 21300000, guid: 3e1b1698c4c90c540aeec08a0c18b19c, type: 3}
-    text: "Gen\xE7 Delikanl\u0131: Bir g\xFCn buradan \xE7\u0131k\u0131p gidece\u011Fim.
-      Senin hayalin ne?"
+    name: Young Man
+    sprite: {fileID: -2922439677368059965, guid: ed54fec51e3b9154dac8ffdbdf1f4e5f, type: 3}
+    text: "One day I\u2019ll leave this place. What is your dream?\r"
     choices:
-    - text: "Daha iyi bir d\xFCnya kurmak."
+    - text: 'To build a better world. '
       trustChange: 4
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "\xD6zg\xFCrce ya\u015Famak yeter."
+    - text: 'To live freely is enough. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: Benim hayalim yok.
+    - text: 'I have no dreams. '
       trustChange: 1
       faithChange: 1
       hostilityChange: 2
@@ -5651,24 +5626,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_19
-    name: 
-    sprite: {fileID: 21300000, guid: 85ace2f9f969d8949a2d57d24de8be54, type: 3}
-    text: "Tuhaf Ya\u015Fl\u0131: Geceleri ta\u015Flar f\u0131s\u0131ldar, ama herkes
-      duymaz. Sen duyabiliyor musun?"
+    name: Strange Elder
+    sprite: {fileID: 5945893775843038804, guid: cd93936b9ae7f404ab854fe81f8dbb83, type: 3}
+    text: "At night, the stones whisper, but not everyone hears them. Can you?\r"
     choices:
-    - text: Bazen sessizlikte sesler bulurum.
+    - text: 'Sometimes I find voices in silence. '
       trustChange: 3
       faithChange: 5
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Yaln\u0131zca r\xFCzgar\u0131n oyunudur."
+    - text: "It\u2019s just the wind\u2019s trick. "
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Sa\xE7mal\u0131k bu!"
+    - text: "That\u2019s nonsense! "
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
@@ -5677,24 +5651,24 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_20
-    name: 
-    sprite: {fileID: 21300000, guid: 85ace2f9f969d8949a2d57d24de8be54, type: 3}
-    text: "Tuhaf Ya\u015Fl\u0131: \xDC\xE7\xFCnc\xFC g\xF6z\xFC a\xE7\u0131lm\u0131\u015F
-      birini tan\u0131d\u0131m... Aynaya bak\u0131nca ne g\xF6r\xFCyorsun?"
+    name: Strange Elder
+    sprite: {fileID: 5945893775843038804, guid: cd93936b9ae7f404ab854fe81f8dbb83, type: 3}
+    text: "I once met someone with an open third eye... What do you see when you
+      look in the mirror?\r"
     choices:
-    - text: "\u0130\xE7imdeki beni."
+    - text: 'My true self within. '
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Sorgulayan bir yabanc\u0131y\u0131."
+    - text: 'A questioning stranger. '
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Bo\u015F bir kabuk."
+    - text: 'An empty shell. '
       trustChange: 0
       faithChange: 0
       hostilityChange: 4
@@ -5703,24 +5677,23 @@ MonoBehaviour:
     isGlobalDialogue: 0
     backgroundSprite: {fileID: 0}
   - id: universal_21
-    name: 
-    sprite: {fileID: 21300000, guid: 85ace2f9f969d8949a2d57d24de8be54, type: 3}
-    text: "Tuhaf Ya\u015Fl\u0131: Zaman d\xFCz de\u011Fil, k\u0131vr\u0131l\u0131r,
-      b\xFCk\xFCl\xFCr. Hangi zaman\u0131 ya\u015F\u0131yorsun \u015Fu an?"
+    name: Strange Elder
+    sprite: {fileID: 5945893775843038804, guid: cd93936b9ae7f404ab854fe81f8dbb83, type: 3}
+    text: "Time is not straight; it twists and bends. Which time do you live in now?\r"
     choices:
-    - text: "\u015Eimdiyi, olmas\u0131 gerekeni."
+    - text: 'The present, as it should be. '
       trustChange: 3
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Ge\xE7mi\u015Fte tak\u0131l\u0131 kald\u0131m."
+    - text: "I\u2019m stuck in the past. "
       trustChange: 2
       faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: "Hi\xE7bir zaman\u0131n i\xE7inde de\u011Filim."
+    - text: 'I belong to no time at all. '
       trustChange: 1
       faithChange: 1
       hostilityChange: 3
@@ -5730,12 +5703,16 @@ MonoBehaviour:
     backgroundSprite: {fileID: 0}
   globalDialogueEffects:
   - id: global_01
-    name: 
+    name: 'Prophet '
     sprite: {fileID: 21300000, guid: de548bdd32ee5394c8d3b921d859c4af, type: 3}
-    text: "Kahin: Leviathan uyan\u0131yor. Dalgalar k\u0131talar\u0131 yutmak \xFCzere.
-      Ne yapacaks\u0131n?"
+    text: 'Leviathan is stirring from its eternal slumber. Its awakening will shatter
+      the balance. What must be done?
+
+'
     choices:
-    - text: "Bar\u0131nak in\u015Fa edin, halk\u0131 koruyun"
+    - text: 'Begin the sealing ritual.
+
+'
       globalEffects:
       - country: 1
         trustChange: 2
@@ -5757,7 +5734,9 @@ MonoBehaviour:
         trustChange: 3
         faithChange: 3
         hostilityChange: -2
-    - text: "Dualar edin, denizi yat\u0131\u015Ft\u0131rmaya \xE7al\u0131\u015F\u0131n"
+    - text: 'Be prepared, but do not interfere.
+
+'
       globalEffects:
       - country: 1
         trustChange: 0
@@ -5779,7 +5758,9 @@ MonoBehaviour:
         trustChange: 3
         faithChange: 4
         hostilityChange: -1
-    - text: "Sularla birlikte ilerleyin, Leviathan\u2019\u0131 selamlay\u0131n"
+    - text: 'Awaken it and wield its power.
+
+'
       globalEffects:
       - country: 1
         trustChange: -1
@@ -5802,12 +5783,16 @@ MonoBehaviour:
         faithChange: -1
         hostilityChange: 2
   - id: global_02
-    name: 
+    name: 'Prophet '
     sprite: {fileID: 21300000, guid: 30799550cda955148a143ab6a49af3e9, type: 3}
-    text: "Kahin: G\xF6ky\xFCz\xFC yar\u0131ld\u0131, i\xE7inden \u0131\u015F\u0131k
-      de\u011Fil karanl\u0131k s\u0131z\u0131yor. Uluslara ne s\xF6yleyeceksin?"
+    text: 'The sky has split open, and darkness seeps through instead of light. What
+      will you tell the nations?
+
+'
     choices:
-    - text: "\u0130nan\xE7la birle\u015Fin"
+    - text: 'Unite in faith.
+
+'
       globalEffects:
       - country: 1
         trustChange: 1
@@ -5829,7 +5814,9 @@ MonoBehaviour:
         trustChange: 1
         faithChange: 1
         hostilityChange: 0
-    - text: "Sessiz kal\u0131n, halk\u0131 oyalay\u0131n"
+    - text: 'Remain silent and distract the people.
+
+'
       globalEffects:
       - country: 1
         trustChange: -1
@@ -5851,7 +5838,10 @@ MonoBehaviour:
         trustChange: 1
         faithChange: 0
         hostilityChange: 0
-    - text: "Karanl\u0131\u011F\u0131 kucaklay\u0131n"
+    - text: 'Leviathan is stirring from its eternal slumber. Its awakening will shatter
+        the balance. What must be done?
+
+'
       globalEffects:
       - country: 1
         trustChange: -2
@@ -5874,11 +5864,15 @@ MonoBehaviour:
         faithChange: 0
         hostilityChange: 3
   - id: global_03
-    name: 
+    name: 'Prophet '
     sprite: {fileID: 21300000, guid: 25dc797d80fe4674ca18245702571643, type: 3}
-    text: "Kahin: D\xFCnya bir yol ayr\u0131m\u0131nda. Hangi yoldan gideceksin?"
+    text: 'The wheel of fate turns. In this cycle, will peace or war prevail?
+
+'
     choices:
-    - text: "Bar\u0131\u015F\u0131 tesis et"
+    - text: 'Call for peace.
+
+'
       globalEffects:
       - country: 1
         trustChange: 4
@@ -5900,7 +5894,7 @@ MonoBehaviour:
         trustChange: 3
         faithChange: 3
         hostilityChange: -2
-    - text: "Ekonomik yapt\u0131r\u0131m uygula"
+    - text: "Be ready for what\u2019s to come. "
       globalEffects:
       - country: 1
         trustChange: -1
@@ -5922,7 +5916,7 @@ MonoBehaviour:
         trustChange: -1
         faithChange: 0
         hostilityChange: 2
-    - text: "Sava\u015Fa haz\u0131rlan"
+    - text: 'Encourage war. '
       globalEffects:
       - country: 1
         trustChange: -3
@@ -5945,12 +5939,13 @@ MonoBehaviour:
         faithChange: -2
         hostilityChange: 4
   - id: global_04
-    name: 
+    name: 'Prophet '
     sprite: {fileID: 21300000, guid: a492e079136183c4da41e40b058d8802, type: 3}
-    text: "Kahin: Y\u0131ld\u0131zlar bir bir s\xF6n\xFCyor. I\u015F\u0131\u011F\u0131n
-      olmad\u0131\u011F\u0131 yerde ne h\xFCk\xFCm s\xFCrer?"
+    text: 'The stars fade one by one. What reigns where there is no light?
+
+'
     choices:
-    - text: "Umudu canl\u0131 tutun"
+    - text: 'Keep hope alive. '
       globalEffects:
       - country: 1
         trustChange: 2
@@ -5972,7 +5967,7 @@ MonoBehaviour:
         trustChange: 1
         faithChange: 1
         hostilityChange: -1
-    - text: "Korkuyu kullan\u0131n, halk\u0131 bast\u0131r\u0131n"
+    - text: 'Wield fear to control the people. '
       globalEffects:
       - country: 1
         trustChange: 0
@@ -5994,7 +5989,7 @@ MonoBehaviour:
         trustChange: -1
         faithChange: 0
         hostilityChange: 2
-    - text: "Y\u0131k\u0131m\u0131 kabullenin, haz\u0131rl\u0131k yap\u0131n"
+    - text: 'Accept the destruction and prepare. '
       globalEffects:
       - country: 1
         trustChange: 0
@@ -6017,12 +6012,14 @@ MonoBehaviour:
         faithChange: 1
         hostilityChange: 1
   - id: global_05
-    name: 
+    name: 'Prophet '
     sprite: {fileID: 21300000, guid: a612029496e2680458968367a64fa4c6, type: 3}
-    text: "Kahin: D\xF6rd\xFCnc\xFC m\xFCh\xFCr de k\u0131r\u0131ld\u0131. Kehanetin
-      son halkas\u0131 yakla\u015F\u0131yor. Nas\u0131l y\xF6n vereceksin?"
+    text: 'The fourth seal is broken. The final link of the prophecy draws near.
+      How will you guide it?
+
+'
     choices:
-    - text: "\u0130nananlar\u0131 toplay\u0131n, kehaneti \xE7\xF6z\xFCn"
+    - text: 'Gather the faithful and uncover the prophecy. '
       globalEffects:
       - country: 1
         trustChange: 1
@@ -6044,7 +6041,7 @@ MonoBehaviour:
         trustChange: 1
         faithChange: 1
         hostilityChange: 0
-    - text: "Ortak cephe kurun, sava\u015F ka\xE7\u0131n\u0131lmaz"
+    - text: "Form a united front\u2014war is inevitable. "
       globalEffects:
       - country: 1
         trustChange: 2
@@ -6066,7 +6063,7 @@ MonoBehaviour:
         trustChange: 1
         faithChange: 1
         hostilityChange: 2
-    - text: "Kaosu kabul edin, her \xFClke kendi yolunu \xE7izsin"
+    - text: "Accept the chaos\u2014let each nation forge its own path. "
       globalEffects:
       - country: 1
         trustChange: 0

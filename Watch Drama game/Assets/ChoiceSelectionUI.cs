@@ -30,6 +30,7 @@ public class ChoiceSelectionUI : MonoBehaviour
     public static event Action OnDialogueChoiceMade;
 
     BarUIController barUIController;
+    GlobalDialogueUI globalDialogueUI;
 
     // Animation settings
     private const float ANIMATION_DURATION = 0.5f;
@@ -42,6 +43,7 @@ public class ChoiceSelectionUI : MonoBehaviour
     // Typewriter kontrolü için coroutine referansları
     private Coroutine nameTypewriterCoroutine;
     private Coroutine descriptionTypewriterCoroutine;
+    private bool isTypewriterActive = false; // Typewriter'ın aktif olup olmadığını takip etmek için
     private void UpdateCharacterImageForNode(DialogueNode node)
     {
         if (characterImage == null) return;
@@ -61,6 +63,7 @@ public class ChoiceSelectionUI : MonoBehaviour
     void Start()
     {
         barUIController = barPanel.transform.parent.GetComponent<BarUIController>();
+        globalDialogueUI = FindFirstObjectByType<GlobalDialogueUI>(FindObjectsInactive.Include);
         // rectTransform ekranın sağ dışında başlasın
         float screenWidth = Screen.width * SCREEN_OFFSET_MULTIPLIER;
         rectTransform.anchoredPosition = new Vector2(screenWidth, 0);
@@ -69,8 +72,36 @@ public class ChoiceSelectionUI : MonoBehaviour
             bottomPanel.anchoredPosition = new Vector2(0, 0);
     }
 
+    void Update()
+    {
+        // Typewriter aktifken ekrana tıklama algıla
+        if (isTypewriterActive && Input.GetMouseButtonDown(0))
+        {
+            SkipTypewriter();
+        }
+    }
+
     public void ShowUI(DialogueNode newDialogueNode)
     {
+        // Check if this is a global dialogue and route to GlobalDialogueUI
+        if (newDialogueNode.isGlobalDialogue)
+        {
+            Debug.Log($"Routing global dialogue to GlobalDialogueUI. Dialogue ID: {newDialogueNode.id}, Text: {newDialogueNode.text}");
+            if (globalDialogueUI != null)
+            {
+                globalDialogueUI.ShowGlobalDialogue(newDialogueNode);
+                return; // Exit early, don't use normal flow
+            }
+            else
+            {
+                Debug.LogWarning("GlobalDialogueUI not found! Falling back to normal dialogue flow.");
+            }
+        }
+        else
+        {
+            Debug.Log($"Normal dialogue detected. Dialogue ID: {newDialogueNode.id}, isGlobalDialogue: {newDialogueNode.isGlobalDialogue}");
+        }
+        
         bool isFirstTime = !hasBeenInitialized;
         
         gameObject.SetActive(true);
@@ -78,7 +109,6 @@ public class ChoiceSelectionUI : MonoBehaviour
         if (isFirstTime)
         {
             this.dialogueNode = newDialogueNode;
-            choiceSelectionImage.sprite = newDialogueNode.sprite;
             UpdateCharacterImageForNode(newDialogueNode);
             barPanel.SetActive(true);
             if (barUIController != null)
@@ -103,13 +133,6 @@ public class ChoiceSelectionUI : MonoBehaviour
         // Aktif typewriter'ları durdur ve metinleri sıfırla (skip + reset)
         StopTypewriterCoroutines();
         ResetTypewriterTexts();
-        
-        // Global diyalog kontrolü
-        if (!isFirstTime && pendingDialogueNode != null && pendingDialogueNode.isGlobalDialogue)
-        {
-            Debug.Log("Global diyalog gösteriliyor...");
-            // Global diyalog için özel işlemler burada yapılabilir
-        }
         
         if (isFirstTime)
         {
@@ -220,6 +243,9 @@ public class ChoiceSelectionUI : MonoBehaviour
         StopTypewriterCoroutines();
         ResetTypewriterTexts();
         
+        // Typewriter aktif olduğunu işaretle
+        isTypewriterActive = true;
+        
         // Typewriter başlat (name ve description)
         nameTypewriterCoroutine = StartCoroutine(TypewriterEffect(characterNameText, dialogueNode.name, TEXT_REVEAL_DURATION * 0.6f, CHARACTER_NAME_DELAY));
         descriptionTypewriterCoroutine = StartCoroutine(TypewriterEffect(descriptionText, dialogueNode.text, TEXT_REVEAL_DURATION, CHARACTER_NAME_DELAY + 0.2f));
@@ -237,12 +263,34 @@ public class ChoiceSelectionUI : MonoBehaviour
             StopCoroutine(descriptionTypewriterCoroutine);
             descriptionTypewriterCoroutine = null;
         }
+        isTypewriterActive = false;
     }
 
     private void ResetTypewriterTexts()
     {
         if (characterNameText != null) characterNameText.text = "";
         if (descriptionText != null) descriptionText.text = "";
+    }
+
+    /// <summary>
+    /// Typewriter'ı atla ve metinleri tam olarak göster
+    /// </summary>
+    private void SkipTypewriter()
+    {
+        if (!isTypewriterActive) return;
+        
+        // Typewriter coroutine'lerini durdur
+        StopTypewriterCoroutines();
+        
+        // Metinleri tam olarak göster
+        if (characterNameText != null && dialogueNode != null)
+        {
+            characterNameText.text = dialogueNode.name;
+        }
+        if (descriptionText != null && dialogueNode != null)
+        {
+            descriptionText.text = dialogueNode.text;
+        }
     }
 
     private IEnumerator TypewriterEffect(TextMeshProUGUI textComponent, string fullText, float duration, float delay)
@@ -265,8 +313,28 @@ public class ChoiceSelectionUI : MonoBehaviour
         
         for (int i = 0; i <= totalCharacters; i++)
         {
+            // Typewriter aktif değilse dur (skip edilmişse)
+            if (!isTypewriterActive)
+                yield break;
+                
             textComponent.text = fullText.Substring(0, i);
             yield return new WaitForSeconds(timePerCharacter);
+        }
+        
+        // Bu coroutine tamamlandığında typewriter aktif mi kontrol et
+        // Eğer her iki coroutine de tamamlandıysa flag'i false yap
+        CheckTypewriterCompletion();
+    }
+
+    /// <summary>
+    /// Typewriter coroutine'lerinin tamamlanıp tamamlanmadığını kontrol eder
+    /// </summary>
+    private void CheckTypewriterCompletion()
+    {
+        // Eğer hiç coroutine çalışmıyorsa typewriter tamamlanmış demektir
+        if (nameTypewriterCoroutine == null && descriptionTypewriterCoroutine == null)
+        {
+            isTypewriterActive = false;
         }
     }
 
@@ -294,8 +362,7 @@ public class ChoiceSelectionUI : MonoBehaviour
                             this.dialogueNode = pendingDialogueNode;
                             pendingDialogueNode = null;
 
-                            // Sprite ve görünürlük
-                            choiceSelectionImage.sprite = ((DialogueNode)dialogueNode).sprite;
+                            // Karakter görseli güncelle
                             UpdateCharacterImageForNode((DialogueNode)dialogueNode);
 
                             // Arkaplan ve barlar
@@ -303,7 +370,7 @@ public class ChoiceSelectionUI : MonoBehaviour
                             // Choice slotlarını resetle
                             for (int i = 0; i < choiceButtonSlotList.Count; i++)
                             {
-                                choiceButtonSlotList[i].ResetVisualState();
+                                choiceButtonSlotList[i].ResetForNewChoices();
                             }
                             if (barUIController != null)
                             {
@@ -351,7 +418,7 @@ public class ChoiceSelectionUI : MonoBehaviour
         for (int i = 0; i < choices.Count; i++)
         {
             choiceButtonSlotList[i].SetChoice(choices[i]);
-            choiceButtonSlotList[i].ResetVisualState();
+            choiceButtonSlotList[i].ResetForNewChoices();
         }
     }
 
@@ -382,5 +449,36 @@ public class ChoiceSelectionUI : MonoBehaviour
         // Choice selection sonrası text'leri temizle
         if (characterNameText != null) characterNameText.text = "";
         if (descriptionText != null) descriptionText.text = "";
+    }
+    
+    /// <summary>
+    /// Force close the dialogue panel immediately
+    /// </summary>
+    public void ForceCloseDialoguePanel()
+    {
+        Debug.Log("Force closing ChoiceSelectionUI dialogue panel");
+        
+        // Stop any running animations
+        StopAllCoroutines();
+        
+        // Stop typewriter
+        StopTypewriterCoroutines();
+        
+        // Force close using canvas group if available
+        var canvasGroup = GetComponent<CanvasGroup>();
+        if (canvasGroup != null)
+        {
+            canvasGroup.alpha = 0f;
+            canvasGroup.interactable = false;
+            canvasGroup.blocksRaycasts = false;
+        }
+        
+        // Force deactivate
+        gameObject.SetActive(false);
+        
+        // Reset state
+        hasBeenInitialized = false;
+        isTransitioning = false;
+        isTypewriterActive = false;
     }
 }

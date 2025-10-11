@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using DG.Tweening;
 using TMPro;
 
@@ -12,10 +13,8 @@ public class IntroController : MonoBehaviour
 
     [Header("Animation Settings")]
     [SerializeField] private float fadeDuration = 1.5f;
-    [SerializeField] private float textMoveDuration = 1.0f;
+    [SerializeField] private float textFadeDuration = 1.0f;
     [SerializeField] private float holdDuration = 1.0f;
-    [SerializeField] private float textStartY = -500f;
-    [SerializeField] private float textEndY = 0f;
 
     void Start()
     {
@@ -34,14 +33,14 @@ public class IntroController : MonoBehaviour
         // Initial setup: Start with a fully black screen.
         blackScreen.color = new Color(0, 0, 0, 1);
 
-        // Prepare all text elements by making them transparent and setting their start position.
+        // Prepare all text elements by making them transparent.
         foreach (var txt in introTexts)
         {
             txt.gameObject.SetActive(false);
             var tempColor = txt.color;
             tempColor.a = 0;
             txt.color = tempColor;
-            txt.rectTransform.anchoredPosition = new Vector2(txt.rectTransform.anchoredPosition.x, textStartY);
+            // Position'ı değiştirmeye gerek yok, sadece fade kullanacağız
         }
         
         // Hide all images initially.
@@ -70,22 +69,20 @@ public class IntroController : MonoBehaviour
 
             // Animate the fade-in of the scene and text.
             introSequence.Append(blackScreen.DOFade(0, fadeDuration));
-            introSequence.Join(introTexts[currentIndex].rectTransform.DOAnchorPosY(textEndY, textMoveDuration));
-            introSequence.Join(introTexts[currentIndex].DOFade(1, textMoveDuration));
+            introSequence.Join(introTexts[currentIndex].DOFade(1, textFadeDuration));
 
             // Hold the scene.
             introSequence.AppendInterval(holdDuration);
 
             // Animate the fade-out of the scene and text.
             introSequence.Append(blackScreen.DOFade(1, fadeDuration));
-            introSequence.Join(introTexts[currentIndex].rectTransform.DOAnchorPosY(textStartY, textMoveDuration));
-            introSequence.Join(introTexts[currentIndex].DOFade(0, textMoveDuration));
+            introSequence.Join(introTexts[currentIndex].DOFade(0, textFadeDuration));
         }
 
-        // On completion, disable the intro GameObject.
+        // On completion, load the GameScene.
         introSequence.OnComplete(() =>
         {
-            gameObject.SetActive(false);
+            SceneManager.LoadScene("GameScene");
         });
 
         introSequence.Play();

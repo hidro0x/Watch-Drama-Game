@@ -21,6 +21,7 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IPointerUpHa
     private LayoutElement layoutElement;
     private Vector3 originalScale;
     private bool isDragging;
+    private bool isSelected = false;
 
     public void SetChoice(DialogueChoice choice)
     {
@@ -52,11 +53,14 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 
 	private void OnChoiceButtonClicked()
 	{
-		if (choice == null) return;
+		if (choice == null || isSelected) return;
 		
 		if (choice is DialogueChoice dialogueChoice)
 		{
 			Debug.Log($"Dialogue choice clicked: {dialogueChoice.text}");
+			
+			// Seçim animasyonunu başlat
+			PlaySelectionAnimation();
 			
 			// Global choice kontrolü
 			if (dialogueChoice.isGlobalChoice)
@@ -98,6 +102,7 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 	{
 		if (rectTransform == null) return;
 		rectTransform.DOKill();
+		isSelected = false;
 		rectTransform.localScale = originalScale;
 		if (layoutElement != null) layoutElement.ignoreLayout = false;
 		rectTransform.anchoredPosition = Vector2.zero;
@@ -126,12 +131,15 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 	{
 		if (rectTransform == null) return;
 		
-		// Eğer sürükleme yapılmadıysa, boyutu geri al
+		// Eğer sürükleme yapılmadıysa, tıklama olarak değerlendir
 		if (!isDragging)
 		{
 			rectTransform.DOKill();
 			rectTransform.DOScale(originalScale, 0.1f).SetEase(Ease.OutQuad);
 			if (layoutElement != null) layoutElement.ignoreLayout = false;
+			
+			// Tıklama işlemini gerçekleştir
+			OnChoiceButtonClicked();
 		}
 	}
 
@@ -174,12 +182,8 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 			float threshold = GetEffectiveThresholdUnits();
 			if (delta.magnitude >= threshold)
 			{
-				// Seçim tetikle
+				// Seçim tetikle - PlaySelectionAnimation kendi scale animasyonunu yapacak
 				OnChoiceButtonClicked();
-                // Seçimle birlikte boyutu geri al (UI zaten akış değiştirebilir)
-                rectTransform.DOKill();
-                rectTransform.localScale = originalScale;
-                if (layoutElement != null) layoutElement.ignoreLayout = false;
 			}
 			else
 			{
@@ -211,6 +215,54 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 	}
 
     
+    /// <summary>
+    /// Plays the selection animation when a choice is selected
+    /// </summary>
+    private void PlaySelectionAnimation()
+    {
+        if (isSelected || rectTransform == null) return;
+        
+        isSelected = true;
+        rectTransform.DOKill();
+        
+        // Layout'u ignore etmeye devam et (sürükleme sırasında zaten ignore edilmişti)
+        if (layoutElement != null) layoutElement.ignoreLayout = true;
+        
+        // Scale down to 0 with a smooth easing
+        rectTransform.DOScale(Vector3.zero, 0.4f)
+            .SetEase(Ease.InBack)
+            .OnComplete(() => {
+                // Optional: Hide the button completely after animation
+                gameObject.SetActive(false);
+            });
+    }
+    
+    /// <summary>
+    /// Resets the button to its original state for new choices
+    /// </summary>
+    public void ResetForNewChoices()
+    {
+        if (rectTransform == null) return;
+        
+        // Reactivate if it was hidden
+        if (!gameObject.activeInHierarchy)
+        {
+            gameObject.SetActive(true);
+        }
+        
+        rectTransform.DOKill();
+        isSelected = false;
+        
+        // Reset position and layout
+        if (layoutElement != null) layoutElement.ignoreLayout = false;
+        rectTransform.anchoredPosition = Vector2.zero;
+        
+        // Scale back to original with a nice easing
+        rectTransform.localScale = Vector3.zero;
+        rectTransform.DOScale(originalScale, 0.3f)
+            .SetEase(Ease.OutBack);
+    }
+
     private void OnGlobalChoiceSelected(DialogueChoice globalChoice)
     {
         // Global choice seçimi sonrası işlemler
@@ -220,11 +272,22 @@ public class ChoiceButtonSlot : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         // Bu kısım için GlobalDialogueChoice'tan bilgi almamız gerekiyor
         ApplyGlobalEffectsFromDialogueChoice(globalChoice);
         
-        // 1. Diyalog ekranını kapat
-        var choiceSelectionUI = UnityEngine.Object.FindFirstObjectByType<ChoiceSelectionUI>();
-        if (choiceSelectionUI != null)
+        // Check if we're using GlobalDialogueUI
+        var globalDialogueUI = UnityEngine.Object.FindFirstObjectByType<GlobalDialogueUI>();
+        if (globalDialogueUI != null && globalDialogueUI.gameObject.activeInHierarchy)
         {
-            choiceSelectionUI.OnPanelClosed();
+            // Trigger the GlobalDialogueUI's choice completion sequence
+            globalDialogueUI.OnChoiceMade();
+        }
+        else
+        {
+            // Fallback to normal ChoiceSelectionUI flow - but force close it
+            var choiceSelectionUI = UnityEngine.Object.FindFirstObjectByType<ChoiceSelectionUI>();
+            if (choiceSelectionUI != null)
+            {
+                Debug.Log("Force closing ChoiceSelectionUI after global choice");
+                choiceSelectionUI.ForceCloseDialoguePanel();
+            }
         }
         
         // 2. Aktif ülkenin butonunu pasif yap

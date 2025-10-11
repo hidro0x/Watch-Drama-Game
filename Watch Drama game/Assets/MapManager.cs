@@ -56,6 +56,9 @@ public class MapManager : MonoBehaviour
             return;
         }
         
+        // Check if this was the last turn and a global decision was made
+        CheckForMapCompletion();
+        
         // Normal akış
         StartNextDialogue();
     }
@@ -157,11 +160,12 @@ public class MapManager : MonoBehaviour
         int mapTurn = mapTurns[currentMap.Value];
         
         Debug.Log($"Turn: {currentTurn}, Map Turn: {mapTurn}, Current Map: {currentMap}");
+        Debug.Log($"Global dialogue count: {dialogueDatabase.globalDialogueEffects.Count}, Interval: {dialogueDatabase.globalDialogueInterval}");
         
         // 1. Global diyalog kontrolü
-        if (currentTurn % dialogueDatabase.globalDialogueInterval == 0 && dialogueDatabase.globalDialogueEffects.Count > 0)
+        if (currentTurn % dialogueDatabase.globalDialogueInterval == 0 && currentTurn > 0 && dialogueDatabase.globalDialogueEffects.Count > 0)
         {
-            Debug.Log("Global diyalog seçiliyor...");
+            Debug.Log($"Global diyalog seçiliyor... Turn: {currentTurn}, Interval: {dialogueDatabase.globalDialogueInterval}");
             var globalDialogue = dialogueDatabase.globalDialogueEffects[UnityEngine.Random.Range(0, dialogueDatabase.globalDialogueEffects.Count)];
             currentGlobalDialogue = globalDialogue; // Global diyalog referansını sakla
             return ConvertGlobalDialogueToDialogue(globalDialogue);
@@ -188,16 +192,69 @@ public class MapManager : MonoBehaviour
         return selected;
     }
     
+    /// <summary>
+    /// Check if the current map should be completed (last turn + global decision made)
+    /// </summary>
+    private void CheckForMapCompletion()
+    {
+        if (currentMap == null || currentGlobalDialogue == null) return;
+        
+        DialogueManager dialogueManager = FindFirstObjectByType<DialogueManager>();
+        if (dialogueManager == null) return;
+        
+        int currentTurn = dialogueManager.GetCurrentTurn();
+        int maxTurns = dialogueManager.GetMaxTurnCount();
+        
+        // Check if this is the last turn
+        if (currentTurn >= maxTurns)
+        {
+            Debug.Log($"Last turn reached ({currentTurn}/{maxTurns}). Map completion triggered for {currentMap}!");
+            
+            // Get final stats for the current map
+            MapValues finalStats = GameManager.Instance.GetMapValues(currentMap.Value);
+            
+            // Trigger map completion panel
+            MapCompletionPanelUI.TriggerMapCompletion(currentMap.Value, finalStats);
+            
+            // Mark map as completed
+            OnMapCompleted?.Invoke(currentMap.Value);
+            
+            // Clear current global dialogue reference
+            currentGlobalDialogue = null;
+        }
+    }
+
+    /// <summary>
+    /// Manually trigger map completion (for testing purposes)
+    /// </summary>
+    [ContextMenu("Trigger Map Completion (Debug)")]
+    public void TriggerMapCompletionDebug()
+    {
+        if (currentMap == null)
+        {
+            Debug.LogWarning("No current map selected!");
+            return;
+        }
+        
+        MapValues finalStats = GameManager.Instance.GetMapValues(currentMap.Value);
+        MapCompletionPanelUI.TriggerMapCompletion(currentMap.Value, finalStats);
+    }
+
     public DialogueNode ConvertGlobalDialogueToDialogue(GlobalDialogueNode globalDialogue)
     {
         // GlobalDialogueNode'u DialogueNode'a dönüştür
         DialogueNode dialogueNode = new DialogueNode
         {
             id = globalDialogue.id,
+            name = globalDialogue.name,
             text = globalDialogue.text,
+            sprite = globalDialogue.sprite,
+            backgroundSprite = globalDialogue.sprite, // Use the sprite as background for global dialogues
             choices = new List<DialogueChoice>(),
             isGlobalDialogue = true // Global diyalog olduğunu işaretle
         };
+        
+        Debug.Log($"ConvertGlobalDialogueToDialogue: Set backgroundSprite to {(globalDialogue.sprite != null ? globalDialogue.sprite.name : "NULL")} for dialogue {globalDialogue.id}");
         
         // GlobalDialogueChoice'ları DialogueChoice'a dönüştür
         foreach (var globalChoice in globalDialogue.choices)

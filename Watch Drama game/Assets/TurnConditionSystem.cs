@@ -9,7 +9,22 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class TurnConditionSystem : MonoBehaviour
 {
-    [Title("Bar Sıfırlanma Diyalogları")]
+    [Title("Ending Scenario Mappings", "Map specific conditions to ending scenarios")]
+    [InfoBox("These conditions will trigger specific ending scenarios when met")]
+    
+    [Title("Defeat Conditions")]
+    [LabelWidth(120)]
+    public EndingScenario trustZeroEnding = EndingScenario.TrustDefeat;
+    [LabelWidth(120)]
+    public EndingScenario faithZeroEnding = EndingScenario.FaithDefeat;
+    
+    [Title("Victory Conditions")]
+    [LabelWidth(120)]
+    public EndingScenario hostilityMaxEnding = EndingScenario.HostilityVictory;
+    [LabelWidth(120)]
+    public EndingScenario allMapsCompletedEnding = EndingScenario.AllMapsCompleted;
+    
+    [Title("Legacy Support", "Old sprite/text system (optional - for custom endings)")]
     [LabelWidth(120)]
     public Sprite trustZeroDialogueSprite;
     public string trustZeroDialogueText;
@@ -22,7 +37,6 @@ public class TurnConditionSystem : MonoBehaviour
     public Sprite hostilityMaxDialogueSprite;
     public string hostilityMaxDialogueText;
     
-    [Title("Tüm Haritalar Tamamlandı Diyalogu")]
     [LabelWidth(120)]
     public Sprite allMapsCompletedDialogueSprite;
     public string allMapsCompletedDialogueText;
@@ -83,8 +97,8 @@ public class TurnConditionSystem : MonoBehaviour
             int trustValue = GameManager.Instance.GetTrustForCountry(country);
             if (trustValue <= 0)
             {
-                Debug.Log($"{country} ülkesinin Trust değeri 0'a düştü! Özel diyalog tetikleniyor.");
-                FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include).SetEnding(trustZeroDialogueSprite, trustZeroDialogueText);
+                Debug.Log($"{country} ülkesinin Trust değeri 0'a düştü! Trust defeat ending tetikleniyor.");
+                TriggerEndingScenario(trustZeroEnding, trustZeroDialogueSprite, trustZeroDialogueText);
                 return; // Sadece ilk bulunanı tetikle
             }
         }
@@ -98,8 +112,8 @@ public class TurnConditionSystem : MonoBehaviour
             int faithValue = GameManager.Instance.GetFaithForCountry(country);
             if (faithValue <= 0)
             {
-                Debug.Log($"{country} ülkesinin Faith değeri 0'a düştü! Özel diyalog tetikleniyor.");
-                FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include).SetEnding(faithZeroDialogueSprite, faithZeroDialogueText);
+                Debug.Log($"{country} ülkesinin Faith değeri 0'a düştü! Faith defeat ending tetikleniyor.");
+                TriggerEndingScenario(faithZeroEnding, faithZeroDialogueSprite, faithZeroDialogueText);
                 return; // Sadece ilk bulunanı tetikle
             }
         }
@@ -113,8 +127,8 @@ public class TurnConditionSystem : MonoBehaviour
             int hostilityValue = GameManager.Instance.GetHostilityForCountry(country);
             if (hostilityValue >= 100)
             {
-                Debug.Log($"{country} ülkesinin Hostility değeri 100'e çıktı! Özel diyalog tetikleniyor.");
-                FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include).SetEnding(hostilityMaxDialogueSprite, hostilityMaxDialogueText);
+                Debug.Log($"{country} ülkesinin Hostility değeri 100'e çıktı! Hostility victory ending tetikleniyor.");
+                TriggerEndingScenario(hostilityMaxEnding, hostilityMaxDialogueSprite, hostilityMaxDialogueText);
                 return; // Sadece ilk bulunanı tetikle
             }
         }
@@ -146,14 +160,106 @@ public class TurnConditionSystem : MonoBehaviour
         
         if (allMapsCompleted)
         {
-            Debug.Log("Tüm haritalar tamamlandı! Özel diyalog tetikleniyor.");
-            FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include).SetEnding(allMapsCompletedDialogueSprite, allMapsCompletedDialogueText);
+            Debug.Log("Tüm haritalar tamamlandı! All maps completed ending tetikleniyor.");
+            TriggerEndingScenario(allMapsCompletedEnding, allMapsCompletedDialogueSprite, allMapsCompletedDialogueText);
         }
     }
     
+    /// <summary>
+    /// Trigger ending scenario with support for both new system and legacy sprite/text
+    /// </summary>
+    private void TriggerEndingScenario(EndingScenario scenario, Sprite legacySprite = null, string legacyText = null)
+    {
+        var endingPanelUI = FindFirstObjectByType<EndingPanelUI>(FindObjectsInactive.Include);
+        if (endingPanelUI == null)
+        {
+            Debug.LogError("EndingPanelUI not found! Cannot trigger ending scenario.");
+            return;
+        }
+
+        // If legacy sprite and text are provided, create custom ending data
+        if (legacySprite != null && !string.IsNullOrEmpty(legacyText))
+        {
+            EndingData customEnding = new EndingData
+            {
+                scenario = scenario,
+                title = GetScenarioTitle(scenario),
+                description = legacyText,
+                endingImage = legacySprite,
+                backgroundColor = GetScenarioBackgroundColor(scenario),
+                textColor = GetScenarioTextColor(scenario),
+                titleColor = GetScenarioTitleColor(scenario)
+            };
+            
+            Debug.Log($"Triggering custom ending for scenario: {scenario}");
+            endingPanelUI.ShowEnding(customEnding);
+        }
+        else
+        {
+            // Use default ending data from EndingPanelUI
+            Debug.Log($"Triggering default ending for scenario: {scenario}");
+            endingPanelUI.ShowEnding(scenario);
+        }
+        
+        // Also trigger GameManager completion
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.FinishGameWithScenario(scenario);
+        }
+    }
+    
+    private string GetScenarioTitle(EndingScenario scenario)
+    {
+        switch (scenario)
+        {
+            case EndingScenario.TrustDefeat: return "Trust Lost";
+            case EndingScenario.FaithDefeat: return "Faith Broken";
+            case EndingScenario.HostilityDefeat: return "Power Faded";
+            case EndingScenario.HostilityVictory: return "Power Through Strength";
+            case EndingScenario.AllMapsCompleted: return "Journey Complete";
+            default: return "Game Complete";
+        }
+    }
+    
+    private Color GetScenarioBackgroundColor(EndingScenario scenario)
+    {
+        switch (scenario)
+        {
+            case EndingScenario.TrustDefeat: return new Color(0.8f, 0.2f, 0.2f, 1.0f); // Red
+            case EndingScenario.FaithDefeat: return new Color(0.6f, 0.3f, 0.8f, 1.0f); // Purple
+            case EndingScenario.HostilityDefeat: return new Color(0.4f, 0.4f, 0.4f, 1.0f); // Dark Gray
+            case EndingScenario.HostilityVictory: return new Color(0.8f, 0.2f, 0.2f, 1.0f); // Red
+            case EndingScenario.AllMapsCompleted: return new Color(0.3f, 0.7f, 0.3f, 1.0f); // Green
+            default: return Color.black;
+        }
+    }
+    
+    private Color GetScenarioTextColor(EndingScenario scenario)
+    {
+        switch (scenario)
+        {
+            case EndingScenario.FaithDefeat: return Color.white;
+            case EndingScenario.HostilityDefeat: return Color.white;
+            default: return Color.white;
+        }
+    }
+    
+    private Color GetScenarioTitleColor(EndingScenario scenario)
+    {
+        switch (scenario)
+        {
+            case EndingScenario.TrustDefeat: return new Color(1.0f, 0.6f, 0.6f, 1.0f); // Light Red
+            case EndingScenario.FaithDefeat: return new Color(0.9f, 0.7f, 1.0f, 1.0f); // Light Purple
+            case EndingScenario.HostilityDefeat: return new Color(0.7f, 0.7f, 0.7f, 1.0f); // Light Gray
+            case EndingScenario.HostilityVictory: return new Color(1.0f, 0.4f, 0.4f, 1.0f); // Light Red
+            case EndingScenario.AllMapsCompleted: return new Color(0.6f, 1.0f, 0.6f, 1.0f); // Light Green
+            default: return Color.white;
+        }
+    }
+
     private void ShowSpecialDialogue(DialogueNode dialogue, MapType country)
     {
-        DialogueManager dialogueManager = UnityEngine.Object.FindObjectOfType<DialogueManager>();
+        DialogueManager dialogueManager = UnityEngine.Object.FindFirstObjectByType<DialogueManager>();
         if (dialogueManager != null)
         {
             dialogueManager.ShowSpecificDialogue(dialogue);
@@ -165,6 +271,43 @@ public class TurnConditionSystem : MonoBehaviour
         // Harita değiştiğinde condition'ları güncelle
         // Bu sistemde harita değişikliği önemli değil
     }
+    
+    #region DEBUG AND TESTING
+    [Title("Debug and Testing", "Test ending scenarios")]
+    [Button("Test Trust Defeat")]
+    private void TestTrustDefeat()
+    {
+        TriggerEndingScenario(EndingScenario.TrustDefeat, trustZeroDialogueSprite, trustZeroDialogueText);
+    }
+    
+    [Button("Test Faith Defeat")]
+    private void TestFaithDefeat()
+    {
+        TriggerEndingScenario(EndingScenario.FaithDefeat, faithZeroDialogueSprite, faithZeroDialogueText);
+    }
+    
+    [Button("Test Hostility Victory")]
+    private void TestHostilityVictory()
+    {
+        TriggerEndingScenario(EndingScenario.HostilityVictory, hostilityMaxDialogueSprite, hostilityMaxDialogueText);
+    }
+    
+    [Button("Test All Maps Completed")]
+    private void TestAllMapsCompleted()
+    {
+        TriggerEndingScenario(EndingScenario.AllMapsCompleted, allMapsCompletedDialogueSprite, allMapsCompletedDialogueText);
+    }
+    
+    [Button("Test All Conditions")]
+    private void TestAllConditions()
+    {
+        Debug.Log("Testing all condition checks...");
+        CheckTrustZeroConditions();
+        CheckFaithZeroConditions();
+        CheckHostilityMaxConditions();
+        CheckAllMapsCompletedCondition();
+    }
+    #endregion
 }
 
 /// <summary>
