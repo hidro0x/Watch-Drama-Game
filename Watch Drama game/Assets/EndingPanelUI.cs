@@ -411,7 +411,23 @@ public class EndingPanelUI : MonoBehaviour
     private void OnRestartButtonClicked()
     {
         Debug.Log("Restart button clicked");
-        HidePanel();
+        
+        // Stop all animations and coroutines
+        StopAllCoroutines();
+        
+        // Reset game state
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.StartNewGame();
+        }
+        
+        // Reset map manager
+        if (MapManager.Instance != null)
+        {
+            MapManager.Instance.ResetAllMaps();
+        }
+        
+        // Load scene immediately
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
