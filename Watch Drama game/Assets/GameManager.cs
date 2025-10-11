@@ -54,25 +54,98 @@ public class GameManager : MonoBehaviour
     [Header("Map Bazlı Değerler")]
     public List<MapTypeValues> mapTypeValuesList;
 
-    [Header("🔧 DEBUG - Inspector Test Controls")]
-    [Space(10)]
-    [SerializeField] private bool showDebugControls = true;
-    [Space(5)]
-    [Header("Preset Value Combinations")]
-    [SerializeField] private bool usePresetValues = false;
-    [SerializeField] private DebugPreset presetToApply = DebugPreset.Normal;
+    [Title("🔧 DEBUG - Game Controls")]
+    [Title("Preset Values")]
+    [Button("Apply Normal Preset", ButtonSizes.Large)]
+    [GUIColor(0.4f, 0.8f, 1f)]
+    public void ApplyNormalPreset() => ApplyPresetValues(DebugPreset.Normal);
     
-    [Space(10)]
-    [Header("Manual Value Adjustment")]
-    [SerializeField] private int debugTrust = 0;
-    [SerializeField] private int debugFaith = 0;
-    [SerializeField] private int debugHostility = 0;
-    [SerializeField] private bool applyManualValues = false;
+    [Button("Apply Trust Zero Preset", ButtonSizes.Large)]
+    [GUIColor(1f, 0.6f, 0.6f)]
+    public void ApplyTrustZeroPreset() => ApplyPresetValues(DebugPreset.TrustZero);
     
-    [Space(10)]
-    [Header("Quick Actions")]
-    [SerializeField] private bool resetAllValues = false;
-    [SerializeField] private bool maxAllValues = false;
+    [Button("Apply Faith Zero Preset", ButtonSizes.Large)]
+    [GUIColor(1f, 0.8f, 0.4f)]
+    public void ApplyFaithZeroPreset() => ApplyPresetValues(DebugPreset.FaithZero);
+    
+    [Button("Apply Hostility Max Preset", ButtonSizes.Large)]
+    [GUIColor(1f, 0.2f, 0.2f)]
+    public void ApplyHostilityMaxPreset() => ApplyPresetValues(DebugPreset.HostilityMax);
+    
+    [Button("Apply All Zero Preset", ButtonSizes.Large)]
+    [GUIColor(0.5f, 0.5f, 0.5f)]
+    public void ApplyAllZeroPreset() => ApplyPresetValues(DebugPreset.AllZero);
+    
+    [Button("Apply All Max Preset", ButtonSizes.Large)]
+    [GUIColor(0.2f, 1f, 0.2f)]
+    public void ApplyAllMaxPreset() => ApplyPresetValues(DebugPreset.AllMax);
+    
+    [Button("Apply Balanced Preset", ButtonSizes.Large)]
+    [GUIColor(1f, 1f, 0.2f)]
+    public void ApplyBalancedPreset() => ApplyPresetValues(DebugPreset.Balanced);
+    
+    [Title("Manual Value Controls")]
+    [InfoBox("Set values for maps")]
+    [SerializeField] private int manualTrust = 0;
+    [SerializeField] private int manualFaith = 0;
+    [SerializeField] private int manualHostility = 0;
+    [SerializeField] private bool applyToAllMaps = true;
+    
+    [Button("Apply Manual Values", ButtonSizes.Large)]
+    [GUIColor(0.8f, 0.8f, 1f)]
+    public void ApplyManualValues() => ApplyManualValues(manualTrust, manualFaith, manualHostility, applyToAllMaps);
+    
+    [Title("Quick Actions")]
+    [Button("Reset All Values", ButtonSizes.Large)]
+    [GUIColor(1f, 0.4f, 0.4f)]
+    public void ResetAllValues() => ResetAllMapValues();
+    
+    [Button("Max All Values", ButtonSizes.Large)]
+    [GUIColor(0.4f, 1f, 0.4f)]
+    public void MaxAllValues() => SetAllValuesToMax();
+    
+    [Button("Force Update UI", ButtonSizes.Medium)]
+    [GUIColor(0.6f, 0.6f, 1f)]
+    public void ForceUpdateUI() => ForceUpdateBarUI();
+    
+    [Button("Print All Map Values", ButtonSizes.Medium)]
+    [GUIColor(1f, 1f, 0.6f)]
+    public void PrintAllMapValuesDebug() => PrintAllMapValues();
+    
+    [Title("Game Completion")]
+    [Button("Complete Selected Map", ButtonSizes.Large)]
+    [GUIColor(1f, 0.8f, 0.2f)]
+    public void CompleteSelectedMap() => CompleteCurrentMap();
+    
+    [Button("Complete All Maps", ButtonSizes.Large)]
+    [GUIColor(0.8f, 0.2f, 1f)]
+    public void CompleteAllMapsDebug() => CompleteAllMaps();
+    
+    [Title("Victory Scenarios")]
+    [Button("🏆 Trust Victory", ButtonSizes.Large)]
+    [GUIColor(0.2f, 0.8f, 0.2f)]
+    public void TriggerTrustVictory() => FinishWithTrustVictory();
+    
+    [Button("🌟 Faith Victory", ButtonSizes.Large)]
+    [GUIColor(0.2f, 0.8f, 1f)]
+    public void TriggerFaithVictory() => FinishWithFaithVictory();
+    
+    [Button("⚔️ Hostility Victory", ButtonSizes.Large)]
+    [GUIColor(1f, 0.2f, 0.2f)]
+    public void TriggerHostilityVictory() => FinishWithHostilityVictory();
+    
+    [Button("⚖️ Balanced Victory", ButtonSizes.Large)]
+    [GUIColor(1f, 1f, 0.2f)]
+    public void TriggerBalancedVictory() => FinishWithBalancedVictory();
+    
+    [Button("🗺️ All Maps Completed", ButtonSizes.Large)]
+    [GUIColor(0.8f, 0.8f, 0.8f)]
+    public void TriggerAllMapsCompleted() => FinishWithAllMapsCompleted();
+    
+    [Title("Game Restart")]
+    [Button("🔄 Start New Game", ButtonSizes.Large)]
+    [GUIColor(0.4f, 0.4f, 1f)]
+    public void StartNewGameDebug() => StartNewGame();
 
     private Dictionary<MapType, MapValues> mapValuesDict = new Dictionary<MapType, MapValues>();
     private MapType currentMapType;
@@ -102,25 +175,21 @@ public class GameManager : MonoBehaviour
     private void InitializeMapValues()
     {
         mapValuesDict.Clear();
-        if (mapTypeValuesList != null && mapTypeValuesList.Count > 0)
+        
+        // Apply normal preset values to all maps
+        var normalPresetValues = GetPresetValues(DebugPreset.Normal);
+        var allMaps = GetAllMapTypes();
+        
+        foreach (var mapType in allMaps)
         {
-            foreach (var item in mapTypeValuesList)
-            {
-                var initVals = new MapValues(item.trust, item.faith, item.hostility);
-                mapValuesDict[item.mapType] = ClampMapValues(initVals);
-            }
+            mapValuesDict[mapType] = normalPresetValues;
         }
-        else
-        {
-            // Eğer inspector'dan ayarlanmadıysa tüm MapType'lar için default değer ata
-            foreach (MapType mapType in Enum.GetValues(typeof(MapType)))
-            {
-                mapValuesDict[mapType] = new MapValues(0, 0, 0);
-            }
-        }
+        
         // Varsayılan olarak ilk MapType'ı aktif yap
         currentMapType = (MapType)0;
         SyncMapTypeValuesList();
+        
+        Debug.Log("🎮 All maps initialized with normal preset values (Trust: 50, Faith: 50, Hostility: 0)");
     }
 
     private void OnDestroy()
@@ -129,38 +198,6 @@ public class GameManager : MonoBehaviour
         OnValueReachedZero -= HandleValueReachedZero;
     }
 
-    private void Update()
-    {
-        if (!showDebugControls) return;
-        
-        // Preset değerleri uygula
-        if (usePresetValues)
-        {
-            ApplyPresetValues(presetToApply);
-            usePresetValues = false; // Tek seferlik kullanım
-        }
-        
-        // Manuel değerleri uygula
-        if (applyManualValues)
-        {
-            ApplyManualValues();
-            applyManualValues = false; // Tek seferlik kullanım
-        }
-        
-        // Tüm değerleri sıfırla
-        if (resetAllValues)
-        {
-            ResetAllValues();
-            resetAllValues = false; // Tek seferlik kullanım
-        }
-        
-        // Tüm değerleri maksimum yap
-        if (maxAllValues)
-        {
-            MaxAllValues();
-            maxAllValues = false; // Tek seferlik kullanım
-        }
-    }
 
     // Aktif haritayı ayarla
     public void SetActiveMap(MapType mapType)
@@ -184,7 +221,7 @@ public class GameManager : MonoBehaviour
         SyncMapTypeValuesList();
 
         // DialogueManager'a seçim yapıldığını bildir
-        DialogueManager dialogueManager = UnityEngine.Object.FindObjectOfType<DialogueManager>();
+        DialogueManager dialogueManager = UnityEngine.Object.FindFirstObjectByType<DialogueManager>();
         if (dialogueManager != null)
         {
             dialogueManager.OnChoiceMade();
@@ -307,31 +344,82 @@ public class GameManager : MonoBehaviour
     [Button("Finish with Trust Victory")]
     public void FinishWithTrustVictory()
     {
+        // Tüm haritaları complete etmiş gibi davran
+        CompleteAllMaps();
+        
+        // Trust victory efekti uygula
+        ApplyTrustVictoryEffects();
+        
+        // Oyun bitti event'ini tetikle
         FinishGameWithScenario(EndingScenario.TrustVictory);
+        
+        // Bar UI'yi force update et
+        ForceUpdateBarUI();
+        
+        Debug.Log("🏆 Trust Victory - Tüm haritalar complete edildi!");
     }
     
     [Button("Finish with Faith Victory")]
     public void FinishWithFaithVictory()
     {
+        // Tüm haritaları complete etmiş gibi davran
+        CompleteAllMaps();
+        
+        // Faith victory efekti uygula
+        ApplyFaithVictoryEffects();
+        
+        // Oyun bitti event'ini tetikle
         FinishGameWithScenario(EndingScenario.FaithVictory);
+        
+        // Bar UI'yi force update et
+        ForceUpdateBarUI();
+        
+        Debug.Log("🌟 Faith Victory - Tüm haritalar complete edildi!");
     }
     
     [Button("Finish with Hostility Victory")]
     public void FinishWithHostilityVictory()
     {
+        // Tüm haritaları complete etmiş gibi davran
+        CompleteAllMaps();
+        
+        // Hostility victory efekti uygula
+        ApplyHostilityVictoryEffects();
+        
+        // Oyun bitti event'ini tetikle
         FinishGameWithScenario(EndingScenario.HostilityVictory);
+        
+        // Bar UI'yi force update et
+        ForceUpdateBarUI();
+        
+        Debug.Log("⚔️ Hostility Victory - Tüm haritalar complete edildi!");
     }
     
     [Button("Finish with Balanced Victory")]
     public void FinishWithBalancedVictory()
     {
+        // Tüm haritaları complete etmiş gibi davran
+        CompleteAllMaps();
+        
+        // Balanced victory efekti uygula
+        ApplyBalancedVictoryEffects();
+        
+        // Oyun bitti event'ini tetikle
         FinishGameWithScenario(EndingScenario.BalancedVictory);
+        
+        // Bar UI'yi force update et
+        ForceUpdateBarUI();
+        
+        Debug.Log("⚖️ Balanced Victory - Tüm haritalar complete edildi!");
     }
     
     [Button("Finish with All Maps Completed")]
     public void FinishWithAllMapsCompleted()
     {
         FinishGameWithScenario(EndingScenario.AllMapsCompleted);
+        
+        // Bar UI'yi force update et
+        ForceUpdateBarUI();
     }
     
     public void FinishGameWithScenario(EndingScenario scenario)
@@ -529,54 +617,96 @@ public class GameManager : MonoBehaviour
 
     #region DEBUG METHODS
     /// <summary>
-    /// Preset değerleri uygula
+    /// Preset değerleri uygula (tüm şehirlere)
     /// </summary>
     private void ApplyPresetValues(DebugPreset preset)
     {
         MapValues newValues = GetPresetValues(preset);
-        mapValuesDict[currentMapType] = newValues;
+        var allMaps = GetAllMapTypes();
+        
+        // Tüm şehirlere preset değerlerini uygula
+        foreach (var mapType in allMaps)
+        {
+            mapValuesDict[mapType] = newValues;
+        }
+        
         SyncMapTypeValuesList();
         RefreshValues();
         
-        Debug.Log($"🔧 DEBUG: Preset '{preset}' uygulandı - Trust: {newValues.Trust}, Faith: {newValues.Faith}, Hostility: {newValues.Hostility}");
+        // Bar UI'yi force update et
+        ForceUpdateBarUI();
+        
+        Debug.Log($"🔧 DEBUG: Preset '{preset}' tüm şehirlere uygulandı - Trust: {newValues.Trust}, Faith: {newValues.Faith}, Hostility: {newValues.Hostility}");
     }
 
     /// <summary>
     /// Manuel değerleri uygula
     /// </summary>
-    private void ApplyManualValues()
+    private void ApplyManualValues(int trust, int faith, int hostility, bool applyToAllMaps = false)
     {
-        MapValues newValues = new MapValues(debugTrust, debugFaith, debugHostility);
+        MapValues newValues = new MapValues(trust, faith, hostility);
         newValues = ClampMapValues(newValues);
-        mapValuesDict[currentMapType] = newValues;
+        
+        if (applyToAllMaps)
+        {
+            // Tüm şehirlere uygula
+            var allMaps = GetAllMapTypes();
+            foreach (var mapType in allMaps)
+            {
+                mapValuesDict[mapType] = newValues;
+            }
+            Debug.Log($"🔧 DEBUG: Manuel değerler TÜM ŞEHİRLERE uygulandı - Trust: {newValues.Trust}, Faith: {newValues.Faith}, Hostility: {newValues.Hostility}");
+        }
+        else
+        {
+            // Sadece aktif şehre uygula
+            mapValuesDict[currentMapType] = newValues;
+            Debug.Log($"🔧 DEBUG: Manuel değerler {currentMapType} şehrine uygulandı - Trust: {newValues.Trust}, Faith: {newValues.Faith}, Hostility: {newValues.Hostility}");
+        }
+        
         SyncMapTypeValuesList();
         RefreshValues();
         
-        Debug.Log($"🔧 DEBUG: Manuel değerler uygulandı - Trust: {newValues.Trust}, Faith: {newValues.Faith}, Hostility: {newValues.Hostility}");
+        // Bar UI'yi force update et
+        ForceUpdateBarUI();
     }
 
     /// <summary>
-    /// Tüm değerleri sıfırla
+    /// Tüm map değerlerini sıfırla
     /// </summary>
-    private void ResetAllValues()
+    private void ResetAllMapValues()
     {
-        MapValues zeroValues = new MapValues(0, 0, 0);
-        mapValuesDict[currentMapType] = zeroValues;
+        var zeroValues = new MapValues(0, 0, 0);
+        var allMaps = GetAllMapTypes();
+        
+        foreach (var mapType in allMaps)
+        {
+            mapValuesDict[mapType] = zeroValues;
+        }
+        
         SyncMapTypeValuesList();
         RefreshValues();
+        ForceUpdateBarUI();
         
-        Debug.Log("🔧 DEBUG: Tüm değerler sıfırlandı");
+        Debug.Log("🔧 DEBUG: Tüm map değerleri sıfırlandı");
     }
 
     /// <summary>
     /// Tüm değerleri maksimum yap
     /// </summary>
-    private void MaxAllValues()
+    private void SetAllValuesToMax()
     {
-        MapValues maxValues = new MapValues(100, 100, 100);
-        mapValuesDict[currentMapType] = maxValues;
+        var maxValues = new MapValues(100, 100, 100);
+        var allMaps = GetAllMapTypes();
+        
+        foreach (var mapType in allMaps)
+        {
+            mapValuesDict[mapType] = maxValues;
+        }
+        
         SyncMapTypeValuesList();
         RefreshValues();
+        ForceUpdateBarUI();
         
         Debug.Log("🔧 DEBUG: Tüm değerler maksimum yapıldı");
     }
@@ -648,9 +778,29 @@ public class GameManager : MonoBehaviour
     // Yeni oyun başlatma
     public void StartNewGame()
     {
+        // Map değerlerini yeniden initialize et (default değerleri korur)
         InitializeMapValues();
-        Debug.Log("Yeni oyun başlatıldı!");
+        
+        // UI'yi güncelle
         SyncMapTypeValuesList();
+        ForceUpdateBarUI();
+        
+        Debug.Log("🎮 Yeni oyun başlatıldı - Default değerler yüklendi!");
+    }
+    
+    /// <summary>
+    /// Tüm map tiplerini al
+    /// </summary>
+    private List<MapType> GetAllMapTypes()
+    {
+        return new List<MapType>
+        {
+            MapType.Astrahil,
+            MapType.Agnari,
+            MapType.Solarya,
+            MapType.Theon,
+            MapType.Varnan
+        };
     }
 
     private void SyncMapTypeValuesList()
@@ -686,6 +836,74 @@ public class GameManager : MonoBehaviour
         values.Faith = Mathf.Clamp(values.Faith, 0, 100);
         values.Hostility = Mathf.Clamp(values.Hostility, 0, 100);
         return values;
+    }
+    
+    /// <summary>
+    /// Bar UI'yi force update et - Debug için
+    /// </summary>
+    public void ForceUpdateBarUI()
+    {
+        // BarUIController'ı bul ve force update et
+        var barUIController = UnityEngine.Object.FindFirstObjectByType<BarUIController>();
+        if (barUIController != null && barUIController.bar != null)
+        {
+            // Mevcut map'i al
+            var currentMap = MapManager.Instance != null ? MapManager.Instance.GetCurrentMap() : (MapType?)null;
+            if (currentMap.HasValue)
+            {
+                barUIController.bar.Initialize(currentMap.Value);
+                barUIController.bar.Refresh();
+                Debug.Log($"🔧 DEBUG: Bar UI force updated for {currentMap.Value}");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("🔧 DEBUG: BarUIController veya bar bulunamadı!");
+        }
+    }
+    
+    /// <summary>
+    /// Tüm haritaları complete etmiş gibi davran (Game completion için)
+    /// </summary>
+    private void CompleteAllMaps()
+    {
+        if (MapManager.Instance == null)
+        {
+            Debug.LogWarning("MapManager bulunamadı!");
+            return;
+        }
+        
+        // MapManager'da tüm haritaları complete et
+        MapManager.Instance.CompleteAllMaps();
+        Debug.Log("🔧 DEBUG: Tüm haritalar complete edildi!");
+    }
+    
+    /// <summary>
+    /// Seçili haritayı complete et (Debug için)
+    /// </summary>
+    private void CompleteCurrentMap()
+    {
+        if (MapManager.Instance == null)
+        {
+            Debug.LogWarning("MapManager bulunamadı!");
+            return;
+        }
+        
+        var currentMap = MapManager.Instance.GetCurrentMap();
+        if (currentMap == null)
+        {
+            Debug.LogWarning("Aktif harita yok!");
+            return;
+        }
+        
+        // Seçili haritayı complete et
+        MapManager.Instance.CompleteCurrentMap();
+        
+        // Map completion panel'ini tetikle
+        var finalStats = GetMapValues(currentMap.Value);
+        MapCompletionPanelUI.TriggerMapCompletion(currentMap.Value, finalStats);
+        
+        Debug.Log($"🔧 DEBUG: {currentMap.Value} haritası complete edildi!");
     }
 }
 

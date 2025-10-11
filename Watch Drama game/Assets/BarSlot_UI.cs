@@ -29,8 +29,18 @@ public class BarSlot_UI : MonoBehaviour
     [SerializeField] private float scaleEffectDuration = 0.6f;
     [SerializeField] private float scaleEffectIntensity = 1.1f;
 
-	// Yalnızca hostility barında artışta kırmızı, düşüşte yeşil göster
+    // Yalnızca hostility barında artışta kırmızı, düşüşte yeşil göster
 	[SerializeField] private bool invertHostilityColor = true;
+
+    // Floating Text Settings
+    [Header("Floating Text Settings")]
+    [SerializeField] private bool enableFloatingText = true;
+    [SerializeField] private GameObject trustFloatingText;
+    [SerializeField] private GameObject faithFloatingText;
+    [SerializeField] private GameObject hostilityFloatingText;
+    [SerializeField] private float floatingTextDuration = 1.5f;
+    [SerializeField] private float floatingTextDistance = 50f;
+    [SerializeField] private float floatingTextStartOffset = 20f;
 
 
     public void Initialize(MapType mapType)
@@ -97,6 +107,21 @@ public class BarSlot_UI : MonoBehaviour
         bool decreased = newValue01 < previousValue01 - EPSILON;
 		bool isHostilityBar = slider == hostilitySlider;
 		bool invertColors = isHostilityBar && invertHostilityColor;
+
+        // Calculate the value change for floating text
+        float valueChange = (newValue01 - previousValue01) * 100f; // Convert to actual values (0-100)
+        if (Mathf.Abs(valueChange) > EPSILON * 100f && enableFloatingText)
+        {
+            GameObject floatingTextObj = null;
+            if (slider == trustSlider) floatingTextObj = trustFloatingText;
+            else if (slider == faithSlider) floatingTextObj = faithFloatingText;
+            else if (slider == hostilitySlider) floatingTextObj = hostilityFloatingText;
+            
+            if (floatingTextObj != null)
+            {
+                ShowFloatingText(floatingTextObj, slider, valueChange, increased, invertColors);
+            }
+        }
 
         // Tweenleri tek bir Sequence altında senkronize et
         DOTween.Kill(slider); // aynı ID ile önceki sequence/tweenleri öldür
@@ -165,4 +190,83 @@ public class BarSlot_UI : MonoBehaviour
 		// 4) Bulunamazsa null dön
 		return null;
 	}
+
+    private void ShowFloatingText(GameObject floatingTextObj, Slider slider, float valueChange, bool increased, bool invertColors)
+    {
+        if (!enableFloatingText || floatingTextObj == null) return;
+
+        // Get the text component from the reusable object
+        var textComponent = floatingTextObj.GetComponent<TextMeshProUGUI>();
+        if (textComponent == null)
+        {
+            textComponent = floatingTextObj.GetComponentInChildren<TextMeshProUGUI>();
+        }
+
+        if (textComponent == null)
+        {
+            Debug.LogWarning("Floating text object doesn't have a TextMeshProUGUI component!");
+            return;
+        }
+
+        // Set the text content
+        string sign = valueChange > 0 ? "+" : "";
+        textComponent.text = sign + Mathf.RoundToInt(valueChange).ToString();
+
+        // Set the text color
+        bool showGreen = (increased && !invertColors) || (!increased && invertColors);
+        Color textColor = showGreen 
+            ? new Color(0.2f, 1f, 0.2f, 1f)   // Green for positive/increased
+            : new Color(1f, 0.25f, 0.25f, 1f); // Red for negative/decreased
+        textComponent.color = textColor;
+
+        // Position the floating text above the slider
+        RectTransform textRect = floatingTextObj.GetComponent<RectTransform>();
+        if (textRect != null)
+        {
+            // Position above the slider with configurable offset
+            Vector3 sliderPosition = slider.transform.position;
+            Vector3 startPosition = sliderPosition + Vector3.up * floatingTextStartOffset;
+            textRect.position = startPosition;
+            
+            // Ensure the object is visible
+            floatingTextObj.SetActive(true);
+            
+            // Animate the floating text
+            StartCoroutine(AnimateFloatingText(floatingTextObj, startPosition));
+        }
+    }
+
+    private System.Collections.IEnumerator AnimateFloatingText(GameObject floatingTextObj, Vector3 startPosition)
+    {
+        RectTransform textRect = floatingTextObj.GetComponent<RectTransform>();
+        var textComponent = floatingTextObj.GetComponent<TextMeshProUGUI>() ?? floatingTextObj.GetComponentInChildren<TextMeshProUGUI>();
+        
+        if (textRect == null || textComponent == null)
+        {
+            floatingTextObj.SetActive(false);
+            yield break;
+        }
+
+        // Reset to initial state
+        textComponent.color = new Color(textComponent.color.r, textComponent.color.g, textComponent.color.b, 1f);
+        Vector3 targetPosition = startPosition + Vector3.up * floatingTextDistance;
+
+        // Create animation sequence
+        var sequence = DOTween.Sequence();
+        
+        // Move upward
+        sequence.Append(textRect.DOMove(targetPosition, floatingTextDuration).SetEase(Ease.OutQuad));
+        
+        // Fade out
+        sequence.Join(textComponent.DOFade(0f, floatingTextDuration).SetEase(Ease.OutQuad));
+
+        // Play the animation
+        sequence.Play();
+
+        // Wait for animation to complete
+        yield return new WaitForSeconds(floatingTextDuration + 0.1f);
+
+        // Hide the floating text object instead of destroying it
+        floatingTextObj.SetActive(false);
+    }
 }

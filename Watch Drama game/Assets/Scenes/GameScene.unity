@@ -562,6 +562,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapType: 1
+--- !u!1 &311357632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673309354816720970, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
+  m_PrefabInstance: {fileID: 731589064107809940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &371458223
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,8 +683,7 @@ MonoBehaviour:
   endingTitle: {fileID: 0}
   endingText: {fileID: 2103251537}
   continueButton: {fileID: 0}
-  restartButton: {fileID: 0}
-  mainMenuButton: {fileID: 0}
+  restartButton: {fileID: 750756049}
   scenarioButtonsParent: {fileID: 0}
   scenarioButtonPrefab: {fileID: 0}
   canvasGroup: {fileID: 383267169}
@@ -930,6 +934,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1506316433}
     m_Modifications:
+    - target: {fileID: 444667831270469577, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.18081665
+      objectReference: {fileID: 0}
     - target: {fileID: 963989898804836393, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
       propertyPath: m_Name
       value: HostilityBar
@@ -1569,7 +1577,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1930,7 +1938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -0.00006866455}
+  m_AnchoredPosition: {x: 0, y: -0.00006866455}
   m_SizeDelta: {x: 0, y: -1.1100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &653116388
@@ -1986,9 +1994,9 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2153,6 +2161,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1506316433}
     m_Modifications:
+    - target: {fileID: 444667831270469577, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.18081665
+      objectReference: {fileID: 0}
     - target: {fileID: 963989898804836393, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
       propertyPath: m_Name
       value: FaithBar
@@ -3085,6 +3097,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1506316433}
     m_Modifications:
+    - target: {fileID: 444667831270469577, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.18081665
+      objectReference: {fileID: 0}
     - target: {fileID: 963989898804836393, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
       propertyPath: m_Name
       value: TrustBar
@@ -3343,6 +3359,13 @@ MonoBehaviour:
   scaleEffectDuration: 0.6
   scaleEffectIntensity: 1.1
   invertHostilityColor: 1
+  enableFloatingText: 1
+  trustFloatingText: {fileID: 311357632}
+  faithFloatingText: {fileID: 1906598348}
+  hostilityFloatingText: {fileID: 1547502938}
+  floatingTextDuration: 1.5
+  floatingTextDistance: 50
+  floatingTextStartOffset: 40
 --- !u!1 &1117018336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,7 +3743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.3764706, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3898,7 +3921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.10056223, y: 0.42158386}
   m_AnchorMax: {x: 0.915346, y: 0.94836026}
-  m_AnchoredPosition: {x: -3.6386108, y: 2.3226318}
+  m_AnchoredPosition: {x: -3.6385498, y: 2.3226318}
   m_SizeDelta: {x: -4.3468018, y: -1.0396729}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1219727229
@@ -4146,32 +4169,27 @@ MonoBehaviour:
   - mapType: 0
     trust: 50
     faith: 50
-    hostility: 50
+    hostility: 0
   - mapType: 1
     trust: 50
     faith: 50
-    hostility: 50
+    hostility: 0
   - mapType: 2
     trust: 50
     faith: 50
-    hostility: 50
+    hostility: 0
   - mapType: 3
     trust: 50
     faith: 50
-    hostility: 50
+    hostility: 0
   - mapType: 4
     trust: 50
     faith: 50
-    hostility: 50
-  showDebugControls: 1
-  usePresetValues: 0
-  presetToApply: 0
-  debugTrust: 0
-  debugFaith: 0
-  debugHostility: 0
-  applyManualValues: 0
-  resetAllValues: 0
-  maxAllValues: 0
+    hostility: 0
+  manualTrust: 0
+  manualFaith: 0
+  manualHostility: 0
+  applyToAllMaps: 1
 --- !u!4 &1315643951
 Transform:
   m_ObjectHideFlags: 0
@@ -4588,7 +4606,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.1
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4776,6 +4794,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1547502938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673309354816720970, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
+  m_PrefabInstance: {fileID: 1582596013}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1548727417
 GameObject:
   m_ObjectHideFlags: 0
@@ -5175,7 +5198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
   m_SizeDelta: {x: 0, y: -1.1100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1689460426
@@ -6377,6 +6400,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877993028}
   m_CullTransparentMesh: 1
+--- !u!1 &1906598348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673309354816720970, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
+  m_PrefabInstance: {fileID: 1583107982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1925441763
 GameObject:
   m_ObjectHideFlags: 0

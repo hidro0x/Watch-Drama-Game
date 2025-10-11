@@ -238,6 +238,9 @@ public class MapManager : MonoBehaviour
         
         MapValues finalStats = GameManager.Instance.GetMapValues(currentMap.Value);
         MapCompletionPanelUI.TriggerMapCompletion(currentMap.Value, finalStats);
+        
+        // Bar UI'yi de force update et
+        GameManager.Instance.ForceUpdateBarUI();
     }
 
     public DialogueNode ConvertGlobalDialogueToDialogue(GlobalDialogueNode globalDialogue)
@@ -292,6 +295,30 @@ public class MapManager : MonoBehaviour
         mapTurns.Clear();
         currentMap = null;
         currentGlobalDialogue = null; // Global diyalog referansını da temizle
+    }
+    
+    /// <summary>
+    /// Tüm haritaları complete et (Game completion için)
+    /// </summary>
+    public void CompleteAllMaps()
+    {
+        OnAllMapsCompleted?.Invoke();
+        Debug.Log("🎯 Tüm haritalar complete edildi - Oyun bitti!");
+    }
+    
+    /// <summary>
+    /// Seçili haritayı complete et (Debug için)
+    /// </summary>
+    public void CompleteCurrentMap()
+    {
+        if (currentMap == null)
+        {
+            Debug.LogWarning("Aktif harita yok!");
+            return;
+        }
+        
+        OnMapCompleted?.Invoke(currentMap.Value);
+        Debug.Log($"🔧 DEBUG: {currentMap.Value} haritası complete edildi!");
     }
 
 

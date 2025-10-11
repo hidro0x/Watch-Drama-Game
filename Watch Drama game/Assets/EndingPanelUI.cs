@@ -49,7 +49,6 @@ public class EndingPanelUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI endingText;
     [SerializeField] private Button continueButton;
     [SerializeField] private Button restartButton;
-    [SerializeField] private Button mainMenuButton;
     
     [Title("Scenario Buttons", "Buttons for different ending scenarios")]
     [SerializeField] private Transform scenarioButtonsParent;
@@ -97,8 +96,6 @@ public class EndingPanelUI : MonoBehaviour
             continueButton.onClick.AddListener(OnContinueButtonClicked);
         if (restartButton != null)
             restartButton.onClick.AddListener(OnRestartButtonClicked);
-        if (mainMenuButton != null)
-            mainMenuButton.onClick.AddListener(OnMainMenuButtonClicked);
     }
     
     private void InitializeEndingData()
@@ -265,7 +262,6 @@ public class EndingPanelUI : MonoBehaviour
     {
         if (continueButton != null) continueButton.gameObject.SetActive(false);
         if (restartButton != null) restartButton.gameObject.SetActive(false);
-        if (mainMenuButton != null) mainMenuButton.gameObject.SetActive(false);
     }
     
     private EndingData GetEndingData(EndingScenario scenario)
@@ -311,13 +307,6 @@ public class EndingPanelUI : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
         }
         
-        // Show main menu button
-        if (mainMenuButton != null)
-        {
-            mainMenuButton.gameObject.SetActive(true);
-            mainMenuButton.transform.localScale = Vector3.zero;
-            mainMenuButton.transform.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBack);
-        }
     }
     
     private IEnumerator AnimateScenarioButtons()
@@ -410,34 +399,39 @@ public class EndingPanelUI : MonoBehaviour
     
     private void OnRestartButtonClicked()
     {
-        Debug.Log("Restart button clicked");
+        Debug.Log("🔄 Restart button clicked - Restarting scene and GameManager data");
         
-        // Stop all animations and coroutines
-        StopAllCoroutines();
-        
-        // Reset game state
+        // Reset GameManager data first
         if (GameManager.Instance != null)
         {
             GameManager.Instance.StartNewGame();
+            Debug.Log("🎮 GameManager data reset");
+        }
+        else
+        {
+            Debug.LogError("GameManager instance not found!");
         }
         
-        // Reset map manager
+        // Reset MapManager data
         if (MapManager.Instance != null)
         {
             MapManager.Instance.ResetAllMaps();
+            Debug.Log("🗺️ MapManager data reset");
         }
         
-        // Load scene immediately
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // Reset DialogueManager turn count
+        var dialogueManager = FindFirstObjectByType<DialogueManager>();
+        if (dialogueManager != null)
+        {
+            dialogueManager.ResetTurn();
+            Debug.Log("📝 DialogueManager turn reset");
+        }
+        
+        // Restart the current scene
+        Debug.Log("🔄 Restarting current scene...");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
-    private void OnMainMenuButtonClicked()
-    {
-        Debug.Log("Main menu button clicked");
-        HidePanel();
-        // Load main menu scene (adjust scene name as needed)
-        SceneManager.LoadScene("MainMenu");
-    }
     
     [Title("Utility Methods", "Helper methods for panel management")]
     public void HidePanel()

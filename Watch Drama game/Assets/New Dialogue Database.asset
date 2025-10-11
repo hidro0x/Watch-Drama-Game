@@ -23,11 +23,10 @@ MonoBehaviour:
     - {fileID: 2950376048903711399, guid: a70f169ecc7965e45a385b97e3de35ff, type: 3}
     - {fileID: 1162334233193285745, guid: 127ab56932638674ca73d5fd986c4117, type: 3}
     - {fileID: -1888665144130760584, guid: 2cf00051ea4a49a468b5358bfb95b996, type: 3}
-    - {fileID: 611229527524370839, guid: d13c3a8d83ca09f43b4993c36136f081, type: 3}
+    - {fileID: 25535211364710562, guid: 7298e9b54189da84c842f0b24349bd4a, type: 3}
     - {fileID: -1634364802510623753, guid: afd3083810fe6db43ac3f8994a233d7f, type: 3}
     - {fileID: 5977595905246154407, guid: b470724451a80c94d898e8bf38a80a88, type: 3}
     - {fileID: -2135552259498141439, guid: c46bef6bad0c01041bdbb403ec3a8abe, type: 3}
-    - {fileID: 25535211364710562, guid: 7298e9b54189da84c842f0b24349bd4a, type: 3}
     - {fileID: 4246733751768426875, guid: d98c8f441d9334742892bb47c7b6dc00, type: 3}
     - {fileID: -4814437822384209800, guid: dbdcb92abde557243a33f54484363cc0, type: 3}
     - {fileID: -5367458613230219050, guid: e37642d1d0c765c4691104d97c61a27a, type: 3}
@@ -3748,7 +3747,7 @@ MonoBehaviour:
       Data: Council Spokesman Tharak
     - Name: sprite
       Entry: 10
-      Data: 11
+      Data: 7
     - Name: text
       Entry: 1
       Data: "The Council does not know you. Why have you come?\r"
@@ -3857,7 +3856,7 @@ MonoBehaviour:
       Data: Council Spokesman Tharak
     - Name: sprite
       Entry: 10
-      Data: 11
+      Data: 7
     - Name: text
       Entry: 1
       Data: "Your words may carry weight. Which language will you speak?\r"
@@ -3966,7 +3965,7 @@ MonoBehaviour:
       Data: 'Council Spokesman Tharak '
     - Name: sprite
       Entry: 10
-      Data: 11
+      Data: 7
     - Name: text
       Entry: 1
       Data: "The Council\u2019s decisions are final \u2014 yet today may be an exception.\r"
@@ -4097,7 +4096,7 @@ MonoBehaviour:
       Data: 'Varnan Watcher '
     - Name: sprite
       Entry: 10
-      Data: 12
+      Data: 11
     - Name: text
       Entry: 1
       Data: "The shadows of Varnan are watching you. Why have you come?\r"
@@ -4206,7 +4205,7 @@ MonoBehaviour:
       Data: 'Varnan Watcher '
     - Name: sprite
       Entry: 10
-      Data: 12
+      Data: 11
     - Name: text
       Entry: 1
       Data: "Strangers are rarely trusted here. What can you prove?\r"
@@ -4315,7 +4314,7 @@ MonoBehaviour:
       Data: 'Varnan Watcher '
     - Name: sprite
       Entry: 10
-      Data: 12
+      Data: 11
     - Name: text
       Entry: 1
       Data: "When the wind changes, will you remain a friend or become a foe?\r"
@@ -4424,7 +4423,7 @@ MonoBehaviour:
       Data: 'Elder Warrior Terek '
     - Name: sprite
       Entry: 10
-      Data: 13
+      Data: 12
     - Name: text
       Entry: 1
       Data: "Without a sword, you won\u2019t last long in these lands.\r"
@@ -4533,7 +4532,7 @@ MonoBehaviour:
       Data: 'Elder Warrior Terek '
     - Name: sprite
       Entry: 10
-      Data: 13
+      Data: 12
     - Name: text
       Entry: 1
       Data: "The young no longer know how to fight. Are you different?\r"
@@ -4642,7 +4641,7 @@ MonoBehaviour:
       Data: 'Elder Warrior Terek '
     - Name: sprite
       Entry: 10
-      Data: 13
+      Data: 12
     - Name: text
       Entry: 1
       Data: "The shadows judge you. Are you ready?\r"
@@ -4751,7 +4750,7 @@ MonoBehaviour:
       Data: 'Fire Camp Mother Milna '
     - Name: sprite
       Entry: 10
-      Data: 14
+      Data: 13
     - Name: text
       Entry: 1
       Data: "By the fire, every story holds equal worth. What\u2019s yours?\r"
@@ -4860,7 +4859,7 @@ MonoBehaviour:
       Data: 'Fire Camp Mother Milna '
     - Name: sprite
       Entry: 10
-      Data: 14
+      Data: 13
     - Name: text
       Entry: 1
       Data: "From the ashes of the past, who will rise? Which side are you on?\r"
@@ -4969,7 +4968,7 @@ MonoBehaviour:
       Data: 'Fire Camp Mother Milna '
     - Name: sprite
       Entry: 10
-      Data: 14
+      Data: 13
     - Name: text
       Entry: 1
       Data: "Every flame carries a story. Should I share one with you?\r"
@@ -5110,7 +5109,7 @@ MonoBehaviour:
       Data: 0
     - Name: $v
       Entry: 10
-      Data: 15
+      Data: 14
     - Name: 
       Entry: 8
       Data: 
@@ -5122,7 +5121,7 @@ MonoBehaviour:
       Data: 1
     - Name: $v
       Entry: 10
-      Data: 16
+      Data: 15
     - Name: 
       Entry: 8
       Data: 
@@ -5134,7 +5133,7 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 10
-      Data: 17
+      Data: 16
     - Name: 
       Entry: 8
       Data: 
@@ -5146,7 +5145,7 @@ MonoBehaviour:
       Data: 3
     - Name: $v
       Entry: 10
-      Data: 18
+      Data: 17
     - Name: 
       Entry: 8
       Data: 
@@ -5158,7 +5157,7 @@ MonoBehaviour:
       Data: 4
     - Name: $v
       Entry: 10
-      Data: 19
+      Data: 18
     - Name: 
       Entry: 8
       Data: 
