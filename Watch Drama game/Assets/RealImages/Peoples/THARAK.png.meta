@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      THARAK_0: 25535211364710562
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

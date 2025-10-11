@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      terazi_0: -2327790518332955500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CELYA_0: 2950376048903711399
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

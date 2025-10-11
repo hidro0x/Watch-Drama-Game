@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KAROK_0: -8424203280747765378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
