@@ -103,10 +103,10 @@ MonoBehaviour:
       Data: 'The flame was born within me. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: hostilityChange
       Entry: 3
       Data: 0
@@ -127,13 +127,13 @@ MonoBehaviour:
       Data: 'I found my path through it. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -151,13 +151,13 @@ MonoBehaviour:
       Data: 'I keep my distance from fire. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: faithChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -212,10 +212,10 @@ MonoBehaviour:
       Data: 'My faith is unshakable. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 3
     - Name: hostilityChange
       Entry: 3
       Data: 0
@@ -236,13 +236,13 @@ MonoBehaviour:
       Data: 'I have doubts, but I move forward. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -260,13 +260,13 @@ MonoBehaviour:
       Data: 'Faith is a waste of time. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 7
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -321,13 +321,13 @@ MonoBehaviour:
       Data: 'I walk in its path. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -351,7 +351,7 @@ MonoBehaviour:
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 5
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -375,7 +375,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -430,13 +430,13 @@ MonoBehaviour:
       Data: 'I come in peace. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -454,13 +454,13 @@ MonoBehaviour:
       Data: 'I seek knowledge. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -484,7 +484,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -539,13 +539,13 @@ MonoBehaviour:
       Data: 'My words are my shield. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -563,13 +563,13 @@ MonoBehaviour:
       Data: 'I can protect myself. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -587,13 +587,13 @@ MonoBehaviour:
       Data: 'Let the weapons speak. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -648,13 +648,13 @@ MonoBehaviour:
       Data: 'I have changed. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: faithChange
       Entry: 3
       Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -672,13 +672,13 @@ MonoBehaviour:
       Data: 'Time will tell. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -702,7 +702,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -757,10 +757,10 @@ MonoBehaviour:
       Data: 'Filled with faith. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: hostilityChange
       Entry: 3
       Data: 0
@@ -781,13 +781,13 @@ MonoBehaviour:
       Data: 'Filled with curiosity. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -805,13 +805,13 @@ MonoBehaviour:
       Data: 'With nothing at all. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 3
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -866,13 +866,13 @@ MonoBehaviour:
       Data: "I\u2019ve heard even its whispers. "
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -896,7 +896,7 @@ MonoBehaviour:
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -917,10 +917,10 @@ MonoBehaviour:
       Data: 0
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 3
+      Data: 6
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -975,10 +975,10 @@ MonoBehaviour:
       Data: 'I came to protect it. '
     - Name: trustChange
       Entry: 3
-      Data: 4
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: hostilityChange
       Entry: 3
       Data: 0
@@ -999,13 +999,13 @@ MonoBehaviour:
       Data: 'I just want to look. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1029,7 +1029,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1106,13 +1106,13 @@ MonoBehaviour:
       Data: 'The light is my path. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1130,7 +1130,7 @@ MonoBehaviour:
       Data: "I haven\u2019t decided yet. "
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
@@ -1160,7 +1160,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1215,7 +1215,7 @@ MonoBehaviour:
       Data: 'My heart is ready. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
@@ -1239,13 +1239,13 @@ MonoBehaviour:
       Data: "I\u2019m ready to be tested. "
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1263,13 +1263,13 @@ MonoBehaviour:
       Data: 'No one can test me. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1324,13 +1324,13 @@ MonoBehaviour:
       Data: 'The truth lies within me. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1351,10 +1351,10 @@ MonoBehaviour:
       Data: 2
     - Name: faithChange
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 5
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1378,7 +1378,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1433,7 +1433,7 @@ MonoBehaviour:
       Data: 'I earn through hard work. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
@@ -1457,13 +1457,13 @@ MonoBehaviour:
       Data: "Time will tell if I\u2019m worthy. "
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1481,13 +1481,13 @@ MonoBehaviour:
       Data: 'Anything is allowed for gold. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1542,13 +1542,13 @@ MonoBehaviour:
       Data: "I\u2019m here for order. "
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: faithChange
       Entry: 3
       Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1566,13 +1566,13 @@ MonoBehaviour:
       Data: 'Whichever brings more gain. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1596,7 +1596,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1651,13 +1651,13 @@ MonoBehaviour:
       Data: 'I prefer steady progress. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: faithChange
       Entry: 3
       Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1675,13 +1675,13 @@ MonoBehaviour:
       Data: 'Faster, stronger! '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1705,7 +1705,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1760,10 +1760,10 @@ MonoBehaviour:
       Data: 'The sun illuminates my soul. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: hostilityChange
       Entry: 3
       Data: 0
@@ -1784,13 +1784,13 @@ MonoBehaviour:
       Data: 'I may have lingered in the shadows. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1814,7 +1814,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1869,13 +1869,13 @@ MonoBehaviour:
       Data: 'I am one who serves. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: faithChange
       Entry: 3
       Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1893,13 +1893,13 @@ MonoBehaviour:
       Data: 'I chose my own path. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1923,7 +1923,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -1978,7 +1978,7 @@ MonoBehaviour:
       Data: 'I am worthy of your trust. '
     - Name: trustChange
       Entry: 3
-      Data: 4
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
@@ -2002,13 +2002,13 @@ MonoBehaviour:
       Data: 'Trust is dangerous. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: faithChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2032,7 +2032,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2109,10 +2109,10 @@ MonoBehaviour:
       Data: 'Yes, I long for peace. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: hostilityChange
       Entry: 3
       Data: 0
@@ -2133,13 +2133,13 @@ MonoBehaviour:
       Data: 'I will heal my own wounds. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2157,13 +2157,13 @@ MonoBehaviour:
       Data: Healing is a false comfort.
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2218,13 +2218,13 @@ MonoBehaviour:
       Data: 'I hear them with my heart. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2248,7 +2248,7 @@ MonoBehaviour:
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2272,7 +2272,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2327,10 +2327,10 @@ MonoBehaviour:
       Data: 'I remember the light. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: hostilityChange
       Entry: 3
       Data: 0
@@ -2351,13 +2351,13 @@ MonoBehaviour:
       Data: 'I grow used to the dark. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2381,7 +2381,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2436,13 +2436,13 @@ MonoBehaviour:
       Data: "My eyes don\u2019t see; my intuition does. "
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2460,13 +2460,13 @@ MonoBehaviour:
       Data: 'I find the truth I seek. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2490,7 +2490,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2545,13 +2545,13 @@ MonoBehaviour:
       Data: 'To stay safe from the shadows. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: faithChange
       Entry: 3
       Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2569,13 +2569,13 @@ MonoBehaviour:
       Data: 'I trust no one. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 5
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2599,7 +2599,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2654,13 +2654,13 @@ MonoBehaviour:
       Data: 'I will dance with the mist. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2684,7 +2684,7 @@ MonoBehaviour:
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2708,7 +2708,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2763,7 +2763,7 @@ MonoBehaviour:
       Data: 'The moon gives me hope. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
@@ -2793,7 +2793,7 @@ MonoBehaviour:
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2817,7 +2817,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2872,13 +2872,13 @@ MonoBehaviour:
       Data: 'My true self is revealed. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2896,13 +2896,13 @@ MonoBehaviour:
       Data: 'I may lose control. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 6
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2926,7 +2926,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -2981,13 +2981,13 @@ MonoBehaviour:
       Data: 'My steps are silent but lasting. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3005,13 +3005,13 @@ MonoBehaviour:
       Data: 'The wind erases my trail. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3029,13 +3029,13 @@ MonoBehaviour:
       Data: 'I choose not to leave any. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3112,13 +3112,13 @@ MonoBehaviour:
       Data: 'Neutrality brings peace. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3136,13 +3136,13 @@ MonoBehaviour:
       Data: 'Neutrality is betrayal. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3160,13 +3160,13 @@ MonoBehaviour:
       Data: "It\u2019s not my decision. "
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: faithChange
       Entry: 3
       Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3221,13 +3221,13 @@ MonoBehaviour:
       Data: 'I came seeking wisdom. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3245,13 +3245,13 @@ MonoBehaviour:
       Data: "I\u2019m just on my way. "
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 6
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3269,13 +3269,13 @@ MonoBehaviour:
       Data: "I\u2019m wasting my time here. "
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 3
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3330,13 +3330,13 @@ MonoBehaviour:
       Data: 'I stand with justice. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3354,13 +3354,13 @@ MonoBehaviour:
       Data: 'I side with the strong. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: faithChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3384,7 +3384,7 @@ MonoBehaviour:
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3439,13 +3439,13 @@ MonoBehaviour:
       Data: 'I came to observe. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3463,13 +3463,13 @@ MonoBehaviour:
       Data: 'I ended up here by mistake. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3487,13 +3487,13 @@ MonoBehaviour:
       Data: 'I came to watch you. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3548,13 +3548,13 @@ MonoBehaviour:
       Data: I only wish to know.
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3572,13 +3572,13 @@ MonoBehaviour:
       Data: I came to steal knowledge.
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 4
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3599,10 +3599,10 @@ MonoBehaviour:
       Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3657,10 +3657,10 @@ MonoBehaviour:
       Data: I cannot be recorded.
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: faithChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: hostilityChange
       Entry: 3
       Data: 2
@@ -3681,13 +3681,13 @@ MonoBehaviour:
       Data: "I\u2019m from beyond the system. "
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: faithChange
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 5
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3705,13 +3705,13 @@ MonoBehaviour:
       Data: To remain unregistered is true freedom.
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3769,10 +3769,10 @@ MonoBehaviour:
       Data: 3
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 7
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3790,13 +3790,13 @@ MonoBehaviour:
       Data: I came to warn you.
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: faithChange
       Entry: 3
       Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3820,7 +3820,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3875,13 +3875,13 @@ MonoBehaviour:
       Data: The language of truth.
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3899,13 +3899,13 @@ MonoBehaviour:
       Data: The language of diplomacy.
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3923,13 +3923,13 @@ MonoBehaviour:
       Data: 'The language of threats. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -3984,7 +3984,7 @@ MonoBehaviour:
       Data: 'I will stand by the Council. '
     - Name: trustChange
       Entry: 3
-      Data: 4
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
@@ -4008,13 +4008,13 @@ MonoBehaviour:
       Data: 'Rethink your decisions. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: faithChange
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 6
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4035,10 +4035,10 @@ MonoBehaviour:
       Data: 0
     - Name: faithChange
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4115,7 +4115,7 @@ MonoBehaviour:
       Data: I came for peace.
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
       Data: 4
@@ -4139,13 +4139,13 @@ MonoBehaviour:
       Data: I came for war.
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4163,13 +4163,13 @@ MonoBehaviour:
       Data: I was just passing through.
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: faithChange
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4224,13 +4224,13 @@ MonoBehaviour:
       Data: I can offer my loyalty.
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4248,13 +4248,13 @@ MonoBehaviour:
       Data: 'I can show my strength. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: faithChange
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4272,13 +4272,13 @@ MonoBehaviour:
       Data: "I don\u2019t need to prove anything."
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4336,10 +4336,10 @@ MonoBehaviour:
       Data: 4
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4357,13 +4357,13 @@ MonoBehaviour:
       Data: 'I decide based on the situation. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: faithChange
       Entry: 3
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 6
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4381,13 +4381,13 @@ MonoBehaviour:
       Data: 'I owe loyalty to no one. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4442,13 +4442,13 @@ MonoBehaviour:
       Data: I can defend myself.
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4466,13 +4466,13 @@ MonoBehaviour:
       Data: 'Peace can be made without a sword. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4496,7 +4496,7 @@ MonoBehaviour:
       Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 10
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4551,13 +4551,13 @@ MonoBehaviour:
       Data: 'I question the meaning of war. '
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4575,13 +4575,13 @@ MonoBehaviour:
       Data: "I don\u2019t hesitate to spill blood. "
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: faithChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4599,13 +4599,13 @@ MonoBehaviour:
       Data: 'I dream of a world without war. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4660,13 +4660,13 @@ MonoBehaviour:
       Data: I will face my fate.
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: hostilityChange
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4684,13 +4684,13 @@ MonoBehaviour:
       Data: I will judge the ones who judge me.
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 1
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4708,13 +4708,13 @@ MonoBehaviour:
       Data: I do not fear the shadows.
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: faithChange
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 2
+      Data: 9
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4769,10 +4769,10 @@ MonoBehaviour:
       Data: 'I set out on a journey for peace. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: hostilityChange
       Entry: 3
       Data: 0
@@ -4793,7 +4793,7 @@ MonoBehaviour:
       Data: "Hikayem ac\u0131 ve kanla dolu."
     - Name: trustChange
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: faithChange
       Entry: 3
       Data: 2
@@ -4817,13 +4817,13 @@ MonoBehaviour:
       Data: "I don\u2019t wish to share it. "
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 3
+      Data: 7
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4878,10 +4878,10 @@ MonoBehaviour:
       Data: 'I came to rebuild what was broken. '
     - Name: trustChange
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: hostilityChange
       Entry: 3
       Data: 0
@@ -4908,7 +4908,7 @@ MonoBehaviour:
       Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4926,13 +4926,13 @@ MonoBehaviour:
       Data: 'Even the ashes are not mine. '
     - Name: trustChange
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: faithChange
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: hostilityChange
       Entry: 3
-      Data: 4
+      Data: 6
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -4987,10 +4987,10 @@ MonoBehaviour:
       Data: 'Please, I wish to hear your words. '
     - Name: trustChange
       Entry: 3
-      Data: 4
+      Data: 5
     - Name: faithChange
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: hostilityChange
       Entry: 3
       Data: 0
@@ -5011,13 +5011,13 @@ MonoBehaviour:
       Data: 'The time for stories has passed. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: faithChange
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: hostilityChange
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -5035,13 +5035,13 @@ MonoBehaviour:
       Data: 'I only need silence. '
     - Name: trustChange
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: faithChange
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: hostilityChange
       Entry: 3
-      Data: 1
+      Data: 8
     - Name: isGlobalChoice
       Entry: 5
       Data: false
@@ -5175,8 +5175,8 @@ MonoBehaviour:
     text: "Child, the dust of long roads covers your face. Where have you come from?\r"
     choices:
     - text: 'I come from far away. '
-      trustChange: 3
-      faithChange: 3
+      trustChange: 5
+      faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
@@ -5189,7 +5189,7 @@ MonoBehaviour:
     - text: 'Why do you care? '
       trustChange: 0
       faithChange: 0
-      hostilityChange: 4
+      hostilityChange: 9
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5201,21 +5201,21 @@ MonoBehaviour:
       big.\r"
     choices:
     - text: 'Thank you, that would mean a lot. '
-      trustChange: 3
-      faithChange: 4
+      trustChange: 5
+      faithChange: 5
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'A little water is enough. '
-      trustChange: 2
-      faithChange: 2
-      hostilityChange: 0
+      trustChange: 3
+      faithChange: 3
+      hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'The smell of your food bothers me. '
       trustChange: 0
-      faithChange: 0
-      hostilityChange: 5
+      faithChange: 1
+      hostilityChange: 7
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5226,21 +5226,21 @@ MonoBehaviour:
     text: "I was once like you when I was young... but then the wind changed direction.\r"
     choices:
     - text: "I\u2019d like to hear your story. "
-      trustChange: 4
+      trustChange: 5
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'Everyone walks their own path. '
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 0
+      hostilityChange: 2
       isGlobalChoice: 0
       nextNodeId: 
     - text: "I don\u2019t have time for stories, old woman."
       trustChange: 0
       faithChange: 0
-      hostilityChange: 4
+      hostilityChange: 8
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5252,21 +5252,21 @@ MonoBehaviour:
       you come?"
     choices:
     - text: 'I came to help you. '
-      trustChange: 3
-      faithChange: 4
-      hostilityChange: 0
+      trustChange: 4
+      faithChange: 3
+      hostilityChange: 2
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'I just passed by. '
       trustChange: 2
       faithChange: 2
-      hostilityChange: 0
+      hostilityChange: 4
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'I came to stop you from cutting trees. '
-      trustChange: 0
-      faithChange: 1
-      hostilityChange: 4
+      trustChange: 1
+      faithChange: 0
+      hostilityChange: 9
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5277,21 +5277,21 @@ MonoBehaviour:
     text: The forest watches with its eyes. Every time I cut a branch, my heart aches.
     choices:
     - text: "It\u2019s good that you show respect. "
-      trustChange: 3
+      trustChange: 5
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'A tree is just another resource. '
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 3
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'Emotions make your work harder. '
-      trustChange: 1
-      faithChange: 0
-      hostilityChange: 3
+      trustChange: 0
+      faithChange: 1
+      hostilityChange: 7
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5302,21 +5302,21 @@ MonoBehaviour:
     text: "Wood cut in the cold lasts longer. When are you at your strongest?\r"
     choices:
     - text: 'In the face of hardship. '
-      trustChange: 3
-      faithChange: 4
-      hostilityChange: 0
-      isGlobalChoice: 0
-      nextNodeId: 
-    - text: 'When I feel alone. '
-      trustChange: 2
-      faithChange: 2
+      trustChange: 4
+      faithChange: 3
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
+    - text: 'When I feel alone. '
+      trustChange: 3
+      faithChange: 2
+      hostilityChange: 5
+      isGlobalChoice: 0
+      nextNodeId: 
     - text: "I\u2019m always strong. "
-      trustChange: 0
-      faithChange: 1
-      hostilityChange: 2
+      trustChange: 1
+      faithChange: 0
+      hostilityChange: 8
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5327,21 +5327,21 @@ MonoBehaviour:
     text: Prices in the market have been rising for days. Where will this end?
     choices:
     - text: "Let\u2019s hope it passes. "
-      trustChange: 3
+      trustChange: 5
       faithChange: 4
-      hostilityChange: 0
+      hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'Everyone should fend for themselves. '
-      trustChange: 1
+      trustChange: 2
       faithChange: 1
-      hostilityChange: 2
+      hostilityChange: 6
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'This order must end. '
-      trustChange: 2
-      faithChange: 2
-      hostilityChange: 3
+      trustChange: 1
+      faithChange: 0
+      hostilityChange: 9
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5352,7 +5352,7 @@ MonoBehaviour:
     text: "It\u2019s nice to see a new face. Are you planning to stay?\r"
     choices:
     - text: "Yes, I\u2019ll stay for a while. "
-      trustChange: 3
+      trustChange: 4
       faithChange: 3
       hostilityChange: 0
       isGlobalChoice: 0
@@ -5360,13 +5360,13 @@ MonoBehaviour:
     - text: "I\u2019m unsure, still observing. "
       trustChange: 2
       faithChange: 2
-      hostilityChange: 0
+      hostilityChange: 3
       isGlobalChoice: 0
       nextNodeId: 
     - text: "No, I\u2019ll leave soon. "
       trustChange: 0
-      faithChange: 1
-      hostilityChange: 2
+      faithChange: 0
+      hostilityChange: 6
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5378,21 +5378,21 @@ MonoBehaviour:
       think it was?\r"
     choices:
     - text: 'The voice of nature, nothing to fear. '
-      trustChange: 2
-      faithChange: 4
-      hostilityChange: 0
+      trustChange: 4
+      faithChange: 3
+      hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'Maybe a warning. '
       trustChange: 2
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 5
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'Something is hiding out there. '
       trustChange: 1
       faithChange: 1
-      hostilityChange: 3
+      hostilityChange: 7
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5404,21 +5404,21 @@ MonoBehaviour:
       What are you seeking here?\r"
     choices:
     - text: 'A path that fits me. '
-      trustChange: 3
+      trustChange: 5
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'My path just led me here. '
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 2
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'I have no business with you, tailor. '
       trustChange: 0
       faithChange: 0
-      hostilityChange: 4
+      hostilityChange: 8
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5429,21 +5429,21 @@ MonoBehaviour:
     text: Every stitch is a decision. How do you make yours?
     choices:
     - text: 'I listen to my inner voice. '
-      trustChange: 3
+      trustChange: 5
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'It depends on the situation. '
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 3
       isGlobalChoice: 0
       nextNodeId: 
     - text: "I don\u2019t question my choices. "
       trustChange: 0
       faithChange: 1
-      hostilityChange: 2
+      hostilityChange: 7
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5454,21 +5454,21 @@ MonoBehaviour:
     text: "Do you seek silk or linen? Every soul chooses a fabric.\r"
     choices:
     - text: 'Something elegant yet simple. '
-      trustChange: 3
-      faithChange: 3
-      hostilityChange: 0
+      trustChange: 5
+      faithChange: 4
+      hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'The most durable one. '
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 2
       isGlobalChoice: 0
       nextNodeId: 
     - text: "It doesn\u2019t matter, I can\u2019t afford any. "
       trustChange: 1
-      faithChange: 1
-      hostilityChange: 2
+      faithChange: 0
+      hostilityChange: 9
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5479,21 +5479,21 @@ MonoBehaviour:
     text: "Even the sheep can sense a stranger. What is your intent?\r"
     choices:
     - text: 'I came as a friend. '
-      trustChange: 3
+      trustChange: 5
       faithChange: 4
-      hostilityChange: 0
+      hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'Just observing. '
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 3
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'I came to take your flock. '
       trustChange: 0
       faithChange: 0
-      hostilityChange: 5
+      hostilityChange: 10
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5504,21 +5504,21 @@ MonoBehaviour:
     text: "I saw wolf tracks this morning. What will you do if danger comes near?\r"
     choices:
     - text: "I\u2019ll warn the villagers. "
-      trustChange: 3
-      faithChange: 3
+      trustChange: 5
+      faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'Exploring new places. '
       trustChange: 2
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 4
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'Running is the best choice. '
       trustChange: 1
       faithChange: 1
-      hostilityChange: 2
+      hostilityChange: 7
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5529,21 +5529,21 @@ MonoBehaviour:
     text: "Time flows differently in the mountains. How do you spend yours?\r"
     choices:
     - text: 'I spend it with myself. '
-      trustChange: 3
+      trustChange: 5
       faithChange: 4
-      hostilityChange: 0
-      isGlobalChoice: 0
-      nextNodeId: 
-    - text: 'Exploring new places. '
-      trustChange: 1
-      faithChange: 2
       hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
-    - text: 'Time holds no meaning for me. '
-      trustChange: 0
+    - text: 'Exploring new places. '
+      trustChange: 2
       faithChange: 1
-      hostilityChange: 3
+      hostilityChange: 7
+      isGlobalChoice: 0
+      nextNodeId: 
+    - text: 'Time holds no meaning for me. '
+      trustChange: 1
+      faithChange: 0
+      hostilityChange: 9
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5554,21 +5554,21 @@ MonoBehaviour:
     text: "There\u2019s no adventure here, only waiting. What are you after?\r"
     choices:
     - text: "I\u2019m searching for the truth. "
-      trustChange: 3
-      faithChange: 4
-      hostilityChange: 0
+      trustChange: 5
+      faithChange: 3
+      hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
     - text: "I won\u2019t miss a chance if one comes. "
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 4
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'Mind your own business. '
       trustChange: 0
       faithChange: 0
-      hostilityChange: 4
+      hostilityChange: 9
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5580,21 +5580,21 @@ MonoBehaviour:
       right?\r"
     choices:
     - text: 'Dreams guide the way. '
-      trustChange: 3
-      faithChange: 5
+      trustChange: 5
+      faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'You must face reality. '
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 2
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'Dreams are a waste of time. '
       trustChange: 0
       faithChange: 0
-      hostilityChange: 4
+      hostilityChange: 8
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5605,21 +5605,21 @@ MonoBehaviour:
     text: "One day I\u2019ll leave this place. What is your dream?\r"
     choices:
     - text: 'To build a better world. '
-      trustChange: 4
+      trustChange: 5
       faithChange: 4
       hostilityChange: 0
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'To live freely is enough. '
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 2
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'I have no dreams. '
       trustChange: 1
       faithChange: 1
-      hostilityChange: 2
+      hostilityChange: 6
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5630,21 +5630,21 @@ MonoBehaviour:
     text: "At night, the stones whisper, but not everyone hears them. Can you?\r"
     choices:
     - text: 'Sometimes I find voices in silence. '
-      trustChange: 3
-      faithChange: 5
-      hostilityChange: 0
+      trustChange: 4
+      faithChange: 3
+      hostilityChange: 2
       isGlobalChoice: 0
       nextNodeId: 
     - text: "It\u2019s just the wind\u2019s trick. "
       trustChange: 2
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 4
       isGlobalChoice: 0
       nextNodeId: 
     - text: "That\u2019s nonsense! "
       trustChange: 0
       faithChange: 0
-      hostilityChange: 4
+      hostilityChange: 7
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5656,21 +5656,21 @@ MonoBehaviour:
       look in the mirror?\r"
     choices:
     - text: 'My true self within. '
-      trustChange: 3
+      trustChange: 5
       faithChange: 4
-      hostilityChange: 0
+      hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'A questioning stranger. '
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 2
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'An empty shell. '
       trustChange: 0
       faithChange: 0
-      hostilityChange: 4
+      hostilityChange: 9
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
@@ -5681,21 +5681,21 @@ MonoBehaviour:
     text: "Time is not straight; it twists and bends. Which time do you live in now?\r"
     choices:
     - text: 'The present, as it should be. '
-      trustChange: 3
+      trustChange: 5
       faithChange: 4
-      hostilityChange: 0
+      hostilityChange: 1
       isGlobalChoice: 0
       nextNodeId: 
     - text: "I\u2019m stuck in the past. "
-      trustChange: 2
+      trustChange: 3
       faithChange: 2
-      hostilityChange: 1
+      hostilityChange: 3
       isGlobalChoice: 0
       nextNodeId: 
     - text: 'I belong to no time at all. '
       trustChange: 1
       faithChange: 1
-      hostilityChange: 3
+      hostilityChange: 8
       isGlobalChoice: 0
       nextNodeId: 
     isGlobalDialogue: 0
