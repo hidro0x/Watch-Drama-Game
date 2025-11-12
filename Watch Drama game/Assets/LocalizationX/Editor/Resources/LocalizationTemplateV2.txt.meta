@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 94b2f75e1cab812459220629d75268f6
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 303995
+  packageName: 'LocalizationX Lite: Manage Localizations with Excel and Google Sheets'
+  packageVersion: 1.2
+  assetPath: Assets/LocalizationX/Editor/Resources/LocalizationTemplateV2.txt
+  uploadId: 727078

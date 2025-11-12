@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4df699f793d883f4db69a1449c1d605f
+timeCreated: 1455499659
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 303995
+  packageName: 'LocalizationX Lite: Manage Localizations with Excel and Google Sheets'
+  packageVersion: 1.2
+  assetPath: Assets/LocalizationX/Editor/Plugins/NPOI.OpenXml4Net.XML
+  uploadId: 727078

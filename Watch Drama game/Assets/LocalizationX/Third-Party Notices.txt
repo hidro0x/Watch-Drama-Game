@@ -1,0 +1,51 @@
+# Third-Party Notices
+
+## Google.Apis.Auth.dll
+- License: Apache License, Version 2.0
+- Copyright: Copyright (c) 2014 Google Inc.
+- License Text: http://www.apache.org/licenses/LICENSE-2.0
+
+## Google.Apis.Core.dll
+- License: Apache License, Version 2.0
+- Copyright: Copyright (c) 2014 Google Inc.
+- License Text: http://www.apache.org/licenses/LICENSE-2.0
+
+## Google.Apis.PlatformServices.dll
+- License: Apache License, Version 2.0
+- Copyright: Copyright (c) 2014 Google Inc.
+- License Text: http://www.apache.org/licenses/LICENSE-2.0
+
+## Google.Apis.Sheets.v4.dll
+- License: Apache License, Version 2.0
+- Copyright: Copyright (c) 2014 Google Inc.
+- License Text: http://www.apache.org/licenses/LICENSE-2.0
+
+## Google.Apis.dll
+- License: Apache License, Version 2.0
+- Copyright: Copyright (c) 2014 Google Inc.
+- License Text: http://www.apache.org/licenses/LICENSE-2.0
+
+## ICSharpCode.SharpZipLib.dll
+- License: MIT License
+- Copyright: Copyright (c) 2000-2010 AlphaSierraPapa for the SharpDevelop Team
+- License Text: https://opensource.org/licenses/MIT
+
+## NPOI.OOXML.dll
+- License: MIT License
+- Copyright: Copyright (c) 2008 The Apache Software Foundation
+- License Text: https://opensource.org/licenses/MIT
+
+## NPOI.OpenXml4Net.dll
+- License: MIT License
+- Copyright: Copyright (c) 2008 The Apache Software Foundation
+- License Text: https://opensource.org/licenses/MIT
+
+## NPOI.OpenXmlFormats.dll
+- License: MIT License
+- Copyright: Copyright (c) 2008 The Apache Software Foundation
+- License Text: https://opensource.org/licenses/MIT
+
+## NPOI.dll
+- License: MIT License
+- Copyright: Copyright (c) 2008 The Apache Software Foundation
+- License Text: https://opensource.org/licenses/MIT

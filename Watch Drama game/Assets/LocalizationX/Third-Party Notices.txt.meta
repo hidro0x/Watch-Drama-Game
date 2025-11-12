@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: efdae8e3e6ab9dc439bbacbbf445a2cf
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 303995
+  packageName: 'LocalizationX Lite: Manage Localizations with Excel and Google Sheets'
+  packageVersion: 1.2
+  assetPath: Assets/LocalizationX/Third-Party Notices.txt
+  uploadId: 727078

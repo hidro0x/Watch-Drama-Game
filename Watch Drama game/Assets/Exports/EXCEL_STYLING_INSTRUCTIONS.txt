@@ -1,0 +1,73 @@
+﻿========================================
+EXCEL STYLING INSTRUCTIONS
+========================================
+
+After opening the CSV file in Excel, follow these steps to apply styling:
+
+1. SELECT THE HEADER ROW (Row 1):
+   - Select entire row by clicking row number '1'
+   - Right-click > Format Cells
+   - Font: Bold, Size 11
+   - Fill: Light Blue background (#D9E1F2)
+   - Alignment: Center, Wrap Text
+
+2. FREEZE HEADER ROW:
+   - Click cell A2
+   - View > Freeze Panes > Freeze Panes
+
+3. AUTO-SIZE COLUMNS:
+   - Select all columns (Ctrl+A or click top-left corner)
+   - Double-click between any two column headers
+   - Or: Home > Format > AutoFit Column Width
+
+4. COLOR-CODE LANGUAGE COLUMNS:
+   - Select Turkish columns (D-F, G-I): Light Yellow (#FFF2CC)
+   - Select English columns (J-L, M-O): Light Green (#E2EFDA)
+   - Select Effects columns (P-X): Light Gray (#F2F2F2)
+
+5. TEXT WRAPPING:
+   - Select all data cells (A2 onwards)
+   - Home > Wrap Text
+   - Set row height: Right-click row > Row Height > 30
+
+6. PROTECT STYLING (Optional):
+   - Select all cells
+   - Right-click > Format Cells > Protection
+   - Uncheck 'Locked' for data cells (A2 onwards)
+   - Keep 'Locked' checked for header row
+   - Review > Protect Sheet
+   - Check 'Format cells' to protect styling
+   - Uncheck 'Select locked cells' if you want to prevent selection
+
+7. SAVE AS EXCEL FORMAT:
+   - File > Save As
+   - Choose 'Excel Workbook (*.xlsx)'
+   - This preserves all styling
+
+========================================
+QUICK STYLE TEMPLATE
+========================================
+
+Header Row:
+  - Font: Calibri, 11pt, Bold
+  - Background: #D9E1F2 (Light Blue)
+  - Text Color: #000000 (Black)
+  - Alignment: Center, Middle
+
+Turkish Columns (D-F, G-I):
+  - Background: #FFF2CC (Light Yellow)
+  - Border: Thin, Gray
+
+English Columns (J-L, M-O):
+  - Background: #E2EFDA (Light Green)
+  - Border: Thin, Gray
+
+Effects Columns (P-X):
+  - Background: #F2F2F2 (Light Gray)
+  - Alignment: Center
+
+Data Rows:
+  - Font: Calibri, 10pt
+  - Wrap Text: Yes
+  - Row Height: 30px
+

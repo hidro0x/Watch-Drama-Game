@@ -1,0 +1,1 @@
+For detailed documentation, please visit this link: https://hnb-rabear.github.io/LocalizationXLite
