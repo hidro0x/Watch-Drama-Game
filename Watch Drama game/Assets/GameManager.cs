@@ -142,6 +142,27 @@ public class GameManager : MonoBehaviour
     [GUIColor(0.8f, 0.8f, 0.8f)]
     public void TriggerAllMapsCompleted() => FinishWithAllMapsCompleted();
     
+    [Title("⚡ Instant Endings (No Animations)")]
+    [Button("⚡ Trust Victory INSTANT", ButtonSizes.Medium)]
+    [GUIColor(0.4f, 1f, 0.4f)]
+    public void TriggerTrustVictoryInstant() => FinishWithTrustVictoryInstant();
+    
+    [Button("⚡ Faith Victory INSTANT", ButtonSizes.Medium)]
+    [GUIColor(0.4f, 1f, 1f)]
+    public void TriggerFaithVictoryInstant() => FinishWithFaithVictoryInstant();
+    
+    [Button("⚡ Hostility Victory INSTANT", ButtonSizes.Medium)]
+    [GUIColor(1f, 0.4f, 0.4f)]
+    public void TriggerHostilityVictoryInstant() => FinishWithHostilityVictoryInstant();
+    
+    [Button("⚡ Balanced Victory INSTANT", ButtonSizes.Medium)]
+    [GUIColor(1f, 1f, 0.4f)]
+    public void TriggerBalancedVictoryInstant() => FinishWithBalancedVictoryInstant();
+    
+    [Button("⚡ All Maps Completed INSTANT", ButtonSizes.Medium)]
+    [GUIColor(1f, 1f, 1f)]
+    public void TriggerAllMapsCompletedInstant() => FinishWithAllMapsCompletedInstant();
+    
     [Title("Game Restart")]
     [Button("🔄 Start New Game", ButtonSizes.Large)]
     [GUIColor(0.4f, 0.4f, 1f)]
@@ -422,6 +443,52 @@ public class GameManager : MonoBehaviour
         ForceUpdateBarUI();
     }
     
+    /// <summary>
+    /// Instant victory methods (bypass animations)
+    /// </summary>
+    public void FinishWithTrustVictoryInstant()
+    {
+        CompleteAllMaps();
+        ApplyTrustVictoryEffects();
+        FinishGameWithScenarioInstant(EndingScenario.TrustVictory);
+        ForceUpdateBarUI();
+        Debug.Log("⚡ Trust Victory INSTANT - Displayed immediately!");
+    }
+    
+    public void FinishWithFaithVictoryInstant()
+    {
+        CompleteAllMaps();
+        ApplyFaithVictoryEffects();
+        FinishGameWithScenarioInstant(EndingScenario.FaithVictory);
+        ForceUpdateBarUI();
+        Debug.Log("⚡ Faith Victory INSTANT - Displayed immediately!");
+    }
+    
+    public void FinishWithHostilityVictoryInstant()
+    {
+        CompleteAllMaps();
+        ApplyHostilityVictoryEffects();
+        FinishGameWithScenarioInstant(EndingScenario.HostilityVictory);
+        ForceUpdateBarUI();
+        Debug.Log("⚡ Hostility Victory INSTANT - Displayed immediately!");
+    }
+    
+    public void FinishWithBalancedVictoryInstant()
+    {
+        CompleteAllMaps();
+        ApplyBalancedVictoryEffects();
+        FinishGameWithScenarioInstant(EndingScenario.BalancedVictory);
+        ForceUpdateBarUI();
+        Debug.Log("⚡ Balanced Victory INSTANT - Displayed immediately!");
+    }
+    
+    public void FinishWithAllMapsCompletedInstant()
+    {
+        FinishGameWithScenarioInstant(EndingScenario.AllMapsCompleted);
+        ForceUpdateBarUI();
+        Debug.Log("⚡ All Maps Completed INSTANT - Displayed immediately!");
+    }
+    
     public void FinishGameWithScenario(EndingScenario scenario)
     {
         Debug.Log($"🎯 Finishing game with scenario: {scenario}");
@@ -434,6 +501,31 @@ public class GameManager : MonoBehaviour
         
         // Trigger any end-game events
         OnGameFinished?.Invoke(scenario);
+    }
+    
+    /// <summary>
+    /// Finish game with scenario INSTANTLY (bypasses animations) - For debug/testing
+    /// </summary>
+    public void FinishGameWithScenarioInstant(EndingScenario scenario)
+    {
+        Debug.Log($"🎯 Finishing game INSTANTLY with scenario: {scenario}");
+        
+        // Process the ending scenario
+        ProcessEndingScenario(scenario);
+        
+        // Save game completion data
+        SaveGameCompletion(scenario);
+        
+        // Find and show ending panel instantly
+        var endingPanel = UnityEngine.Object.FindFirstObjectByType<GameEndingPanelUI>();
+        if (endingPanel != null)
+        {
+            endingPanel.ShowGameEndingInstant(scenario);
+        }
+        else
+        {
+            Debug.LogError("GameEndingPanelUI not found! Cannot show ending instantly.");
+        }
     }
     
     /// <summary>

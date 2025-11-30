@@ -427,6 +427,12 @@ public class ChoiceSelectionUI : MonoBehaviour
         // Typewriter'ları durdur
         StopTypewriterCoroutines();
         
+        // bottomPanel tekrar yukarı çıksın (dialogue kapanırken)
+        if (bottomPanel != null)
+        {
+            bottomPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad);
+        }
+        
         // Animate exit to left
         float screenWidth = Screen.width * SCREEN_OFFSET_MULTIPLIER;
         
@@ -436,11 +442,6 @@ public class ChoiceSelectionUI : MonoBehaviour
                 barPanel.SetActive(false);
                 hasBeenInitialized = false; // Panel kapatıldığında flag'i sıfırla
             });
-        // bottomPanel tekrar yukarı çıksın
-        if (bottomPanel != null)
-        {
-            bottomPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad);
-        }
     }
 
     public void TriggerDialogueChoiceEvent()
@@ -463,6 +464,13 @@ public class ChoiceSelectionUI : MonoBehaviour
         
         // Stop typewriter
         StopTypewriterCoroutines();
+        
+        // Bring bottom panel back up when force closing
+        if (bottomPanel != null)
+        {
+            bottomPanel.DOKill(); // Kill any existing animations
+            bottomPanel.DOAnchorPos(new Vector2(0, 0), ANIMATION_DURATION).SetEase(Ease.OutQuad);
+        }
         
         // Force close using canvas group if available
         var canvasGroup = GetComponent<CanvasGroup>();

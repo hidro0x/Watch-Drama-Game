@@ -128,17 +128,30 @@ public class DialogueExcelExporter : EditorWindow
             // Collect all dialogues
             Dictionary<string, DialogueExportData> dialogues = new Dictionary<string, DialogueExportData>();
             
+            int turkishCount = 0;
+            int englishCount = 0;
+            
             // Load Turkish dialogues
             if (includeTurkish)
             {
+                Debug.Log("=== Loading Turkish Dialogues ===");
+                int beforeCount = dialogues.Count;
                 LoadDialoguesFromLanguage("", "Turkish", dialogues);
                 LoadDialoguesFromLanguage("tr", "Turkish", dialogues);
+                turkishCount = dialogues.Count - beforeCount;
+                Debug.Log($"Loaded {turkishCount} Turkish dialogues. Total: {dialogues.Count}");
             }
             
             // Load English dialogues
             if (includeEnglish)
             {
+                Debug.Log("=== Loading English Dialogues ===");
+                int beforeCount = dialogues.Count;
                 LoadDialoguesFromLanguage("en", "English", dialogues);
+                int newEnglishDialogues = dialogues.Count - beforeCount;
+                englishCount = CountEnglishDialogues(dialogues);
+                Debug.Log($"Found {newEnglishDialogues} new dialogue entries from English files.");
+                Debug.Log($"Total dialogues with English translations: {englishCount} out of {dialogues.Count}");
             }
             
             // Export to CSV
@@ -149,12 +162,24 @@ public class DialogueExcelExporter : EditorWindow
             string instructionsPath = Path.Combine(exportPath, "STYLING_INSTRUCTIONS.txt");
             CreateQuickStylingGuide(instructionsPath);
             
-            EditorUtility.DisplayDialog("Export Complete", 
-                $"Successfully exported {dialogues.Count} dialogues to:\n{csvPath}\n\n" +
-                "Styling guide saved to:\n" + instructionsPath + "\n\n" +
-                "You can now open this file in Excel or Google Sheets for translation.\n\n" +
-                "💡 For advanced styling, use 'Excel Dialogue Exporter (With Styling)' menu!", 
-                "OK");
+            string summaryMessage = $"Successfully exported {dialogues.Count} dialogues to:\n{csvPath}\n\n";
+            if (includeTurkish)
+            {
+                summaryMessage += $"Turkish: {turkishCount} dialogues loaded\n";
+            }
+            if (includeEnglish)
+            {
+                summaryMessage += $"English: {englishCount} dialogues with translations\n";
+                if (englishCount < dialogues.Count)
+                {
+                    summaryMessage += $"⚠️ Note: {dialogues.Count - englishCount} dialogues missing English translations\n";
+                }
+            }
+            summaryMessage += "\nStyling guide saved to:\n" + instructionsPath + "\n\n";
+            summaryMessage += "You can now open this file in Excel or Google Sheets for translation.\n\n";
+            summaryMessage += "💡 For advanced styling, use 'Excel Dialogue Exporter (With Styling)' menu!";
+            
+            EditorUtility.DisplayDialog("Export Complete", summaryMessage, "OK");
             
             // Open the folder
             EditorUtility.RevealInFinder(csvPath);
@@ -176,11 +201,12 @@ public class DialogueExcelExporter : EditorWindow
         
         if (jsonFiles == null || jsonFiles.Length == 0)
         {
-            Debug.LogWarning($"No files found in Resources/{resourcesPath}");
+            Debug.LogWarning($"⚠️ No files found in Resources/{resourcesPath} for {languageName}");
+            Debug.LogWarning($"   Make sure files exist in: Assets/Resources/{resourcesPath}/");
             return;
         }
         
-        Debug.Log($"Loading {jsonFiles.Length} files from Resources/{resourcesPath}");
+        Debug.Log($"✓ Found {jsonFiles.Length} files in Resources/{resourcesPath} for {languageName}");
         
         foreach (var jsonFile in jsonFiles)
         {
@@ -205,13 +231,13 @@ public class DialogueExcelExporter : EditorWindow
                     continue;
                 }
                 
-                Debug.Log($"Processing file: {jsonFile.name}");
+                Debug.Log($"  Processing file: {jsonFile.name}");
                 
                 try
                 {
                     if (jsonFile == null || string.IsNullOrEmpty(jsonFile.text))
                     {
-                        Debug.LogWarning($"Skipping file {jsonFile?.name ?? "unknown"}: file is null or empty");
+                        Debug.LogWarning($"  ⚠️ Skipping file {jsonFile?.name ?? "unknown"}: file is null or empty");
                         continue;
                     }
                     
@@ -219,9 +245,11 @@ public class DialogueExcelExporter : EditorWindow
                     
                     if (string.IsNullOrEmpty(jsonContent))
                     {
-                        Debug.LogWarning($"Skipping file {jsonFile.name}: content is empty");
+                        Debug.LogWarning($"  ⚠️ Skipping file {jsonFile.name}: content is empty");
                         continue;
                     }
+                    
+                    int dialoguesInFile = 0;
                     
                     // Handle array format
                     if (jsonContent.Trim().StartsWith("["))
@@ -234,9 +262,11 @@ public class DialogueExcelExporter : EditorWindow
                                 if (dialogue != null)
                                 {
                                     AddDialogueToExport(dialogues, dialogue, languageName);
+                                    dialoguesInFile++;
                                 }
                             }
                         }
+                        Debug.Log($"    ✓ Loaded {dialoguesInFile} dialogues from {jsonFile.name} ({languageName})");
                     }
                     // Handle map-specific format
                     else if (jsonContent.Contains("\"mapType\""))
@@ -250,9 +280,11 @@ public class DialogueExcelExporter : EditorWindow
                                 if (dialogue != null)
                                 {
                                     AddDialogueToExport(dialogues, dialogue, languageName, mapData.mapType ?? "");
+                                    dialoguesInFile++;
                                 }
                             }
                         }
+                        Debug.Log($"    ✓ Loaded {dialoguesInFile} dialogues from {jsonFile.name} ({languageName}, map: {mapData?.mapType ?? "unknown"})");
                     }
                     // Single dialogue format
                     else
@@ -261,6 +293,8 @@ public class DialogueExcelExporter : EditorWindow
                         if (dialogue != null)
                         {
                             AddDialogueToExport(dialogues, dialogue, languageName);
+                            dialoguesInFile++;
+                            Debug.Log($"    ✓ Loaded 1 dialogue from {jsonFile.name} ({languageName})");
                         }
                     }
                 }
@@ -276,17 +310,19 @@ public class DialogueExcelExporter : EditorWindow
     {
         if (dialogue == null)
         {
-            Debug.LogWarning("Attempted to add null dialogue to export");
+            Debug.LogWarning("⚠️ Attempted to add null dialogue to export");
             return;
         }
         
         if (string.IsNullOrEmpty(dialogue.id))
         {
-            Debug.LogWarning("Attempted to add dialogue with empty ID");
+            Debug.LogWarning("⚠️ Attempted to add dialogue with empty ID");
             return;
         }
         
-        if (!dialogues.ContainsKey(dialogue.id))
+        bool isNewDialogue = !dialogues.ContainsKey(dialogue.id);
+        
+        if (isNewDialogue)
         {
             dialogues[dialogue.id] = new DialogueExportData
             {
@@ -313,6 +349,26 @@ public class DialogueExcelExporter : EditorWindow
             exportData.textEnglish = dialogue.text ?? "";
             exportData.optionsEnglish = dialogue.options ?? new List<JsonDialogueOption>();
         }
+    }
+    
+    /// <summary>
+    /// Count how many dialogues have English translations
+    /// </summary>
+    private int CountEnglishDialogues(Dictionary<string, DialogueExportData> dialogues)
+    {
+        int count = 0;
+        foreach (var kvp in dialogues)
+        {
+            var dialogue = kvp.Value;
+            // Check if dialogue has any English content
+            if (!string.IsNullOrEmpty(dialogue.textEnglish) || 
+                !string.IsNullOrEmpty(dialogue.nameEnglish) ||
+                (dialogue.optionsEnglish != null && dialogue.optionsEnglish.Count > 0))
+            {
+                count++;
+            }
+        }
+        return count;
     }
     
     private void ExportToCSV(Dictionary<string, DialogueExportData> dialogues, string filePath)

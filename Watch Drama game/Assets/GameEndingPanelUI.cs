@@ -192,6 +192,171 @@ public class GameEndingPanelUI : MonoBehaviour
         // Start animation sequence
         StartCoroutine(PlayEndingAnimation());
     }
+    
+    /// <summary>
+    /// Show the game ending panel INSTANTLY without animations (for debug/testing)
+    /// </summary>
+    /// <param name="ending">The ending scenario that was achieved</param>
+    public void ShowGameEndingInstant(EndingScenario ending)
+    {
+        // Stop any running animations
+        StopAllCoroutines();
+        isAnimating = false;
+        
+        this.currentEnding = ending;
+        
+        // Make sure the GameObject is active
+        if (!gameObject.activeInHierarchy)
+            gameObject.SetActive(true);
+        
+        // Set canvas group to be fully visible
+        canvasGroup.alpha = 1f;
+        canvasGroup.interactable = true;
+        canvasGroup.blocksRaycasts = true;
+        
+        // Setup content immediately
+        SetupEndingContent();
+        
+        // Show all elements instantly (no fade)
+        if (backgroundPanel != null)
+        {
+            var bgColor = backgroundPanel.color;
+            bgColor.a = 0.95f;
+            backgroundPanel.color = bgColor;
+        }
+        
+        if (endingIcon != null)
+        {
+            var iconColor = endingIcon.color;
+            iconColor.a = 1f;
+            endingIcon.color = iconColor;
+        }
+        
+        if (endingTitleText != null)
+        {
+            endingTitleText.alpha = 1f;
+        }
+        
+        if (endingDescriptionText != null)
+        {
+            endingDescriptionText.alpha = 1f;
+        }
+        
+        if (finalStatsText != null)
+        {
+            finalStatsText.alpha = 1f;
+        }
+        
+        // Set sliders to final values instantly
+        var overallStats = CalculateOverallStats();
+        if (overallTrustSlider != null)
+        {
+            overallTrustSlider.value = overallStats.Trust / 100f;
+        }
+        if (overallFaithSlider != null)
+        {
+            overallFaithSlider.value = overallStats.Faith / 100f;
+        }
+        if (overallHostilitySlider != null)
+        {
+            overallHostilitySlider.value = overallStats.Hostility / 100f;
+        }
+        
+        // Show completed maps summary instantly
+        ShowCompletedMapsSummaryInstant();
+        
+        // Show buttons instantly
+        ShowButtonsInstant();
+        
+        Debug.Log($"🎯 Ending displayed INSTANTLY: {ending}");
+    }
+    
+    /// <summary>
+    /// Show completed maps summary instantly (no animation)
+    /// </summary>
+    private void ShowCompletedMapsSummaryInstant()
+    {
+        if (completedMapsContainer == null || mapSummaryPrefab == null)
+            return;
+        
+        // Clear existing map summaries
+        foreach (var obj in mapSummaryObjects)
+        {
+            if (obj != null)
+                Destroy(obj);
+        }
+        mapSummaryObjects.Clear();
+        
+        // Get all map types and create summaries
+        var allMaps = GetAllMapTypes();
+        
+        foreach (var mapType in allMaps)
+        {
+            var mapStats = GameManager.Instance.GetMapValues(mapType);
+            var mapData = GetMapData(mapType);
+            
+            // Create map summary object
+            var summaryObj = Instantiate(mapSummaryPrefab, completedMapsContainer);
+            mapSummaryObjects.Add(summaryObj);
+            
+            // Setup map summary content
+            SetupMapSummary(summaryObj, mapType, mapStats, mapData);
+            
+            // Show instantly (no fade)
+            var summaryCanvasGroup = summaryObj.GetComponent<CanvasGroup>();
+            if (summaryCanvasGroup != null)
+            {
+                summaryCanvasGroup.alpha = 1f;
+            }
+        }
+    }
+    
+    /// <summary>
+    /// Show buttons instantly (no animation)
+    /// </summary>
+    private void ShowButtonsInstant()
+    {
+        // Show main menu button
+        if (mainMenuButton != null)
+        {
+            ShowButtonInstant(mainMenuButton, mainMenuButtonText);
+        }
+        
+        // Show restart button
+        if (restartButton != null)
+        {
+            ShowButtonInstant(restartButton, restartButtonText);
+        }
+        
+        // Show continue button (if applicable)
+        if (continueButton != null)
+        {
+            ShowButtonInstant(continueButton, continueButtonText);
+        }
+    }
+    
+    /// <summary>
+    /// Show button instantly (no fade animation)
+    /// </summary>
+    private void ShowButtonInstant(Button button, TextMeshProUGUI buttonText)
+    {
+        if (button != null)
+        {
+            var buttonImage = button.GetComponent<Image>();
+            if (buttonImage != null)
+            {
+                var color = buttonImage.color;
+                color.a = 1f;
+                buttonImage.color = color;
+            }
+            button.interactable = true;
+        }
+        
+        if (buttonText != null)
+        {
+            buttonText.alpha = 1f;
+        }
+    }
 
     /// <summary>
     /// Hide the game ending panel immediately

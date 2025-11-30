@@ -4227,8 +4227,8 @@ MonoBehaviour:
   faithZeroDialogueText: No one believes you
   hostilityMaxDialogueSprite: {fileID: -1685125853566359774, guid: 8084f7c80ef572643aaf3c09fe957061, type: 3}
   hostilityMaxDialogueText: You've been killed by impostor.
-  allMapsCompletedDialogueSprite: {fileID: 0}
-  allMapsCompletedDialogueText: 
+  allMapsCompletedDialogueSprite: {fileID: 4342987560025478810, guid: dcd174d40daa66442b21fa81b31a231b, type: 3}
+  allMapsCompletedDialogueText: You've have completed all the maps.
 --- !u!1 &1328185126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,7 +4606,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 71.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
