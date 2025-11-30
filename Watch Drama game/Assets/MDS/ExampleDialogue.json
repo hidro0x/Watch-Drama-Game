@@ -1,0 +1,32 @@
+{
+  "id": "n03",
+  "type": "normal",
+  "speaker": "Genç Öğrenci Lia",
+  "text": "Gerçekten kutsal biri misin? Efsanelerde anlatılan gibi mi?",
+  "options": [
+    {
+      "text": "Ben sadece görevimi yapıyorum.",
+      "effects": {
+        "faith": 4,
+        "trust": 3,
+        "hostility": 0
+      }
+    },
+    {
+      "text": "Evet, rüyaların bile ötesinden geldim.",
+      "effects": {
+        "faith": 7,
+        "trust": 2,
+        "hostility": -1
+      }
+    },
+    {
+      "text": "Saçmalıklarla vakit kaybetme.",
+      "effects": {
+        "faith": -2,
+        "trust": -3,
+        "hostility": 5
+      }
+    }
+  ]
+} 

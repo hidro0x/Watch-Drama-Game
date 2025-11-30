@@ -1,0 +1,8270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 217ce13efb71cef4b8ef2c195d46b527, type: 3}
+  m_Name: New Dialogue Localization Data
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: dialogueLocalizations
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String,
+        mscorlib],[LocalizedDialogueText, Assembly-CSharp]], mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 66
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: agnari_01
+    - Name: $v
+      Entry: 7
+      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 4|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Gen\xE7 Alev Rahibesi Mira"
+    - Name: text
+      Entry: 1
+      Data: "Alev seni se\xE7ti mi, yoksa sen mi ona y\xFCr\xFCd\xFCn?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Alev i\xE7imde do\u011Fdu."
+    - Name: 
+      Entry: 1
+      Data: Yolumu onunla buldum.
+    - Name: 
+      Entry: 1
+      Data: "Ate\u015Ften uzak dururum."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 6|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Young Flame Priestess Mira
+    - Name: text
+      Entry: 1
+      Data: Did the flame choose you, or did you walk toward it?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: The flame was born within me.
+    - Name: 
+      Entry: 1
+      Data: I found my path through it.
+    - Name: 
+      Entry: 1
+      Data: I keep my distance from fire.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: agnari_02
+    - Name: $v
+      Entry: 7
+      Data: 8|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 9|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Gen\xE7 Alev Rahibesi Mira"
+    - Name: text
+      Entry: 1
+      Data: "\u0130nan\xE7s\u0131z biri alevi s\xF6nd\xFCrebilir. Senin kalbin ne
+        diyor?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "\u0130nanc\u0131m sars\u0131lmaz."
+    - Name: 
+      Entry: 1
+      Data: "\u015E\xFCphelerim var ama ilerliyorum."
+    - Name: 
+      Entry: 1
+      Data: "\u0130nan\xE7 zaman kayb\u0131."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 11|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Young Flame Priestess Mira
+    - Name: text
+      Entry: 1
+      Data: One without faith can extinguish the flame. What does your heart say?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 12|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: My faith is unshakable.
+    - Name: 
+      Entry: 1
+      Data: I have doubts, but I move forward.
+    - Name: 
+      Entry: 1
+      Data: Faith is a waste of time.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: agnari_03
+    - Name: $v
+      Entry: 7
+      Data: 13|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 14|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Gen\xE7 Alev Rahibesi Mira"
+    - Name: text
+      Entry: 1
+      Data: "Agnari\u2019nin kutsal\u0131 \xF6n\xFCnde diz \xE7\xF6ker misin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 15|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Onun yolunda y\xFCr\xFCr\xFCm."
+    - Name: 
+      Entry: 1
+      Data: "Sayg\u0131 duyar\u0131m ama itaat etmem."
+    - Name: 
+      Entry: 1
+      Data: "Kutsall\u0131k beni ilgilendirmez."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 16|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Young Flame Priestess Mira
+    - Name: text
+      Entry: 1
+      Data: "Will you kneel before Agnari\u2019s sacred light?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 17|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I walk in its path.
+    - Name: 
+      Entry: 1
+      Data: "I respect it, but I won\u2019t obey."
+    - Name: 
+      Entry: 1
+      Data: The sacred means nothing to me.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: agnari_04
+    - Name: $v
+      Entry: 7
+      Data: 18|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 19|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Agnari Muhaf\u0131z\u0131 Karok"
+    - Name: text
+      Entry: 1
+      Data: "Bu topraklara izinsiz girdin. Ne i\xE7in buradas\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 20|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Bar\u0131\u015F i\xE7in geldim."
+    - Name: 
+      Entry: 1
+      Data: "Bilgi ar\u0131yorum."
+    - Name: 
+      Entry: 1
+      Data: "\u0130\u015Fgal i\xE7in buraday\u0131m."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 21|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Agnari Guardian Karok
+    - Name: text
+      Entry: 1
+      Data: "You\u2019ve entered these lands without permission. Why are you here?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 22|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I come in peace.
+    - Name: 
+      Entry: 1
+      Data: I seek knowledge.
+    - Name: 
+      Entry: 1
+      Data: "I\u2019m here to invade."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: agnari_05
+    - Name: $v
+      Entry: 7
+      Data: 23|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 24|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Agnari Muhaf\u0131z\u0131 Karok"
+    - Name: text
+      Entry: 1
+      Data: "Silah\u0131n var m\u0131, yoksa kelimelere mi g\xFCvenirsin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 25|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "S\xF6zlerim kalkan\u0131md\u0131r."
+    - Name: 
+      Entry: 1
+      Data: Kendimi korurum.
+    - Name: 
+      Entry: 1
+      Data: "Silahlar konu\u015Fsun."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 26|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Agnari Guardian Karok
+    - Name: text
+      Entry: 1
+      Data: Do you rely on weapons, or on words?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 27|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: My words are my shield.
+    - Name: 
+      Entry: 1
+      Data: I can protect myself.
+    - Name: 
+      Entry: 1
+      Data: Let the weapons speak.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: agnari_06
+    - Name: $v
+      Entry: 7
+      Data: 28|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 29|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Agnari Muhaf\u0131z\u0131 Karok"
+    - Name: text
+      Entry: 1
+      Data: "Agnari d\xFC\u015Fmanlar\u0131n\u0131 affetmez. Sen affedilebilir misin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 30|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Ben de\u011Fi\u015Ftim."
+    - Name: 
+      Entry: 1
+      Data: "Zaman g\xF6sterecek."
+    - Name: 
+      Entry: 1
+      Data: "Hi\xE7bir zaman affedilmeyi beklemedim."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 31|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Agnari Guardian Karok
+    - Name: text
+      Entry: 1
+      Data: Agnari does not forgive its enemies. Can you be forgiven?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 32|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I have changed.
+    - Name: 
+      Entry: 1
+      Data: Time will tell.
+    - Name: 
+      Entry: 1
+      Data: I never expected forgiveness.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: agnari_07
+    - Name: $v
+      Entry: 7
+      Data: 33|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 34|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Alev Cevhercisi Lena
+    - Name: text
+      Entry: 1
+      Data: "Bu cevher yaln\u0131zca y\xFCrekle par\u0131ldar. Senin y\xFCre\u011Fin
+        neyle dolu?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 35|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "\u0130nan\xE7la dolu."
+    - Name: 
+      Entry: 1
+      Data: Merakla dolu.
+    - Name: 
+      Entry: 1
+      Data: "Hi\xE7bir \u015Feyle."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 36|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Flame Gemsmith Lena
+    - Name: text
+      Entry: 1
+      Data: This gem shines only through the heart. What fills yours?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 37|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Filled with faith.
+    - Name: 
+      Entry: 1
+      Data: Filled with curiosity.
+    - Name: 
+      Entry: 1
+      Data: With nothing at all.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: agnari_08
+    - Name: $v
+      Entry: 7
+      Data: 38|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 39|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Alev Cevhercisi Lena
+    - Name: text
+      Entry: 1
+      Data: Cevherin sesi var, ama herkes duymaz. Sen duydun mu?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 40|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "F\u0131s\u0131lt\u0131s\u0131n\u0131 bile duydum."
+    - Name: 
+      Entry: 1
+      Data: "Bir yank\u0131 hissettim."
+    - Name: 
+      Entry: 1
+      Data: "Hi\xE7bir \u015Fey duymad\u0131m."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 41|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Flame Gemsmith Lena
+    - Name: text
+      Entry: 1
+      Data: The gem has a voice, but not all can hear it. Have you?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 42|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "I\u2019ve heard even its whispers."
+    - Name: 
+      Entry: 1
+      Data: "I\u2019ve felt an echo."
+    - Name: 
+      Entry: 1
+      Data: "I\u2019ve heard nothing."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: agnari_09
+    - Name: $v
+      Entry: 7
+      Data: 43|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 44|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Alev Cevhercisi Lena
+    - Name: text
+      Entry: 1
+      Data: "Cevheri \xE7almak isteyenler oldu. Sen onlardan m\u0131s\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 45|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Onu korumaya geldim.
+    - Name: 
+      Entry: 1
+      Data: Sadece bakmak istiyorum.
+    - Name: 
+      Entry: 1
+      Data: Evet, cevher benim olacak.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 46|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Flame Gemsmith Lena
+    - Name: text
+      Entry: 1
+      Data: Some came to steal the gem. Are you one of them?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 47|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I came to protect it.
+    - Name: 
+      Entry: 1
+      Data: I just want to look.
+    - Name: 
+      Entry: 1
+      Data: Yes, it shall be mine.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: astharil_01
+    - Name: $v
+      Entry: 7
+      Data: 48|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 49|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ruh \u015Eifac\u0131s\u0131 Ihlira"
+    - Name: text
+      Entry: 1
+      Data: "Ruhun yorgun g\xF6r\xFCn\xFCyor. \u015Eifa m\u0131 ar\u0131yorsun?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 50|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Evet, huzur istiyorum.
+    - Name: 
+      Entry: 1
+      Data: "Yaralar\u0131m\u0131 kendim sarar\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "\u015Eifa yalan bir tesellidir."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 51|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Soul Healer Ihlira
+    - Name: text
+      Entry: 1
+      Data: Your soul looks weary. Are you seeking healing?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 52|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Yes, I long for peace.
+    - Name: 
+      Entry: 1
+      Data: I will heal my own wounds.
+    - Name: 
+      Entry: 1
+      Data: Healing is a false comfort.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: astharil_02
+    - Name: $v
+      Entry: 7
+      Data: 53|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 54|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ruh \u015Eifac\u0131s\u0131 Ihlira"
+    - Name: text
+      Entry: 1
+      Data: "Sessizlik i\xE7inde konu\u015Fanlar\u0131 duyabiliyor musun?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 55|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Kalbimle duyar\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Bazen f\u0131s\u0131lt\u0131lar gelir."
+    - Name: 
+      Entry: 1
+      Data: "Sessizlik bana bir \u015Fey s\xF6ylemez."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 56|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Soul Healer Ihlira
+    - Name: text
+      Entry: 1
+      Data: Can you hear the ones who speak within silence?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 57|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I hear them with my heart.
+    - Name: 
+      Entry: 1
+      Data: Sometimes I catch their whispers.
+    - Name: 
+      Entry: 1
+      Data: Silence speaks nothing to me.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: astharil_03
+    - Name: $v
+      Entry: 7
+      Data: 58|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 59|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ruh \u015Eifac\u0131s\u0131 Ihlira"
+    - Name: text
+      Entry: 1
+      Data: "Karanl\u0131k seni buldu\u011Funda ne yapars\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 60|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "I\u015F\u0131\u011F\u0131 hat\u0131rlar\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Karanl\u0131\u011Fa al\u0131\u015F\u0131r\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Karanl\u0131k benim evimdir."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 61|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Soul Healer Ihlira
+    - Name: text
+      Entry: 1
+      Data: What do you do when darkness finds you?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 62|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I remember the light.
+    - Name: 
+      Entry: 1
+      Data: I grow used to the dark.
+    - Name: 
+      Entry: 1
+      Data: Darkness is my home.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: astharil_04
+    - Name: $v
+      Entry: 7
+      Data: 63|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 64|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Sis Rahibi Thamor
+    - Name: text
+      Entry: 1
+      Data: "Sis her \u015Feyi \xF6rter. Ger\xE7e\u011Fi g\xF6rebiliyor musun?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 65|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "G\xF6z\xFCm de\u011Fil, sezgim g\xF6r\xFCr."
+    - Name: 
+      Entry: 1
+      Data: "Arad\u0131\u011F\u0131m ger\xE7e\u011Fi bulurum."
+    - Name: 
+      Entry: 1
+      Data: "Ger\xE7ek diye bir \u015Fey yoktur."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 66|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Priest of Mist Thamor
+    - Name: text
+      Entry: 1
+      Data: The mist covers all things. Can you see the truth?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 67|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "My eyes don\u2019t see; my intuition does."
+    - Name: 
+      Entry: 1
+      Data: I find the truth I seek.
+    - Name: 
+      Entry: 1
+      Data: There is no such thing as truth.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: astharil_05
+    - Name: $v
+      Entry: 7
+      Data: 68|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 69|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Sis Rahibi Thamor
+    - Name: text
+      Entry: 1
+      Data: "Ad\u0131mlar\u0131n\u0131 sessiz at\u0131yorsun. Neden gizleniyorsun?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 70|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "G\xF6lgeden korunmak i\xE7in."
+    - Name: 
+      Entry: 1
+      Data: "Kimseye g\xFCvenmiyorum."
+    - Name: 
+      Entry: 1
+      Data: "Niyetim karanl\u0131k."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 71|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Priest of Mist Thamor
+    - Name: text
+      Entry: 1
+      Data: You walk with silent steps. Why do you hide?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 72|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: To stay safe from the shadows.
+    - Name: 
+      Entry: 1
+      Data: I trust no one.
+    - Name: 
+      Entry: 1
+      Data: My intent is dark.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: astharil_06
+    - Name: $v
+      Entry: 7
+      Data: 73|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 74|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Sis Rahibi Thamor
+    - Name: text
+      Entry: 1
+      Data: "Sis seni \xE7a\u011F\u0131rd\u0131\u011F\u0131nda kar\u015F\u0131l\u0131k
+        verir misin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 75|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Sisle dans ederim.
+    - Name: 
+      Entry: 1
+      Data: "Uza\u011F\u0131nda kal\u0131r\u0131m."
+    - Name: 
+      Entry: 1
+      Data: Sis beni yutsun isterim.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 76|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Priest of Mist Thamor
+    - Name: text
+      Entry: 1
+      Data: When the mist calls, will you answer?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 77|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I will dance with the mist.
+    - Name: 
+      Entry: 1
+      Data: I will stay away.
+    - Name: 
+      Entry: 1
+      Data: I wish to be swallowed by it.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: astharil_07
+    - Name: $v
+      Entry: 7
+      Data: 78|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 79|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ay \u0130zleyicisi Velun"
+    - Name: text
+      Entry: 1
+      Data: "Ay geceyi izlerken sen ne d\xFC\u015F\xFCn\xFCrs\xFCn?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 80|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Ay bana umut verir.
+    - Name: 
+      Entry: 1
+      Data: "Sadece bir \u0131\u015F\u0131k kayna\u011F\u0131."
+    - Name: 
+      Entry: 1
+      Data: "Ay benim d\xFC\u015Fman\u0131m."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 81|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Moon Watcher Velun
+    - Name: text
+      Entry: 1
+      Data: As the moon watches the night, what do you think?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 82|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: The moon gives me hope.
+    - Name: 
+      Entry: 1
+      Data: "It\u2019s just a source of light."
+    - Name: 
+      Entry: 1
+      Data: The moon is my enemy.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: astharil_08
+    - Name: $v
+      Entry: 7
+      Data: 83|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 84|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ay \u0130zleyicisi Velun"
+    - Name: text
+      Entry: 1
+      Data: "Dolunay zaman\u0131 geldi\u011Finde kim oluyorsun?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 85|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Ger\xE7ek benli\u011Fim ortaya \xE7\u0131kar."
+    - Name: 
+      Entry: 1
+      Data: "Kontrol\xFCm\xFC kaybedebilirim."
+    - Name: 
+      Entry: 1
+      Data: "O zaman beni tan\u0131yamazs\u0131n."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 86|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Moon Watcher Velun
+    - Name: text
+      Entry: 1
+      Data: When the full moon rises, who do you become?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 87|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: My true self is revealed.
+    - Name: 
+      Entry: 1
+      Data: I may lose control.
+    - Name: 
+      Entry: 1
+      Data: "You wouldn\u2019t recognize me then."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: astharil_09
+    - Name: $v
+      Entry: 7
+      Data: 88|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 89|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ay \u0130zleyicisi Velun"
+    - Name: text
+      Entry: 1
+      Data: "Ay \u0131\u015F\u0131\u011F\u0131nda y\xFCr\xFCrken iz b\u0131rak\u0131r
+        m\u0131s\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 90|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Ad\u0131mlar\u0131m sessiz ama kal\u0131c\u0131d\u0131r."
+    - Name: 
+      Entry: 1
+      Data: "\u0130zimi r\xFCzgar siler."
+    - Name: 
+      Entry: 1
+      Data: "\u0130z b\u0131rakmak istemem."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 91|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Moon Watcher Velun
+    - Name: text
+      Entry: 1
+      Data: Do you leave traces as you walk in the moonlight?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 92|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: My steps are silent but lasting.
+    - Name: 
+      Entry: 1
+      Data: The wind erases my trail.
+    - Name: 
+      Entry: 1
+      Data: I choose not to leave any.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_01
+    - Name: $v
+      Entry: 7
+      Data: 93|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 94|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ya\u015Fl\u0131 Teyze"
+    - Name: text
+      Entry: 1
+      Data: "Evlad\u0131m, y\xFCz\xFCnde uzun yollar\u0131n tozu var. Nereden geliyorsun
+        bakal\u0131m?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 95|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "\xC7ok uzaklardan geliyorum."
+    - Name: 
+      Entry: 1
+      Data: "Buralarda dola\u015F\u0131yordum."
+    - Name: 
+      Entry: 1
+      Data: Sana ne?
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 96|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Old Lady
+    - Name: text
+      Entry: 1
+      Data: Child, the dust of long roads covers your face. Where have you come from?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 97|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I come from far away.
+    - Name: 
+      Entry: 1
+      Data: I was just wandering around.
+    - Name: 
+      Entry: 1
+      Data: Why do you care?
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_02
+    - Name: $v
+      Entry: 7
+      Data: 98|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 99|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ya\u015Fl\u0131 Teyze"
+    - Name: text
+      Entry: 1
+      Data: "Bir tas s\u0131cak \xE7orba ister misin? Evim k\xFC\xE7\xFCk ama kalbim
+        b\xFCy\xFCk."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 100|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Te\u015Fekk\xFCr ederim, \xE7ok makbule ge\xE7er."
+    - Name: 
+      Entry: 1
+      Data: Sadece biraz su yeterli.
+    - Name: 
+      Entry: 1
+      Data: "Yemeklerin kokusu rahats\u0131z edici."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 101|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Old Lady
+    - Name: text
+      Entry: 1
+      Data: Would you like a bowl of hot soup? My house is small, but my heart is
+        big.
+    - Name: choiceTexts
+      Entry: 7
+      Data: 102|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Thank you, that would mean a lot.
+    - Name: 
+      Entry: 1
+      Data: A little water is enough.
+    - Name: 
+      Entry: 1
+      Data: The smell of your food bothers me.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_03
+    - Name: $v
+      Entry: 7
+      Data: 103|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 104|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ya\u015Fl\u0131 Teyze"
+    - Name: text
+      Entry: 1
+      Data: "Gen\xE7ken ben de senin gibiydim... Ama sonra r\xFCzgar ba\u015Fka y\xF6nden
+        esti."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 105|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Hikayeni duymak isterim.
+    - Name: 
+      Entry: 1
+      Data: "Herkesin yolu farkl\u0131d\u0131r."
+    - Name: 
+      Entry: 1
+      Data: "Benim vaktim yok ya\u015Fl\u0131 kad\u0131n."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 106|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Old Lady
+    - Name: text
+      Entry: 1
+      Data: I was once like you when I was young... but then the wind changed direction.
+    - Name: choiceTexts
+      Entry: 7
+      Data: 107|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "I\u2019d like to hear your story."
+    - Name: 
+      Entry: 1
+      Data: Everyone walks their own path.
+    - Name: 
+      Entry: 1
+      Data: "I don\u2019t have time for stories, old woman."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_04
+    - Name: $v
+      Entry: 7
+      Data: 108|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 109|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Oduncu
+    - Name: text
+      Entry: 1
+      Data: "Baltam k\u0131r\u0131lmak \xFCzere... Ama orman h\xE2l\xE2 suskun. Sen
+        neden geldin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 110|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Sana yard\u0131m etmeye geldim."
+    - Name: 
+      Entry: 1
+      Data: "Sadece yolum d\xFC\u015Ft\xFC."
+    - Name: 
+      Entry: 1
+      Data: "A\u011Fa\xE7lar\u0131 kesmeni engellemeye geldim."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 111|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Woodcutter
+    - Name: text
+      Entry: 1
+      Data: "My axe is about to break\u2026 yet the forest remains silent. Why have
+        you come?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 112|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I came to help you.
+    - Name: 
+      Entry: 1
+      Data: I just passed by.
+    - Name: 
+      Entry: 1
+      Data: I came to stop you from cutting trees.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_05
+    - Name: $v
+      Entry: 7
+      Data: 113|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 114|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Oduncu
+    - Name: text
+      Entry: 1
+      Data: "Orman g\xF6z\xFCyle izler. Ne zaman dal kessem, i\xE7im burkulur."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 115|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Sayg\u0131l\u0131 davranman g\xFCzel."
+    - Name: 
+      Entry: 1
+      Data: "A\u011Fa\xE7 da bir kaynak sonu\xE7ta."
+    - Name: 
+      Entry: 1
+      Data: "Duygusall\u0131k i\u015Fini zorla\u015Ft\u0131r\u0131r."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 116|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Woodcutter
+    - Name: text
+      Entry: 1
+      Data: The forest watches with its eyes. Every time I cut a branch, my heart
+        aches.
+    - Name: choiceTexts
+      Entry: 7
+      Data: 117|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "It\u2019s good that you show respect."
+    - Name: 
+      Entry: 1
+      Data: A tree is just another resource.
+    - Name: 
+      Entry: 1
+      Data: Emotions make your work harder.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_06
+    - Name: $v
+      Entry: 7
+      Data: 118|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 119|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Oduncu
+    - Name: text
+      Entry: 1
+      Data: "So\u011Fuk havada kesilen odun daha dayan\u0131kl\u0131d\u0131r. Sen
+        ne zaman en g\xFC\xE7l\xFCs\xFCn?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 120|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Zorluklar kar\u015F\u0131s\u0131nda."
+    - Name: 
+      Entry: 1
+      Data: "Kendimi yaln\u0131z hissetti\u011Fimde."
+    - Name: 
+      Entry: 1
+      Data: "Her zaman g\xFC\xE7l\xFCy\xFCmd\xFCr."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 121|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Woodcutter
+    - Name: text
+      Entry: 1
+      Data: Wood cut in the cold lasts longer. When are you at your strongest?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 122|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: In the face of hardship.
+    - Name: 
+      Entry: 1
+      Data: When I feel alone.
+    - Name: 
+      Entry: 1
+      Data: "I\u2019m always strong."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_07
+    - Name: $v
+      Entry: 7
+      Data: 123|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 124|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Vatanda\u015F"
+    - Name: text
+      Entry: 1
+      Data: "G\xFCnlerdir pazarda fiyatlar art\u0131yor. Bu i\u015Fin sonu nereye
+        varacak sence?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 125|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Umut edelim, ge\xE7er."
+    - Name: 
+      Entry: 1
+      Data: "Herkes kendi ba\u015F\u0131n\u0131n \xE7aresine baks\u0131n."
+    - Name: 
+      Entry: 1
+      Data: "Bu d\xFCzene bir son verilmeli."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 126|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Citizen
+    - Name: text
+      Entry: 1
+      Data: Prices in the market have been rising for days. Where will this end?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 127|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Let\u2019s hope it passes."
+    - Name: 
+      Entry: 1
+      Data: Everyone should fend for themselves.
+    - Name: 
+      Entry: 1
+      Data: This order must end.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_08
+    - Name: $v
+      Entry: 7
+      Data: 128|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 129|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Vatanda\u015F"
+    - Name: text
+      Entry: 1
+      Data: "Yeni bir y\xFCz g\xF6rmek g\xFCzel. Burada kalmay\u0131 m\u0131 d\xFC\u015F\xFCn\xFCyorsun?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 130|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Evet, bir s\xFCre kalaca\u011F\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Karars\u0131z\u0131m, daha g\xF6zlemliyorum."
+    - Name: 
+      Entry: 1
+      Data: "Hay\u0131r, hemen gidece\u011Fim."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 131|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Citizen
+    - Name: text
+      Entry: 1
+      Data: "It\u2019s nice to see a new face. Are you planning to stay?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 132|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Yes, I\u2019ll stay for a while."
+    - Name: 
+      Entry: 1
+      Data: "I\u2019m unsure, still observing."
+    - Name: 
+      Entry: 1
+      Data: "No, I\u2019ll leave soon."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_09
+    - Name: $v
+      Entry: 7
+      Data: 133|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 134|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Vatanda\u015F"
+    - Name: text
+      Entry: 1
+      Data: "D\xFCn gece yine garip sesler geldi da\u011Flardan. Sence ne olabilir?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 135|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Do\u011Fan\u0131n sesi, korkmaya gerek yok."
+    - Name: 
+      Entry: 1
+      Data: "Belki de bir uyar\u0131yd\u0131."
+    - Name: 
+      Entry: 1
+      Data: "Bir \u015Feyler gizleniyor buralarda."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 136|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Citizen
+    - Name: text
+      Entry: 1
+      Data: Last night, strange sounds came from the mountains again. What do you
+        think it was?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 137|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: The voice of nature, nothing to fear.
+    - Name: 
+      Entry: 1
+      Data: Maybe a warning.
+    - Name: 
+      Entry: 1
+      Data: Something is hiding out there.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_10
+    - Name: $v
+      Entry: 7
+      Data: 138|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 139|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Terzi
+    - Name: text
+      Entry: 1
+      Data: "Kuma\u015F ruh gibidir; yanl\u0131\u015F bi\xE7ersen geri d\xF6n\xFC\u015F\xFC
+        olmaz. Ne ar\u0131yorsun burada?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 140|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Kendime uygun bir yol.
+    - Name: 
+      Entry: 1
+      Data: "Yolum buraya d\xFC\u015Ft\xFC sadece."
+    - Name: 
+      Entry: 1
+      Data: "Seninle i\u015Fim olmaz, terzi."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 141|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Tailor
+    - Name: text
+      Entry: 1
+      Data: "Fabric is like a soul; cut it wrong, and there\u2019s no turning back.
+        What are you seeking here?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 142|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: A path that fits me.
+    - Name: 
+      Entry: 1
+      Data: My path just led me here.
+    - Name: 
+      Entry: 1
+      Data: I have no business with you, tailor.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_11
+    - Name: $v
+      Entry: 7
+      Data: 143|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 144|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Terzi
+    - Name: text
+      Entry: 1
+      Data: "Her diki\u015F bir karar demektir. Sen kararlar\u0131n\u0131 nas\u0131l
+        al\u0131rs\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 145|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "\u0130\xE7 sesimi dinlerim."
+    - Name: 
+      Entry: 1
+      Data: "Duruma g\xF6re de\u011Fi\u015Fir."
+    - Name: 
+      Entry: 1
+      Data: "Kararlar\u0131 sorgulamam."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 146|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Tailor
+    - Name: text
+      Entry: 1
+      Data: Every stitch is a decision. How do you make yours?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 147|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I listen to my inner voice.
+    - Name: 
+      Entry: 1
+      Data: It depends on the situation.
+    - Name: 
+      Entry: 1
+      Data: "I don\u2019t question my choices."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_12
+    - Name: $v
+      Entry: 7
+      Data: 148|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 149|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Terzi
+    - Name: text
+      Entry: 1
+      Data: "\u0130pek mi arars\u0131n, keten mi? Her ruh bir kuma\u015F se\xE7er."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 150|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Zarif ama sade bir \u015Fey isterim."
+    - Name: 
+      Entry: 1
+      Data: "Dayan\u0131kl\u0131 olan en iyisidir."
+    - Name: 
+      Entry: 1
+      Data: Fark etmez, param yok zaten.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 151|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Tailor
+    - Name: text
+      Entry: 1
+      Data: Do you seek silk or linen? Every soul chooses a fabric.
+    - Name: choiceTexts
+      Entry: 7
+      Data: 152|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Something elegant yet simple.
+    - Name: 
+      Entry: 1
+      Data: The most durable one.
+    - Name: 
+      Entry: 1
+      Data: "It doesn\u2019t matter, I can\u2019t afford any."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_13
+    - Name: $v
+      Entry: 7
+      Data: 153|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 154|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "\xC7oban"
+    - Name: text
+      Entry: 1
+      Data: "Koyunlar bile yabanc\u0131y\u0131 hisseder. Senin niyetin ne?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 155|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Sadece dost\xE7a geldim."
+    - Name: 
+      Entry: 1
+      Data: "Biraz g\xF6zlem yap\u0131yorum."
+    - Name: 
+      Entry: 1
+      Data: "S\xFCr\xFCy\xFC almaya geldim."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 156|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Shepherd
+    - Name: text
+      Entry: 1
+      Data: Even the sheep can sense a stranger. What is your intent?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 157|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I came as a friend.
+    - Name: 
+      Entry: 1
+      Data: Just observing.
+    - Name: 
+      Entry: 1
+      Data: I came to take your flock.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_14
+    - Name: $v
+      Entry: 7
+      Data: 158|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 159|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "\xC7oban"
+    - Name: text
+      Entry: 1
+      Data: "Da\u011Flarda zaman farkl\u0131 akar. Sen zaman\u0131 nas\u0131l ge\xE7irirsin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 160|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Kendimle kal\u0131r\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Yeni yerler ke\u015Ffederim."
+    - Name: 
+      Entry: 1
+      Data: "Zaman\u0131n \xF6nemi yoktur bana."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 161|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Shepherd
+    - Name: text
+      Entry: 1
+      Data: Time flows differently in the mountains. How do you spend yours?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 162|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I spend it with myself.
+    - Name: 
+      Entry: 1
+      Data: Exploring new places.
+    - Name: 
+      Entry: 1
+      Data: Time holds no meaning for me.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_15
+    - Name: $v
+      Entry: 7
+      Data: 163|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 164|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "\xC7oban"
+    - Name: text
+      Entry: 1
+      Data: "Kurt izleri g\xF6rd\xFCm bu sabah. Tehlike yak\u0131ndaysa sen ne yapars\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 165|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "K\xF6yl\xFCleri uyar\u0131r\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Kendimi korurum \xF6nce."
+    - Name: 
+      Entry: 1
+      Data: "Ka\xE7mak en iyisi."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 166|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Shepherd
+    - Name: text
+      Entry: 1
+      Data: I saw wolf tracks this morning. What will you do if danger comes near?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 167|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "I\u2019ll warn the villagers."
+    - Name: 
+      Entry: 1
+      Data: "I\u2019ll protect myself first."
+    - Name: 
+      Entry: 1
+      Data: Running is the best choice.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_16
+    - Name: $v
+      Entry: 7
+      Data: 168|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 169|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Gen\xE7 Delikanl\u0131"
+    - Name: text
+      Entry: 1
+      Data: "Buralarda macera yok, sadece bekleyi\u015F. Sen neyin pe\u015Findesin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 170|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Ger\xE7ekleri ar\u0131yorum."
+    - Name: 
+      Entry: 1
+      Data: "Bir i\u015F \xE7\u0131karsa ka\xE7\u0131rmam."
+    - Name: 
+      Entry: 1
+      Data: "Sana ne, i\u015Fine bak."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 171|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Young Man
+    - Name: text
+      Entry: 1
+      Data: "There\u2019s no adventure here, only waiting. What are you after?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 172|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "I\u2019m searching for the truth."
+    - Name: 
+      Entry: 1
+      Data: "I won\u2019t miss a chance if one comes."
+    - Name: 
+      Entry: 1
+      Data: Mind your own business.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_17
+    - Name: $v
+      Entry: 7
+      Data: 173|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 174|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Gen\xE7 Delikanl\u0131"
+    - Name: text
+      Entry: 1
+      Data: "Bana herkes 'fazla hayal kurma' diyor. Sence hakl\u0131lar m\u0131?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 175|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Hayaller yol g\xF6sterir."
+    - Name: 
+      Entry: 1
+      Data: "Ger\xE7eklerle y\xFCzle\u015Fmelisin."
+    - Name: 
+      Entry: 1
+      Data: "Hayaller zaman kayb\u0131d\u0131r."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 176|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Young Man
+    - Name: text
+      Entry: 1
+      Data: "Everyone tells me, \u201CStop dreaming so much.\u201D Do you think they\u2019re
+        right?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 177|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Dreams guide the way.
+    - Name: 
+      Entry: 1
+      Data: You must face reality.
+    - Name: 
+      Entry: 1
+      Data: Dreams are a waste of time.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_18
+    - Name: $v
+      Entry: 7
+      Data: 178|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 179|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Gen\xE7 Delikanl\u0131"
+    - Name: text
+      Entry: 1
+      Data: "Bir g\xFCn buradan \xE7\u0131k\u0131p gidece\u011Fim. Senin hayalin
+        ne?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 180|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Daha iyi bir d\xFCnya kurmak."
+    - Name: 
+      Entry: 1
+      Data: "\xD6zg\xFCrce ya\u015Famak yeter."
+    - Name: 
+      Entry: 1
+      Data: Benim hayalim yok.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 181|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Young Man
+    - Name: text
+      Entry: 1
+      Data: "One day I\u2019ll leave this place. What is your dream?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 182|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: To build a better world.
+    - Name: 
+      Entry: 1
+      Data: To live freely is enough.
+    - Name: 
+      Entry: 1
+      Data: I have no dreams.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_19
+    - Name: $v
+      Entry: 7
+      Data: 183|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 184|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Tuhaf Ya\u015Fl\u0131"
+    - Name: text
+      Entry: 1
+      Data: "Geceleri ta\u015Flar f\u0131s\u0131ldar, ama herkes duymaz. Sen duyabiliyor
+        musun?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 185|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Bazen sessizlikte sesler bulurum.
+    - Name: 
+      Entry: 1
+      Data: "Yaln\u0131zca r\xFCzgar\u0131n oyunudur."
+    - Name: 
+      Entry: 1
+      Data: "Sa\xE7mal\u0131k bu!"
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 186|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Strange Elder
+    - Name: text
+      Entry: 1
+      Data: At night, the stones whisper, but not everyone hears them. Can you?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 187|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Sometimes I find voices in silence.
+    - Name: 
+      Entry: 1
+      Data: "It\u2019s just the wind\u2019s trick."
+    - Name: 
+      Entry: 1
+      Data: "That\u2019s nonsense!"
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_20
+    - Name: $v
+      Entry: 7
+      Data: 188|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 189|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Tuhaf Ya\u015Fl\u0131"
+    - Name: text
+      Entry: 1
+      Data: "\xDC\xE7\xFCnc\xFC g\xF6z\xFC a\xE7\u0131lm\u0131\u015F birini tan\u0131d\u0131m...
+        Aynaya bak\u0131nca ne g\xF6r\xFCyorsun?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 190|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "\u0130\xE7imdeki beni."
+    - Name: 
+      Entry: 1
+      Data: "Sorgulayan bir yabanc\u0131y\u0131."
+    - Name: 
+      Entry: 1
+      Data: "Bo\u015F bir kabuk."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 191|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Strange Elder
+    - Name: text
+      Entry: 1
+      Data: I once met someone with an open third eye... What do you see when you
+        look in the mirror?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 192|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: My true self within.
+    - Name: 
+      Entry: 1
+      Data: A questioning stranger.
+    - Name: 
+      Entry: 1
+      Data: An empty shell.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: universal_21
+    - Name: $v
+      Entry: 7
+      Data: 193|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 194|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Tuhaf Ya\u015Fl\u0131"
+    - Name: text
+      Entry: 1
+      Data: "Zaman d\xFCz de\u011Fil, k\u0131vr\u0131l\u0131r, b\xFCk\xFCl\xFCr.
+        Hangi zaman\u0131 ya\u015F\u0131yorsun \u015Fu an?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 195|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "\u015Eimdiyi, olmas\u0131 gerekeni."
+    - Name: 
+      Entry: 1
+      Data: "Ge\xE7mi\u015Fte tak\u0131l\u0131 kald\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Hi\xE7bir zaman\u0131n i\xE7inde de\u011Filim."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 196|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Strange Elder
+    - Name: text
+      Entry: 1
+      Data: Time is not straight; it twists and bends. Which time do you live in
+        now?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 197|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: The present, as it should be.
+    - Name: 
+      Entry: 1
+      Data: "I\u2019m stuck in the past."
+    - Name: 
+      Entry: 1
+      Data: I belong to no time at all.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: solarya_01
+    - Name: $v
+      Entry: 7
+      Data: 198|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 199|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "G\xFCne\u015F Tap\u0131na\u011F\u0131 Rahibi Solon"
+    - Name: text
+      Entry: 1
+      Data: "G\xFCne\u015F \u0131\u015F\u0131\u011F\u0131n\u0131 aramaya m\u0131
+        geldin, yoksa ondan ka\xE7maya m\u0131?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 200|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "I\u015F\u0131k yolumdur."
+    - Name: 
+      Entry: 1
+      Data: "Hen\xFCz karar vermedim."
+    - Name: 
+      Entry: 1
+      Data: "G\xF6lgeyi tercih ederim."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 201|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Sun Temple Priest Solon
+    - Name: text
+      Entry: 1
+      Data: Have you come seeking the light of the sun, or fleeing from it?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 202|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: The light is my path.
+    - Name: 
+      Entry: 1
+      Data: "I haven\u2019t decided yet."
+    - Name: 
+      Entry: 1
+      Data: I prefer the shadows.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: solarya_02
+    - Name: $v
+      Entry: 7
+      Data: 203|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 204|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "G\xFCne\u015F Tap\u0131na\u011F\u0131 Rahibi Solon"
+    - Name: text
+      Entry: 1
+      Data: "Tap\u0131nak sadece hak edenleri ayd\u0131nlat\u0131r. Sen haz\u0131r
+        m\u0131s\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 205|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Kalbim haz\u0131r."
+    - Name: 
+      Entry: 1
+      Data: "S\u0131nanmaya haz\u0131r\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Beni kimse s\u0131nayamaz."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 206|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Sun Temple Priest Solon
+    - Name: text
+      Entry: 1
+      Data: The temple shines only upon the worthy. Are you ready?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 207|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: My heart is ready.
+    - Name: 
+      Entry: 1
+      Data: "I\u2019m ready to be tested."
+    - Name: 
+      Entry: 1
+      Data: No one can test me.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: solarya_03
+    - Name: $v
+      Entry: 7
+      Data: 208|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 209|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "G\xFCne\u015F Tap\u0131na\u011F\u0131 Rahibi Solon"
+    - Name: text
+      Entry: 1
+      Data: "G\xF6zlerin kama\u015Ft\u0131\u011F\u0131nda bile ger\xE7e\u011Fi g\xF6rebilir
+        misin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 210|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Ger\xE7ek i\xE7imdedir."
+    - Name: 
+      Entry: 1
+      Data: "Ger\xE7ek de\u011Fi\u015Fkendir."
+    - Name: 
+      Entry: 1
+      Data: "Ger\xE7ek yaland\u0131r."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 211|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Sun Temple Priest Solon
+    - Name: text
+      Entry: 1
+      Data: Can you see the truth even when your eyes are blinded?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 212|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: The truth lies within me.
+    - Name: 
+      Entry: 1
+      Data: The truth is ever-changing.
+    - Name: 
+      Entry: 1
+      Data: The truth is a lie.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: solarya_04
+    - Name: $v
+      Entry: 7
+      Data: 213|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 214|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Alt\u0131n M\xFChendis Celya"
+    - Name: text
+      Entry: 1
+      Data: "Alt\u0131nla \xE7al\u0131\u015Fan bir d\xFCzen kurduk. Ona lay\u0131k
+        m\u0131s\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 215|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Emekle kazan\u0131r\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Lay\u0131k olup olmad\u0131\u011F\u0131m\u0131 g\xF6rece\u011Fiz."
+    - Name: 
+      Entry: 1
+      Data: "Alt\u0131n i\xE7in her \u015Fey m\xFCbaht\u0131r."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 216|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Golden Engineer Celya
+    - Name: text
+      Entry: 1
+      Data: We built an order powered by gold. Are you worthy of it?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 217|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I earn through hard work.
+    - Name: 
+      Entry: 1
+      Data: "Time will tell if I\u2019m worthy."
+    - Name: 
+      Entry: 1
+      Data: Anything is allowed for gold.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: solarya_05
+    - Name: $v
+      Entry: 7
+      Data: 218|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 219|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Alt\u0131n M\xFChendis Celya"
+    - Name: text
+      Entry: 1
+      Data: "D\xFCzen mi istersin, yoksa kaos mu getirirsin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 220|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "D\xFCzen i\xE7in buraday\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Hangisi daha \xE7ok kazand\u0131r\u0131rsa."
+    - Name: 
+      Entry: 1
+      Data: Kaosun hizmetindeyim.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 221|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Golden Engineer Celya
+    - Name: text
+      Entry: 1
+      Data: Do you seek order, or do you bring chaos?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 222|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "I\u2019m here for order."
+    - Name: 
+      Entry: 1
+      Data: Whichever brings more gain.
+    - Name: 
+      Entry: 1
+      Data: I serve chaos.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: solarya_06
+    - Name: $v
+      Entry: 7
+      Data: 223|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 224|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Alt\u0131n M\xFChendis Celya"
+    - Name: text
+      Entry: 1
+      Data: "Makineyi durdurmak m\u0131, yoksa h\u0131zland\u0131rmak m\u0131 istersin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 225|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Kontroll\xFC ilerlemek isterim."
+    - Name: 
+      Entry: 1
+      Data: "Daha h\u0131zl\u0131, daha g\xFC\xE7l\xFC!"
+    - Name: 
+      Entry: 1
+      Data: "Makineyi y\u0131kmak i\xE7in geldim."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 226|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Golden Engineer Celya
+    - Name: text
+      Entry: 1
+      Data: Would you stop the machine, or make it run faster?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 227|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I prefer steady progress.
+    - Name: 
+      Entry: 1
+      Data: Faster, stronger!
+    - Name: 
+      Entry: 1
+      Data: I came to destroy the machine.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: solarya_07
+    - Name: $v
+      Entry: 7
+      Data: 228|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 229|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "G\xFCne\u015F Muhaf\u0131z\u0131 Talmar"
+    - Name: text
+      Entry: 1
+      Data: "Bu kap\u0131 \u0131\u015F\u0131kla a\xE7\u0131l\u0131r. Kalbinde \u0131\u015F\u0131k
+        var m\u0131?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 230|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "G\xFCne\u015F i\xE7imi ayd\u0131nlat\u0131r."
+    - Name: 
+      Entry: 1
+      Data: "G\xF6lgede kalm\u0131\u015F olabilirim."
+    - Name: 
+      Entry: 1
+      Data: "I\u015F\u0131k g\xF6z\xFCm\xFC al\u0131yor."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 231|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Sun Guardian Talmar
+    - Name: text
+      Entry: 1
+      Data: This gate opens only with light. Do you hold light in your heart?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 232|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: The sun illuminates my soul.
+    - Name: 
+      Entry: 1
+      Data: I may have lingered in the shadows.
+    - Name: 
+      Entry: 1
+      Data: The light blinds me.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: solarya_08
+    - Name: $v
+      Entry: 7
+      Data: 233|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 234|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "G\xFCne\u015F Muhaf\u0131z\u0131 Talmar"
+    - Name: text
+      Entry: 1
+      Data: "G\xFCne\u015Fin alt\u0131nda herkes e\u015Fit de\u011Fildir. Sen neredesin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 235|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Hizmet edenim.
+    - Name: 
+      Entry: 1
+      Data: "Kendi yolumu se\xE7tim."
+    - Name: 
+      Entry: 1
+      Data: "I\u015F\u0131\u011F\u0131n h\xFCkm\xFCn\xFC tan\u0131mam."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 236|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Sun Guardian Talmar
+    - Name: text
+      Entry: 1
+      Data: Beneath the sun, not all are equal. Where do you stand?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 237|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I am one who serves.
+    - Name: 
+      Entry: 1
+      Data: I chose my own path.
+    - Name: 
+      Entry: 1
+      Data: I do not bow to the light.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: solarya_09
+    - Name: $v
+      Entry: 7
+      Data: 238|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 239|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "G\xFCne\u015F Muhaf\u0131z\u0131 Talmar"
+    - Name: text
+      Entry: 1
+      Data: "Kalkan\u0131m\u0131 indirirsem, arkamdan vurur musun?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 240|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "G\xFCvenine lay\u0131\u011F\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "G\xFCven tehlikelidir."
+    - Name: 
+      Entry: 1
+      Data: "Evet, ilk f\u0131rsatta."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 241|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Sun Guardian Talmar
+    - Name: text
+      Entry: 1
+      Data: If I lower my shield, will you strike me from behind?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 242|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I am worthy of your trust.
+    - Name: 
+      Entry: 1
+      Data: Trust is dangerous.
+    - Name: 
+      Entry: 1
+      Data: Yes, at the first chance.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: theon_01
+    - Name: $v
+      Entry: 7
+      Data: 243|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 244|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ya\u015Fl\u0131 Bilge Elenor"
+    - Name: text
+      Entry: 1
+      Data: "Theon tarafs\u0131z kalmal\u0131 m\u0131, karar senin ellerinde mi?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 245|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Tarafs\u0131zl\u0131k bar\u0131\u015F\u0131 getirir."
+    - Name: 
+      Entry: 1
+      Data: "Tarafs\u0131zl\u0131k ihanettir."
+    - Name: 
+      Entry: 1
+      Data: "Benim karar\u0131m de\u011Fil."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 246|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Elder Sage Elenor
+    - Name: text
+      Entry: 1
+      Data: Should Theon remain neutral, or is the choice in your hands?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 247|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Neutrality brings peace.
+    - Name: 
+      Entry: 1
+      Data: Neutrality is betrayal.
+    - Name: 
+      Entry: 1
+      Data: "It\u2019s not my decision."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: theon_02
+    - Name: $v
+      Entry: 7
+      Data: 248|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 249|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ya\u015Fl\u0131 Bilge Elenor"
+    - Name: text
+      Entry: 1
+      Data: "Bilgelik mi ar\u0131yorsun yoksa sadece ge\xE7ip mi gidiyorsun?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 250|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Bilgelik i\xE7in geldim."
+    - Name: 
+      Entry: 1
+      Data: Sadece yoluma devam ediyorum.
+    - Name: 
+      Entry: 1
+      Data: Burada zaman kaybediyorum.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 251|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Elder Sage Elenor
+    - Name: text
+      Entry: 1
+      Data: Do you seek wisdom, or are you merely passing through?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 252|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I came seeking wisdom.
+    - Name: 
+      Entry: 1
+      Data: "I\u2019m just on my way."
+    - Name: 
+      Entry: 1
+      Data: "I\u2019m wasting my time here."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: theon_03
+    - Name: $v
+      Entry: 7
+      Data: 253|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 254|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Ya\u015Fl\u0131 Bilge Elenor"
+    - Name: text
+      Entry: 1
+      Data: "Bir karar vermen gerek. Taraf m\u0131 se\xE7eceksin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 255|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Adaletin taraf\u0131nday\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "G\xFC\xE7l\xFC olan\u0131n yan\u0131nday\u0131m."
+    - Name: 
+      Entry: 1
+      Data: Taraf tutmam.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 256|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Elder Sage Elenor
+    - Name: text
+      Entry: 1
+      Data: "You must choose \u2014 will you take a side?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 257|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I stand with justice.
+    - Name: 
+      Entry: 1
+      Data: I side with the strong.
+    - Name: 
+      Entry: 1
+      Data: I choose no sides.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: theon_04
+    - Name: $v
+      Entry: 7
+      Data: 258|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 259|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Teknokrat G\xF6zlemci Nuro"
+    - Name: text
+      Entry: 1
+      Data: "Veriler seni uyar\u0131yor: burada bulunman normal de\u011Fil."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 260|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "G\xF6zlem i\xE7in geldim."
+    - Name: 
+      Entry: 1
+      Data: "Yanl\u0131\u015Fl\u0131kla d\xFC\u015Ft\xFCm buraya."
+    - Name: 
+      Entry: 1
+      Data: Sizi izlemeye geldim.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 261|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Technocrat Observer Nuro
+    - Name: text
+      Entry: 1
+      Data: 'The data warns: your presence here is irregular.'
+    - Name: choiceTexts
+      Entry: 7
+      Data: 262|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I came to observe.
+    - Name: 
+      Entry: 1
+      Data: I ended up here by mistake.
+    - Name: 
+      Entry: 1
+      Data: I came to watch you.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: theon_05
+    - Name: $v
+      Entry: 7
+      Data: 263|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 264|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Teknokrat G\xF6zlemci Nuro"
+    - Name: text
+      Entry: 1
+      Data: "Veriye eri\u015Fim iznin yok. Ama niyetin nedir?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 265|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Sadece bilmek istiyorum.
+    - Name: 
+      Entry: 1
+      Data: "Bilgiyi \xE7almaya geldim."
+    - Name: 
+      Entry: 1
+      Data: "Merak\u0131ma yenildim."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 266|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Technocrat Observer Nuro
+    - Name: text
+      Entry: 1
+      Data: You have no access to the data. What are your intentions?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 267|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I only wish to know.
+    - Name: 
+      Entry: 1
+      Data: I came to steal knowledge.
+    - Name: 
+      Entry: 1
+      Data: My curiosity got the better of me.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: theon_06
+    - Name: $v
+      Entry: 7
+      Data: 268|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 269|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Teknokrat G\xF6zlemci Nuro"
+    - Name: text
+      Entry: 1
+      Data: "Theon'un hesaplamalar\u0131 seni kay\u0131ts\u0131z g\xF6steriyor. A\xE7\u0131kla
+        kendini."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 270|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Kay\u0131tl\u0131 olmam m\xFCmk\xFCn de\u011Fil."
+    - Name: 
+      Entry: 1
+      Data: "Sistemin d\u0131\u015F\u0131ndan\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Kay\u0131ts\u0131z kalmak \xF6zg\xFCrl\xFCkt\xFCr."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 271|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Technocrat Observer Nuro
+    - Name: text
+      Entry: 1
+      Data: "Theon\u2019s calculations show you as unregistered. Explain yourself."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 272|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I cannot be recorded.
+    - Name: 
+      Entry: 1
+      Data: "I\u2019m from beyond the system."
+    - Name: 
+      Entry: 1
+      Data: To remain unregistered is true freedom.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: theon_07
+    - Name: $v
+      Entry: 7
+      Data: 273|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 274|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Konsey S\xF6zc\xFCs\xFC Tharak"
+    - Name: text
+      Entry: 1
+      Data: "Konsey seni tan\u0131m\u0131yor. Neden kap\u0131m\u0131za geldin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 275|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Yard\u0131m\u0131n\u0131za ihtiyac\u0131m var."
+    - Name: 
+      Entry: 1
+      Data: Sizi uyarmaya geldim.
+    - Name: 
+      Entry: 1
+      Data: "Konseyin zaman\u0131 doldu."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 276|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Council Spokesman Tharak
+    - Name: text
+      Entry: 1
+      Data: The Council does not know you. Why have you come?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 277|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I seek your aid.
+    - Name: 
+      Entry: 1
+      Data: I came to warn you.
+    - Name: 
+      Entry: 1
+      Data: "The Council\u2019s time is over."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: theon_08
+    - Name: $v
+      Entry: 7
+      Data: 278|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 279|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Konsey S\xF6zc\xFCs\xFC Tharak"
+    - Name: text
+      Entry: 1
+      Data: "S\xF6zlerin etkili olabilir. Hangi dili konu\u015Facaks\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 280|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Ger\xE7e\u011Fin diliyle."
+    - Name: 
+      Entry: 1
+      Data: Diplomasiyle.
+    - Name: 
+      Entry: 1
+      Data: Tehditlerle.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 281|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Council Spokesman Tharak
+    - Name: text
+      Entry: 1
+      Data: Your words may carry weight. Which language will you speak?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 282|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: The language of truth.
+    - Name: 
+      Entry: 1
+      Data: The language of diplomacy.
+    - Name: 
+      Entry: 1
+      Data: The language of threats.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: theon_09
+    - Name: $v
+      Entry: 7
+      Data: 283|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 284|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Konsey S\xF6zc\xFCs\xFC Tharak"
+    - Name: text
+      Entry: 1
+      Data: "Konseyin kararlar\u0131 sorgulanmaz, ama bug\xFCn bir istisna olabilir."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 285|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Konseyin yan\u0131nda yer alaca\u011F\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Kararlar\u0131n\u0131z\u0131 g\xF6zden ge\xE7irin."
+    - Name: 
+      Entry: 1
+      Data: "Art\u0131k s\xF6z s\u0131ras\u0131 bende."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 286|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Council Spokesman Tharak
+    - Name: text
+      Entry: 1
+      Data: "The Council\u2019s decisions are final \u2014 yet today may be an exception."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 287|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I will stand by the Council.
+    - Name: 
+      Entry: 1
+      Data: Rethink your decisions.
+    - Name: 
+      Entry: 1
+      Data: "Now it\u2019s my turn to speak."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: varnan_01
+    - Name: $v
+      Entry: 7
+      Data: 288|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 289|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Varnan G\xF6zc\xFCs\xFC"
+    - Name: text
+      Entry: 1
+      Data: "Varnan'\u0131n g\xF6lgeleri seni izliyor. Neden geldin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 290|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Bar\u0131\u015F i\xE7in geldim."
+    - Name: 
+      Entry: 1
+      Data: "Sava\u015F i\xE7in geldim."
+    - Name: 
+      Entry: 1
+      Data: "Sadece ge\xE7iyordum."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 291|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Varnan Watcher
+    - Name: text
+      Entry: 1
+      Data: The shadows of Varnan are watching you. Why have you come?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 292|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I came for peace.
+    - Name: 
+      Entry: 1
+      Data: I came for war.
+    - Name: 
+      Entry: 1
+      Data: I was just passing through.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: varnan_02
+    - Name: $v
+      Entry: 7
+      Data: 293|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 294|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Varnan G\xF6zc\xFCs\xFC"
+    - Name: text
+      Entry: 1
+      Data: "Burada yabanc\u0131lara nadiren g\xFCvenilir. Neyi kan\u0131tlayabilirsin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 295|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Sadakatimi sunabilirim.
+    - Name: 
+      Entry: 1
+      Data: "G\xFCc\xFCm\xFC g\xF6sterebilirim."
+    - Name: 
+      Entry: 1
+      Data: "Hi\xE7bir \u015Fey kan\u0131tlamam gerekmiyor."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 296|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Varnan Watcher
+    - Name: text
+      Entry: 1
+      Data: Strangers are rarely trusted here. What can you prove?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 297|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I can offer my loyalty.
+    - Name: 
+      Entry: 1
+      Data: I can show my strength.
+    - Name: 
+      Entry: 1
+      Data: "I don\u2019t need to prove anything."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: varnan_03
+    - Name: $v
+      Entry: 7
+      Data: 298|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 299|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Varnan G\xF6zc\xFCs\xFC"
+    - Name: text
+      Entry: 1
+      Data: "R\xFCzgar de\u011Fi\u015Fti\u011Finde, dost mu kalacaks\u0131n d\xFC\u015Fman
+        m\u0131?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 300|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Varnan\u2019a sad\u0131\u011F\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Duruma g\xF6re karar veririm."
+    - Name: 
+      Entry: 1
+      Data: Kimseye sadakat borcum yok.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 301|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Varnan Watcher
+    - Name: text
+      Entry: 1
+      Data: When the wind changes, will you remain a friend or become a foe?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 302|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I am loyal to Varnan.
+    - Name: 
+      Entry: 1
+      Data: I decide based on the situation.
+    - Name: 
+      Entry: 1
+      Data: I owe loyalty to no one.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: varnan_04
+    - Name: $v
+      Entry: 7
+      Data: 303|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 304|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Yasl\u0131 Sava\u015F\xE7\u0131 Terek"
+    - Name: text
+      Entry: 1
+      Data: "K\u0131l\u0131c\u0131n olmadan bu topraklarda uzun s\xFCre kalamazs\u0131n."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 305|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Kendimi savunabilirim.
+    - Name: 
+      Entry: 1
+      Data: "K\u0131l\u0131\xE7s\u0131z da bar\u0131\u015F sa\u011Flan\u0131r."
+    - Name: 
+      Entry: 1
+      Data: "Benimle u\u011Fra\u015Fma ya\u015Fl\u0131 adam."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 306|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Elder Warrior Terek
+    - Name: text
+      Entry: 1
+      Data: "Without a sword, you won\u2019t last long in these lands."
+    - Name: choiceTexts
+      Entry: 7
+      Data: 307|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I can defend myself.
+    - Name: 
+      Entry: 1
+      Data: Peace can be made without a sword.
+    - Name: 
+      Entry: 1
+      Data: "Don\u2019t test me, old man."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: varnan_05
+    - Name: $v
+      Entry: 7
+      Data: 308|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 309|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Yasl\u0131 Sava\u015F\xE7\u0131 Terek"
+    - Name: text
+      Entry: 1
+      Data: "Gen\xE7ler art\u0131k sava\u015Fmay\u0131 bilmiyor. Sen farkl\u0131
+        m\u0131s\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 310|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Sava\u015F\u0131n anlam\u0131n\u0131 sorguluyorum."
+    - Name: 
+      Entry: 1
+      Data: "Kan d\xF6kmekten \xE7ekinmem."
+    - Name: 
+      Entry: 1
+      Data: "Sava\u015Fs\u0131z bir gelecek hayalim."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 311|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Elder Warrior Terek
+    - Name: text
+      Entry: 1
+      Data: The young no longer know how to fight. Are you different?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 312|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I question the meaning of war.
+    - Name: 
+      Entry: 1
+      Data: "I don\u2019t hesitate to spill blood."
+    - Name: 
+      Entry: 1
+      Data: I dream of a world without war.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: varnan_06
+    - Name: $v
+      Entry: 7
+      Data: 313|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 314|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Yasl\u0131 Sava\u015F\xE7\u0131 Terek"
+    - Name: text
+      Entry: 1
+      Data: "G\xF6lgeler seni yarg\u0131lar. Haz\u0131r m\u0131s\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 315|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Kaderimle y\xFCzle\u015Firim."
+    - Name: 
+      Entry: 1
+      Data: "Yarg\u0131layanlar\u0131 yarg\u0131lar\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "G\xF6lgelerden korkmam."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 316|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Elder Warrior Terek
+    - Name: text
+      Entry: 1
+      Data: The shadows judge you. Are you ready?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 317|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I will face my fate.
+    - Name: 
+      Entry: 1
+      Data: I will judge the ones who judge me.
+    - Name: 
+      Entry: 1
+      Data: I do not fear the shadows.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: varnan_07
+    - Name: $v
+      Entry: 7
+      Data: 318|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 319|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Kamp Ate\u015Fi Anas\u0131 Milna"
+    - Name: text
+      Entry: 1
+      Data: "Ate\u015Fin ba\u015F\u0131nda herkesin hikayesi e\u015Fit de\u011Fer
+        ta\u015F\u0131r. Seninki nedir?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 320|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Bar\u0131\u015F i\xE7in yola \xE7\u0131kt\u0131m."
+    - Name: 
+      Entry: 1
+      Data: "Hikayem ac\u0131 ve kanla dolu."
+    - Name: 
+      Entry: 1
+      Data: Anlatmak istemem.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 321|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Fire Camp Mother Milna
+    - Name: text
+      Entry: 1
+      Data: "By the fire, every story holds equal worth. What\u2019s yours?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 322|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I set out on a journey for peace.
+    - Name: 
+      Entry: 1
+      Data: My story is filled with pain and blood.
+    - Name: 
+      Entry: 1
+      Data: "I don\u2019t wish to share it."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: varnan_08
+    - Name: $v
+      Entry: 7
+      Data: 323|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 324|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Kamp Ate\u015Fi Anas\u0131 Milna"
+    - Name: text
+      Entry: 1
+      Data: "Ge\xE7mi\u015Fin k\xFCllerinden kim do\u011Far, bilmezsin. Sen hangi
+        yandans\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 325|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Y\u0131k\u0131lan\u0131 onarmaya geldim."
+    - Name: 
+      Entry: 1
+      Data: "Ge\xE7mi\u015Fi unutmaya geldim."
+    - Name: 
+      Entry: 1
+      Data: "K\xFCller bile bana ait de\u011Fil."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 326|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Fire Camp Mother Milna
+    - Name: text
+      Entry: 1
+      Data: From the ashes of the past, who will rise? Which side are you on?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 327|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: I came to rebuild what was broken.
+    - Name: 
+      Entry: 1
+      Data: I came to forget the past.
+    - Name: 
+      Entry: 1
+      Data: Even the ashes are not mine.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: varnan_09
+    - Name: $v
+      Entry: 7
+      Data: 328|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 329|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: "Kamp Ate\u015Fi Anas\u0131 Milna"
+    - Name: text
+      Entry: 1
+      Data: "Her ate\u015F bir \xF6yk\xFCy\xFC ta\u015F\u0131r. Seninle payla\u015Fmal\u0131
+        m\u0131y\u0131m?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 330|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "L\xFCtfen, s\xF6zlerini duymak isterim."
+    - Name: 
+      Entry: 1
+      Data: "\xD6yk\xFClerin zaman\u0131 ge\xE7ti."
+    - Name: 
+      Entry: 1
+      Data: "Sadece sessizli\u011Fe ihtiyac\u0131m var."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 331|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Fire Camp Mother Milna
+    - Name: text
+      Entry: 1
+      Data: Every flame carries a story. Should I share one with you?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 332|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Please, I wish to hear your words.
+    - Name: 
+      Entry: 1
+      Data: The time for stories has passed.
+    - Name: 
+      Entry: 1
+      Data: I only need silence.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: globalDialogueLocalizations
+      Entry: 7
+      Data: 333|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String,
+        mscorlib],[LocalizedDialogueText, Assembly-CSharp]], mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 1
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: global_01
+    - Name: $v
+      Entry: 7
+      Data: 334|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 335|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Kahin
+    - Name: text
+      Entry: 1
+      Data: "Leviathan uyan\u0131yor. Dalgalar k\u0131talar\u0131 yutmak \xFCzere.
+        Ne yapacaks\u0131n?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 336|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 337|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Prophet
+    - Name: text
+      Entry: 1
+      Data: Leviathan is stirring from its eternal slumber. Its awakening will shatter
+        the balance. What must be done?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 338|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Begin the sealing ritual.
+    - Name: 
+      Entry: 1
+      Data: Be prepared, but do not interfere.
+    - Name: 
+      Entry: 1
+      Data: Awaken it and wield its power.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: global_02
+    - Name: $v
+      Entry: 7
+      Data: 339|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 340|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Kahin
+    - Name: text
+      Entry: 1
+      Data: "G\xF6ky\xFCz\xFC yar\u0131ld\u0131, i\xE7inden \u0131\u015F\u0131k de\u011Fil
+        karanl\u0131k s\u0131z\u0131yor. Uluslara ne s\xF6yleyeceksin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 341|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 342|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Prophet
+    - Name: text
+      Entry: 1
+      Data: The sky has split open, and darkness seeps through instead of light.
+        What will you tell the nations?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 343|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Unite in faith.
+    - Name: 
+      Entry: 1
+      Data: Remain silent and distract the people.
+    - Name: 
+      Entry: 1
+      Data: Embrace the darkness.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: global_03
+    - Name: $v
+      Entry: 7
+      Data: 344|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 345|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Kahin
+    - Name: text
+      Entry: 1
+      Data: "D\xFCnya bir yol ayr\u0131m\u0131nda. Hangi yoldan gideceksin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 346|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 347|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Prophet
+    - Name: text
+      Entry: 1
+      Data: The wheel of fate turns. In this cycle, will peace or war prevail?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 348|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Call for peace.
+    - Name: 
+      Entry: 1
+      Data: "Be ready for what\u2019s to come."
+    - Name: 
+      Entry: 1
+      Data: Encourage war.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: global_04
+    - Name: $v
+      Entry: 7
+      Data: 349|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 350|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Kahin
+    - Name: text
+      Entry: 1
+      Data: "Y\u0131ld\u0131zlar bir bir s\xF6n\xFCyor. I\u015F\u0131\u011F\u0131n
+        olmad\u0131\u011F\u0131 yerde ne h\xFCk\xFCm s\xFCrer?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 351|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: s
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 352|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Prophet
+    - Name: text
+      Entry: 1
+      Data: The stars fade one by one. What reigns where there is no light?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 353|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Keep hope alive.
+    - Name: 
+      Entry: 1
+      Data: Wield fear to control the people.
+    - Name: 
+      Entry: 1
+      Data: Accept the destruction and prepare.
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: global_05
+    - Name: $v
+      Entry: 7
+      Data: 354|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LocalizedDialogueText,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 3
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Turkish
+    - Name: $v
+      Entry: 7
+      Data: 355|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Kahin
+    - Name: text
+      Entry: 1
+      Data: "D\xF6rd\xFCnc\xFC m\xFCh\xFCr de k\u0131r\u0131ld\u0131. Kehanetin son
+        halkas\u0131 yakla\u015F\u0131yor. Nas\u0131l y\xF6n vereceksin?"
+    - Name: choiceTexts
+      Entry: 7
+      Data: 356|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: "ayarlanmas\u0131 gerekiyor"
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: English
+    - Name: $v
+      Entry: 7
+      Data: 357|LocalizedDialogueText, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Prophet
+    - Name: text
+      Entry: 1
+      Data: The fourth seal is broken. The final link of the prophecy draws near.
+        How will you guide it?
+    - Name: choiceTexts
+      Entry: 7
+      Data: 358|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Gather the faithful and uncover the prophecy.
+    - Name: 
+      Entry: 1
+      Data: "Form a united front\u2014war is inevitable."
+    - Name: 
+      Entry: 1
+      Data: "Accept the chaos\u2014let each nation forge its own path."
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

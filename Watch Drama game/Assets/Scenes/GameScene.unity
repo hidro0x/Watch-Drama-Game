@@ -229,8 +229,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.09280733}
-  m_AnchoredPosition: {x: 0, y: 1.5}
-  m_SizeDelta: {x: 0, y: 3}
+  m_AnchoredPosition: {x: 0, y: 1}
+  m_SizeDelta: {x: 0, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &266414268
 GameObject:
@@ -1078,6 +1078,7 @@ GameObject:
   - component: {fileID: 437460344}
   - component: {fileID: 437460346}
   - component: {fileID: 437460345}
+  - component: {fileID: 437460347}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1203,6 +1204,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437460343}
   m_CullTransparentMesh: 1
+--- !u!114 &437460347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437460343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e92685c9bd7124888909999e71ae04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: ui_stats
+  showDebugInfo: 0
 --- !u!114 &447856406 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6250255930658600617, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
@@ -1768,6 +1783,7 @@ GameObject:
   - component: {fileID: 572990034}
   - component: {fileID: 572990036}
   - component: {fileID: 572990035}
+  - component: {fileID: 572990037}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1893,6 +1909,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572990033}
   m_CullTransparentMesh: 1
+--- !u!114 &572990037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572990033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e92685c9bd7124888909999e71ae04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: ui_try
+  showDebugInfo: 0
 --- !u!114 &617933444 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6250255930658600617, guid: c32f3fc7054fdfa4192bc7e845373c64, type: 3}
@@ -4227,8 +4257,8 @@ MonoBehaviour:
   faithZeroDialogueText: No one believes you
   hostilityMaxDialogueSprite: {fileID: -1685125853566359774, guid: 8084f7c80ef572643aaf3c09fe957061, type: 3}
   hostilityMaxDialogueText: You've been killed by impostor.
-  allMapsCompletedDialogueSprite: {fileID: 0}
-  allMapsCompletedDialogueText: 
+  allMapsCompletedDialogueSprite: {fileID: 4342987560025478810, guid: dcd174d40daa66442b21fa81b31a231b, type: 3}
+  allMapsCompletedDialogueText: You've have rescued all the nations
 --- !u!1 &1328185126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4317,6 +4347,7 @@ GameObject:
   - component: {fileID: 1344904079}
   - component: {fileID: 1344904078}
   - component: {fileID: 1344904077}
+  - component: {fileID: 1344904081}
   m_Layer: 5
   m_Name: StatsButton
   m_TagString: Untagged
@@ -4426,6 +4457,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 9.8457}
   m_SizeDelta: {x: 300, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1344904081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344904076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a7a5eba61a01f14182451c888736337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: 0
 --- !u!224 &1385279348 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 235683214469111255, guid: dad2fb991f81d2c4e8b623e5f07695d5, type: 3}
@@ -5500,6 +5544,7 @@ GameObject:
   - component: {fileID: 1781775926}
   - component: {fileID: 1781775928}
   - component: {fileID: 1781775927}
+  - component: {fileID: 1781775929}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5625,6 +5670,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781775925}
   m_CullTransparentMesh: 1
+--- !u!114 &1781775929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781775925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e92685c9bd7124888909999e71ae04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: ui_exit
+  showDebugInfo: 0
 --- !u!1001 &1791379925
 PrefabInstance:
   m_ObjectHideFlags: 0
